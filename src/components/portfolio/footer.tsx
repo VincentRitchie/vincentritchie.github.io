@@ -1,7 +1,7 @@
 "use client";
 
 import { footer, profile as defaultProfile } from "@/lib/portfolio-data";
-import { ArrowUp, Mail, Phone, MapPin, Twitter, Github } from "lucide-react";
+import { ArrowUp, Mail, MapPin, Twitter, Github, Linkedin } from "lucide-react";
 import { assetPath } from "@/lib/asset-path";
 
 type ProfileLike = typeof defaultProfile;
@@ -16,6 +16,7 @@ export function Footer({ profile = defaultProfile }: { profile?: ProfileLike } =
     { label: "Email", href: `mailto:${publicEmail}`, icon: Mail },
     { label: "X / Twitter", href: `https://x.com/${profile.twitter}`, icon: Twitter },
     { label: "GitHub", href: `https://github.com/${profile.github}`, icon: Github },
+    ...(profile.linkedin ? [{ label: "LinkedIn", href: profile.linkedin, icon: Linkedin }] : []),
   ];
 
   return (
