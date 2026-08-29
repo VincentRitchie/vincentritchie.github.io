@@ -39,7 +39,7 @@ export const profile = {
   phone: "",
   twitter: "cyb3rghoxt",
   github: "vin_chimaobi042",
-  linkedin: null,
+  linkedin: "https://www.linkedin.com/in/vincent-chimaobi042",
 };
 
 export type NavItem = { label: string; href: string };
@@ -648,6 +648,7 @@ export const contact = {
     { label: "Location", value: "Abuja, FCT, Nigeria", href: null, icon: "MapPin" },
     { label: "X / Twitter", value: "@cyb3rghoxt", href: "https://x.com/cyb3rghoxt", icon: "Twitter" },
     { label: "GitHub", value: "@vin_chimaobi042", href: "https://github.com/vin_chimaobi042", icon: "Github" },
+    { label: "LinkedIn", value: "vincent-chimaobi042", href: "https://www.linkedin.com/in/vincent-chimaobi042", icon: "Linkedin" },
   ],
   whatsapp: {
     url: "https://wa.me/message/BS2I4XH5NM3CH1",

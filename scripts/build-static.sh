@@ -1,15 +1,34 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# ============================================================
+# Static export build for GitHub Pages.
+# Supports BOTH project sites (username.github.io/repo-name) and
+# user/org sites (username.github.io) with automatic basePath detection.
+# ============================================================
+
 REPO_NAME="${REPO_NAME:-}"
+REPO_OWNER="${REPO_OWNER:-}"
+
+# Determine if this is a user/org site (username.github.io).
+# If so, BASE_PATH must be empty (served from root).
+USER_SITE_REPO=""
+if [ -n "$REPO_OWNER" ]; then
+  USER_SITE_REPO="$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]').github.io"
+fi
+
 BASE_PATH=""
-if [ -n "$REPO_NAME" ]; then
+if [ -n "$REPO_NAME" ] && [ "$REPO_NAME" != "$USER_SITE_REPO" ]; then
+  # Ordinary project repo — use /repo-name as basePath.
   BASE_PATH="/$REPO_NAME"
 fi
+# If REPO_NAME == USER_SITE_REPO (e.g. "vincentritchie.github.io"), BASE_PATH stays "".
 
 echo "=== Static export build ==="
 echo "REPO_NAME: ${REPO_NAME:-(none)}"
-echo "BASE_PATH: ${BASE_PATH:-(empty)}"
+echo "REPO_OWNER: ${REPO_OWNER:-(none)}"
+echo "USER_SITE_REPO: ${USER_SITE_REPO:-(none)}"
+echo "BASE_PATH: ${BASE_PATH:-(empty — root deployment)}"
 
 TMP_DIR=$(mktemp -d)
 
