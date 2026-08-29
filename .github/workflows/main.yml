@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Generate Prisma client
+        run: bun run db:generate
+
       - name: Build static site
         run: REPO_NAME=${{ github.event.repository.name }} REPO_OWNER=${{ github.repository_owner }} bash scripts/build-static.sh
 
