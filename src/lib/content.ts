@@ -1,5 +1,4 @@
 import "server-only";
-import { db } from "@/lib/db";
 import {
   profile as fallbackProfile,
   afrikVine as fallbackAfrikVine,
@@ -7,6 +6,17 @@ import {
   expertiseCards as fallbackExpertise,
   articles as fallbackArticles,
 } from "@/lib/portfolio-data";
+
+// Dynamic import of db — only loaded when NOT in static export mode.
+// This prevents Prisma client from being required during GitHub Pages build.
+let _db: typeof import("@/lib/db")["db"] | null = null;
+async function getDb() {
+  if (!_db) {
+    const { db } = await import("@/lib/db");
+    _db = db;
+  }
+  return _db;
+}
 
 /**
  * Server-only content layer.
@@ -179,6 +189,7 @@ export function clearContentCache() {
 }
 
 async function buildContent(): Promise<MergedContent> {
+  const db = await getDb();
   // ---- profile (SiteSetting) ----
   let profile: PublicProfile = {
     ...fallbackProfile,
