@@ -1,0 +1,1864 @@
+TARGETED GLM IMPLEMENTATION INSTRUCTION
+VINCENT CHIMAOBI OBASIOCHIE PORTFOLIO
+CURRENT-CV REPOSITIONING, CONTENT INTEGRATION, DEPLOYMENT AND LIVE VERIFICATION
+
+============================================================
+1. TASK MODE
+============================================================
+
+This is a TARGETED EXISTING-SITE REPOSITIONING.
+
+Do NOT rebuild the portfolio from scratch.
+
+Do NOT create a new visual identity.
+
+Do NOT replace the working architecture merely because another implementation would be easier.
+
+The objective is:
+
+PRESERVE THE WEBSITE.
+PRESERVE ITS STRUCTURAL DNA.
+REPLACE THE OUTDATED PROFESSIONAL IDENTITY.
+INTEGRATE THE CURRENT CV COMPLETELY.
+BUILD, DEPLOY AND VERIFY THE LIVE RESULT.
+
+CURRENT PRODUCTION URL:
+
+https://vincentritchie.github.io/
+
+CURRENT REPOSITORY:
+
+VincentRitchie/vincentritchie.github.io
+
+CURRENT DEFAULT BRANCH:
+
+main
+
+The repository has already been moved to the correct GitHub Pages user-site repository.
+
+THIS IS NOT A REPOSITORY-RENAME OR ROOT-URL MIGRATION TASK.
+
+
+============================================================
+2. ABSOLUTE FACTUAL AUTHORITY
+============================================================
+
+Read the attached:
+
+Vincent_Chimaobi_Current_CV.pdf
+
+completely before editing the repository.
+
+That PDF is the ONLY factual authority for Vincent's current:
+
+- name;
+- professional title;
+- summary;
+- work experience;
+- dates;
+- employers/platforms;
+- achievements;
+- education;
+- skills;
+- certifications;
+- languages;
+- contact information;
+- professional direction;
+- quantitative claims.
+
+The existing website is NOT a factual authority.
+
+Its authority is limited to:
+
+- visual identity;
+- component architecture;
+- structure;
+- page flow;
+- section shells;
+- responsive behaviour;
+- animations;
+- hover states;
+- frames;
+- cards;
+- typography relationships;
+- spacing;
+- interaction design;
+- premium presentation.
+
+If old website copy conflicts with the CV:
+
+THE CV WINS.
+
+Do not use remembered information, an earlier CV, repository history, old profile copy or old metadata to override the attached current CV.
+
+
+============================================================
+3. VERIFIED REPOSITORY ARCHITECTURE
+============================================================
+
+Before editing, inspect the live repository yourself.
+
+Pay particular attention to:
+
+src/lib/portfolio-data.ts
+
+This file currently declares itself the single source of truth for public copy and contains large amounts of the outdated professional identity.
+
+Also inspect:
+
+src/lib/content.ts
+src/app/page.tsx
+src/app/layout.tsx
+src/components/portfolio/
+src/lib/web-dev-content.ts
+src/lib/faq-seed.ts
+src/lib/faq.ts
+public/
+README.md
+
+and every other source that can surface professional/profile information.
+
+Current homepage flow includes:
+
+page.tsx
+→ getMergedContent()
+→ PortfolioSite
+
+Therefore:
+
+Do NOT assume changing one visible component is enough.
+
+Confirm whether any DB/content merging, fallback logic, seeded data or build-time content can override or reintroduce outdated values.
+
+For GitHub Pages/static production, ensure the final rendered content comes from the newly corrected CV-aligned data.
+
+Do not create duplicate sources of truth.
+
+
+============================================================
+4. EXISTING DESIGN LOCK
+============================================================
+
+Preserve the current premium dark portfolio design.
+
+Retain:
+
+- header architecture;
+- hero architecture;
+- professional portrait treatment;
+- image/gallery treatment where neutral;
+- About layout;
+- Expertise architecture;
+- detailed-section shells;
+- Experience layout;
+- project/card architecture;
+- article architecture;
+- Contact layout;
+- footer architecture;
+- dark visual personality;
+- existing component depth;
+- frames;
+- hover treatment;
+- animations;
+- section transitions;
+- responsive logic;
+- desktop/tablet/mobile behaviour.
+
+Do not introduce a generic template.
+
+Do not flatten the site into a basic CV page.
+
+The finished website must still be recognisably the same premium Vincent portfolio.
+
+The change is professional positioning, not redesign.
+
+
+============================================================
+5. NEW PRIMARY IDENTITY
+============================================================
+
+Replace the current dominant identity with:
+
+VINCENT CHIMAOBI OBASIOCHIE
+
+MULTIMODAL PROMPT ENGINEER
+
+Do not keep:
+
+OBASIOCHIE VINCENT CHIMAOBI
+
+as the primary displayed name if it conflicts with the current CV's name order.
+
+Do not keep:
+
+AI Evaluation & Data Annotation Specialist
+
+as the primary role.
+
+Do not present Web Development, Security Research, Penetration Testing, Bug Bounty Hunting or general cybersecurity work as current professional positioning.
+
+
+============================================================
+6. HERO SECTION
+============================================================
+
+Preserve the existing hero component, animations, visual hierarchy and portrait system.
+
+Update its professional content.
+
+PRIMARY NAME
+
+VINCENT CHIMAOBI OBASIOCHIE
+
+PRIMARY TITLE
+
+MULTIMODAL PROMPT ENGINEER
+
+The supporting hero copy should communicate, in first person, this CV-supported positioning:
+
+I work with generative AI across text, image and video, using structured prompting, repeated refinement and careful visual control to turn creative ideas into long-form content. My work focuses strongly on character identity, facial appearance, environments, scene continuity, visual direction and consistent storytelling across generated scenes.
+
+Keep this concise enough for the existing hero.
+
+If the existing hero contains an availability/status line, reposition it around CV-supported work only, for example:
+
+Available for Multimodal Prompt Engineering, AI Video Production, Generative AI Content and Content Quality Work
+
+Do not mention web development, cybersecurity, data annotation services or security research.
+
+
+============================================================
+7. VERIFIED HERO / PERFORMANCE HIGHLIGHTS
+============================================================
+
+Where the site's metric/highlight architecture already supports statistics, use only:
+
+29,000+
+Subscribers across AI-powered YouTube channels
+
+3.5M+
+Combined views
+
+20+
+Nollywood-style AI films
+
+20+
+Content writing and research clients
+
+10,000+
+Individual items reviewed through Remotasks workflows
+
+For TELUS, where a statistic is useful, use only the CV-supported wording:
+
+Thousands of digital content items reviewed
+
+Do NOT preserve the site's existing unsupported breakdown such as:
+
+2M+ on one channel
+1.5M+ on another channel
+
+unless that breakdown is separately authorised later.
+
+The CV supports only:
+
+3.5 million combined views
+
+and:
+
+over 29,000 subscribers.
+
+
+============================================================
+8. ABOUT SECTION
+============================================================
+
+Preserve the About section design.
+
+Rewrite the narrative completely in first person.
+
+Use this professional direction:
+
+I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production.
+
+My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.
+
+Across AI-assisted film and content production, I plan scenes and visual requirements before generation, keep useful references, review outputs critically and correct inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage.
+
+My background in content writing, research and digital content review also strengthens how I approach AI-generated work. I read requirements carefully, examine information critically and review outputs for accuracy, meaning, consistency and quality before accepting them.
+
+Do not reintroduce web development, cybersecurity or unsupported AI-evaluator positioning into this narrative.
+
+
+============================================================
+9. HOW-I-WORK CONTENT
+============================================================
+
+Preserve the existing visual treatment for professional principles.
+
+Refocus the cards/principles around:
+
+STRUCTURE BEFORE GENERATION
+
+I define the scene, visual requirements and intended result before generation so the model has clearer direction.
+
+CONSISTENCY THROUGH REFERENCES
+
+I maintain useful references and visual cues to keep characters, environments and story details recognisable across scenes.
+
+REVIEW BEFORE PROGRESSION
+
+I inspect generated results for facial, character, setting, composition and continuity problems before moving to the next stage.
+
+REFINE FROM OBSERVED FAILURES
+
+When an output fails, I adjust the prompt, reference, visual direction or production approach according to the actual problem.
+
+USE THE RIGHT TOOL FOR THE STAGE
+
+I use different generative tools where appropriate instead of forcing one system to handle every part of production.
+
+QUALITY THROUGH ITERATION
+
+I treat generative production as a controlled process of planning, generation, review, correction and refinement.
+
+
+============================================================
+10. EXPERTISE SECTION
+============================================================
+
+Keep the existing Expertise card/grid architecture.
+
+Replace outdated cards with CV-supported expertise.
+
+Use approximately these areas, adapting the number only to the existing component capacity:
+
+1. Multimodal Prompt Engineering
+
+Structured prompting across text, image and video, with close control of requirements, visual direction and generated results.
+
+2. Generative AI Content Creation
+
+Development of AI-assisted story and visual content from initial concept through final review.
+
+3. AI Video Production
+
+Long-form video production using story development, scripting, image generation, video generation, voice production, sequencing and review.
+
+4. AI Creative Direction
+
+Planning characters, settings, scenes, visual cues and overall creative direction before and during generation.
+
+5. Character Identity & Facial Consistency
+
+Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement.
+
+6. Scene & Environment Continuity
+
+Maintaining locations, backgrounds, settings, objects and visual continuity across generated scenes.
+
+7. Story Development & Scriptwriting
+
+Developing story-based content, scripts and narrative direction for long-form AI productions.
+
+8. Content Research & Quality Control
+
+Research, critical reading, organised information gathering and manual review for accuracy, meaning and quality.
+
+9. Model Stumping & Prompt Stress Testing
+
+Testing difficult instructions and model behaviour to identify weaknesses, inconsistency or failure under demanding prompts.
+
+10. Prompt Refinement & Production Planning
+
+Improving prompts from observed results and defining scenes or production requirements clearly before generation.
+
+Do not retain unsupported expertise cards simply because the icons already exist.
+
+
+============================================================
+11. NAVIGATION REPOSITIONING
+============================================================
+
+Preserve the navigation architecture and responsive menu behaviour.
+
+Replace outdated labels consistently.
+
+Recommended one-to-one mapping:
+
+Home
+→ Home
+
+About
+→ About
+
+Expertise
+→ Expertise
+
+AI Evaluation
+→ Multimodal Prompting
+
+Prompt Engineering
+→ Prompt Refinement
+
+Web Development
+→ Character Consistency
+
+Security Research
+→ Quality Control
+
+Experience
+→ Experience
+
+Projects
+→ Generative AI Work
+
+Afrik-Vine
+→ Production Approach
+
+Articles
+→ Articles
+
+Contact
+→ Contact
+
+If IDs are renamed, update:
+
+- anchor links;
+- scrollspy;
+- active-navigation state;
+- mobile menu links;
+- footer links;
+- accessibility labels;
+- internal section references.
+
+Do not leave obsolete IDs or hidden labels where they can surface publicly.
+
+
+============================================================
+12. DETAILED SECTION MAPPING
+============================================================
+
+Do NOT delete the existing premium detailed-section shells.
+
+Repurpose them in place.
+
+------------------------------------------------------------
+A. CURRENT AI EVALUATION SHELL
+→ MULTIMODAL PROMPT ENGINEERING
+------------------------------------------------------------
+
+New section focus:
+
+- text prompting;
+- image prompting;
+- video prompting;
+- clear task definition;
+- references;
+- visual requirements;
+- scene requirements;
+- structured prompts;
+- iterative refinement;
+- output review;
+- multimodal workflow thinking.
+
+Suggested headline:
+
+Multimodal Prompt Engineering Across Text, Image & Video
+
+Primary narrative:
+
+My prompt engineering work extends across text, image and video generation. I use structured instructions, references and clearly defined visual requirements to control what the model should produce, then review the generated result and refine the instruction when consistency, composition, identity or scene continuity breaks.
+
+Preserve the current workflow-card architecture, but rename its stages around:
+
+1. Define the intended result
+2. Prepare references and context
+3. Structure the prompt
+4. Generate the first result
+5. Inspect the output
+6. Identify the failure
+7. Refine the instruction or references
+8. Continue only when the result supports the next stage
+
+
+------------------------------------------------------------
+B. CURRENT PROMPT ENGINEERING SHELL
+→ PROMPT REFINEMENT & PROMPT STRESS TESTING
+------------------------------------------------------------
+
+Focus on:
+
+- repeated refinement;
+- specific prompting;
+- difficult model behaviour;
+- diagnosing failures;
+- maintaining requirements;
+- model stumping;
+- prompt stress testing;
+- correction across iterations.
+
+Suggested headline:
+
+Refining Prompts by Studying Where the Output Fails
+
+Use first-person language.
+
+Do not imply formal commercial red-team work beyond what the CV supports.
+
+Model Stumping & Prompt Stress Testing is a CV-listed skill.
+
+Use it as a practical skill, not an invented job title.
+
+
+------------------------------------------------------------
+C. CURRENT GENERATIVE AI WORKFLOW SHELL
+→ GENERATIVE AI CONTENT PRODUCTION WORKFLOW
+------------------------------------------------------------
+
+Preserve the workflow architecture.
+
+Use these CV-supported stages:
+
+1. Creative idea
+2. Story development
+3. Scriptwriting
+4. Scene and visual planning
+5. Prompt development
+6. Image generation
+7. Video generation
+8. Voice production
+9. Sequencing
+10. Review
+11. Correction
+12. Final assembly
+
+Explain that different generative tools may be selected for different production stages.
+
+Do NOT list named AI tools unless they appear in the current CV or Vincent separately authorises them.
+
+
+------------------------------------------------------------
+D. CURRENT AI VIDEO SHELL
+→ AI VIDEO PRODUCTION & CREATIVE DIRECTION
+------------------------------------------------------------
+
+Focus on:
+
+- long-form AI films;
+- Nigerian stories;
+- Nigerian characters;
+- Nigerian settings;
+- visual storytelling;
+- scene planning;
+- character recognisability;
+- creative direction;
+- voice production;
+- sequencing;
+- output review;
+- long-form consistency.
+
+Use the verified highlight:
+
+20+ Nollywood-style AI films
+
+Do not exaggerate.
+
+
+------------------------------------------------------------
+E. CURRENT WEB DEVELOPMENT SHELL
+→ CHARACTER & SCENE CONSISTENCY
+------------------------------------------------------------
+
+Keep the sophisticated visual shell.
+
+Remove all public-facing web-development service copy.
+
+New focus:
+
+Character Identity
+
+Facial Characteristics
+
+Clothing Continuity
+
+Location Continuity
+
+Environment Continuity
+
+Background Consistency
+
+Visual Cues
+
+Scene-to-Scene Continuity
+
+Storyline Continuity
+
+Long-Form Production Consistency
+
+Use a process such as:
+
+Reference
+→ Prompt
+→ Generation
+→ Compare
+→ Detect inconsistency
+→ Refine
+→ Regenerate
+→ Approve
+→ Continue
+
+Explain that previous generations of image/video tools often required repeated creative adjustment because consistency across long productions was difficult.
+
+This is explicitly supported by the CV.
+
+
+------------------------------------------------------------
+F. CURRENT SECURITY RESEARCH SHELL
+→ MODEL STUMPING, CONTENT REVIEW & QUALITY CONTROL
+------------------------------------------------------------
+
+Remove all public-facing:
+
+- penetration testing;
+- bug bounty;
+- vulnerability assessment;
+- responsible disclosure service;
+- API security;
+- authentication testing;
+- brute-force testing;
+- file-upload testing;
+- cybersecurity consulting.
+
+Repurpose the section around:
+
+- model stumping;
+- prompt stress testing;
+- difficult-output review;
+- ambiguity detection;
+- conflicting information;
+- unsupported information;
+- content verification;
+- research;
+- critical reading;
+- quality control;
+- systematic correction.
+
+Connect the section truthfully to TELUS Digital, Remotasks and later generative AI production.
+
+Do not rename previous security work into AI work.
+
+Instead, remove the unsupported security content and replace the shell with new CV-supported content.
+
+
+============================================================
+13. PROFESSIONAL EXPERIENCE
+============================================================
+
+Replace the current experience records with exactly these four CV roles.
+
+ORDER THEM PROFESSIONALLY, preferably most recent/current first.
+
+------------------------------------------------------------
+GENERATIVE AI CONTENT CREATOR & AI VIDEO PRODUCER
+October 2023 – Present
+Independent Content Production – Remote
+------------------------------------------------------------
+
+Represent:
+
+- video content of varying lengths;
+- Nigerian stories, characters and settings;
+- AI-powered YouTube channels;
+- 3.5M+ combined views;
+- 29,000+ subscribers;
+- 20+ Nollywood-style AI movies;
+- story development;
+- scripting;
+- prompt engineering;
+- image generation;
+- video generation;
+- voice production;
+- sequencing;
+- review;
+- character recognisability;
+- facial characteristics;
+- clothing;
+- settings;
+- visual cues;
+- long story-based productions;
+- scene consistency;
+- creative refinement;
+- clearer scene planning;
+- reduction of unnecessary retries;
+- generation-credit efficiency;
+- quality review;
+- multi-tool production;
+- ongoing exploration of prompting techniques.
+
+Do not change the start date to October 2024.
+
+The CV says October 2023.
+
+
+------------------------------------------------------------
+CONTENT WRITER & RESEARCH ASSISTANT
+December 2020 – Present
+Upwork – Remote
+------------------------------------------------------------
+
+Represent:
+
+- 20+ clients;
+- writing;
+- research;
+- editing;
+- digital content development;
+- online research;
+- organised information gathering;
+- audience-specific content;
+- generative-AI-assisted drafting/editing;
+- manual accuracy and quality review;
+- client requirement alignment;
+- independent remote execution.
+
+
+------------------------------------------------------------
+DIGITAL CONTENT QUALITY & RESEARCH WORK
+March 2022 – December 2023
+TELUS Digital – Remote
+------------------------------------------------------------
+
+Represent:
+
+- large-scale digital content assignments;
+- research;
+- detailed instructions;
+- consistent judgement;
+- thousands of content items;
+- relevance;
+- clarity;
+- factual consistency;
+- completeness;
+- evidence review;
+- ambiguity;
+- conflicting information;
+- incomplete information;
+- unsupported information;
+- changing project instructions;
+- online research;
+- verification;
+- critical reading;
+- quality control.
+
+Do NOT rename this role to AI Evaluation Specialist unless the current CV says so.
+
+It does not.
+
+
+------------------------------------------------------------
+DIGITAL CONTENT REVIEW & QUALITY OPERATIONS
+October 2020 – January 2022
+Remotasks – Remote
+------------------------------------------------------------
+
+Represent:
+
+- high-volume digital work;
+- content review;
+- classification;
+- quality review;
+- detailed instructions;
+- 10,000+ individual items;
+- error detection;
+- inconsistency detection;
+- missing-information review;
+- guideline interpretation;
+- attention to detail;
+- independent remote execution;
+- adaptation to changing project requirements;
+- foundational content-review skills supporting later research, generative content production and prompt refinement.
+
+Do NOT label this current role:
+
+AI Data Annotation Specialist
+
+unless separately authorised.
+
+Use the CV title.
+
+
+============================================================
+14. REMOVE THE SECURITY EXPERIENCE ENTRY
+============================================================
+
+The existing portfolio currently includes:
+
+Penetration Tester & Bug Bounty Hunter
+Independent Engagements / HackerOne / Bugcrowd
+
+This is not contained in the current CV.
+
+Remove it from the current professional portfolio.
+
+Do not retain it as a fifth work-experience role.
+
+Do not move it into hidden metadata.
+
+Do not leave it in rendered HTML.
+
+
+============================================================
+15. PRODUCTION HIGHLIGHTS / PROJECTS
+============================================================
+
+Keep the Projects & Case Studies visual architecture.
+
+Rename the public section:
+
+SELECTED GENERATIVE AI WORK
+
+or:
+
+PRODUCTION HIGHLIGHTS
+
+Do not present unverified workflows as named client projects.
+
+Remove unsupported public cards such as:
+
+- Underwater Laser Detection Security System;
+- AI-Powered Community Census Application;
+- XYZ Electronics Retail Website Demo;
+- ABC Mobile Store E-commerce Demo;
+
+because they are absent from the current CV.
+
+Use CV-supported cards such as:
+
+AI-POWERED YOUTUBE CONTENT
+
+Created and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views.
+
+20+ NOLLYWOOD-STYLE AI FILMS
+
+Created more than 20 AI-assisted Nollywood-style films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.
+
+LONG-FORM CHARACTER CONSISTENCY
+
+Developed practical techniques for maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.
+
+MULTIMODAL AI VIDEO PRODUCTION
+
+Worked across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.
+
+CONTENT RESEARCH & QUALITY REVIEW
+
+Built practical research and review experience through Upwork, TELUS Digital and Remotasks, with careful attention to requirements, evidence, ambiguity, accuracy and consistency.
+
+Use the site's existing cards, visual depth and animation.
+
+
+============================================================
+16. AFRIK-VINE SHELL
+→ MULTIMODAL PRODUCTION APPROACH
+============================================================
+
+Afrik-Vine does not appear in the current CV.
+
+Remove it from current professional positioning.
+
+Do NOT delete the premium visual section shell.
+
+Repurpose that section as:
+
+MULTIMODAL PRODUCTION APPROACH
+
+Possible headline:
+
+How I Keep Long-Form Generative Work Controlled
+
+Use the existing structural footprint to present principles such as:
+
+1. Creativity
+Start from a clear story, visual goal or production idea.
+
+2. Scene Preparation
+Define characters, setting, action and visual requirements before generation.
+
+3. Structured Prompting
+Write instructions specific enough to reduce ambiguity.
+
+4. Consistency
+Use visual references and repeated cues to maintain recognisability.
+
+5. Critical Review
+Inspect faces, clothing, backgrounds, composition and continuity.
+
+6. Refinement
+Correct the precise problem instead of restarting blindly.
+
+7. Production Efficiency
+Reduce unnecessary retries and wasted generation credits through clearer planning.
+
+8. Long-Form Continuity
+Carry important character, environment and storyline information from scene to scene.
+
+Remove:
+
+- Afrik-Vine logo;
+- Afrik-Vine company copy;
+- company roadmap;
+- company services;
+- venture note;
+- Afrik-Vine inquiry;
+- future-company claims;
+
+from the public site unless Vincent separately authorises their return.
+
+
+============================================================
+17. ARTICLES / RESEARCH SECTION
+============================================================
+
+Preserve the architecture and truthful status labels.
+
+Reposition around current professional themes.
+
+Suggested categories:
+
+- Multimodal Prompt Engineering
+- Character Consistency in AI Video
+- Prompt Refinement for Image & Video Models
+- Long-Form Generative Storytelling
+- AI Creative Direction
+- Scene Continuity
+- Model Stumping & Prompt Stress Testing
+- Content Research & Quality Review
+
+Possible "Coming Soon" concepts:
+
+How I Approach Character Consistency Across AI-Generated Scenes
+
+Why Clearer Scene Planning Reduces Repeated AI Generation
+
+Prompt Refinement for Long-Form Visual Storytelling
+
+What I Check Before Accepting an AI-Generated Scene
+
+Do NOT present these as published articles.
+
+Keep "Coming Soon" or "In Progress" treatment where appropriate.
+
+
+============================================================
+18. SKILLS
+============================================================
+
+The primary skills must match the current CV:
+
+Multimodal Prompt Engineering
+
+Generative AI Content Creation
+
+AI Video Production
+
+AI Creative Direction
+
+Character & Scene Consistency
+
+Story Development & Scriptwriting
+
+Content Research & Quality Control
+
+Model Stumping & Prompt Stress Testing
+
+Closely related presentation labels may be used only when directly supported, such as:
+
+Prompt Refinement
+
+Character Identity Consistency
+
+Facial Consistency
+
+Scene Continuity
+
+Environment Continuity
+
+Visual Direction
+
+Long-Form AI Production
+
+Generative Content Quality Review
+
+
+============================================================
+19. EDUCATION, CERTIFICATIONS AND LANGUAGES
+============================================================
+
+Integrate the complete current CV without adding a disruptive new top-level architecture.
+
+Use the existing Experience/Credentials/Card system to add a compact professional credentials block.
+
+EDUCATION
+
+Bachelor of Science (B.Sc.) in Physics Electronics
+2016 – 2021
+University of Port Harcourt
+
+
+CERTIFICATIONS
+
+Generative AI Essentials: Prompt Engineering Masterclass – Udemy
+March 2025
+
+Mastering AI Leadership: Advanced Certificate in Prompt Engineering and Professional Ethics – Davidson College | edX Professional Certificate
+June 2026
+
+
+LANGUAGES
+
+English (Conversational)
+
+Igbo (Native)
+
+Do not alter these titles or dates.
+
+
+============================================================
+20. CONTACT INFORMATION
+============================================================
+
+The current CV overrides all current site contact information.
+
+Use:
+
+PHONE
+09068254110
+
+EMAIL
+vincentchimaobi042@gmail.com
+
+LOCATION
+Abuja, Nigeria.
+
+LINKEDIN
+https://www.linkedin.com/in/vincent-chimaobi042/
+
+PORTFOLIO
+https://vincentritchie.github.io/
+
+Ensure these are clickable where appropriate.
+
+Use:
+
+mailto:vincentchimaobi042@gmail.com
+
+tel:09068254110
+
+Use the exact LinkedIn URL shown by the current CV.
+
+Remove unsupported public-facing current-site contacts:
+
+cyberghoxt.whitehat@gmail.com
+
+@cyb3rghoxt
+
+old X/Twitter link
+
+old public GitHub profile link
+
+WhatsApp link
+
+WhatsApp QR code
+
+WhatsApp CTA
+
+security-contact wording
+
+unless Vincent separately reauthorises any of them.
+
+If the WhatsApp QR image is inside /public and is no longer authorised, stop shipping it as part of the public-facing production asset set.
+
+
+============================================================
+21. CONTACT INQUIRY TYPES
+============================================================
+
+Keep the current form shell if it works correctly.
+
+Replace old inquiry types with CV-supported categories:
+
+Multimodal Prompt Engineering
+
+AI Video Production
+
+Generative AI Content
+
+Creative AI Workflow
+
+Content Writing & Research
+
+Digital Content Quality
+
+General Professional Contact
+
+Remove:
+
+AI Evaluation / AI Training Role
+
+Data Annotation Opportunity
+
+Web Development Project
+
+Afrik-Vine Tech LTD Inquiry
+
+Security Research Discussion
+
+unless separately authorised.
+
+
+============================================================
+22. FOOTER
+============================================================
+
+Preserve the footer design.
+
+Update its public identity to:
+
+VINCENT CHIMAOBI OBASIOCHIE
+
+MULTIMODAL PROMPT ENGINEER
+
+Suggested supporting line:
+
+Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality.
+
+Remove:
+
+- old AI Evaluation & Data Annotation title;
+- Web Development;
+- Security-Informed Digital Solutions;
+- Afrik-Vine venture note;
+- X/Twitter;
+- unsupported GitHub link;
+- WhatsApp.
+
+Use only CV-authorised public contact routes.
+
+
+============================================================
+23. METADATA AND SEO
+============================================================
+
+Update:
+
+src/app/layout.tsx
+
+and any other metadata source.
+
+Use:
+
+TITLE
+
+Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer
+
+DESCRIPTION
+
+Professional portfolio of Vincent Chimaobi Obasiochie, a Multimodal Prompt Engineer with practical experience across generative AI text, image and video production, AI video production, creative direction, character and scene consistency, prompt refinement, content research and quality control.
+
+KEYWORDS should remain concise and evidence-based, for example:
+
+Vincent Chimaobi Obasiochie
+
+Multimodal Prompt Engineer
+
+Multimodal Prompt Engineering
+
+Generative AI
+
+AI Video Production
+
+AI Creative Direction
+
+Character Consistency
+
+Scene Continuity
+
+Prompt Refinement
+
+Prompt Stress Testing
+
+Content Quality
+
+Abuja Nigeria
+
+Remove metadata keywords and descriptions centred on:
+
+AI Evaluation Specialist
+
+Data Annotation
+
+Web Development
+
+Security Research
+
+Afrik-Vine Tech LTD
+
+Penetration Testing
+
+Bug Bounty
+
+Update Open Graph and social metadata consistently.
+
+Update image alt text where it describes the outdated professional title.
+
+
+============================================================
+24. REPOSITORY PUBLIC COPY AUDIT
+============================================================
+
+The repository currently centralises extensive public copy in:
+
+src/lib/portfolio-data.ts
+
+Perform a deliberate search for outdated concepts across the entire codebase.
+
+Search for variations of:
+
+AI Evaluation
+AI Evaluation Specialist
+AI Evaluation & Data Annotation Specialist
+Data Annotation
+Web Development
+Frontend
+Backend
+React
+Next.js
+WordPress
+E-commerce
+Security Research
+Penetration Tester
+Penetration Testing
+Bug Bounty
+HackerOne
+Bugcrowd
+Responsible Disclosure
+Cybersecurity
+Afrik-Vine
+cyberghoxt
+WhatsApp
+wa.me
+
+Do NOT blindly delete implementation technology from technical project documentation or package files.
+
+Important distinction:
+
+If "Next.js", "React", "TypeScript", etc. describe the WEBSITE'S implementation architecture internally, leave the technical implementation truth intact.
+
+Remove those technologies only when they appear publicly as Vincent's professional service/skill positioning unsupported by the current CV.
+
+The same distinction applies to repository documentation.
+
+Update README.md's public portfolio description if it still advertises the old professional identity, while preserving truthful technical setup/deployment documentation.
+
+
+============================================================
+25. CONTENT MERGING / STALE DATA AUDIT
+============================================================
+
+The homepage currently uses:
+
+getMergedContent()
+
+with portfolio-data fallback.
+
+Before deployment:
+
+- inspect src/lib/content.ts;
+- determine what can override portfolio-data;
+- determine static-export behaviour;
+- inspect seed/default content;
+- inspect database fallback behaviour;
+- ensure stale seeded records cannot appear in the public GitHub Pages build;
+- update any relevant seed data only if it can surface publicly;
+- do not create a second contradictory source.
+
+Final live output must contain the CV-aligned content even after a clean build.
+
+
+============================================================
+26. MEDIA AUDIT
+============================================================
+
+Preserve the existing portrait/gallery assets if visually neutral.
+
+Audit:
+
+- captions;
+- alt text;
+- gallery labels;
+- visual-tour titles;
+- project images;
+- security/web-development graphics;
+- Afrik-Vine logo;
+- WhatsApp QR.
+
+Retain neutral professional portraits and styling.
+
+Replace/remove only assets that explicitly communicate outdated positioning.
+
+Preserve:
+
+- dimensions;
+- framing;
+- aspect ratio;
+- component behaviour;
+- animation;
+- overall rhythm.
+
+
+============================================================
+27. VOICE
+============================================================
+
+Personal narrative must use first person:
+
+I
+me
+my
+my work
+my experience
+my approach
+
+Do not write Vincent's About, methods or professional narrative in detached third person.
+
+Objective records may remain neutral:
+
+- job titles;
+- organisations;
+- dates;
+- education;
+- certifications;
+- skills;
+- metrics.
+
+
+============================================================
+28. CONFIDENCE WITHOUT EXAGGERATION
+============================================================
+
+Do not use:
+
+aspiring
+
+trying to become
+
+hoping to learn
+
+just experimenting
+
+beginner
+
+practising
+
+for completed CV-supported work.
+
+Use direct verbs where supported:
+
+I create
+
+I produced
+
+I managed
+
+I developed
+
+I refined
+
+I reviewed
+
+I researched
+
+I wrote
+
+I edited
+
+I structured
+
+I maintained
+
+Do not invent:
+
+seniority;
+team leadership;
+commercial revenue;
+client outcomes;
+awards;
+new credentials;
+unlisted employers;
+unlisted AI tools;
+new projects;
+new job titles.
+
+
+============================================================
+29. ZERO-FABRICATION RULE
+============================================================
+
+Do not invent or retain unsupported:
+
+- employers;
+- clients;
+- technologies as personal skills;
+- AI model names;
+- tool names;
+- projects;
+- project titles;
+- metrics;
+- revenue;
+- certifications;
+- dates;
+- education;
+- awards;
+- publications;
+- companies;
+- services;
+- professional ventures;
+- security achievements.
+
+The old website is full of material that was appropriate for the former profile but is not contained in the new CV.
+
+Do not preserve it merely because it already exists.
+
+
+============================================================
+30. STRUCTURAL REPLACEMENT MAP
+============================================================
+
+Use this as the implementation map:
+
+CURRENT HERO
+→ Multimodal Prompt Engineer
+
+CURRENT ABOUT
+→ Multimodal AI / visual production professional story
+
+CURRENT EXPERTISE
+→ Current CV skills and derived supported subskills
+
+CURRENT AI EVALUATION
+→ Multimodal Prompt Engineering
+
+CURRENT PROMPT ENGINEERING
+→ Prompt Refinement & Prompt Stress Testing
+
+CURRENT GENERATIVE AI WORKFLOW
+→ Generative AI Content Production Workflow
+
+CURRENT AI VIDEO
+→ AI Video Production & Creative Direction
+
+CURRENT WEB DEVELOPMENT
+→ Character & Scene Consistency
+
+CURRENT SECURITY RESEARCH
+→ Model Stumping, Content Review & Quality Control
+
+CURRENT EXPERIENCE
+→ Exact four-role current CV chronology + credentials
+
+CURRENT PROJECTS
+→ Selected Generative AI Work / Production Highlights
+
+CURRENT AFRIK-VINE
+→ Multimodal Production Approach
+
+CURRENT ARTICLES
+→ Multimodal Prompting / AI video / consistency / quality themes
+
+CURRENT CONTACT
+→ Current CV contact information
+
+CURRENT FOOTER
+→ Current CV identity and authorised contacts
+
+CURRENT METADATA
+→ Multimodal Prompt Engineer
+
+
+============================================================
+31. RESPONSIVE FIT
+============================================================
+
+Replacement copy will differ in length.
+
+Do NOT reduce text to unreadable sizes to fit old components.
+
+Instead:
+
+- allow cards to grow naturally;
+- maintain spacing;
+- preserve responsive stacking;
+- rebalance line breaks;
+- use editorial compression only when it preserves meaning;
+- keep headings readable;
+- prevent overflow;
+- preserve animation stability.
+
+Verify at minimum:
+
+1440 px
+1280 px
+1024 px
+768 px
+430 px
+390 px
+375 px
+320 px
+
+
+============================================================
+32. FUNCTIONAL QA
+============================================================
+
+Verify:
+
+- sticky header;
+- mobile menu;
+- all navigation anchors;
+- scroll behaviour;
+- gallery;
+- image loading;
+- buttons;
+- external links;
+- email link;
+- phone link;
+- LinkedIn;
+- contact form;
+- CV/download behaviour if retained;
+- focus states;
+- hover states;
+- keyboard navigation;
+- responsive layout;
+- footer navigation.
+
+No stale anchor may point to:
+
+#ai-evaluation
+#web-development
+#security-research
+#afrik-vine
+
+if those IDs have been renamed.
+
+
+============================================================
+33. BUILD AND DEPLOYMENT
+============================================================
+
+Use the existing repository and deployment architecture.
+
+Do not ask Vincent for repository access again unless actual authenticated access fails.
+
+Do not expose or reproduce any private credential.
+
+Before modification:
+
+- inspect git status;
+- preserve unrelated changes;
+- confirm main branch;
+- inspect recent deployment state.
+
+After implementation:
+
+1. Run the production/static build.
+2. Resolve real TypeScript/build errors.
+3. Verify exported production output.
+4. Check for stale old professional copy.
+5. Check for broken assets.
+6. Check console/network errors.
+7. Commit only the targeted repositioning changes.
+8. Push to main.
+9. Allow GitHub Pages deployment to complete.
+10. Open the live production site.
+
+Final production URL:
+
+https://vincentritchie.github.io/
+
+
+============================================================
+34. LIVE POST-DEPLOYMENT CONTENT AUDIT
+============================================================
+
+After deployment, search the LIVE rendered page for these obsolete public concepts:
+
+AI Evaluation & Data Annotation Specialist
+AI Evaluation Specialist
+Web Development
+Security Research
+Penetration Tester
+Bug Bounty
+HackerOne
+Bugcrowd
+Afrik-Vine
+cyberghoxt.whitehat@gmail.com
+cyb3rghoxt
+
+Where any remain in public professional positioning:
+
+STOP.
+
+Find the source.
+
+Correct it.
+
+Redeploy.
+
+Do not declare completion while contradictory old identity remains.
+
+
+============================================================
+35. FINAL CV VERIFICATION
+============================================================
+
+Verify against the attached PDF one item at a time.
+
+NAME
+Vincent Chimaobi Obasiochie
+
+TITLE
+Multimodal Prompt Engineer
+
+PHONE
+09068254110
+
+EMAIL
+vincentchimaobi042@gmail.com
+
+LOCATION
+Abuja, Nigeria.
+
+LINKEDIN
+https://www.linkedin.com/in/vincent-chimaobi042/
+
+PORTFOLIO
+https://vincentritchie.github.io/
+
+GENERATIVE AI ROLE
+October 2023 – Present
+
+UPWORK
+December 2020 – Present
+
+TELUS DIGITAL
+March 2022 – December 2023
+
+REMOTASKS
+October 2020 – January 2022
+
+EDUCATION
+Bachelor of Science (B.Sc.) in Physics Electronics
+2016 – 2021
+University of Port Harcourt
+
+LANGUAGES
+English (Conversational)
+Igbo (Native)
+
+CERTIFICATION 1
+Generative AI Essentials: Prompt Engineering Masterclass – Udemy
+March 2025
+
+CERTIFICATION 2
+Mastering AI Leadership: Advanced Certificate in Prompt Engineering and Professional Ethics – Davidson College | edX Professional Certificate
+June 2026
+
+METRICS
+29,000+ subscribers
+3.5M+ combined views
+20+ Nollywood-style AI films
+20+ Upwork clients
+10,000+ Remotasks individual items
+Thousands of TELUS digital content items
+
+
+============================================================
+36. FINAL VALIDATION
+============================================================
+
+Do not declare the task complete until:
+
+PASS — Current premium design remains recognisable.
+
+PASS — Main name is Vincent Chimaobi Obasiochie.
+
+PASS — Main role is Multimodal Prompt Engineer.
+
+PASS — Hero reflects text, image and video generative AI work.
+
+PASS — About reflects the current CV.
+
+PASS — Expertise reflects current CV skills.
+
+PASS — Web Development professional positioning is removed.
+
+PASS — Security Research professional positioning is removed.
+
+PASS — AI Evaluation & Data Annotation Specialist headline is removed.
+
+PASS — Afrik-Vine professional positioning is removed.
+
+PASS — Current four-role work chronology is accurate.
+
+PASS — October 2023 start date is correct for independent AI content production.
+
+PASS — TELUS and Remotasks titles match the CV.
+
+PASS — Education is accurate.
+
+PASS — Certifications are accurate.
+
+PASS — Languages are accurate.
+
+PASS — 29,000+ subscribers is accurate.
+
+PASS — 3.5M+ combined views is accurate.
+
+PASS — 20+ Nollywood-style films is accurate.
+
+PASS — Old 2M/1.5M channel split is no longer presented as current-CV fact.
+
+PASS — Old email is removed.
+
+PASS — Unsupported X/Twitter is removed.
+
+PASS — Unsupported GitHub contact link is removed.
+
+PASS — Unsupported WhatsApp public contact is removed.
+
+PASS — LinkedIn is correct.
+
+PASS — Metadata is updated.
+
+PASS — Open Graph metadata is updated.
+
+PASS — Old public image alt/caption positioning is updated.
+
+PASS — Desktop works.
+
+PASS — Tablet works.
+
+PASS — Mobile works.
+
+PASS — Navigation works.
+
+PASS — Forms/buttons/links work.
+
+PASS — No material console errors.
+
+PASS — GitHub Pages deployment succeeds.
+
+PASS — Live root URL serves the new content.
+
+
+============================================================
+37. FINAL REPORT
+============================================================
+
+Return a concise factual implementation report.
+
+Use:
+
+REPOSITORY
+VincentRitchie/vincentritchie.github.io
+
+BRANCH
+[verified branch]
+
+PRIMARY POSITIONING
+Vincent Chimaobi Obasiochie
+Multimodal Prompt Engineer
+
+FILES / DATA SOURCES UPDATED
+[list actual files]
+
+SECTION REPOSITIONING
+[list old → new mappings actually implemented]
+
+OUTDATED CONTENT REMOVED
+[list actual categories removed]
+
+CV INTEGRATION
+Experience: PASS/FAIL
+Education: PASS/FAIL
+Skills: PASS/FAIL
+Certifications: PASS/FAIL
+Languages: PASS/FAIL
+Contact: PASS/FAIL
+Metrics: PASS/FAIL
+
+TECHNICAL VALIDATION
+Build: PASS/FAIL
+Desktop: PASS/FAIL
+Tablet: PASS/FAIL
+Mobile: PASS/FAIL
+Navigation: PASS/FAIL
+Assets: PASS/FAIL
+External links: PASS/FAIL
+Console: PASS/FAIL
+
+DEPLOYMENT
+GitHub Pages: PASS/FAIL
+Live URL: https://vincentritchie.github.io/
+
+LIVE CONTENT AUDIT
+Old primary professional identity remaining: YES/NO
+Unsupported web-development positioning remaining: YES/NO
+Unsupported security positioning remaining: YES/NO
+Afrik-Vine professional positioning remaining: YES/NO
+Old contact details remaining: YES/NO
+
+Do not report PASS unless verified from the production site.
+
+
+============================================================
+38. COMPLETION STANDARD
+============================================================
+
+The task succeeds when the visitor sees the SAME premium portfolio design but understands a COMPLETELY UPDATED professional profile:
+
+VINCENT CHIMAOBI OBASIOCHIE
+
+MULTIMODAL PROMPT ENGINEER
+
+with practical experience in:
+
+- text, image and video prompting;
+- generative AI content creation;
+- AI video production;
+- AI creative direction;
+- character and scene consistency;
+- story development and scriptwriting;
+- long-form AI storytelling;
+- prompt refinement;
+- model stumping and prompt stress testing;
+- content research;
+- digital content quality control.
+
+Preserve the website.
+
+Preserve the structural architecture.
+
+Preserve the design quality.
+
+Replace the obsolete professional identity completely.
+
+Integrate the current CV accurately.
+
+Build.
+
+Deploy.
+
+Open the live website.
+
+Verify the result end to end.
