@@ -9,17 +9,17 @@ type ProjectItem = typeof defaultProjects[number];
 
 export function Projects({ projects = defaultProjects }: { projects?: ProjectItem[] } = {}) {
   return (
-    <Section id="projects" className="border-t border-border/40">
+    <Section id="generative-ai-work" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Projects & Case Studies"
+          eyebrow="Generative AI Work & Productions"
           title={
             <>
-              Projects that reflect technical learning, AI workflows{" "}
-              <span className="text-gradient">&amp; practical problem solving</span>
+              Generative AI work reflecting multimodal production{" "}
+              <span className="text-gradient">&amp; long-form storytelling</span>
             </>
           }
-          intro="This section presents confirmed work from my academic, community, AI content, and technical background. It also includes clearly labeled placeholder case studies that define the structure for future client work and demonstrations."
+          intro="This section presents confirmed generative AI work — AI-powered YouTube content, Nollywood-style AI films, character consistency techniques, multimodal production, and content research and quality review experience. Each card reflects real production work rather than placeholder case studies."
           accent="magenta"
         />
 

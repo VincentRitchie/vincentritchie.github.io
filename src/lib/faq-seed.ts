@@ -1,129 +1,121 @@
 /**
  * Initial FAQ seed entries for the chatbot.
- * Content sourced ONLY from the approved portfolio content repository (v4.1).
+ * Content aligned with the Multimodal Prompt Engineer identity per current CV.
  * No invented clients, testimonials, certifications, or achievements.
  *
  * Each entry: { question, answer, keywords, category, order }
  */
 export const FAQ_SEED = [
   {
-    question: "Who is Obasiochie Vincent Chimaobi?",
+    question: "Who is Vincent Chimaobi Obasiochie?",
     answer:
-      "OBASIOCHIE VINCENT CHIMAOBI is an AI Evaluation and Data Annotation Specialist based in Abuja, Nigeria. His work sits at the intersection of AI response evaluation, prompt engineering, structured research, generative AI workflows, technical documentation, web development, and cybersecurity-informed analysis.",
-    keywords: "who,about,obi,obasiochie,vincent,chimaobi,background,introduction",
+      "VINCENT CHIMAOBI OBASIOCHIE is a Multimodal Prompt Engineer based in Abuja, Nigeria. I work with generative AI across text, image and video, using structured prompting, repeated refinement and careful visual control to turn creative ideas into long-form content. My work focuses strongly on character identity, facial appearance, environments, scene continuity, visual direction and consistent storytelling across generated scenes.",
+    keywords: "who,about,vincent,chimaobi,obasiochie,background,introduction",
     category: "about",
     order: 1,
   },
   {
     question: "What services do you offer?",
     answer:
-      "I offer AI response evaluation, data annotation and human-in-the-loop review, rubric-based evaluation, prompt engineering, generative AI workflows, hallucination detection, analytical thinking, technical documentation, web development, and security-informed research. Each area is supported by the same discipline: understand the requirement, verify the evidence, and build outputs that are useful in real-world contexts.",
+      "I offer multimodal prompt engineering, generative AI content creation, AI video production, AI creative direction, character identity and facial consistency, scene and environment continuity, story development and scriptwriting, content research and quality control, model stumping and prompt stress testing, and prompt refinement and production planning. Each area is supported by the same discipline: plan before generation, keep useful references, review outputs critically, and correct inconsistencies before moving forward.",
     keywords: "services,offer,help,work,do,expertise,skills",
     category: "services",
     order: 2,
   },
   {
-    question: "What is AI response evaluation?",
+    question: "What is multimodal prompt engineering?",
     answer:
-      "AI response evaluation is the disciplined review of model outputs to determine whether they satisfy the user's request, follow instructions, remain factually grounded, and provide useful value. I use a structured, evidence-based process: clarify the task, identify criteria, collect evidence, compare output to requirement, identify weaknesses, and explain the judgment clearly.",
-    keywords: "ai evaluation,response,llm,quality,review,assessment",
-    category: "ai-evaluation",
+      "Multimodal prompt engineering is the structured practice of guiding generative AI across text, image and video in one production process. I define the creative objective, prepare references and constraints, generate the first output with the appropriate tool, review the result critically, and refine prompts, assets or direction until the output meets the intended standard. A polished output can still miss the brief, break character identity, drift in environment or fail continuity — my role is to catch and correct those issues before they become final content.",
+    keywords: "multimodal,prompt,engineering,text,image,video,generation",
+    category: "multimodal-prompting",
     order: 3,
   },
   {
-    question: "What is prompt engineering?",
+    question: "What is prompt refinement?",
     answer:
-      "Prompt engineering is the process of turning a desired result into clear, structured instructions an AI system can follow. My approach focuses on clarity, context, constraints, examples, output structure, and quality standards. I define the objective, provide useful context, set constraints, specify output format, add success criteria, and iterate based on evidence.",
-    keywords: "prompt,engineering,design,instructions,ai,refine",
-    category: "prompt-engineering",
+      "Prompt refinement is the process of improving prompts based on what a generative tool actually produces. I observe outputs critically, trace weaknesses back to the prompt, and revise instructions to address the specific issue rather than changing everything blindly. A refined prompt defines the objective, anchors the references, sets boundaries, and explains what a successful output should look like — and it improves with each generation cycle.",
+    keywords: "prompt,refinement,refine,debug,iterate,improve",
+    category: "prompt-refinement",
     order: 4,
   },
   {
-    question: "Do you build websites?",
+    question: "How do you maintain character consistency across generated scenes?",
     answer:
-      "Yes. I approach web development as a combination of structure, usability, performance, and business purpose. I work on business websites, portfolio websites, retail and e-commerce sites, UX and information architecture, and performance/SEO/maintenance. A website should guide visitors, communicate value quickly, support growth, and remain maintainable over time.",
-    keywords: "web,website,development,build,design,ecommerce,retail",
-    category: "web-development",
+      "I maintain character recognisability through facial characteristics, clothing, visual references and repeated refinement. I establish the character identity before any scene generation begins, keep useful references so each output can be checked against the intended look, generate per scene with an anchored prompt, review each output for drift, correct inconsistencies through prompt and reference revision, and only accept the output when it meets the standard. This is one of the hardest problems in long-form AI content and I treat it as production discipline, not luck.",
+    keywords: "character,consistency,identity,facial,recognisability,continuity",
+    category: "character-consistency",
     order: 5,
   },
   {
-    question: "What is data annotation and HITL review?",
+    question: "What does your AI video production process look like?",
     answer:
-      "Data annotation is the careful labeling, review, and validation of data to improve AI training. Human-in-the-loop (HITL) review remains important because AI systems still need people to interpret ambiguous cases, recognize nuance, identify edge cases, and apply judgment. My approach focuses on consistency, guideline alignment, attention to detail, and practical human judgment.",
-    keywords: "data,annotation,labeling,hitl,human,review,training",
-    category: "ai-evaluation",
+      "My AI video production combines story development, scripting, prompting, image generation, video generation, voice production, sequencing and review. I plan scenes and visual requirements before generation, keep useful references, review outputs critically, and correct inconsistencies before moving forward. This has helped me reduce unnecessary retries, maintain stronger continuity, and use different generative tools according to the needs of each production stage.",
+    keywords: "ai,video,production,film,nollywood,story,script,voice,sequencing",
+    category: "production-approach",
     order: 6,
   },
   {
-    question: "What is your cybersecurity and penetration testing background?",
+    question: "What is model stumping and prompt stress testing?",
     answer:
-      "My security research approach is careful, authorized, and documentation-focused. I work to understand how systems behave, identify weaknesses, validate impact safely, and communicate findings in a way that helps teams fix issues without exposing unnecessary risk. I follow responsible disclosure principles. Most engagements are under NDA, so I describe methodology rather than exposing confidential findings.",
-    keywords: "security,cybersecurity,pentest,penetration,vulnerability,bug,bounty,hacking",
-    category: "security",
+      "Model stumping and prompt stress testing is the practice of probing a generative model with difficult, ambiguous or demanding instructions to surface where it fails, hallucinates or produces inconsistent behaviour. This is part of my quality-control work — I identify weaknesses, trace the cause (prompt, reference, tool limitation or editing), and correct them before the output reaches a final production or audience.",
+    keywords: "model,stumping,stress,test,quality,control,weakness,failure",
+    category: "quality-control",
     order: 7,
   },
   {
-    question: "What is Afrik-Vine Tech LTD?",
+    question: "What is your content research and quality review background?",
     answer:
-      "Afrik-Vine Tech LTD is one of Obasiochie's professional ventures, guided by the tagline Creativity - Futuristic - Legacy. It is presented as a dedicated company section within this personal portfolio, not as the global identity of the website. It is being developed to support technology services, AI-driven solutions, web development, digital strategy, and long-term professional growth.",
-    keywords: "afrik,vine,company,tech,ltd,business,venture",
-    category: "afrik-vine",
+      "I have practical research and review experience from Upwork, TELUS Digital and Remotasks. I reviewed more than 10,000 individual items at Remotasks across content review, classification and quality review tasks. At TELUS Digital I worked on large-scale digital content assignments involving thousands of content items, applying research, detailed instructions and consistent judgement, including detection of ambiguity, conflicting information and unsupported information. On Upwork I have supported more than 20 clients with writing, research, editing and digital content development. This background strengthens how I plan, evaluate and refine AI-generated work today.",
+    keywords: "research,review,quality,upwork,telus,remotasks,content,annotation",
+    category: "quality-control",
     order: 8,
   },
   {
     question: "How can I contact you?",
     answer:
-      "You can reach me by email at vincentchimaobi.ai@gmail.com, by phone at +234 906 825 4110, or through the contact form on this website. I am based in Abuja, FCT, Nigeria, and I am available for remote AI evaluation, prompt engineering, data annotation, web development, and professional technology opportunities.",
-    keywords: "contact,email,phone,reach,connect,message",
+      "You can reach me by email at vincentchimaobi042@gmail.com, by phone at 09068254110, or through the contact form on this website. I am based in Abuja, Nigeria, and I am available for remote multimodal prompt engineering, generative AI content, AI video production, creative direction and content quality opportunities. You can also connect with me on LinkedIn at vincent-chimaobi042.",
+    keywords: "contact,email,phone,reach,connect,message,linkedin",
     category: "contact",
     order: 9,
   },
   {
-    question: "Can I contact you on WhatsApp?",
+    question: "Can I download your CV?",
     answer:
-      "Yes. You can start a direct WhatsApp conversation using the WhatsApp button or QR code in the Contact section. The link opens https://wa.me/message/BS2I4XH5NM3CH1. WhatsApp is best for direct or urgent contact; for detailed project inquiries the contact form is often more suitable.",
-    keywords: "whatsapp,chat,message,wa,qr,code,direct",
+      "My full CV is available on request for relevant opportunities, collaborations and project discussions. Use the Request CV button in the Contact section to email me directly, and I will share the latest CV with you. I do not publish a direct download link on this website.",
+    keywords: "cv,resume,download,pdf,document,request",
     category: "contact",
     order: 10,
   },
   {
-    question: "Can I download your CV?",
-    answer:
-      "Yes. Use the Download CV button in the Contact section of this website to download my current resume as a PDF. If no CV has been uploaded yet, the button shows a 'CV coming soon' state. You can also request the latest CV through the contact form.",
-    keywords: "cv,resume,download,pdf,document",
-    category: "contact",
-    order: 11,
-  },
-  {
     question: "What projects have you worked on?",
     answer:
-      "Confirmed projects include an Underwater Laser Detection Security System (Raspberry Pi + Python, final-year university project), an AI-Powered Community Census Application (NYSC Community Development Service project), and AI-Generated Video and Storytelling Projects. There are also clearly-labeled placeholder case studies (XYZ Electronics, ABC Mobile Store) that are not yet completed client work.",
-    keywords: "projects,work,portfolio,case study,examples",
+      "Confirmed work includes AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review, long-form character consistency techniques, multimodal AI video production across text, image and video, and content research and quality review work through Upwork, TELUS Digital and Remotasks.",
+    keywords: "projects,work,portfolio,case study,examples,film,youtube",
     category: "projects",
-    order: 12,
+    order: 11,
   },
   {
     question: "Do you write articles or research notes?",
     answer:
-      "The Articles section is being prepared as a knowledge hub for AI evaluation, prompt engineering, web development, generative AI workflows, technical documentation, and security-informed practice. New posts will be added gradually as the portfolio grows. Future categories include AI evaluation, prompt debugging, hallucination detection, web development, and responsible disclosure.",
+      "The Articles section is being prepared as a knowledge hub for multimodal prompt engineering, generative AI content, AI video production, character consistency, prompt refinement and content quality. New posts will be added gradually as the portfolio grows. Future categories include multimodal prompt engineering, AI video production, character identity, scene continuity, prompt refinement and content quality.",
     keywords: "articles,blog,research,posts,writing,notes",
     category: "articles",
-    order: 13,
+    order: 12,
   },
   {
     question: "Do you work remotely?",
     answer:
-      "Yes. I am available for remote AI evaluation, prompt engineering, data annotation, web development, and professional technology opportunities. My experience includes remote work with Remotasks, TELUS Digital, Upwork, and independent AI content and security projects. I am based in Abuja, FCT, Nigeria.",
+      "Yes. I am available for remote multimodal prompt engineering, generative AI content, AI video production, creative direction and content quality opportunities. My experience includes remote work with Upwork, TELUS Digital, Remotasks and independent AI content production. I am based in Abuja, Nigeria.",
     keywords: "remote,work,online,location,abuja,nigeria",
     category: "contact",
-    order: 14,
+    order: 13,
   },
   {
     question: "I want to hire you or discuss a project — what should I include?",
     answer:
-      "For AI evaluation or data annotation roles, please include the role type, task expectations, region eligibility, and any assessment steps. For web development, include the type of website, target audience, preferred features, content availability, timeline, budget range, and whether admin editing is required. For security discussions, please use responsible disclosure channels and do not send sensitive data through the contact form.",
+      "For multimodal prompt engineering or AI video production, please include the type of production, target audience, intended length, character or story requirements, references if available, timeline, and whether creative direction is needed. For generative AI content collaboration, please include the scope, intended platform, audience, tone, content volume, timeline, and whether review and refinement are part of the engagement. For content writing, research or quality review, please include the type of content, expected depth, research requirements, accuracy expectations, volume and timeline.",
     keywords: "hire,project,job,work,inquiry,rfp,proposal,discuss",
     category: "contact",
-    order: 15,
+    order: 14,
   },
 ];

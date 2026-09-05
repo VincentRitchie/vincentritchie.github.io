@@ -6,7 +6,7 @@ import { ShieldCheck, ShieldAlert, Lock, FileWarning, Eye } from "lucide-react";
 
 export function SecurityResearch() {
   return (
-    <Section id="security-research" className="border-t border-border/40">
+    <Section id="quality-control" className="border-t border-border/40">
       {/* atmospheric backdrop */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-violet-700/10 blur-[120px]" />
@@ -14,11 +14,11 @@ export function SecurityResearch() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Security Research"
+          eyebrow="Quality Control & Content Review"
           title={
             <>
-              Guided by evidence, responsible testing{" "}
-              <span className="text-gradient">&amp; clear risk communication</span>
+              Guided by evidence, critical review{" "}
+              <span className="text-gradient">&amp; clear quality communication</span>
             </>
           }
           intro={securityResearch.intro}
@@ -35,7 +35,7 @@ export function SecurityResearch() {
                     <ShieldCheck className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-foreground">
-                    Security research philosophy
+                    Quality control philosophy
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
@@ -109,7 +109,7 @@ export function SecurityResearch() {
             <Reveal delay={0.1}>
               <div className="rounded-2xl border border-border bg-card/50 p-7">
                 <h3 className="mb-4 font-display text-lg font-semibold text-foreground">
-                  Areas of security interest
+                  Areas of quality interest
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {securityResearch.interestAreas.map((area) => (

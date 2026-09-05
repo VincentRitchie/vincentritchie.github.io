@@ -97,7 +97,7 @@ export async function sendSupportNotification(p: SupportNotificationPayload): Pr
     ``,
     `Visitor name: ${p.visitorName}`,
     p.visitorEmail ? `Visitor email: ${p.visitorEmail}` : null,
-    p.visitorPhone ? `Visitor phone/WhatsApp: ${p.visitorPhone}` : null,
+    p.visitorPhone ? `Visitor phone: ${p.visitorPhone}` : null,
     p.preferredContact ? `Preferred contact method: ${p.preferredContact}` : null,
     ``,
     `Message:`,
@@ -106,7 +106,7 @@ export async function sendSupportNotification(p: SupportNotificationPayload): Pr
     `View / manage this inquiry in the admin dashboard:`,
     p.adminInboxUrl,
     ``,
-    `— Sent from the Obasiochie Vincent Chimaobi portfolio support system.`,
+    `— Sent from the Vincent Chimaobi Obasiochie portfolio support system.`,
   ]
     .filter(Boolean)
     .join("\n");

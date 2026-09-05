@@ -13,7 +13,7 @@ import { useEffect } from "react";
  *  - Renders a subtle, non-blocking ownership watermark
  *
  * What it deliberately does NOT break:
- *  - buttons, links, navigation, the contact form, WhatsApp link, CV download,
+ *  - buttons, links, navigation, the contact form, CV download,
  *    admin functionality, or mobile usability.
  *
  * Note: true screenshot prevention is not possible on the web. This component
@@ -74,7 +74,7 @@ export function SiteProtection() {
 
   return (
     <div className="ownership-notice" aria-hidden="true">
-      © OBASIOCHIE VINCENT CHIMAOBI
+      © VINCENT CHIMAOBI OBASIOCHIE
     </div>
   );
 }

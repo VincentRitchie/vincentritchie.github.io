@@ -30,13 +30,13 @@ type Msg = {
 type ActionButton =
   | { kind: "faq"; label: string; faqId: string }
   | { kind: "ask_human"; label: string }
-  | { kind: "whatsapp"; label: string; href: string }
+  | { kind: "email"; label: string; href: string }
   | { kind: "helpful_yes"; label: string; faqId: string }
   | { kind: "helpful_no"; label: string; faqId: string };
 
 type Stage = "faq" | "human_form" | "done";
 
-const OWNER_WHATSAPP = "https://wa.me/message/BS2I4XH5NM3CH1";
+const OWNER_EMAIL = "vincentchimaobi042@gmail.com";
 const IS_STATIC = process.env.NEXT_PUBLIC_STATIC_EXPORT === "true";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -167,7 +167,7 @@ export function ChatbotWidget() {
         } else {
           pushBot("I couldn't find a quick answer for that. Would you like to continue with an Assistant or contact Mr. Vincent directly?", [
             { kind: "ask_human", label: "Talk to a human" },
-            { kind: "whatsapp", label: "WhatsApp Mr. Vincent", href: OWNER_WHATSAPP },
+            { kind: "email", label: "Email Mr. Vincent", href: `mailto:${OWNER_EMAIL}` },
           ]);
         }
         return;
@@ -190,13 +190,13 @@ export function ChatbotWidget() {
         } else {
           pushBot(data.message ?? "I couldn't find a quick answer for that.", [
             { kind: "ask_human", label: "Talk to a human" },
-            { kind: "whatsapp", label: "WhatsApp Mr. Vincent", href: OWNER_WHATSAPP },
+            { kind: "email", label: "Email Mr. Vincent", href: `mailto:${OWNER_EMAIL}` },
           ]);
         }
       } catch {
         setThinking(false);
-        pushBot("Something went wrong. Please try again or reach out via WhatsApp.", [
-          { kind: "whatsapp", label: "WhatsApp Mr. Vincent", href: OWNER_WHATSAPP },
+        pushBot("Something went wrong. Please try again or reach out via email.", [
+          { kind: "email", label: "Email Mr. Vincent", href: `mailto:${OWNER_EMAIL}` },
         ]);
       }
     },
@@ -214,7 +214,7 @@ export function ChatbotWidget() {
           "Sorry it wasn't quite right. Would you like to continue with an Assistant or contact Mr. Vincent directly?",
           [
             { kind: "ask_human", label: "Continue with human support" },
-            { kind: "whatsapp", label: "WhatsApp Mr. Vincent", href: OWNER_WHATSAPP },
+            { kind: "email", label: "Email Mr. Vincent", href: `mailto:${OWNER_EMAIL}` },
           ]
         );
       }
@@ -225,7 +225,7 @@ export function ChatbotWidget() {
   const startHumanFlow = useCallback(() => {
     setStage("human_form");
     pushBot(
-      "I can connect you with a human. FAQs are instant; human replies may take some time. WhatsApp is best for direct urgent contact. Please leave your name, contact details, and message. Would you like to continue with an Assistant or contact Mr. Vincent directly?"
+      "I can connect you with a human. FAQs are instant; human replies may take some time. Email is best for direct contact. Please leave your name, contact details, and message. Would you like to continue with an Assistant or contact Mr. Vincent directly?"
     );
   }, [pushBot]);
 
@@ -235,8 +235,8 @@ export function ChatbotWidget() {
         askQuestion(action.label);
       } else if (action.kind === "ask_human") {
         startHumanFlow();
-      } else if (action.kind === "whatsapp") {
-        window.open(action.href, "_blank", "noopener,noreferrer");
+      } else if (action.kind === "email") {
+        window.location.href = action.href;
       } else if (action.kind === "helpful_yes") {
         handleHelpful(true, action.faqId);
       } else if (action.kind === "helpful_no") {
@@ -254,7 +254,7 @@ export function ChatbotWidget() {
         return;
       }
       if (!form.visitorEmail.trim() && !form.visitorPhone.trim()) {
-        setSubmitResult({ ok: false, text: "Please provide an email or phone/WhatsApp so we can respond." });
+        setSubmitResult({ ok: false, text: "Please provide an email or phone number so we can respond." });
         return;
       }
       setSubmitting(true);
@@ -264,14 +264,14 @@ export function ChatbotWidget() {
       if (IS_STATIC) {
         const subject = encodeURIComponent(`Website inquiry from ${form.visitorName}`);
         const body = encodeURIComponent(
-          `Name: ${form.visitorName}\nEmail: ${form.visitorEmail || "—"}\nPhone/WhatsApp: ${form.visitorPhone || "—"}\nPreferred contact: ${form.preferredContact}\n\nMessage:\n${form.visitorMessage}`
+          `Name: ${form.visitorName}\nEmail: ${form.visitorEmail || "—"}\nPhone: ${form.visitorPhone || "—"}\nPreferred contact: ${form.preferredContact}\n\nMessage:\n${form.visitorMessage}`
         );
-        window.location.href = `mailto:cyberghoxt.whitehat@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:${OWNER_EMAIL}?subject=${subject}&body=${body}`;
         setSubmitting(false);
         setStage("done");
-        pushBot("No Assistant is currently available. Your email client should have opened with your message pre-filled. You can also reach Mr. Vincent directly on WhatsApp.");
+        pushBot("No Assistant is currently available. Your email client should have opened with your message pre-filled. You can also reach Mr. Vincent directly via email.");
         pushBot("Your message has been prepared. The support team will review it and respond as soon as possible.", [
-          { kind: "whatsapp", label: "Open WhatsApp", href: OWNER_WHATSAPP },
+          { kind: "email", label: "Open Email", href: `mailto:${OWNER_EMAIL}` },
         ]);
         setForm({ visitorName: "", visitorEmail: "", visitorPhone: "", visitorMessage: "", preferredContact: "Email", requestedRecipient: "" });
         return;
@@ -300,7 +300,7 @@ export function ChatbotWidget() {
           pushBot(
             data.closingMessage ??
               "Your message has been received. The support team will review it and respond as soon as possible.",
-            [{ kind: "whatsapp", label: "Open WhatsApp", href: OWNER_WHATSAPP }]
+            [{ kind: "email", label: "Open Email", href: `mailto:${OWNER_EMAIL}` }]
           );
           setForm({ visitorName: "", visitorEmail: "", visitorPhone: "", visitorMessage: "", preferredContact: "Email", requestedRecipient: "" });
         } else {
@@ -308,7 +308,7 @@ export function ChatbotWidget() {
         }
       } catch {
         setSubmitting(false);
-        setSubmitResult({ ok: false, text: "Network error. Please try again or use WhatsApp." });
+        setSubmitResult({ ok: false, text: "Network error. Please try again or use email." });
       }
     },
     [form, pushBot]
@@ -422,16 +422,14 @@ export function ChatbotWidget() {
                   {m.actions && m.actions.length > 0 && (
                     <div className="mt-2 flex flex-wrap gap-2 pl-9">
                       {m.actions.map((a, i) => {
-                        if (a.kind === "whatsapp") {
+                        if (a.kind === "email") {
                           return (
                             <a
                               key={i}
                               href={a.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
                               className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/40 bg-emerald-500/15 px-3 py-1.5 text-xs font-medium text-emerald-200 transition-colors hover:bg-emerald-500/25"
                             >
-                              <WhatsAppGlyph className="h-3 w-3" />
+                              <Mail className="h-3 w-3" />
                               {a.label}
                             </a>
                           );
@@ -516,7 +514,7 @@ export function ChatbotWidget() {
                   <input
                     value={form.visitorPhone}
                     onChange={(e) => setForm({ ...form, visitorPhone: e.target.value })}
-                    placeholder="Phone / WhatsApp"
+                    placeholder="Phone"
                     className="w-full rounded-lg border border-border bg-background/70 px-3 py-2 text-xs text-foreground outline-none focus:border-violet-400/60"
                   />
                   <textarea
@@ -534,7 +532,6 @@ export function ChatbotWidget() {
                     >
                       <option>Email</option>
                       <option>Phone</option>
-                      <option>WhatsApp</option>
                     </select>
                     <select
                       value={form.requestedRecipient}
@@ -560,13 +557,11 @@ export function ChatbotWidget() {
                     <Send className="h-3 w-3" />
                   </button>
                   <a
-                    href={OWNER_WHATSAPP}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`mailto:${OWNER_EMAIL}`}
                     className="flex items-center justify-center gap-1.5 rounded-lg border border-emerald-400/40 bg-emerald-500/10 px-3 py-2 text-xs font-semibold text-emerald-200"
                   >
-                    <WhatsAppGlyph className="h-3 w-3" />
-                    Or chat on WhatsApp now
+                    <Mail className="h-3 w-3" />
+                    Or email Mr. Vincent now
                   </a>
                 </form>
               )}
@@ -614,8 +609,8 @@ export function ChatbotWidget() {
               </div>
               <p className="mt-1.5 text-center text-[10px] text-muted-foreground">
                 FAQs are instant · human replies may take time ·{" "}
-                <a href={OWNER_WHATSAPP} target="_blank" rel="noopener noreferrer" className="text-emerald-300 hover:underline">
-                  WhatsApp for urgent
+                <a href={`mailto:${OWNER_EMAIL}`} className="text-emerald-300 hover:underline">
+                  Email for serious inquiries
                 </a>
               </p>
             </div>
@@ -623,14 +618,6 @@ export function ChatbotWidget() {
         )}
       </AnimatePresence>
     </>
-  );
-}
-
-function WhatsAppGlyph({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>
-      <path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.86 9.86 0 0 0 4.74 1.21h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15h-.003a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.47-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z" />
-    </svg>
   );
 }
 

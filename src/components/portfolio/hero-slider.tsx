@@ -78,7 +78,7 @@ export function HeroSlider({ profile = defaultProfile }: { profile?: ProfileLike
         tabIndex={0}
         role="group"
         aria-roledescription="carousel"
-        aria-label="Professional photographs of Obasiochie Vincent Chimaobi"
+        aria-label="Professional photographs of Vincent Chimaobi Obasiochie"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onFocus={() => setPaused(true)}

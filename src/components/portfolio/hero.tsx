@@ -13,16 +13,16 @@ const scrollTo = (href: string) => {
 };
 
 const techTicker = [
-  "AI Response Evaluation",
-  "Prompt Engineering",
-  "Data Annotation & HITL",
-  "Rubric-Based Evaluation",
-  "Hallucination Detection",
-  "Generative AI Workflows",
-  "Technical Documentation",
-  "Web Development",
-  "Security Research",
-  "Responsible Disclosure",
+  "Multimodal Prompt Engineering",
+  "Generative AI Content",
+  "AI Video Production",
+  "Character Identity & Consistency",
+  "Scene & Environment Continuity",
+  "Story Development & Scriptwriting",
+  "Prompt Refinement",
+  "Model Stumping & Stress Testing",
+  "Creative Direction",
+  "Content Quality Control",
 ];
 
 type ProfileLike = typeof defaultProfile & {
@@ -55,7 +55,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-400" />
             </span>
-            Available for remote AI evaluation, prompt & web projects
+            Available for remote multimodal prompt & generative AI work
           </motion.div>
 
           <motion.h1
@@ -134,7 +134,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Sparkles className="h-4 w-4 text-fuchsia-300" />
-              Upwork
+              Independent Content Production · Upwork
             </span>
           </motion.div>
         </div>
@@ -169,16 +169,24 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -left-4 top-10 hidden rounded-2xl border border-fuchsia-400/30 bg-card/80 px-4 py-3 backdrop-blur-md sm:block"
             >
-              <p className="font-display text-xl font-bold text-gradient">2M+</p>
-              <p className="text-[11px] text-muted-foreground">AI content views</p>
+              <p className="font-display text-xl font-bold text-gradient">29,000+</p>
+              <p className="text-[11px] text-muted-foreground">Subscribers across AI YouTube channels</p>
             </motion.div>
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -right-3 bottom-24 hidden rounded-2xl border border-sky-400/30 bg-card/80 px-4 py-3 backdrop-blur-md sm:block"
             >
-              <p className="font-display text-xl font-bold text-sky-300">5+</p>
-              <p className="text-[11px] text-muted-foreground">Professional roles</p>
+              <p className="font-display text-xl font-bold text-sky-300">3.5M+</p>
+              <p className="text-[11px] text-muted-foreground">Combined views</p>
+            </motion.div>
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
+              className="absolute -left-6 bottom-6 hidden rounded-2xl border border-violet-400/30 bg-card/80 px-4 py-3 backdrop-blur-md lg:block"
+            >
+              <p className="font-display text-xl font-bold text-violet-300">20+</p>
+              <p className="text-[11px] text-muted-foreground">Nollywood-style AI films</p>
             </motion.div>
           </div>
         </motion.div>

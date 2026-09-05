@@ -1,7 +1,7 @@
 "use client";
 
 import { footer, profile as defaultProfile } from "@/lib/portfolio-data";
-import { ArrowUp, Mail, MapPin, Twitter, Github, Linkedin } from "lucide-react";
+import { ArrowUp, Mail, MapPin, Linkedin } from "lucide-react";
 import { assetPath } from "@/lib/asset-path";
 
 type ProfileLike = typeof defaultProfile;
@@ -12,10 +12,9 @@ export function Footer({ profile = defaultProfile }: { profile?: ProfileLike } =
   };
 
   const publicEmail = (profile as { publicEmail?: string }).publicEmail ?? profile.email;
+  // CV-aligned: only Email + LinkedIn are public. WhatsApp, X/Twitter, GitHub removed.
   const socials = [
     { label: "Email", href: `mailto:${publicEmail}`, icon: Mail },
-    { label: "X / Twitter", href: `https://x.com/${profile.twitter}`, icon: Twitter },
-    { label: "GitHub", href: `https://github.com/${profile.github}`, icon: Github },
     ...(profile.linkedin ? [{ label: "LinkedIn", href: profile.linkedin, icon: Linkedin }] : []),
   ];
 
@@ -46,9 +45,6 @@ export function Footer({ profile = defaultProfile }: { profile?: ProfileLike } =
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
               {footer.blurb}
-            </p>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
-              {footer.ventureNote}
             </p>
             <p className="mt-3 inline-flex items-center gap-1.5 text-xs text-muted-foreground">
               <MapPin className="h-3.5 w-3.5 text-violet-300" />

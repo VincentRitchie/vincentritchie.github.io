@@ -5,6 +5,7 @@ import {
   projects as fallbackProjects,
   expertiseCards as fallbackExpertise,
   articles as fallbackArticles,
+  seedCertifications,
 } from "@/lib/portfolio-data";
 
 // Dynamic import of db — only loaded when NOT in static export mode.
@@ -159,7 +160,7 @@ function buildStaticContent(): MergedContent {
   const profile: PublicProfile = {
     ...fallbackProfile,
     cvPath: null,
-    whatsappQrPath: "/images/whatsapp-qr.jpeg",
+    whatsappQrPath: "",
     afrikVineLogoPath: fallbackAfrikVine.logo,
   };
   const afrikVine: PublicAfrikVine = {
@@ -178,9 +179,14 @@ function buildStaticContent(): MergedContent {
     icon: c.icon, accent: c.accent,
     category: c.href?.replace("#", "") ?? "general", href: c.href ?? "#expertise",
   }));
+  // CV-aligned seed certifications — shown by default in static export mode
+  // (no admin DB available). Mirrors PublicCertification shape.
+  const certifications: PublicCertification[] = seedCertifications.map((c) => ({
+    id: c.id, title: c.title, issuer: c.issuer, year: c.year, credentialLink: c.credentialLink,
+  }));
   return {
     profile, afrikVine, projects, articles: [], skills,
-    certifications: [], testimonials: [], achievements: [],
+    certifications, testimonials: [], achievements: [],
   };
 }
 
@@ -194,7 +200,7 @@ async function buildContent(): Promise<MergedContent> {
   let profile: PublicProfile = {
     ...fallbackProfile,
     cvPath: null,
-    whatsappQrPath: "/images/whatsapp-qr.jpeg",
+    whatsappQrPath: "",
     afrikVineLogoPath: fallbackAfrikVine.logo,
   };
 
@@ -357,19 +363,26 @@ async function buildContent(): Promise<MergedContent> {
     console.error("[content] Skills load failed, using fallback:", err);
   }
 
-  // ---- certifications (visible) ---- empty by default
-  let certifications: PublicCertification[] = [];
+  // ---- certifications (visible) ----
+  // Falls back to CV-aligned seed certifications when DB has no visible items
+  // so the public Certifications section is populated by default.
+  let certifications: PublicCertification[] = seedCertifications.map((c) => ({
+    id: c.id, title: c.title, issuer: c.issuer, year: c.year, credentialLink: c.credentialLink,
+  }));
   try {
-    certifications = (await db.certification.findMany({
+    const dbCerts = await db.certification.findMany({
       where: { visible: true },
       orderBy: [{ order: "asc" }, { createdAt: "desc" }],
-    })).map((c) => ({
-      id: c.id,
-      title: c.title,
-      issuer: c.issuer,
-      year: c.year,
-      credentialLink: c.credentialLink,
-    }));
+    });
+    if (dbCerts.length > 0) {
+      certifications = dbCerts.map((c) => ({
+        id: c.id,
+        title: c.title,
+        issuer: c.issuer,
+        year: c.year,
+        credentialLink: c.credentialLink,
+      }));
+    }
   } catch (err) {
     console.error("[content] Certifications load failed:", err);
   }
