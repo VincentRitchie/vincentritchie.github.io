@@ -41,7 +41,7 @@ export async function sendContactNotification(payload: ContactNotificationPayloa
     `Message:`,
     payload.message,
     ``,
-    `— Sent from the Obasiochie Vincent Chimaobi portfolio contact form.`,
+    `— Sent from the Vincent Chimaobi Obasiochie portfolio contact form.`,
   ]
     .filter(Boolean)
     .join("\n");

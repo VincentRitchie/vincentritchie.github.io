@@ -8,11 +8,11 @@ import { Code2, ArrowRight, Layers, Zap, ShieldCheck, Compass, Workflow, Sparkle
 export function WebDevelopment() {
   const e = webDevExtended;
   return (
-    <Section id="web-development" className="border-t border-border/40">
+    <Section id="character-consistency" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Web Development"
-          title={<>{`Websites that combine design, strategy, performance `}<span className="text-gradient">&amp; maintainability</span></>}
+          eyebrow="Character Consistency"
+          title={<>{`Character identity, facial consistency `}<span className="text-gradient">&amp; scene continuity</span></>}
           intro={e.intro}
           accent="blue"
         />
@@ -24,7 +24,7 @@ export function WebDevelopment() {
                 <div className="grid h-11 w-11 place-items-center rounded-xl border border-sky-400/30 bg-sky-500/15 text-sky-300">
                   <Code2 className="h-5 w-5" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground">My web development philosophy</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground">My character consistency philosophy</h3>
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">{e.philosophy}</p>
             </div>
@@ -32,11 +32,11 @@ export function WebDevelopment() {
           <Reveal className="lg:col-span-7" delay={0.1}>
             <div className="h-full space-y-4">
               <div className="rounded-2xl border border-border bg-card/50 p-6">
-                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-violet-200"><Compass className="h-4 w-4" /> Development methodology</div>
+                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-violet-200"><Compass className="h-4 w-4" /> Identity methodology</div>
                 <p className="text-sm leading-relaxed text-muted-foreground">{e.methodology}</p>
               </div>
               <div className="rounded-2xl border border-border bg-card/50 p-6">
-                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fuchsia-200"><Workflow className="h-4 w-4" /> Software engineering workflow</div>
+                <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-fuchsia-200"><Workflow className="h-4 w-4" /> Consistency pipeline</div>
                 <p className="text-sm leading-relaxed text-muted-foreground">{e.engineeringWorkflow}</p>
               </div>
             </div>
@@ -44,21 +44,21 @@ export function WebDevelopment() {
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-          <Reveal><GlowCard accent="blue" className="h-full"><h4 className="font-display text-sm font-semibold text-sky-200">Analytical problem-solving</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.analyticalApproach}</p></GlowCard></Reveal>
-          <Reveal delay={0.06}><GlowCard accent="violet" className="h-full"><h4 className="font-display text-sm font-semibold text-violet-200">UI / UX thinking</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.uxThinking}</p></GlowCard></Reveal>
-          <Reveal delay={0.12}><GlowCard accent="magenta" className="h-full"><h4 className="font-display text-sm font-semibold text-fuchsia-200">System architecture mindset</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.architectureMindset}</p></GlowCard></Reveal>
+          <Reveal><GlowCard accent="blue" className="h-full"><h4 className="font-display text-sm font-semibold text-sky-200">Drift analysis</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.analyticalApproach}</p></GlowCard></Reveal>
+          <Reveal delay={0.06}><GlowCard accent="violet" className="h-full"><h4 className="font-display text-sm font-semibold text-violet-200">Audience-first thinking</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.uxThinking}</p></GlowCard></Reveal>
+          <Reveal delay={0.12}><GlowCard accent="magenta" className="h-full"><h4 className="font-display text-sm font-semibold text-fuchsia-200">Reference architecture mindset</h4><p className="mt-2 text-xs leading-relaxed text-muted-foreground">{e.architectureMindset}</p></GlowCard></Reveal>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <Reveal><div className="h-full rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6"><h4 className="mb-2 text-sm font-semibold text-violet-200">Design philosophy</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.designPhilosophy}</p></div></Reveal>
-          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-sky-400/20 bg-sky-500/5 p-6"><h4 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-sky-200"><Zap className="h-3.5 w-3.5" /> Performance strategy</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.performanceStrategy}</p></div></Reveal>
-          <Reveal><div className="h-full rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-6"><h4 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-fuchsia-200"><ShieldCheck className="h-3.5 w-3.5" /> Security-first mindset</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.securityMindset}</p></div></Reveal>
-          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-emerald-400/20 bg-emerald-500/5 p-6"><h4 className="mb-2 text-sm font-semibold text-emerald-200">Quality assurance</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.qualityAssurance}</p></div></Reveal>
+          <Reveal><div className="h-full rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6"><h4 className="mb-2 text-sm font-semibold text-violet-200">Identity design philosophy</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.designPhilosophy}</p></div></Reveal>
+          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-sky-400/20 bg-sky-500/5 p-6"><h4 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-sky-200"><Zap className="h-3.5 w-3.5" /> Batch generation strategy</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.performanceStrategy}</p></div></Reveal>
+          <Reveal><div className="h-full rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-6"><h4 className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-fuchsia-200"><ShieldCheck className="h-3.5 w-3.5" /> Responsible use mindset</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.securityMindset}</p></div></Reveal>
+          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-emerald-400/20 bg-emerald-500/5 p-6"><h4 className="mb-2 text-sm font-semibold text-emerald-200">Consistency quality assurance</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.qualityAssurance}</p></div></Reveal>
         </div>
 
         <Reveal>
           <div className="mt-8 rounded-2xl border border-border bg-card/40 p-7 backdrop-blur-sm">
-            <h3 className="mb-5 font-display text-lg font-semibold text-foreground">Development lifecycle</h3>
+            <h3 className="mb-5 font-display text-lg font-semibold text-foreground">Character identity lifecycle</h3>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
               {e.lifecycle.map((p, i) => (
                 <div key={p.phase} className="rounded-xl border border-border/60 bg-background/40 p-3">
@@ -71,8 +71,8 @@ export function WebDevelopment() {
         </Reveal>
 
         <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <Reveal><div className="h-full rounded-2xl border border-violet-400/20 bg-violet-500/5 p-7"><h3 className="mb-3 font-display text-base font-semibold text-foreground">Client consultation process</h3><p className="text-sm leading-relaxed text-muted-foreground">{e.clientConsultation}</p></div></Reveal>
-          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-7"><h3 className="mb-3 font-display text-base font-semibold text-foreground">Requirement analysis methodology</h3><p className="text-sm leading-relaxed text-muted-foreground">{e.requirementAnalysis}</p></div></Reveal>
+          <Reveal><div className="h-full rounded-2xl border border-violet-400/20 bg-violet-500/5 p-7"><h3 className="mb-3 font-display text-base font-semibold text-foreground">Character direction consultation</h3><p className="text-sm leading-relaxed text-muted-foreground">{e.clientConsultation}</p></div></Reveal>
+          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-7"><h3 className="mb-3 font-display text-base font-semibold text-foreground">Character requirement analysis</h3><p className="text-sm leading-relaxed text-muted-foreground">{e.requirementAnalysis}</p></div></Reveal>
         </div>
 
         <Reveal>
@@ -89,14 +89,14 @@ export function WebDevelopment() {
         </Reveal>
 
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <Reveal><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-violet-200">Maintainability</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.maintainability}</p></div></Reveal>
-          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-sky-200">Scalability</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.scalability}</p></div></Reveal>
-          <Reveal delay={0.12}><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-fuchsia-200">Long-term support</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.longTermSupport}</p></div></Reveal>
+          <Reveal><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-violet-200">Reference maintainability</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.maintainability}</p></div></Reveal>
+          <Reveal delay={0.06}><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-sky-200">Cross-scene scalability</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.scalability}</p></div></Reveal>
+          <Reveal delay={0.12}><div className="h-full rounded-2xl border border-border bg-card/50 p-5"><h4 className="mb-2 text-sm font-semibold text-fuchsia-200">Long-term identity support</h4><p className="text-xs leading-relaxed text-muted-foreground">{e.longTermSupport}</p></div></Reveal>
         </div>
 
         <div className="mt-10">
           <Reveal>
-            <h3 className="font-display text-xl font-semibold text-foreground sm:text-2xl">Web development solutions for every need &amp; budget</h3>
+            <h3 className="font-display text-xl font-semibold text-foreground sm:text-2xl">Character consistency solutions for every production</h3>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">{e.solutionPhilosophy}</p>
           </Reveal>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -108,12 +108,12 @@ export function WebDevelopment() {
           </div>
         </div>
 
-        {/* Web Development Toolkit */}
+        {/* Character Consistency Toolkit */}
         <Reveal>
           <div className="mt-10 rounded-2xl border border-border bg-card/40 p-7 backdrop-blur-sm">
             <div className="mb-5 flex items-center gap-2">
               <Layers className="h-5 w-5 text-violet-300" />
-              <h3 className="font-display text-lg font-semibold text-foreground">Web Development Toolkit</h3>
+              <h3 className="font-display text-lg font-semibold text-foreground">Character Consistency Toolkit</h3>
             </div>
             <div className="space-y-5">
               {e.toolkit.map((group, gi) => {
@@ -135,12 +135,12 @@ export function WebDevelopment() {
           </div>
         </Reveal>
 
-        {/* Advanced Website Features & Client Solutions */}
+        {/* Advanced Character Consistency Techniques */}
         <Reveal>
           <div className="mt-6 rounded-2xl border border-border bg-card/40 p-7 backdrop-blur-sm">
             <div className="mb-2 flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-fuchsia-300" />
-              <h3 className="font-display text-lg font-semibold text-foreground">Advanced Website Features &amp; Client Solutions</h3>
+              <h3 className="font-display text-lg font-semibold text-foreground">Advanced Character Consistency Techniques</h3>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{e.advancedFeaturesNote}</p>
             <div className="flex flex-wrap gap-1.5">
@@ -153,7 +153,7 @@ export function WebDevelopment() {
 
         {/* Service areas */}
         <div className="mt-10">
-          <Reveal><h3 className="font-display text-xl font-semibold text-foreground sm:text-2xl">Web development service areas</h3></Reveal>
+          <Reveal><h3 className="font-display text-xl font-semibold text-foreground sm:text-2xl">Character consistency service areas</h3></Reveal>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {webDevelopment.serviceAreas.map((s, i) => {
               const accent = (["blue", "violet", "magenta", "blue"] as const)[i % 4];
@@ -173,8 +173,8 @@ export function WebDevelopment() {
         <Reveal>
           <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-2xl border border-violet-400/20 bg-gradient-to-r from-violet-950/40 to-fuchsia-950/30 p-7 text-center sm:flex-row sm:text-left">
             <div>
-              <h4 className="font-display text-lg font-semibold text-foreground">Need a website built around your business goal?</h4>
-              <p className="mt-1 text-sm text-muted-foreground">Let&apos;s discuss your audience, content, and conversion path.</p>
+              <h4 className="font-display text-lg font-semibold text-foreground">Need a character-driven AI production built around your story?</h4>
+              <p className="mt-1 text-sm text-muted-foreground">Let&apos;s discuss your characters, scenes, audience and continuity goals.</p>
             </div>
             <button onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })} className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-6 py-3 text-sm font-semibold text-white shadow-[0_0_30px_-6px_rgba(217,70,239,0.7)] transition-all hover:-translate-y-0.5">
               Request a Project Discussion

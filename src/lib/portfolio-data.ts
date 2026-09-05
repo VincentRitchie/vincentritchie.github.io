@@ -1,27 +1,34 @@
 /**
- * Portfolio content repository for Obasiochie Vincent Chimaobi.
- * Source: Portfolio Website Content Repository v4.1
- * This file is the single source of truth for public copy.
+ * Portfolio content repository for Vincent Chimaobi Obasiochie.
+ * Source of truth for public copy.
+ *
+ * Identity: Multimodal Prompt Engineer · Generative AI Content Creation ·
+ * AI Video Production · Creative Direction · Content Quality.
+ *
+ * NOTE: This file is the single source of truth for public copy. All personal
+ * narrative uses first-person voice. The CV is the factual authority — no
+ * invented employers, clients, tools, or metrics.
  */
 
 export const profile = {
   // Primary personal identity — displayed in uppercase everywhere it appears as the main identity.
-  name: "OBASIOCHIE VINCENT CHIMAOBI",
+  name: "VINCENT CHIMAOBI OBASIOCHIE",
   // Homepage hero animated name only (rule: large main animated name shows only "VINCENT CHIMAOBI").
   heroName: "VINCENT CHIMAOBI",
-  shortName: "OBASIOCHIE",
-  initials: "OVC",
-  role: "AI Evaluation & Data Annotation Specialist",
-  location: "Abuja, FCT, Nigeria",
-  tagline: "AI Evaluation, Prompt Engineering, Web Development & Security-Informed Digital Solutions",
+  shortName: "VINCENT",
+  initials: "VCO",
+  role: "Multimodal Prompt Engineer",
+  location: "Abuja, Nigeria",
+  tagline:
+    "Multimodal Prompt Engineering · Generative AI Content · AI Video Production · Creative Direction · Content Quality",
   heroHeadline:
-    "AI Evaluation, Prompt Engineering, Web Development, and Security-Informed Digital Solutions",
+    "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, and Creative Direction",
   heroIntro:
-    "I help evaluate AI outputs, refine prompts, structure digital workflows, and design user-focused web experiences with a disciplined approach to evidence, clarity, quality, and long-term usability.",
+    "I work with generative AI across text, image and video, using structured prompting, repeated refinement and careful visual control to turn creative ideas into long-form content. My work focuses strongly on character identity, facial appearance, environments, scene continuity, visual direction and consistent storytelling across generated scenes.",
   shortBio:
-    "OBASIOCHIE VINCENT CHIMAOBI is an AI Evaluation and Data Annotation Specialist based in Abuja, Nigeria. His work sits at the intersection of AI response evaluation, prompt engineering, structured research, generative AI workflows, technical documentation, web development, and cybersecurity-informed analysis.",
+    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
   longBio:
-    "OBASIOCHIE VINCENT CHIMAOBI is a technology professional with experience in AI response evaluation, data annotation, prompt evaluation, generative AI workflows, research, AI-assisted content systems, technical documentation, web development thinking, and security research. His professional strength is the ability to read requirements carefully, separate evidence from assumption, identify weak reasoning, and communicate findings in a structured and practical way.",
+    "Across AI-assisted film and content production, I plan scenes and visual requirements before generation, keep useful references, review outputs critically and correct inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage. My background in content writing, research and digital content review also strengthens how I approach AI-generated work.",
   // Professional photographs — profile-main.jpeg is the official header avatar.
   profileImage: "/images/profile-main.jpeg",
   avatar: "/images/profile-main.jpeg",
@@ -33,13 +40,14 @@ export const profile = {
     "/images/me_img4.jpeg",
     "/images/me_img5.jpeg",
   ],
-  whatsapp: "https://wa.me/message/BS2I4XH5NM3CH1",
-  email: "cyberghoxt.whitehat@gmail.com",
-  publicEmail: "cyberghoxt.whitehat@gmail.com",
-  phone: "",
-  twitter: "cyb3rghoxt",
-  github: "vin_chimaobi042",
-  linkedin: "https://www.linkedin.com/in/vincent-chimaobi042",
+  // CV-aligned contact — WhatsApp, X/Twitter, GitHub removed (not in CV).
+  whatsapp: "",
+  email: "vincentchimaobi042@gmail.com",
+  publicEmail: "vincentchimaobi042@gmail.com",
+  phone: "09068254110",
+  twitter: "",
+  github: "",
+  linkedin: "https://www.linkedin.com/in/vincent-chimaobi042/",
 };
 
 export type NavItem = { label: string; href: string };
@@ -48,593 +56,512 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Expertise", href: "#expertise" },
-  { label: "AI Evaluation", href: "#ai-evaluation" },
-  { label: "Prompt Engineering", href: "#prompt-engineering" },
-  { label: "Web Development", href: "#web-development" },
-  { label: "Security Research", href: "#security-research" },
+  { label: "Multimodal Prompting", href: "#multimodal-prompting" },
+  { label: "Prompt Refinement", href: "#prompt-refinement" },
+  { label: "Character Consistency", href: "#character-consistency" },
+  { label: "Quality Control", href: "#quality-control" },
   { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Afrik-Vine", href: "#afrik-vine" },
+  { label: "Generative AI Work", href: "#generative-ai-work" },
+  { label: "Production Approach", href: "#production-approach" },
   { label: "Articles", href: "#articles" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const selectedHighlights: string[] = [
-  "AI response evaluation experience across guideline-based tasks, quality review, instruction-following analysis, hallucination detection, factual consistency checks, and comparative response judgment.",
-  "Prompt engineering experience using leading generative AI tools to improve output quality, reduce ambiguity, support research, generate content, and structure workflows.",
-  "Data annotation and human-in-the-loop experience involving labeling, review, consistency checks, and task-specific guideline alignment.",
-  "AI content production experience, including AI-driven storytelling, video workflows, voice/image/video generation, and practical review of generated outputs for coherence and realism.",
-  "Cybersecurity-informed analytical experience through authorized security research, technical evidence collection, impact analysis, and remediation-focused reporting.",
-  "Web development service direction focused on modern, responsive, scalable, user-focused websites for professionals, businesses, and retail-style digital experiences.",
-];
-
-export const coreSkillCards = [
-  {
-    title: "AI Response Evaluation",
-    icon: "ScanSearch",
-    accent: "violet",
-    body: "I evaluate AI responses through a structured, evidence-based process. Rather than relying on surface preference, I compare outputs against the actual task requirements, check whether the response follows instructions, examine factual reliability, identify unsupported claims, and explain the quality difference in clear professional language.",
-  },
-  {
-    title: "Prompt Engineering",
-    icon: "TerminalSquare",
-    accent: "magenta",
-    body: "I design and refine prompts to improve clarity, reduce ambiguity, guide model behavior, and produce more useful outputs. My prompt engineering approach begins with the intended outcome, then works backward into instructions, context, constraints, examples, and success criteria.",
-  },
-  {
-    title: "Generative AI Workflows",
-    icon: "Sparkles",
-    accent: "blue",
-    body: "I use generative AI systems to support research, ideation, content development, workflow automation, image generation, video production, and structured documentation. My focus is on practical value: using AI to accelerate work while still applying human review, quality control, and editorial judgment.",
-  },
-  {
-    title: "Hallucination Detection",
-    icon: "ShieldAlert",
-    accent: "magenta",
-    body: "I identify hallucinations by checking whether a claim is supported by available evidence, whether the response overstates certainty, whether facts conflict with known context, and whether the output introduces invented details. I treat accuracy as a professional responsibility, not a cosmetic feature.",
-  },
-  {
-    title: "Analytical Thinking",
-    icon: "BrainCircuit",
-    accent: "violet",
-    body: "I approach complex problems by breaking them into smaller components, identifying dependencies, testing assumptions, and tracing weak results back to their cause. This helps me work through AI outputs, prompts, technical reports, website structures, and security findings with clarity.",
-  },
-  {
-    title: "Web Development",
-    icon: "Code2",
-    accent: "blue",
-    body: "I approach web development as a combination of structure, usability, performance, and business purpose. A website should not only look attractive; it should guide visitors, communicate value quickly, support growth, and remain maintainable over time.",
-  },
-  {
-    title: "Penetration Testing",
-    icon: "ShieldCheck",
-    accent: "magenta",
-    body: "My security research approach is careful, authorized, and evidence-driven. I focus on understanding systems, identifying weaknesses, validating impact safely, documenting reproducible findings, and recommending practical remediation without exposing confidential information.",
-  },
-];
-
-export const featuredProjectsPreview = [
-  {
-    title: "Underwater Laser Detection Security System",
-    summary:
-      "A final-year university project built with Raspberry Pi and Python, combining electronics, programming, and sensor-based detection logic to solve a security-focused problem.",
-    tags: ["Raspberry Pi", "Python", "Electronics", "Sensor Logic"],
-  },
-  {
-    title: "AI-Powered Community Census Application",
-    summary:
-      "A National Youth Service Corps Community Development Service pass-out project designed to support community-level data collection and structured information management.",
-    tags: ["Data Collection", "Community Tech", "NYSC CDS"],
-  },
-  {
-    title: "AI-Generated Video & Storytelling Projects",
-    summary:
-      "A collection of AI-assisted creative and documentary-style projects using prompt engineering, AI image/video generation, voice workflows, and quality review.",
-    tags: ["Generative AI", "Video", "Prompt Engineering"],
-  },
-  {
-    title: "Retail Website Demonstration Placeholder",
-    summary:
-      "A future demo section for showing retail and e-commerce website concepts, product presentation, search/navigation flow, category structure, and customer journey design. This is a placeholder demo and not yet a completed client project.",
-    tags: ["Placeholder Demo", "E-commerce", "UX"],
-    placeholder: true,
-  },
+  "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views through structured prompting, repeated refinement and careful visual control.",
+  "Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+  "Practical experience maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.",
+  "Multimodal workflow spanning text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
+  "Background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) that strengthens how I plan, evaluate and refine AI-generated work.",
+  "Ongoing exploration of prompting techniques for stronger character identity, scene continuity and long-form storytelling.",
 ];
 
 /* ---------- About ---------- */
 export const about = {
-  headline: "Structured Thinking for AI, Web, and Technical Quality",
+  headline: "Multimodal Prompt Engineering for Generative AI Content & AI Video Production",
   intro:
-    "I am a technology professional focused on AI evaluation, prompt engineering, data annotation, generative AI workflows, web development, and security-informed analysis. My work is built around clarity, evidence, disciplined reasoning, and practical execution.",
+    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
   aboutMe: [
-    "My professional path combines several areas that may look separate at first: AI evaluation, content systems, web-focused digital thinking, technical documentation, and security research. In practice, these areas share the same foundation. They all require careful reading, structured thinking, evidence checking, and the ability to explain complex issues in a way that helps people make better decisions.",
-    "I have worked on AI data annotation and evaluation tasks, supported clients with research and content workflows, built AI-assisted content projects, developed academic and community projects, and conducted authorized security research. Each experience has strengthened the same core habit: do not guess when evidence is needed; do not overstate when uncertainty exists; do not treat a polished output as correct until it has been checked against the requirement.",
+    "My professional path combines generative AI content creation, AI video production, content writing, research and digital content quality review. In practice, these areas share the same foundation: careful planning before generation, useful references, critical review of outputs, and correction of inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage.",
+    "I have built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, created more than 20 Nollywood-style AI films, and worked on long-form character-driven storytelling. My background in content writing, research and digital content review also strengthens how I approach AI-generated work — I read requirements carefully, separate evidence from assumption, identify weak reasoning, and communicate findings in a structured and practical way.",
   ],
   howIWork: [
-    "My work begins with understanding. Before evaluating an AI response, writing a prompt, planning a website, or documenting a security issue, I first clarify the objective. What is the task asking for? What does success look like? What evidence is available? What constraints matter? What risk exists if the conclusion is wrong?",
-    "From there, I break the work into manageable parts. I identify the criteria, collect or review the relevant evidence, compare alternatives, and produce an output that is not only complete but explainable. This approach helps me stay consistent in tasks that require judgment, especially where a fast answer can easily become a wrong answer.",
+    "My work begins with planning. Before generating any scene, I plan the story, characters, settings, visual cues and overall creative direction. I keep useful references so that each generated scene can be checked against the intended look, tone and continuity rather than accepted on first impression.",
+    "From there, I work in stages — text-to-image, image-to-video, voice production, sequencing and review. I review outputs critically, identify inconsistencies in character identity, facial appearance, clothing, environments or backgrounds, and correct them before moving forward. This reduces unnecessary retries and helps maintain stronger continuity across long-form content.",
   ],
   professionalDirection:
-    "My long-term direction is to build a strong professional presence across AI evaluation, prompt engineering, web development, and technical quality work. I am especially interested in roles and projects where human judgment improves AI systems, where structured prompts improve output reliability, where websites help businesses communicate and sell better, and where security-informed thinking reduces risk.",
+    "My long-term direction is to keep building strong, character-consistent, long-form AI content — Nollywood-style films, story-driven video and multimodal productions — while refining my prompting techniques across text, image and video. I am especially interested in work where creative direction, character identity and scene continuity matter, and where my background in content writing, research and quality review strengthens the final output.",
   differentiators: [
     {
-      title: "Evidence before confidence",
-      body: "I prefer conclusions that can be supported by visible, textual, technical, or documented evidence.",
+      title: "Plan before generation",
+      body: "I plan scenes, characters, settings and visual cues before generating, so each output can be checked against the intended look and continuity.",
     },
     {
-      title: "Structure before speed",
-      body: "I move faster by first understanding the structure of the task, not by rushing into an answer.",
+      title: "Character identity first",
+      body: "I maintain recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes.",
     },
     {
-      title: "Quality before appearance",
-      body: "A response, website, report, or workflow must be useful and reliable, not only attractive or fluent.",
+      title: "Critical review at every stage",
+      body: "I review outputs critically and correct inconsistencies in characters, environments, locations or backgrounds before moving forward.",
     },
     {
-      title: "Clear communication",
-      body: "I aim to explain technical and AI-related work in language that is precise without becoming unnecessarily complicated.",
+      title: "Multimodal control",
+      body: "I work across text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
     },
     {
-      title: "Continuous improvement",
-      body: "I treat every project as a chance to refine methods, improve systems, and build stronger long-term capability.",
+      title: "Story-driven refinement",
+      body: "I treat prompting as a story tool — every scene serves the narrative, tone and emotional direction of the long-form content.",
     },
   ],
   brandStatement:
-    "I build my work around disciplined thinking, practical execution, and professional integrity. I want every visitor to this portfolio to understand not just what I do, but how I think: I read carefully, analyze deeply, verify evidence, solve problems structurally, and communicate results clearly.",
+    "I build my work around structured prompting, repeated refinement and careful visual control. I want every visitor to this portfolio to understand not just what I do, but how I think: plan before generation, keep useful references, review outputs critically, correct inconsistencies early, and maintain character identity, scene continuity and visual direction across long-form AI content.",
 };
 
 /* ---------- Expertise overview ---------- */
 export const expertiseCards = [
-  { title: "AI Response Evaluation", icon: "ScanSearch", accent: "violet", body: "Systematic review of AI outputs for instruction following, factuality, clarity, relevance, reasoning quality, hallucination risk, and overall usefulness.", href: "#ai-evaluation" },
-  { title: "Data Annotation & HITL Review", icon: "Tags", accent: "blue", body: "Careful labeling, review, validation, and human judgment applied to improve AI training data and model behavior.", href: "#ai-evaluation" },
-  { title: "Rubric-Based Evaluation", icon: "ListChecks", accent: "magenta", body: "Structured criteria-based judgment that makes evaluation more consistent, explainable, and fair.", href: "#ai-evaluation" },
-  { title: "Prompt Engineering", icon: "TerminalSquare", accent: "violet", body: "Design and refinement of prompts that improve AI output quality, reduce ambiguity, and guide models toward specific goals.", href: "#prompt-engineering" },
-  { title: "Generative AI Workflows", icon: "Sparkles", accent: "magenta", body: "Practical use of AI tools for research, content production, image/video workflows, documentation, and creative development.", href: "#prompt-engineering" },
-  { title: "Hallucination Detection", icon: "ShieldAlert", accent: "blue", body: "Identification and correction of unsupported, invented, exaggerated, or inconsistent claims in AI-generated content.", href: "#ai-evaluation" },
-  { title: "Analytical Thinking", icon: "BrainCircuit", accent: "violet", body: "Breaking complex problems into requirements, evidence, dependencies, risks, and practical solutions.", href: "#prompt-engineering" },
-  { title: "Technical Documentation", icon: "FileText", accent: "blue", body: "Clear reports, structured explanations, process notes, and professional communication for technical and non-technical audiences.", href: "#prompt-engineering" },
-  { title: "Web Development", icon: "Code2", accent: "magenta", body: "Planning and building modern, responsive, scalable websites with attention to UX, performance, SEO, maintainability, and business goals.", href: "#web-development" },
-  { title: "Security Research", icon: "ShieldCheck", accent: "violet", body: "Authorized vulnerability assessment, evidence collection, impact analysis, remediation writing, and responsible disclosure.", href: "#security-research" },
+  { title: "Multimodal Prompt Engineering", icon: "Sparkles", accent: "violet", body: "Structured prompting across text, image and video, with close control of requirements, visual direction and generated results.", href: "#multimodal-prompting" },
+  { title: "Generative AI Content Creation", icon: "Clapperboard", accent: "magenta", body: "Development of AI-assisted story and visual content from initial concept through final review.", href: "#multimodal-prompting" },
+  { title: "AI Video Production", icon: "Clapperboard", accent: "blue", body: "Long-form video production using story development, scripting, image generation, video generation, voice production, sequencing and review.", href: "#prompt-refinement" },
+  { title: "AI Creative Direction", icon: "Compass", accent: "violet", body: "Planning characters, settings, scenes, visual cues and overall creative direction before and during generation.", href: "#production-approach" },
+  { title: "Character Identity & Facial Consistency", icon: "Users", accent: "magenta", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement.", href: "#character-consistency" },
+  { title: "Scene & Environment Continuity", icon: "Layers", accent: "blue", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across generated scenes.", href: "#character-consistency" },
+  { title: "Story Development & Scriptwriting", icon: "FileText", accent: "violet", body: "Developing story-based content, scripts and narrative direction for long-form AI productions.", href: "#production-approach" },
+  { title: "Content Research & Quality Control", icon: "ScanSearch", accent: "magenta", body: "Research, critical reading, organised information gathering and manual review for accuracy, meaning and quality.", href: "#quality-control" },
+  { title: "Model Stumping & Prompt Stress Testing", icon: "ShieldAlert", accent: "blue", body: "Testing difficult instructions and model behaviour to identify weaknesses, inconsistency or failure under demanding prompts.", href: "#quality-control" },
+  { title: "Prompt Refinement & Production Planning", icon: "Lightbulb", accent: "violet", body: "Improving prompts from observed results and defining scenes or production requirements clearly before generation.", href: "#prompt-refinement" },
 ];
 
 export const expertiseIntegration =
-  "My AI evaluation work improves how I judge quality. My prompt engineering work improves how I instruct AI systems. My analytical thinking helps me break down ambiguity. My technical documentation helps me explain findings clearly. My web development direction turns structure into user-facing digital experiences. My security background strengthens how I think about risk, evidence, and impact. Together, these areas form a practical professional profile for AI, web, and technical quality work.";
+  "My multimodal prompting work controls how text, image and video outputs are produced. My character consistency practice keeps recognisability strong across long-form content. My scene and environment continuity work holds locations, backgrounds and visual cues together across scenes. My story development and scriptwriting turn ideas into structured narrative direction. My prompt refinement improves outputs from observed results. My content research and quality control background strengthens how I review, evaluate and correct AI-generated work. Together, these areas form a practical professional profile for multimodal prompt engineering, generative AI content and AI video production.";
 
-/* ---------- AI Evaluation ---------- */
+/* ---------- Multimodal Prompting (was AI Evaluation) ----------
+ * Export names kept stable so existing component imports keep working.
+ * Content is fully replaced with multimodal-prompting material.
+ */
 export const aiEvaluation = {
-  headline: "AI Response Evaluation Built on Evidence, Criteria, and Quality Standards",
+  headline: "Multimodal Prompt Engineering Across Text, Image and Video",
   intro:
-    "AI response evaluation is the disciplined review of model outputs to determine whether they actually satisfy the user's request, follow instructions, remain factually grounded, and provide useful value. My approach is structured, evidence-based, and designed to support reliable human judgment.",
+    "Multimodal prompt engineering is the structured practice of guiding generative AI across text, image and video in one production process. My approach focuses on clear objectives, careful context, repeated refinement and close control of visual direction, character identity and scene continuity.",
   whatItMeans:
-    "Evaluating an AI response is not the same as choosing the answer that sounds better. A polished response can still miss the instruction, invent unsupported details, use weak reasoning, ignore important constraints, or give an answer that is incomplete. My evaluation approach focuses on the relationship between the task, the expected output, and the evidence available for judgment.",
+    "Multimodal prompting is not writing a single instruction and accepting the first result. It is the disciplined process of defining the creative objective, preparing references and constraints, generating the first output with the appropriate tool, reviewing the result critically, and refining prompts, assets or direction until the output meets the intended standard. A polished output can still miss the brief, break character identity, drift in environment or fail continuity — my role is to catch and correct those issues before they become final content.",
   workflow: [
-    { step: "Clarify the task", body: "Identify what the prompt is asking for, what output format is expected, and what constraints control the answer." },
-    { step: "Identify evaluation criteria", body: "Break the task into specific requirements that can be checked rather than relying on general preference." },
-    { step: "Collect evidence", body: "Inspect the response and any provided context to determine what is actually supported." },
-    { step: "Compare output to requirement", body: "Check instruction following, factual accuracy, relevance, completeness, reasoning quality, clarity, and formatting." },
-    { step: "Identify weaknesses", body: "Look for missing requirements, unsupported claims, hallucinations, ambiguity, overconfidence, inconsistency, and weak reasoning." },
-    { step: "Explain the judgment", body: "Communicate the result clearly, showing why the response is strong, weak, incomplete, or better than another response." },
+    { step: "Clarify the creative objective", body: "Identify the story, tone, characters, setting, visual cues and the intended emotional effect before any generation begins." },
+    { step: "Prepare references and constraints", body: "Collect useful references for character identity, clothing, environments, locations and backgrounds so each output can be checked against intent." },
+    { step: "Generate the first output", body: "Use the appropriate generative stage — text-to-image, image-to-video, voice production — with a prompt aligned to the objective." },
+    { step: "Review critically", body: "Check coherence, realism, character recognisability, facial appearance, clothing, environment continuity, narrative alignment and audience suitability." },
+    { step: "Refine and correct", body: "Adjust prompts, references or direction to address weaknesses, inconsistencies or failures identified during review." },
+    { step: "Finalise only when ready", body: "Accept the output only after it meets the intended quality standard and supports the long-form story direction." },
   ],
   lookFor: [
-    { label: "Instruction following", body: "Did the response answer the actual request instead of a similar but different task?" },
-    { label: "Factuality", body: "Are the claims supported by evidence or reliable context?" },
-    { label: "Completeness", body: "Did the response address all important parts of the prompt?" },
-    { label: "Relevance", body: "Does the response stay focused on the user's need?" },
-    { label: "Reasoning quality", body: "Does the explanation make sense and avoid unsupported leaps?" },
-    { label: "Clarity", body: "Is the response understandable and well organized?" },
-    { label: "Hallucination risk", body: "Does the model introduce invented details, false certainty, or unsupported specifics?" },
-    { label: "Usefulness", body: "Would the final user be able to act on the response confidently?" },
+    { label: "Character recognisability", body: "Does the generated character remain identifiable across scenes through facial characteristics, clothing and visual cues?" },
+    { label: "Facial appearance", body: "Is the face consistent with the intended identity, without unintended drift between scenes?" },
+    { label: "Clothing and styling", body: "Does the wardrobe, accessories and styling remain coherent with the story and the character?" },
+    { label: "Environment continuity", body: "Are locations, backgrounds, settings, objects and lighting consistent with the established scene?" },
+    { label: "Narrative alignment", body: "Does the output serve the story, tone and intended emotional effect?" },
+    { label: "Realism and artifacts", body: "Is the output free of obvious AI artifacts, distortion, morphing or implausible motion?" },
+    { label: "Audience suitability", body: "Is the content appropriate for the intended audience and platform?" },
+    { label: "Production fit", body: "Does the output integrate cleanly into the longer sequence, voice track and final edit?" },
   ],
   professionalValue:
-    "Good AI evaluation improves model reliability. It helps teams identify where outputs fail, why they fail, and what needs to improve. My value is in bringing careful judgment to that process: not just marking an output as good or bad, but explaining the practical reason behind the judgment.",
+    "Good multimodal prompting improves the reliability of long-form AI content. It helps reduce unnecessary retries, keeps character identity stable, holds environments and backgrounds together, and produces scenes that fit the story. My value is in bringing careful planning, critical review and structured refinement to that process — not just generating outputs, but explaining why an output works, where it fails, and what needs to change.",
   relatedExperience:
-    "My AI evaluation experience includes work with Remotasks and TELUS Digital, where I contributed to data annotation, AI response evaluation, quality review, and guideline-based task execution. I also apply evaluation thinking in my generative AI content workflows, where outputs must be reviewed for coherence, realism, factual alignment, narrative quality, and audience suitability.",
+    "My multimodal prompting experience includes building and managing AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, and creating more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
 };
 
+/* Text-to-image focus (replaces Data Annotation export shape) */
 export const dataAnnotation = {
-  headline: "Data Annotation & Human Review for Better AI Training Data",
+  headline: "Text-to-Image Generation with Character and Visual Control",
   intro:
-    "AI systems improve when the data behind them is labeled, reviewed, and validated with care. My data annotation approach focuses on consistency, guideline alignment, attention to detail, and practical human judgment.",
+    "Text-to-image generation is where the visual identity of a production is first established. My approach focuses on defining characters, settings, clothing, lighting and visual cues clearly before generation, and reviewing each generated image against the intended look before it is accepted.",
   whyItMatters:
-    "Data annotation is often invisible to end users, but it has a direct effect on how AI systems learn. If labels are inconsistent, unclear, rushed, or misapplied, the model can absorb weak patterns. If annotation is careful and consistent, it supports better model behavior, stronger evaluation, and more reliable outputs. Human-in-the-loop review remains important because AI systems still need people to interpret ambiguous cases, recognize nuance, identify edge cases, and apply judgment where automated systems may miss context.",
+    "Every later stage — image-to-video, sequencing, voice production — depends on the visual identity established at the text-to-image stage. If character identity, facial appearance, clothing, environment or background drift here, the inconsistency propagates through the whole production. That is why careful prompt design, useful references and critical review at this stage reduce unnecessary retries later and protect continuity across long-form content.",
   approach: [
-    "Study the guideline before labeling so the task is understood from the project's perspective.",
-    "Identify the active category or label definition before judging an item.",
-    "Separate what is directly observable from what is assumed.",
-    "Apply labels consistently across similar examples.",
-    "Flag uncertainty when the available evidence does not support a confident decision.",
-    "Review completed work for consistency, instruction alignment, and avoidable errors.",
+    "Define the character identity, facial characteristics, clothing and styling before generation.",
+    "Establish the setting, environment, location, background and lighting in the prompt and references.",
+    "Specify the visual cues, mood, tone and intended emotional effect.",
+    "Generate the first image with a prompt aligned to the objective.",
+    "Review the output for character recognisability, environment continuity and artifact risk.",
+    "Refine the prompt or references and regenerate until the output meets the intended standard.",
   ],
   principles: [
-    { label: "Consistency", body: "Similar examples should be handled similarly unless a meaningful difference exists." },
-    { label: "Traceability", body: "A label should be explainable by pointing back to the relevant instruction or observed evidence." },
-    { label: "Adaptability", body: "When project rules change, the labeling approach must update immediately." },
-    { label: "Careful uncertainty", body: "Unclear evidence should not be forced into a confident label just to finish quickly." },
-    { label: "Quality control", body: "Annotation is not complete until the output has been reviewed for alignment with task requirements." },
+    { label: "Identity first", body: "Character recognisability is established and protected before any environment or motion work begins." },
+    { label: "Reference discipline", body: "Useful references keep the generated output anchored to the intended look rather than drifting." },
+    { label: "Critical review", body: "Each image is reviewed against the brief — not accepted on first impression." },
+    { label: "Iterative refinement", body: "Prompts and references are revised based on observed output, not guesswork." },
+    { label: "Continuity awareness", body: "Every accepted image is checked against the longer sequence it will belong to." },
   ],
 };
 
+/* Image-to-video focus (replaces Rubric Evaluation export shape) */
 export const rubricEvaluation = {
-  headline: "Rubric-Based Evaluation for Fair, Consistent, Explainable AI Judgment",
+  headline: "Image-to-Video Generation Guided by Story and Continuity",
   intro:
-    "A good evaluation should not depend on instinct alone. Rubric-based evaluation turns broad judgment into a structured process by defining what must be checked, how fulfillment should be recognized, and why one output is stronger than another.",
+    "Image-to-video generation turns a static visual into motion. My approach focuses on motion quality, narrative alignment, character consistency and continuity with the surrounding scenes — not just accepting the first motion output.",
   methods: [
-    { label: "Rubric as Recipe for Judgment", body: "I treat each task guideline like a judgment recipe. Before rating or labeling an output, I break the instruction into requirements so the final decision follows the task instead of personal preference." },
-    { label: "Rubric Concepts & Criterion Anatomy", body: "I analyze each criterion by identifying what needs to be checked, what counts as full or partial fulfillment, what would count as failure, and what evidence is required." },
-    { label: "Five-Step Rubric Mindset", body: "Understand the ideal output, form an initial judgment as a hypothesis, map the criteria, compare the evidence, and finalize the rating based on guideline alignment." },
+    { label: "Motion purpose", body: "Before generating motion, I identify the narrative purpose of the shot — what the audience needs to see, feel or understand — so the motion supports the story rather than distracting from it." },
+    { label: "Character stability", body: "I check that facial characteristics, clothing and posture remain consistent with the source image, without unintended morphing, distortion or identity drift during motion." },
+    { label: "Environment consistency", body: "I review the location, background, lighting and objects across the motion to ensure the scene holds together visually and matches the established environment." },
   ],
 };
 
+/* Voice production focus (replaces Hallucination Detection export shape) */
 export const hallucinationDetection = {
-  headline: "Detecting Hallucinations and Improving AI Reliability",
+  headline: "Voice Production, Sequencing and Review for Long-Form AI Content",
   intro:
-    "AI hallucination detection is the process of identifying unsupported, false, exaggerated, or inconsistent claims in AI-generated outputs. My approach focuses on evidence, factuality, internal consistency, and careful uncertainty handling.",
+    "Voice production and sequencing close the loop on AI-assisted film and long-form content. My approach focuses on voice suitability, narrative pacing, audio-visual alignment and final review before a production is considered complete.",
   whyDangerous:
-    "A hallucination is not always obvious. Sometimes an AI response sounds confident, polished, and professional while introducing details that were never provided or facts that are not supported. In professional settings, that can create serious problems: incorrect decisions, misleading documentation, weak training data, damaged credibility, or unsafe user guidance.",
+    "A weak voice, mistimed line or disconnected audio track can break an otherwise strong visual production. Voice is not just an addition — it carries character, tone and emotion. If voice production is rushed, mistimed or inconsistent with the visual identity, the audience feels the disconnect even when they cannot name it. That is why voice production, sequencing and review are treated as a serious production stage, not an afterthought.",
   process: [
-    "Identify the key claims that affect the answer's usefulness or correctness.",
-    "Check whether each claim is supported by the prompt, provided material, visible evidence, or reliable context.",
-    "Look for invented names, dates, figures, sources, relationships, features, or explanations.",
-    "Compare the response against the user's actual request and any supplied documents or media.",
-    "Identify contradictions inside the response or between the response and the available evidence.",
-    "Remove, soften, qualify, or flag claims that cannot be verified from the available material.",
+    "Identify the voice direction — character, tone, accent, pacing and emotional register — that fits the story.",
+    "Produce or select voice outputs aligned to the characters and the scene.",
+    "Sequence voice against the visual track, checking alignment, pacing and emotional beat.",
+    "Review the audio-visual combination for coherence, realism and narrative alignment.",
+    "Refine voice, pacing or sequencing where the combination feels off.",
+    "Finalise only when the audio-visual production meets the intended quality standard.",
   ],
   techniques: [
-    { label: "Evidence mapping", body: "Every important claim should connect to a source, prompt detail, observed fact, or known context." },
-    { label: "Uncertainty control", body: "If a claim cannot be verified, the output should not pretend certainty." },
-    { label: "Consistency checks", body: "A response should not contradict itself, the prompt, or the available evidence." },
-    { label: "Overclaim detection", body: "A partially correct response can still fail if it presents a weak conclusion too strongly." },
-    { label: "Factual restraint", body: "When evidence is limited, the correct professional move is to say less, not invent more." },
+    { label: "Voice-to-character fit", body: "Each voice should match the character identity established in the visual stage." },
+    { label: "Pacing control", body: "Pacing should serve the narrative beat — not the default speed of the generator." },
+    { label: "Audio-visual alignment", body: "Voice and motion should feel connected, with natural timing and emotional register." },
+    { label: "Final review", body: "The combined output is reviewed as a single production, not as separate audio and visual pieces." },
+    { label: "Continuity across scenes", body: "Voice direction should remain consistent across scenes that share a character or setting." },
   ],
 };
 
-/* ---------- Prompt Engineering & Generative AI ---------- */
+/* ---------- Prompt Refinement (was Prompt Engineering & Generative AI) ---------- */
 export const promptEngineering = {
-  headline: "Prompt Engineering for Clearer Instructions and Better AI Outputs",
+  headline: "Prompt Refinement: Improving Outputs from Observed Results",
   intro:
-    "Prompt engineering is the process of turning a desired result into clear, structured instructions that an AI system can follow. My approach focuses on clarity, context, constraints, examples, output structure, and quality standards.",
+    "Prompt refinement is the process of improving prompts based on what a generative tool actually produces. My approach focuses on observing outputs critically, tracing weaknesses back to the prompt, and revising instructions to address the specific issue rather than changing everything blindly.",
   understanding:
-    "A prompt is not just a question. It is an instruction system. A weak prompt may leave too much room for interpretation, causing the model to produce vague, inconsistent, incomplete, or unsupported outputs. A strong prompt defines the goal, provides the right context, sets boundaries, and explains what a successful output should look like.",
+    "A prompt is not a one-shot instruction — it is a working document that evolves with the production. A weak prompt may leave too much room for interpretation, causing the model to drift in character identity, environment, tone or continuity. A refined prompt defines the objective, anchors the references, sets boundaries, and explains what a successful output should look like — and it improves with each generation cycle.",
   principles: [
-    { label: "Define the objective", body: "The model should know the exact task and desired result." },
-    { label: "Provide useful context", body: "Context helps the model understand the situation without overwhelming it with irrelevant details." },
-    { label: "Set constraints clearly", body: "Good prompts explain what must be included and what should be avoided." },
-    { label: "Specify output format", body: "Structured outputs are easier to review, compare, and reuse." },
-    { label: "Add success criteria", body: "The prompt should make it possible to judge whether the output succeeded." },
-    { label: "Iterate based on evidence", body: "Prompt refinement should respond to actual output behavior, not guesswork." },
+    { label: "Define the objective", body: "The prompt should state the exact creative goal — story beat, character action, environment, tone and intended emotional effect." },
+    { label: "Anchor references", body: "Useful references keep the output aligned to the intended character identity, clothing, environment and visual cues." },
+    { label: "Set constraints clearly", body: "The prompt should explain what must be included and what should be avoided — drift, distortion, unwanted style, off-brief additions." },
+    { label: "Specify output structure", body: "Where the output is structured — shot framing, character placement, scene composition — the prompt should define it explicitly." },
+    { label: "Add success criteria", body: "The prompt should make it possible to judge whether the output succeeded against the brief." },
+    { label: "Iterate from evidence", body: "Prompt refinement should respond to actual output behavior — observed drift, artifact, identity loss or continuity break — not guesswork." },
   ],
   debugWorkflow: [
-    "Review the output to identify what failed: relevance, accuracy, format, completeness, tone, or reasoning.",
-    "Trace the failure back to the prompt: missing context, unclear instruction, weak constraints, or poor output guidance.",
+    "Review the output to identify what failed: character recognisability, facial appearance, clothing, environment, motion, narrative alignment, artifact risk.",
+    "Trace the failure back to the prompt: missing context, unclear instruction, weak references, poor output guidance.",
     "Rewrite the prompt to correct the specific weakness rather than changing everything blindly.",
     "Run another output and compare whether the revised prompt improved the result.",
     "Continue refinement until the prompt reliably produces the intended quality standard.",
   ],
   useCases: [
-    "AI response evaluation prompts and quality review instructions.",
-    "Content development prompts for articles, scripts, summaries, and technical explanations.",
-    "Visual generation prompts for image and video workflows.",
-    "Workflow prompts that help organize research, extract requirements, and produce structured documentation.",
-    "Debugging prompts that help refine unclear, incomplete, or inconsistent outputs.",
+    "Multimodal prompting across text, image and video for long-form AI productions.",
+    "Character identity and facial consistency prompts for repeated scenes.",
+    "Environment, location and background continuity prompts across scenes.",
+    "Story development and scriptwriting prompts for narrative direction.",
+    "Voice production and sequencing prompts for audio-visual alignment.",
+    "Prompt stress testing and model stumping to surface weaknesses under demanding instructions.",
   ],
 };
 
 export const generativeAI = {
-  headline: "Practical Generative AI Workflows for Research, Content & Digital Production",
+  headline: "Practical Generative AI Workflows for Long-Form Content & AI Video Production",
   intro:
-    "Generative AI is most useful when it is guided by clear goals, reviewed carefully, and integrated into a structured workflow. I use AI tools to support research, content production, creative development, documentation, and workflow acceleration while maintaining human quality control.",
+    "Generative AI is most useful when it is guided by clear creative goals, reviewed carefully, and integrated into a structured multimodal workflow. I use generative AI tools to develop story, characters, scenes, voice and final sequencing while maintaining critical human review at every stage.",
   experience:
-    "My generative AI work includes AI-assisted storytelling, Nollywood-style film concepts, documentary and reenactment-style content, image generation, voice workflows, video development, research support, and content structuring. I have used tools including ChatGPT, Claude, Gemini, Nano Banana, Veo 3.1, Midjourney, and related platforms.",
-  tools: ["ChatGPT", "Claude", "Gemini", "Nano Banana", "Veo 3.1", "Midjourney"],
+    "My generative AI work includes AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, more than 20 Nollywood-style AI films, long-form character-driven storytelling, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
+  tools: ["Text-to-Image", "Image-to-Video", "Voice Production", "Sequencing", "Critical Review"],
   workflow: [
-    "Define the creative or practical objective.",
+    "Define the creative objective — story, characters, setting, tone, visual cues.",
     "Identify the target audience and intended output format.",
-    "Prepare the prompt, references, constraints, and success criteria.",
-    "Generate the first output using the appropriate tool.",
-    "Review the result for coherence, realism, consistency, factual alignment, and usefulness.",
-    "Refine prompts, assets, or direction based on observed weaknesses.",
+    "Prepare the prompt, references, constraints and success criteria.",
+    "Generate the first output using the appropriate generative stage.",
+    "Review the result for coherence, realism, character identity, environment continuity and narrative alignment.",
+    "Refine prompts, assets or direction based on observed weaknesses.",
     "Finalize only after the output meets the intended standard.",
   ],
   qualityReview:
-    "The important part of my workflow is not simply generating content. It is the review process that comes after generation. I check whether the output is coherent, visually consistent, factually aligned, narratively useful, and appropriate for the audience. When an output fails, I identify whether the weakness came from the prompt, the tool limitation, the reference material, or the editing process.",
+    "The important part of my workflow is not simply generating content. It is the review process that comes after generation. I check whether the output is coherent, visually consistent, narratively useful and appropriate for the audience. When an output fails, I identify whether the weakness came from the prompt, the tool limitation, the reference material, or the editing process — and I correct it before moving forward.",
   stats: [
-    { value: "29,000+", label: "Subscribers on a primary AI YouTube channel" },
-    { value: "2M+", label: "Views on a flagship AI storytelling channel" },
-    { value: "1.5M+", label: "Views on a second AI content channel" },
+    { value: "29,000+", label: "Subscribers across AI YouTube channels" },
+    { value: "3.5M+", label: "Combined views" },
+    { value: "20+", label: "Nollywood-style AI films" },
   ],
 };
 
 export const aiVideo = {
-  headline: "AI-Assisted Video & Storytelling Workflows",
+  headline: "AI Video Production: Story, Sequencing and Review",
   intro:
-    "AI video content creation combines prompt engineering, visual direction, narrative planning, audio judgment, and output review. My work in this area focuses on using AI tools to develop structured creative outputs while maintaining coherence, realism, and audience value.",
+    "AI video production combines story development, scripting, image generation, video generation, voice production, sequencing and review. My work in this area focuses on producing long-form, character-driven content where continuity, realism and narrative alignment matter.",
   creativeDirection:
-    "AI video workflows require more than writing a prompt and accepting the first result. The process begins with a clear concept: the story, tone, setting, character direction, visual style, and intended emotional effect. From there, prompts and assets must be refined until the output supports the creative goal.",
+    "AI video workflows require more than writing a prompt and accepting the first result. The process begins with a clear concept: the story, tone, setting, character direction, visual style and intended emotional effect. From there, prompts and assets are refined until the output supports the creative goal — and reviewed critically at every stage before being accepted into the final sequence.",
   qualityFactors: [
     "Narrative coherence and logical scene progression.",
-    "Visual consistency across characters, setting, objects, and style.",
-    "Realism, motion quality, and avoidance of obvious AI artifacts.",
-    "Audio or voice suitability where relevant.",
+    "Character recognisability and facial consistency across scenes.",
+    "Clothing, styling and visual identity continuity.",
+    "Environment, location, background and lighting consistency.",
+    "Realism, motion quality and avoidance of obvious AI artifacts.",
+    "Voice-to-character fit and audio-visual alignment.",
     "Audience clarity and emotional impact.",
-    "Alignment between prompt, generated output, and final editing direction.",
+    "Alignment between prompt, generated output and final editing direction.",
   ],
 };
 
-/* ---------- Web Development ---------- */
+/* ---------- Character Consistency (was Web Development) ---------- */
 export const webDevelopment = {
-  headline: "Web Development That Combines Design, Strategy, Performance & Maintainability",
+  headline: "Character Identity, Facial Consistency and Scene Continuity Across Generated Scenes",
   intro:
-    "I approach web development as more than building pages. A good website should help people understand a brand, find what they need, trust the business, take action, and return when value is delivered. My web development approach combines user experience, information architecture, responsive design, performance, SEO fundamentals, maintainability, and long-term growth.",
+    "Maintaining character recognisability, facial appearance, clothing, environments, locations and backgrounds across multiple generated scenes is one of the hardest problems in long-form AI content. My approach combines structured prompting, useful references, repeated refinement and critical review at every stage.",
   philosophy:
-    "A website is a business tool, not just a digital decoration. Before thinking about colors, animations, or frameworks, I focus on what the website must achieve. My goal is to build websites that are beautiful, clear, fast, responsive, and useful — looking impressive while still making navigation simple, content readable, and conversion paths obvious.",
+    "Character identity is the foundation of long-form AI storytelling. If a character is not recognisable across scenes, the story breaks — no matter how strong the individual shots are. My approach treats character identity, facial consistency and scene continuity as production discipline, not luck. The goal is to make the audience see the same person in the same world across every scene, even when each scene was generated separately.",
   process: [
-    { step: "Discovery", body: "Understand the business, audience, goals, content, products, services, and technical constraints." },
-    { step: "Information Architecture", body: "Organize pages, navigation, content hierarchy, and user journeys before development begins." },
-    { step: "UX Planning", body: "Define how visitors move from first impression to deeper exploration, contact, purchase, booking, or inquiry." },
-    { step: "Visual Direction", body: "Establish a design system with colors, typography, spacing, components, and interaction style." },
-    { step: "Frontend Implementation", body: "Build responsive layouts that work across desktop, tablet, and mobile devices." },
-    { step: "Performance & SEO", body: "Optimize structure, metadata, page speed, images, accessibility, and crawlable content." },
-    { step: "Content Management", body: "Structure content so the owner can update CVs, projects, products, blogs, services, or company details later." },
-    { step: "Testing & Launch", body: "Review layout, links, forms, mobile views, browser behavior, and deployment readiness." },
-    { step: "Continuous Improvement", body: "Improve the site over time as new content, analytics, user feedback, or business needs emerge." },
+    { step: "Establish identity", body: "Define the character identity, facial characteristics, clothing, styling and visual cues before any scene generation begins." },
+    { step: "Build references", body: "Collect useful references for the character, environment, location, background and lighting so each output can be checked against intent." },
+    { step: "Generate per scene", body: "Produce each scene with a prompt anchored to the established identity and references." },
+    { step: "Review for drift", body: "Check each output for character recognisability, facial appearance, clothing, environment and background continuity." },
+    { step: "Correct inconsistencies", body: "Refine prompts or references and regenerate where drift, distortion or identity loss appears." },
+    { step: "Sequence", body: "Order the accepted scenes into a coherent sequence that respects narrative direction and continuity." },
+    { step: "Final review", body: "Review the full sequence as one production, checking continuity, pacing, tone and emotional effect end-to-end." },
   ],
   priorities: [
-    { label: "User-focused structure", body: "Visitors should quickly understand where they are, what the site offers, and what to do next." },
-    { label: "Responsive design", body: "The website must feel natural on mobile, tablet, and desktop." },
-    { label: "Performance", body: "A beautiful site should still load fast and avoid unnecessary weight." },
-    { label: "SEO fundamentals", body: "Pages should have clear titles, descriptions, heading hierarchy, internal links, and meaningful content." },
-    { label: "Accessibility", body: "Content should remain readable, navigable, and usable for different users and devices." },
-    { label: "Maintainability", body: "The site should be easy to update without breaking the design." },
-    { label: "Scalability", body: "The structure should support new pages, projects, blogs, services, and updates without a complete redesign." },
-    { label: "Security awareness", body: "Forms, admin access, uploads, and integrations should be planned with basic security expectations in mind." },
+    { label: "Character recognisability", body: "The audience should see the same person across every scene." },
+    { label: "Facial consistency", body: "Facial characteristics should not drift, morph or break identity between scenes." },
+    { label: "Clothing continuity", body: "Wardrobe, accessories and styling should remain coherent with the story." },
+    { label: "Environment continuity", body: "Locations, backgrounds, settings and objects should remain consistent across scenes." },
+    { label: "Narrative alignment", body: "Each scene should serve the story, tone and intended emotional effect." },
+    { label: "Critical review", body: "Every output is reviewed against the brief — not accepted on first impression." },
+    { label: "Iterative refinement", body: "Prompts and references are revised based on observed drift, not guesswork." },
+    { label: "End-to-end continuity", body: "The full sequence is reviewed as one production, not as isolated shots." },
   ],
   serviceAreas: [
-    { title: "Business Websites", icon: "Building2", body: "Professional websites for individuals, service providers, startups, and small businesses. Clear structure, credible presentation, mobile responsiveness, and content that supports real business goals." },
-    { title: "Retail & E-commerce", icon: "ShoppingCart", body: "Product catalog, search, product cards, cart/order flow, inventory signals, and customer journey. Organized product discovery with trust and action paths." },
-    { title: "UX & Information Architecture", icon: "Workflow", body: "Content structure, navigation design, conversion paths, and user journey planning. Layered navigation that keeps the homepage clean while allowing depth." },
-    { title: "Performance, SEO & Maintenance", icon: "Gauge", body: "Speed, accessibility, metadata, maintainability, admin updates, and long-term support. Sites built to remain valuable as content grows." },
+    { title: "Character Identity & Facial Consistency", icon: "Users", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes." },
+    { title: "Scene & Environment Continuity", icon: "Layers", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across scenes — so the world stays coherent end-to-end." },
+    { title: "Wardrobe & Styling Coherence", icon: "Sparkles", body: "Keeping clothing, accessories and styling aligned with the character and story across scenes, generations and stages." },
+    { title: "Visual Direction & Tone", icon: "Compass", body: "Holding the overall creative direction, lighting, mood and visual cues consistent across the long-form production." },
   ],
 };
 
-/* ---------- Security Research ---------- */
+/* ---------- Quality Control (was Security Research) ---------- */
 export const securityResearch = {
-  headline: "Security Research Guided by Evidence, Responsible Testing & Clear Risk Communication",
+  headline: "Quality Control, Model Stumping and Content Review for Generative AI",
   intro:
-    "My security research approach is careful, authorized, and documentation-focused. I work to understand how systems behave, identify weaknesses, validate impact safely, and communicate findings in a way that helps teams fix issues without exposing unnecessary risk.",
+    "Quality control for generative AI combines content research, critical review, model stumping and prompt stress testing. My approach focuses on identifying weaknesses, inconsistencies and failures in AI outputs — and correcting them before they reach a final production or audience.",
   philosophy:
-    "Security testing is not only about finding a technical flaw. It is about understanding the system, validating the behavior responsibly, explaining the real-world impact, and recommending a practical remediation path. My security research is shaped by responsible disclosure principles — testing within authorized scope, avoiding unnecessary disruption, protecting user data, and communicating findings through proper channels.",
+    "Quality control is not a final checkbox. It is a discipline that runs through every stage of a generative AI production. I plan before generation, keep useful references, review outputs critically, identify where a model fails under demanding prompts, and correct inconsistencies before moving forward. My background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) shapes how I approach this work.",
   methodology: [
-    { step: "Scope understanding", body: "Review the authorized asset scope, rules of engagement, permitted testing methods, and disclosure expectations." },
-    { step: "Reconnaissance", body: "Identify visible assets, technologies, entry points, authentication flows, API behavior, headers, redirects, upload paths, and trust boundaries." },
-    { step: "Hypothesis building", body: "Identify where security controls may be weak, inconsistent, missing, or misconfigured." },
-    { step: "Safe validation", body: "Confirm the behavior using controlled testing, researcher-owned accounts, benign payloads, and minimal-impact requests." },
-    { step: "Evidence collection", body: "Capture only what is necessary to prove the issue without exposing customer data or causing harm." },
-    { step: "Impact analysis", body: "Explain the realistic business, user, regulatory, operational, or security consequence of the weakness." },
-    { step: "Remediation writing", body: "Provide practical, technically relevant recommendations that help the team address the root cause." },
-    { step: "Responsible reporting", body: "Submit findings through approved channels with clear reproduction steps, evidence references, severity reasoning, and disclosure notes." },
+    { step: "Define the standard", body: "Clarify what a successful output looks like — character identity, environment, narrative alignment, realism, audience suitability — before any review." },
+    { step: "Review critically", body: "Inspect each output against the standard: character recognisability, facial appearance, clothing, environment, background, motion, narrative alignment, artifact risk." },
+    { step: "Identify weaknesses", body: "Look for drift, distortion, identity loss, environment breaks, unsupported claims, weak reasoning, ambiguity, overconfidence or inconsistency." },
+    { step: "Stress-test prompts", body: "Probe the model with difficult, ambiguous or demanding instructions to surface where it fails, hallucinates or produces inconsistent behaviour." },
+    { step: "Trace the cause", body: "Identify whether the weakness came from the prompt, the reference, the tool limitation or the editing process." },
+    { step: "Correct and refine", body: "Revise the prompt, references or direction to address the specific weakness rather than changing everything blindly." },
+    { step: "Final review", body: "Review the corrected output against the standard and the longer sequence it belongs to." },
+    { step: "Document learnings", body: "Capture what failed and what worked so future productions benefit from the refinement." },
   ],
   interestAreas: [
-    "Authentication and authorization weaknesses.",
-    "Rate limiting and brute-force resistance.",
-    "File upload validation and content handling controls.",
-    "Cross-origin and browser trust boundary issues.",
-    "Redirect validation and phishing-resistant flow design.",
-    "API security misconfiguration and exposure analysis.",
-    "Business impact analysis and remediation planning.",
-    "Responsible disclosure reporting and evidence handling.",
+    "Character identity drift across scenes.",
+    "Facial appearance and morphing artifacts.",
+    "Environment, location and background inconsistency.",
+    "Hallucinated or unsupported claims in text generation.",
+    "Model behaviour under ambiguous, conflicting or demanding instructions.",
+    "Continuity breaks across long-form sequences.",
+    "Voice-to-character fit and audio-visual alignment.",
+    "Audience suitability, accuracy and quality of final outputs.",
   ],
   reportingStyle:
-    "My reporting style focuses on clarity and usefulness: what the vulnerability is, who can trigger it, what access or impact it could create, why the organization should care, how to reproduce the issue safely, what evidence supports the finding, how severity was assessed, and what remediation steps are recommended.",
+    "My reporting style focuses on clarity and usefulness: what the weakness is, where it appears, why it matters, what evidence supports the finding, how it can be reproduced, and what correction or refinement is recommended. The goal is always to make the next output stronger, not just to flag the current one as weak.",
   publicNote:
-    "I can discuss my general methodology, security principles, categories of testing, responsible disclosure approach, and reporting process. I do not publicly disclose confidential engagement details, affected organizations, exact assets, endpoints, screenshots, payloads, staff information, customer data, or private report content unless disclosure is explicitly authorized.",
+    "I can discuss my general methodology, quality-control principles, model stumping approach, prompt stress testing, and review process. I do not expose confidential client content, private productions, internal review data or unpublished assets unless explicitly authorized.",
 };
 
 /* ---------- Experience ---------- */
 export const experience = [
   {
-    role: "AI Data Annotation Specialist",
-    org: "Remotasks",
+    role: "Generative AI Content Creator & AI Video Producer",
+    org: "Independent Content Production",
     type: "Remote",
-    period: "Oct 2020 — Jan 2022",
+    period: "Oct 2023 — Present",
     summary:
-      "Contributed to AI data annotation and evaluation workflows involving data labeling, review, and quality control. Required careful reading of task-specific instructions, consistent application of annotation guidelines, and attention to accuracy across remote task environments.",
+      "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views. Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
     points: [
-      "Labeling and reviewing data according to project instructions.",
-      "Evaluating task outputs for correctness and compliance.",
-      "Supporting machine learning training workflows through human-reviewed data.",
-      "Adapting quickly to changing task requirements.",
+      "AI-powered YouTube channels with 29,000+ subscribers and 3.5M+ combined views.",
+      "20+ Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+      "Character recognisability, facial characteristics, clothing, settings, visual cues maintained across long story-based productions.",
+      "Scene consistency, creative refinement and ongoing exploration of prompting techniques.",
     ],
-    methods: [
-      "Rubric as Recipe for Judgment",
-      "Rubric Concepts & Criterion Anatomy",
-      "Five-Step Rubric Mindset",
-    ],
+    methods: [],
   },
   {
-    role: "AI Evaluation Specialist",
+    role: "Content Writer & Research Assistant",
+    org: "Upwork",
+    type: "Remote",
+    period: "Dec 2020 — Present",
+    summary:
+      "Supported more than 20 clients with writing, research, editing and digital content development. Applied generative-AI-assisted drafting and editing alongside manual accuracy and quality review.",
+    points: [
+      "20+ clients supported with writing, research, editing and digital content development.",
+      "Generative-AI-assisted drafting and editing integrated into content workflows.",
+      "Manual accuracy and quality review applied to every delivered piece.",
+    ],
+    methods: [],
+  },
+  {
+    role: "Digital Content Quality & Research Work",
     org: "TELUS Digital",
     type: "Remote",
     period: "Mar 2022 — Dec 2023",
     summary:
-      "Evaluated AI-generated responses using project guidelines, structured criteria, and quality standards. Assessed outputs for accuracy, relevance, clarity, factual consistency, instruction following, and overall usefulness.",
+      "Worked on large-scale digital content assignments involving thousands of content items. Applied research, detailed instructions and consistent judgement, including detection of ambiguity, conflicting information and unsupported information.",
     points: [
-      "Reviewed AI responses to identify unsupported claims, incomplete answers, hallucination risks, weak reasoning, and guideline violations.",
-      "Applied evidence-based judgment and provided structured feedback on AI outputs.",
+      "Large-scale digital content assignments involving thousands of content items.",
+      "Research, detailed instructions and consistent judgement applied across assignments.",
+      "Detection of ambiguity, conflicting information and unsupported information.",
+      "Quality control across a high volume of reviewed content.",
     ],
     methods: [],
   },
   {
-    role: "Freelance Virtual Assistant & Blog Content Writer",
-    org: "Upwork",
+    role: "Digital Content Review & Quality Operations",
+    org: "Remotasks",
     type: "Remote",
-    period: "2020 — Present",
+    period: "Oct 2020 — Jan 2022",
     summary:
-      "Support clients with research, blog content writing, editing, administrative tasks, and AI-assisted workflows. Strengthened ability to organize information, write clearly, polish content, and support client-facing tasks remotely.",
+      "Reviewed more than 10,000 individual items across content review, classification and quality review tasks. Built foundational content-review skills including error detection and inconsistency detection.",
     points: [
-      "Research, editing, workflow support, and content refinement.",
-      "AI-assisted productivity and review of content for factual alignment, user intent, consistency, and overall quality.",
-    ],
-    methods: [],
-  },
-  {
-    role: "Generative AI Content Creator & AI Video Workflow Specialist",
-    org: "Independent AI Content Projects",
-    type: "Remote",
-    period: "Oct 2024 — Present",
-    summary:
-      "Built and managed AI-driven YouTube channels focused on AI-assisted storytelling, video production, and content creation. One channel grew to over 29,000 subscribers with more than 2 million views, while another grew to more than 1.5 million views.",
-    points: [
-      "AI-generated Nollywood-style films, documentary and reenactment-style content.",
-      "AI voice and visual workflows, prompt development, and review of generated outputs for coherence, realism, visual consistency, factual alignment, narrative quality, and audience suitability.",
-    ],
-    methods: [],
-  },
-  {
-    role: "Penetration Tester & Bug Bounty Hunter",
-    org: "Independent Engagements / HackerOne / Bugcrowd",
-    type: "Remote",
-    period: "2025 — Present",
-    summary:
-      "Conduct authorized security assessments and responsible disclosure research. Identify, validate, and document vulnerabilities, prepare technical findings with evidence, explain impact, and write remediation-focused reports.",
-    points: [
-      "Most client engagements are under non-disclosure agreements; publicly shareable information is limited.",
-      "Portfolio describes the methodology and professional approach rather than exposing confidential findings.",
+      "10,000+ individual items reviewed across content review, classification and quality review tasks.",
+      "Error detection and inconsistency detection at scale.",
+      "Foundational content-review skills that strengthened later generative AI quality work.",
     ],
     methods: [],
   },
 ];
 
-/* ---------- Projects ---------- */
+/* ---------- Projects (Generative AI Work) ---------- */
 export const projects = [
   {
-    title: "Underwater Laser Detection Security System",
-    category: "Hardware / Security",
-    status: "Completed",
+    title: "AI-Powered YouTube Content",
+    category: "Generative AI · Audience",
+    status: "Live",
     summary:
-      "A final-year university project developed using Raspberry Pi and Python, combining electronics, programming, sensor-based detection logic, and security-focused problem solving.",
-    focus: ["Sensor-based detection", "Python programming", "Raspberry Pi", "Electronics", "Technical implementation"],
+      "Created and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views through structured prompting, repeated refinement and careful visual control.",
+    focus: ["AI YouTube channels", "29,000+ subscribers", "3.5M+ combined views", "Long-form content"],
     value:
-      "Demonstrates early technical problem-solving, practical engineering thinking, and the ability to turn a security-related concept into a working system.",
-    icon: "Radar",
-    accent: "blue",
-  },
-  {
-    title: "AI-Powered Community Census Application",
-    category: "Community / Data",
-    status: "Completed",
-    summary:
-      "A National Youth Service Corps Community Development Service pass-out project developed while serving in Abinse, Guma Local Government Area, Benue State. Designed to support community-level data collection and structured information management.",
-    focus: ["Data collection", "Community use", "Structured records", "Public-service support"],
-    value:
-      "Demonstrates the ability to think about technology in a community context and build tools that help organize information for real-world use.",
-    icon: "Users",
+      "Demonstrates practical experience producing AI-generated content at scale — building an audience through consistent, character-driven, story-based productions rather than isolated outputs.",
+    icon: "Clapperboard",
     accent: "violet",
   },
   {
-    title: "AI-Generated Video & Storytelling Projects",
-    category: "Generative AI / Content",
+    title: "20+ Nollywood-Style AI Films",
+    category: "Generative AI · Film",
     status: "Completed",
     summary:
-      "AI-assisted storytelling, Nollywood-style video concepts, documentary and reenactment-style content, AI voice workflows, image/video generation, and prompt-based production processes.",
-    focus: ["Prompt engineering", "Generative AI tools", "Video workflow planning", "AI voice/image/video systems", "Content quality review"],
+      "Created more than 20 AI-assisted Nollywood-style films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+    focus: ["Story development", "Scripting", "Image generation", "Video generation", "Voice production", "Sequencing"],
     value:
-      "Shows practical experience with AI tools and the ability to evaluate generated outputs for coherence, realism, visual consistency, narrative flow, and audience suitability.",
-    icon: "Clapperboard",
+      "Shows end-to-end AI film production capability — from story concept through final sequence — using a multimodal workflow across text, image and video.",
+    icon: "Sparkles",
     accent: "magenta",
   },
   {
-    title: "XYZ Electronics Retail Website Demo",
-    category: "Web / E-commerce",
-    status: "Placeholder",
+    title: "Long-Form Character Consistency",
+    category: "Generative AI · Consistency",
+    status: "Ongoing",
     summary:
-      "A future demo that will show how a retail electronics website can organize product categories, product cards, search, pricing, stock status, hot sales, new arrivals, product detail pages, customer support, and inquiry or checkout flow.",
-    focus: ["Business goal", "User journey", "Workflow", "Product catalogue design", "Admin update workflow"],
+      "Developed practical techniques for maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.",
+    focus: ["Character recognisability", "Facial characteristics", "Clothing continuity", "Locations", "Backgrounds", "Visual cues"],
     value:
-      "Planned case study structure for future client work. Not yet a completed client project.",
-    icon: "ShoppingCart",
+      "Addresses one of the hardest problems in long-form AI content — keeping the same character recognisable across separately generated scenes — through references, refinement and review.",
+    icon: "Users",
     accent: "blue",
-    placeholder: true,
   },
   {
-    title: "ABC Mobile Store E-commerce Demo",
-    category: "Web / Retail",
-    status: "Placeholder",
+    title: "Multimodal AI Video Production",
+    category: "Generative AI · Multimodal",
+    status: "Ongoing",
     summary:
-      "A future demo presenting a phone retail website concept with brand filters, device categories, accessory sections, product details, price visibility, WhatsApp inquiry or cart flow, delivery information, and support contact paths.",
-    focus: ["Customer problem", "Design strategy", "UX flow", "Product categorization", "Responsive layout"],
+      "Worked across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
+    focus: ["Text generation", "Image generation", "Video generation", "Stage selection", "Production planning"],
     value:
-      "Planned case study structure for future client work. Not yet a completed client project.",
-    icon: "Smartphone",
+      "Demonstrates multimodal control — choosing the right generative stage for each part of the production rather than relying on a single tool for every task.",
+    icon: "Clapperboard",
     accent: "violet",
-    placeholder: true,
+  },
+  {
+    title: "Content Research & Quality Review",
+    category: "Research · Quality",
+    status: "Completed",
+    summary:
+      "Built practical research and review experience through Upwork, TELUS Digital and Remotasks, with careful attention to requirements, evidence, ambiguity, accuracy and consistency.",
+    focus: ["Research", "Accuracy review", "Ambiguity detection", "Consistency checks", "Quality control"],
+    value:
+      "Foundational experience that strengthens how I plan, evaluate and refine AI-generated work today — quality control is treated as production discipline, not afterthought.",
+    icon: "ScanSearch",
+    accent: "blue",
   },
 ];
 
-/* ---------- Afrik-Vine Tech LTD ---------- */
+/* ---------- Production Approach (was Afrik-Vine Tech LTD) ---------- */
 export const afrikVine = {
-  name: "Afrik-Vine Tech LTD",
-  tagline: "Creativity · Futuristic · Legacy",
-  logo: "/images/afrik-vine-logo.jpeg",
-  headline: "Afrik-Vine Tech LTD: Creativity, Futuristic Thinking & Digital Legacy",
+  name: "Multimodal Production Approach",
+  tagline: "Plan · Refine · Review · Sequence",
+  logo: "/images/profile-main.jpeg",
+  headline: "My Multimodal Production Approach for Long-Form AI Content",
   intro:
-    "Afrik-Vine Tech LTD is being developed as a forward-looking technology brand connected to my professional work in AI, web development, digital strategy, content systems, and security-informed technical services. The brand is guided by three words: Creativity, Futuristic, and Legacy.",
+    "This section describes the production approach I use for long-form AI content — Nollywood-style films, story-driven video and multimodal productions. It is not a separate company or brand; it is the working method behind the work shown in this portfolio.",
   positioning:
-    "Afrik-Vine Tech LTD exists as the business-facing expression of my long-term technology direction. While this portfolio primarily represents me as a professional, the company section introduces the brand through which future services, projects, partnerships, and technology solutions can grow. The company is positioned around practical innovation: using modern tools, structured thinking, and creative execution to help individuals, businesses, and organizations build better digital systems.",
+    "My production approach is built around structured prompting, repeated refinement and careful visual control. I plan scenes and visual requirements before generation, keep useful references, review outputs critically, and correct inconsistencies before moving forward. This reduces unnecessary retries, maintains stronger continuity, and lets me use different generative tools according to the needs of each production stage.",
   mission:
-    "To help individuals, businesses, and organizations build modern digital solutions that combine creativity, intelligent technology, usability, and long-term value.",
+    "To turn creative ideas into controlled, long-form AI content — where character identity, scene continuity, environment consistency and narrative alignment are treated as production discipline, not luck.",
   vision:
-    "To grow into a trusted African technology brand recognized for futuristic design, practical AI adoption, professional web solutions, digital creativity, and responsible technical execution.",
+    "To keep refining multimodal prompting techniques that produce stronger, more consistent, character-driven AI content across text, image and video.",
   values: [
-    { label: "Creativity", body: "We believe digital solutions should be useful, original, and thoughtfully designed." },
-    { label: "Futuristic thinking", body: "We look beyond short-term trends and build with adaptability, scalability, and future growth in mind." },
-    { label: "Legacy", body: "We aim to create work that remains valuable, maintainable, and meaningful over time." },
-    { label: "Integrity", body: "We do not exaggerate capabilities, fabricate results, or expose confidential information." },
-    { label: "Clarity", body: "We value clear communication, structured planning, and practical execution." },
-    { label: "Quality", body: "We treat every project as a system that should be useful, reliable, and professionally presented." },
+    { label: "Plan before generation", body: "I plan scenes, characters, settings, visual cues and creative direction before any generation begins." },
+    { label: "Character identity first", body: "Recognisability through facial characteristics, clothing, visual references and repeated refinement is the foundation of long-form content." },
+    { label: "Critical review", body: "Every output is reviewed against the brief — coherence, realism, continuity, narrative alignment — before being accepted." },
+    { label: "Iterative refinement", body: "Prompts and references are revised based on observed output, not guesswork." },
+    { label: "Multimodal control", body: "I work across text, image and video in one production process, selecting the right stage for each requirement." },
+    { label: "Story-driven", body: "Every scene serves the narrative, tone and intended emotional effect of the long-form content." },
   ],
   serviceAreas: [
-    "Personal and business portfolio websites.",
-    "Retail and e-commerce website development.",
-    "AI-assisted content and workflow strategy.",
-    "Prompt engineering and AI productivity support.",
-    "Technical documentation and digital content structuring.",
-    "Security-informed website review and risk awareness.",
-    "Future AI evaluation and digital training resources.",
+    "Story development and scriptwriting for long-form AI productions.",
+    "Multimodal prompting across text, image and video.",
+    "Character identity, facial consistency and clothing continuity.",
+    "Scene, environment, location and background continuity.",
+    "Voice production, sequencing and audio-visual alignment.",
+    "Critical review, prompt refinement and quality control.",
   ],
   engagementProcess: [
-    { step: "Discovery", body: "Understand the client's business, audience, goals, content, and constraints." },
-    { step: "Planning", body: "Define the sitemap, user journey, content structure, technical requirements, and success criteria." },
-    { step: "Design Direction", body: "Establish the visual style, page hierarchy, interaction patterns, and brand tone." },
-    { step: "Build", body: "Develop the website or digital solution with responsive design, usability, performance, and maintainability in mind." },
-    { step: "Review", body: "Test content, layout, links, forms, mobile responsiveness, accessibility, and user flow." },
-    { step: "Launch & Support", body: "Deploy the solution and provide a path for updates, improvements, and future expansion." },
+    { step: "Discovery", body: "Understand the story, characters, setting, tone, audience and intended emotional effect." },
+    { step: "Planning", body: "Define scenes, visual cues, character identity, references and success criteria before generation." },
+    { step: "Generation", body: "Produce each scene with the appropriate generative stage — text-to-image, image-to-video, voice production." },
+    { step: "Review", body: "Review each output critically against the brief, references and longer sequence." },
+    { step: "Refinement", body: "Correct inconsistencies in character, environment or narrative alignment through prompt and reference revision." },
+    { step: "Sequencing", body: "Order accepted scenes into a coherent sequence that respects continuity and narrative direction." },
+    { step: "Final review", body: "Review the full production end-to-end — continuity, pacing, tone, audio-visual alignment and audience suitability." },
   ],
   roadmap:
-    "Afrik-Vine Tech LTD will gradually expand from a supporting professional venture within this portfolio into a broader technology company presence. The roadmap includes a dedicated company website, official company profile, service portfolio, project case studies, blog or research hub, client onboarding process, productized web development services, AI workflow resources, and future training or consulting offerings.",
+    "My production approach continues to evolve as I explore new prompting techniques, generative tools and review methods. The direction is consistent: stronger character identity, tighter scene continuity, more reliable long-form storytelling, and a clearer creative direction across every production.",
   cta:
-    "For now, Afrik-Vine Tech LTD is presented as a company venture behind future services and digital solutions within Obasiochie Vincent Chimaobi's personal portfolio. As the company profile develops, this section will be updated with official registration details, completed projects, client-ready service pages, and verified company information.",
+    "If you would like to discuss a generative AI content project, an AI video production, a multimodal workflow or a creative direction collaboration, you can reach me through the contact section below.",
 };
 
 /* ---------- Articles ---------- */
 export const articles = {
-  headline: "Articles, Research Notes, Tutorials & Professional Updates",
+  headline: "Articles, Research Notes & Reflections on Multimodal Prompt Engineering",
   intro:
-    "This section will become the knowledge hub for AI evaluation, prompt engineering, web development, generative AI workflows, technical documentation, and security-safe educational writing.",
+    "This section will become the knowledge hub for multimodal prompt engineering, generative AI content, AI video production, character consistency, prompt refinement and content quality.",
   comingSoon:
-    "I am building a collection of articles and research notes focused on AI evaluation, prompt engineering, web development, generative AI workflows, technical documentation, and security-informed digital practice. New posts will be added gradually as this portfolio grows.",
+    "I am building a collection of articles and research notes focused on multimodal prompt engineering, generative AI content, AI video production, character consistency, prompt refinement and content quality. New posts will be added gradually as this portfolio grows.",
   categories: [
-    "AI Evaluation & Response Quality",
-    "Prompt Engineering & Prompt Debugging",
-    "Hallucination Detection & Factuality Review",
-    "Generative AI Workflows & Content Systems",
-    "Web Development, UX, SEO & Performance",
-    "Security Research Principles & Responsible Disclosure",
-    "Technical Documentation & Structured Writing",
-    "Professional Growth & Remote AI Work",
+    "Multimodal Prompt Engineering",
+    "Generative AI Content & Story Development",
+    "AI Video Production & Sequencing",
+    "Character Identity & Facial Consistency",
+    "Scene & Environment Continuity",
+    "Prompt Refinement & Stress Testing",
+    "Content Research & Quality Control",
+    "Creative Direction for Long-Form AI",
   ],
   placeholders: [
-    { title: "How I Evaluate AI Responses", body: "Will explain the difference between surface preference and structured evaluation — reading the prompt, identifying criteria, checking evidence, comparing outputs, detecting hallucinations, and explaining a final judgment clearly." },
-    { title: "Building Better Prompts Through Clear Success Criteria", body: "Will explain how prompt engineering improves when the expected output is defined before the instruction is written — covering task goal, context, constraints, output format, examples, and prompt refinement." },
-    { title: "What Makes a Retail Website Useful", body: "Will discuss product categories, search, product cards, price visibility, trust signals, checkout or inquiry paths, mobile layout, and long-term content management for retail businesses." },
+    { title: "How I Maintain Character Consistency Across Generated Scenes", body: "Will explain the practical techniques I use to keep character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues consistent across multiple separately generated scenes." },
+    { title: "Planning a Multimodal AI Film Before Generation", body: "Will explain how I plan story, characters, settings, visual cues and creative direction before any generation begins — and why this stage reduces unnecessary retries later." },
+    { title: "Prompt Refinement from Observed Results", body: "Will explain how I review generated outputs critically, trace weaknesses back to the prompt, and revise instructions to address the specific issue rather than changing everything blindly." },
   ],
 };
 
@@ -642,41 +569,78 @@ export const articles = {
 export const contact = {
   headline: "Let's Connect",
   intro:
-    "If my work aligns with an opportunity, project, collaboration, or professional discussion, you can reach me through the contact details below. I am open to conversations around AI evaluation, prompt engineering, data annotation, web development, AI-assisted workflows, technical documentation, and responsible security research.",
+    "If my work aligns with an opportunity, project, collaboration or professional discussion, you can reach me through the contact details below. I am open to conversations around multimodal prompt engineering, generative AI content, AI video production, creative direction, content research and quality control.",
   channels: [
-    { label: "Email", value: "cyberghoxt.whitehat@gmail.com", href: "mailto:cyberghoxt.whitehat@gmail.com", icon: "Mail" },
-    { label: "Location", value: "Abuja, FCT, Nigeria", href: null, icon: "MapPin" },
-    { label: "X / Twitter", value: "@cyb3rghoxt", href: "https://x.com/cyb3rghoxt", icon: "Twitter" },
-    { label: "GitHub", value: "@vin_chimaobi042", href: "https://github.com/vin_chimaobi042", icon: "Github" },
-    { label: "LinkedIn", value: "vincent-chimaobi042", href: "https://www.linkedin.com/in/vincent-chimaobi042", icon: "Linkedin" },
+    { label: "Email", value: "vincentchimaobi042@gmail.com", href: "mailto:vincentchimaobi042@gmail.com", icon: "Mail" },
+    { label: "Phone", value: "09068254110", href: "tel:+2349068254110", icon: "Phone" },
+    { label: "Location", value: "Abuja, Nigeria", href: null, icon: "MapPin" },
+    { label: "LinkedIn", value: "vincent-chimaobi042", href: "https://www.linkedin.com/in/vincent-chimaobi042/", icon: "Linkedin" },
   ],
   whatsapp: {
-    url: "https://wa.me/message/BS2I4XH5NM3CH1",
-    qr: "/images/whatsapp-qr.jpeg",
-    label: "Chat on WhatsApp",
-    helper:
-      "Prefer WhatsApp? Scan the QR code or tap the WhatsApp button to start a direct conversation.",
+    url: "",
+    qr: "",
+    label: "",
+    helper: "",
   },
   inquiryGuidance: [
-    { type: "AI evaluation or data annotation", body: "Please include the role type, task expectations, region eligibility requirements, and any assessment or onboarding steps." },
-    { type: "Web development inquiries", body: "Please include the type of website needed, target audience, preferred features, content availability, timeline, budget range if available, and whether admin editing is required." },
-    { type: "Security-related discussions", body: "Please do not send sensitive credentials, private customer data, or confidential assets through an unsecured form. Use responsible disclosure channels where applicable." },
+    { type: "Multimodal prompt engineering or AI video production", body: "Please include the type of production, target audience, intended length, character or story requirements, references if available, timeline, and whether creative direction is needed." },
+    { type: "Generative AI content collaboration", body: "Please include the scope, intended platform, audience, tone, content volume, timeline, and whether review and refinement are part of the engagement." },
+    { type: "Content writing, research or quality review", body: "Please include the type of content, expected depth, research requirements, accuracy expectations, volume, and timeline." },
   ],
   inquiryTypes: [
-    "AI Evaluation / AI Training Role",
-    "Prompt Engineering Project",
-    "Data Annotation Opportunity",
-    "Web Development Project",
-    "Afrik-Vine Tech LTD Inquiry",
-    "Security Research Discussion",
+    "Multimodal Prompt Engineering",
+    "AI Video Production",
+    "Generative AI Content",
+    "Creative AI Workflow",
+    "Content Writing & Research",
+    "Digital Content Quality",
     "General Professional Contact",
   ],
 };
 
 export const footer = {
   blurb:
-    "AI Evaluation, Prompt Engineering, Web Development, and Security-Informed Digital Solutions.",
-  ventureNote: "Professional venture: Afrik-Vine Tech LTD — Creativity · Futuristic · Legacy.",
-  location: "Based in Abuja, FCT, Nigeria. Available for remote AI evaluation, prompt engineering, data annotation, web development, and professional technology opportunities.",
+    "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality.",
+  ventureNote: "",
+  location:
+    "Based in Abuja, Nigeria. Available for remote multimodal prompt engineering, generative AI content, AI video production, creative direction and content quality opportunities.",
   links: navItems,
 };
+
+/* ---------- Credentials (CV-aligned seed data) ---------- */
+// Used as the fallback for the public Certifications section when the DB is
+// empty (static export mode or no admin-managed items). Mirrors the
+// PublicCertification shape used by the Certifications component.
+export const seedCertifications = [
+  {
+    id: "seed-cert-1",
+    title: "Generative AI Essentials: Prompt Engineering Masterclass",
+    issuer: "Udemy",
+    year: "March 2025",
+    credentialLink: null,
+  },
+  {
+    id: "seed-cert-2",
+    title:
+      "Mastering AI Leadership: Advanced Certificate in Prompt Engineering and Professional Ethics",
+    issuer: "Davidson College | edX",
+    year: "June 2026",
+    credentialLink: null,
+  },
+];
+
+/* ---------- Education (CV-aligned) ---------- */
+export const education = [
+  {
+    id: "edu-1",
+    qualification: "Bachelor of Science (B.Sc.) in Physics Electronics",
+    institution: "University of Port Harcourt",
+    period: "2016 — 2021",
+  },
+];
+
+/* ---------- Languages (CV-aligned) ---------- */
+export const languages = [
+  { id: "lang-1", name: "English", level: "Conversational" },
+  { id: "lang-2", name: "Igbo", level: "Native" },
+];

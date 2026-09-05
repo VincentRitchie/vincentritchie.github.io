@@ -23,38 +23,38 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Obasiochie Vincent Chimaobi | AI Evaluation, Prompt Engineering & Web Development",
+  title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
   description:
-    "Professional portfolio of OBASIOCHIE VINCENT CHIMAOBI — AI Evaluation and Data Annotation Specialist based in Abuja, Nigeria. Focused on AI response evaluation, prompt engineering, data annotation, generative AI workflows, web development, and security-informed analysis.",
+    "Professional portfolio of Vincent Chimaobi Obasiochie, a Multimodal Prompt Engineer with practical experience across generative AI text, image and video production, AI video production, creative direction, character and scene consistency, prompt refinement, content research and quality control.",
   keywords: [
-    "Obasiochie Vincent Chimaobi",
-    "AI Evaluation Specialist",
-    "Prompt Engineering",
-    "Data Annotation",
-    "LLM Quality",
-    "Hallucination Detection",
-    "Generative AI Workflows",
-    "Web Development",
-    "Security Research",
-    "Afrik-Vine Tech LTD",
+    "Vincent Chimaobi Obasiochie",
+    "Multimodal Prompt Engineer",
+    "Generative AI",
+    "AI Video Production",
+    "AI Creative Direction",
+    "Character Consistency",
+    "Scene Continuity",
+    "Prompt Refinement",
+    "Prompt Stress Testing",
+    "Content Quality",
     "Abuja Nigeria",
   ],
-  authors: [{ name: "Obasiochie Vincent Chimaobi" }],
+  authors: [{ name: "Vincent Chimaobi Obasiochie" }],
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Obasiochie Vincent Chimaobi | AI Evaluation & Prompt Engineering",
+    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
     description:
-      "AI Evaluation, Prompt Engineering, Web Development, and Security-Informed Digital Solutions. Personal portfolio of Obasiochie Vincent Chimaobi.",
-    siteName: "Obasiochie Vincent Chimaobi",
+      "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality. Personal portfolio of Vincent Chimaobi Obasiochie.",
+    siteName: "Vincent Chimaobi Obasiochie",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Obasiochie Vincent Chimaobi | AI Evaluation & Prompt Engineering",
+    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
     description:
-      "AI Evaluation, Prompt Engineering, Web Development, and Security-Informed Digital Solutions.",
+      "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality.",
   },
 };
 

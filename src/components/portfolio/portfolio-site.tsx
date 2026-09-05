@@ -17,6 +17,7 @@ import { Footer } from "@/components/portfolio/footer";
 import { Certifications, type PublicCertification } from "@/components/portfolio/certifications";
 import { Testimonials, type PublicTestimonial } from "@/components/portfolio/testimonials";
 import { Achievements, type PublicAchievement } from "@/components/portfolio/achievements";
+import { EducationLanguages } from "@/components/portfolio/education-languages";
 
 /**
  * Client wrapper for the public portfolio site.
@@ -95,6 +96,7 @@ export function PortfolioSite({ content }: { content: PortfolioSiteContent }) {
         <WebDevelopment />
         <SecurityResearch />
         <Experience />
+        <EducationLanguages />
         <Achievements items={achievements} />
         <Projects projects={projects} />
         <Testimonials items={testimonials} />

@@ -13,11 +13,11 @@ export function Experience() {
           eyebrow="Professional Experience"
           title={
             <>
-              Across AI evaluation, remote workflows, generative AI{" "}
-              <span className="text-gradient">&amp; security research</span>
+              Across generative AI content, AI video production{" "}
+              <span className="text-gradient">&amp; content quality work</span>
             </>
           }
-          intro="My experience combines AI data annotation, AI response evaluation, freelance research and content workflows, generative AI production, and authorized security research. Each role has contributed to my ability to analyze requirements, evaluate outputs, document findings, and deliver structured work remotely."
+          intro="My experience combines generative AI content creation, AI video production, content writing and research, and digital content quality review. Each role has contributed to my ability to plan productions, evaluate outputs critically, refine prompts, and deliver structured long-form AI content remotely."
           accent="violet"
         />
 

@@ -13,24 +13,24 @@ import { ScanSearch, Tags, ListChecks, ShieldAlert, CheckCircle2 } from "lucide-
 import { cn } from "@/lib/utils";
 
 const tabs = [
-  { id: "evaluation", label: "AI Response Evaluation", icon: ScanSearch, accent: "violet" as const },
-  { id: "annotation", label: "Data Annotation & HITL", icon: Tags, accent: "blue" as const },
-  { id: "rubric", label: "Rubric-Based Evaluation", icon: ListChecks, accent: "magenta" as const },
-  { id: "hallucination", label: "Hallucination Detection", icon: ShieldAlert, accent: "violet" as const },
+  { id: "evaluation", label: "Multimodal Prompting", icon: ScanSearch, accent: "violet" as const },
+  { id: "annotation", label: "Text-to-Image", icon: Tags, accent: "blue" as const },
+  { id: "rubric", label: "Image-to-Video", icon: ListChecks, accent: "magenta" as const },
+  { id: "hallucination", label: "Voice & Sequencing", icon: ShieldAlert, accent: "violet" as const },
 ];
 
 export function AiEvaluation() {
   const [active, setActive] = useState("evaluation");
 
   return (
-    <Section id="ai-evaluation" className="border-t border-border/40">
+    <Section id="multimodal-prompting" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="AI Evaluation & Data Annotation"
+          eyebrow="Multimodal Prompt Engineering"
           title={
             <>
               A structured, evidence-based approach to{" "}
-              <span className="text-gradient">AI quality work</span>
+              <span className="text-gradient">multimodal AI production</span>
             </>
           }
           intro={aiEvaluation.intro}
@@ -146,7 +146,7 @@ function EvaluationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="font-display text-base font-semibold text-foreground">
-            What AI Response Evaluation means to me
+            What multimodal prompt engineering means to me
           </h4>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {aiEvaluation.whatItMeans}
@@ -154,7 +154,7 @@ function EvaluationPanel() {
         </div>
         <div className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            My evaluation workflow
+            My multimodal workflow
           </h4>
           <WorkflowSteps steps={aiEvaluation.workflow} />
         </div>
@@ -162,7 +162,7 @@ function EvaluationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            What I look for in AI outputs
+            What I look for in generated outputs
           </h4>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {aiEvaluation.lookFor.map((item) => (
@@ -207,13 +207,13 @@ function AnnotationPanel() {
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-6">
         <h4 className="font-display text-base font-semibold text-foreground">
-          Why annotation quality matters
+          Why text-to-image identity matters
         </h4>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {dataAnnotation.whyItMatters}
         </p>
         <h4 className="mt-6 mb-4 font-display text-base font-semibold text-foreground">
-          My annotation approach
+          My text-to-image approach
         </h4>
         <ol className="space-y-2.5">
           {dataAnnotation.approach.map((s, i) => (
@@ -228,7 +228,7 @@ function AnnotationPanel() {
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
         <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-          Human review principles
+          Text-to-image principles
         </h4>
         <div className="space-y-3">
           {dataAnnotation.principles.map((p) => (
@@ -248,18 +248,18 @@ function RubricPanel() {
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-6">
         <h4 className="font-display text-base font-semibold text-foreground">
-          Why rubrics matter
+          Why image-to-video matters
         </h4>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {rubricEvaluation.intro}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          For AI evaluation tasks, rubric thinking reduces bias toward fluent wording. A response may sound impressive but fail a key requirement. Another response may be simpler but more accurate, complete, and aligned with the prompt. The evaluator&apos;s job is to identify the difference.
+          Image-to-video is where motion is born — and where character identity, environment and continuity are most at risk. A weak motion output can break an otherwise strong visual production, so motion generation is treated as a serious production stage with its own review checkpoint.
         </p>
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
         <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-          My rubric-oriented methods
+          My image-to-video methods
         </h4>
         <div className="space-y-3">
           {rubricEvaluation.methods.map((m) => (
@@ -283,7 +283,7 @@ function HallucinationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6">
           <h4 className="font-display text-base font-semibold text-foreground">
-            What makes hallucinations dangerous
+            Why voice production matters
           </h4>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {hallucinationDetection.whyDangerous}
@@ -291,7 +291,7 @@ function HallucinationPanel() {
         </div>
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            My hallucination review process
+            My voice production & sequencing process
           </h4>
           <ol className="space-y-2.5">
             {hallucinationDetection.process.map((s, i) => (
@@ -307,7 +307,7 @@ function HallucinationPanel() {
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
         <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-          Professional techniques I apply
+          Techniques I apply
         </h4>
         <div className="space-y-3">
           {hallucinationDetection.techniques.map((t) => (
@@ -322,8 +322,8 @@ function HallucinationPanel() {
         </div>
         <div className="mt-5 rounded-xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-4">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            <span className="font-semibold text-fuchsia-200">Value for AI quality work: </span>
-            Hallucination detection improves trust. Whether the output is used for research, customer communication, content production, evaluation tasks, or training data, unsupported claims can damage reliability. My approach helps identify those risks before they become final outputs.
+            <span className="font-semibold text-fuchsia-200">Value for long-form AI content: </span>
+            Voice production and sequencing close the loop on AI-assisted film. A weak voice, mistimed line or disconnected audio track can break an otherwise strong visual production. My approach treats voice, sequencing and final review as a serious production stage — not an afterthought.
           </p>
         </div>
       </div>

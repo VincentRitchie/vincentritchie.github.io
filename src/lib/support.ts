@@ -37,8 +37,8 @@ export async function getSupportSetting() {
       data: {
         id: "1",
         ownerDisplayName: "Mr. Vincent CEO",
-        ownerEmail: process.env.CONTACT_NOTIFICATION_EMAIL ?? "vincentchimaobi.ai@gmail.com",
-        ownerWhatsapp: "https://wa.me/message/BS2I4XH5NM3CH1",
+        ownerEmail: process.env.CONTACT_NOTIFICATION_EMAIL ?? "vincentchimaobi042@gmail.com",
+        ownerWhatsapp: "",
         notifyOwnerAlways: true,
         welcomeMessage:
           "Hi, welcome. You can choose a quick question below or speak with a human representative.",
@@ -128,5 +128,5 @@ export function visitorRoutingMessage(d: RoutingDecision): string {
   if (d.assignedToType === "assistant" && d.assistantName) {
     return `An Assistant is available to help. Please leave your name, contact details, and message. Your inquiry will be forwarded to ${d.assistantName}.`;
   }
-  return "No Assistant is currently available. You can contact Mr. Vincent directly on WhatsApp or leave a message through the website.";
+  return "No Assistant is currently available. You can contact Mr. Vincent directly via email or leave a message through the website.";
 }

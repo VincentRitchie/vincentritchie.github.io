@@ -6,14 +6,14 @@ import { TerminalSquare, Sparkles, Clapperboard, CheckCircle2, ArrowRight, Light
 
 export function PromptEngineering() {
   return (
-    <Section id="prompt-engineering" className="border-t border-border/40">
+    <Section id="prompt-refinement" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Prompt Engineering & Generative AI"
+          eyebrow="Prompt Refinement & Generative AI"
           title={
             <>
-              Turning desired results into{" "}
-              <span className="text-gradient">clear, structured instructions</span>
+              Turning observed results into{" "}
+              <span className="text-gradient">clearer, refined instructions</span>
             </>
           }
           intro={promptEngineering.intro}
@@ -29,7 +29,7 @@ export function PromptEngineering() {
                   <TerminalSquare className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  How I understand prompt engineering
+                  How I understand prompt refinement
                 </h3>
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">

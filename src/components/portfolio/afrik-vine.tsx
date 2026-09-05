@@ -9,8 +9,8 @@ type AfrikVineLike = typeof defaultAfrikVine;
 
 export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikVineLike } = {}) {
   return (
-    <Section id="afrik-vine" className="border-t border-border/40">
-      {/* deep aurora backdrop exclusive to the company section */}
+    <Section id="production-approach" className="border-t border-border/40">
+      {/* deep aurora backdrop exclusive to the production approach section */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-[-10%] top-[10%] h-96 w-96 rounded-full bg-violet-700/15 blur-[120px]" />
         <div className="absolute right-[-10%] bottom-[10%] h-96 w-96 rounded-full bg-fuchsia-700/12 blur-[120px]" />
@@ -22,13 +22,13 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
           <div className="mb-10 flex items-center justify-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/5 px-4 py-1.5 text-xs font-medium text-amber-200">
               <Layers className="h-3.5 w-3.5" />
-              A professional venture within {`Obasiochie's`} portfolio
+              The working method behind Vincent Chimaobi&apos;s AI productions
             </div>
           </div>
         </Reveal>
 
         <SectionHeading
-          eyebrow="Afrik-Vine Tech LTD"
+          eyebrow="Multimodal Production Approach"
           title={afrikVine.headline}
           intro={afrikVine.intro}
           accent="violet"
@@ -43,7 +43,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
               <div className="overflow-hidden rounded-3xl border border-violet-400/30 bg-card/60 p-2 backdrop-blur-sm">
                 <img
                   src={assetPath(afrikVine.logo)}
-                  alt="Afrik-Vine Tech LTD — company logo"
+                  alt="Vincent Chimaobi — production approach portrait"
                   className="h-40 w-40 rounded-2xl object-cover sm:h-48 sm:w-48"
                   loading="lazy"
                 />
@@ -187,7 +187,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
               onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
               className="group inline-flex shrink-0 items-center gap-2 rounded-full border border-violet-400/40 bg-violet-500/10 px-5 py-2.5 text-sm font-semibold text-violet-100 transition-all hover:bg-violet-500/20"
             >
-              Afrik-Vine Inquiry
+              Discuss a Production
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
