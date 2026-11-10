@@ -3,33 +3,92 @@ set -euo pipefail
 
 # ============================================================
 # Static export build for GitHub Pages.
-# Supports BOTH project sites (username.github.io/repo-name) and
-# user/org sites (username.github.io) with automatic basePath detection.
+#
+# Supports BOTH project sites (owner.github.io/repo-name) and
+# user/org sites (owner.github.io) with automatic basePath
+# detection.
+#
+# Repository identity resolution order:
+#   1. Explicit REPO_OWNER + REPO_NAME env vars (preferred, set
+#      by the GitHub Actions workflow).
+#   2. GITHUB_REPOSITORY env var (auto-provided by GitHub Actions
+#      in the format "<owner>/<repo>") — used as a fallback.
+#
+# For a user/org site (repo name matches "<owner>.github.io",
+# case-insensitive) the production base path MUST be empty so
+# assets resolve at the domain root:
+#     https://<owner>.github.io/_next/static/...
+#
+# For an ordinary project repo the base path is "/<repo-name>":
+#     https://<owner>.github.io/<repo-name>/_next/static/...
+#
+# The script fails with a clear error if it cannot determine the
+# repository owner and name.
 # ============================================================
 
-REPO_NAME="${REPO_NAME:-}"
+# ---- 1. Resolve REPO_OWNER and REPO_NAME ----
 REPO_OWNER="${REPO_OWNER:-}"
+REPO_NAME="${REPO_NAME:-}"
 
-# Determine if this is a user/org site (username.github.io).
-# If so, BASE_PATH must be empty (served from root).
-USER_SITE_REPO=""
-if [ -n "$REPO_OWNER" ]; then
-  USER_SITE_REPO="$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]').github.io"
+if [ -z "$REPO_OWNER" ] || [ -z "$REPO_NAME" ]; then
+  # Fall back to GITHUB_REPOSITORY ("<owner>/<repo>"), which GitHub
+  # Actions automatically sets for every run.
+  if [ -n "${GITHUB_REPOSITORY:-}" ]; then
+    GR_OWNER="${GITHUB_REPOSITORY%%/*}"
+    GR_REPO="${GITHUB_REPOSITORY#*/}"
+    [ -z "$REPO_OWNER" ] && REPO_OWNER="$GR_OWNER"
+    [ -z "$REPO_NAME" ] && REPO_NAME="$GR_REPO"
+  fi
 fi
 
-BASE_PATH=""
-if [ -n "$REPO_NAME" ] && [ "$REPO_NAME" != "$USER_SITE_REPO" ]; then
-  # Ordinary project repo — use /repo-name as basePath.
-  BASE_PATH="/$REPO_NAME"
+# ---- 2. Fail clearly if we still cannot determine the repo identity ----
+if [ -z "$REPO_OWNER" ] || [ -z "$REPO_NAME" ]; then
+  echo "❌ ERROR: cannot determine repository owner and/or name." >&2
+  echo "   Set REPO_OWNER and REPO_NAME env vars, or run inside GitHub" >&2
+  echo "   Actions where GITHUB_REPOSITORY is automatically provided." >&2
+  echo "   Resolved: REPO_OWNER='${REPO_OWNER}', REPO_NAME='${REPO_NAME}'" >&2
+  exit 1
 fi
-# If REPO_NAME == USER_SITE_REPO (e.g. "vincentritchie.github.io"), BASE_PATH stays "".
 
+# ---- 3. Normalise for case-insensitive comparison ----
+# GitHub usernames and repository names are case-insensitive. A user
+# site named "VincentRitchie.github.io" must match owner "vincentritchie".
+OWNER_LC="$(echo "$REPO_OWNER" | tr '[:upper:]' '[:lower:]')"
+NAME_LC="$(echo "$REPO_NAME" | tr '[:upper:]' '[:lower:]')"
+USER_SITE_REPO="${OWNER_LC}.github.io"
+
+# ---- 4. Determine deployment type and base path ----
+DEPLOYMENT_TYPE="project-site"
+BASE_PATH="/${NAME_LC}"
+if [ "$NAME_LC" = "$USER_SITE_REPO" ]; then
+  # User/org site — served from the domain root.
+  DEPLOYMENT_TYPE="user-site"
+  BASE_PATH=""
+fi
+
+# Do NOT hardcode any owner-specific path anywhere. The value below
+# is derived purely from the resolved repo identity.
 echo "=== Static export build ==="
-echo "REPO_NAME: ${REPO_NAME:-(none)}"
-echo "REPO_OWNER: ${REPO_OWNER:-(none)}"
-echo "USER_SITE_REPO: ${USER_SITE_REPO:-(none)}"
-echo "BASE_PATH: ${BASE_PATH:-(empty — root deployment)}"
+echo "REPO_OWNER: ${REPO_OWNER}"
+echo "REPO_NAME: ${REPO_NAME}"
+echo "USER_SITE_REPO (normalised): ${USER_SITE_REPO}"
+echo "DEPLOYMENT_TYPE: ${DEPLOYMENT_TYPE}"
+if [ -z "$BASE_PATH" ]; then
+  echo "BASE_PATH: (empty — root deployment)"
+else
+  echo "BASE_PATH: ${BASE_PATH}"
+fi
 
+# Safety net: refuse to ever emit a base path that duplicates the user
+# site repo name (e.g. "/vincentritchie.github.io") — that is exactly
+# the defect this script is designed to prevent.
+if [ -n "$BASE_PATH" ] && [ "$BASE_PATH" = "/${USER_SITE_REPO}" ]; then
+  echo "❌ ERROR: resolved BASE_PATH '${BASE_PATH}' would duplicate the user-site repo name." >&2
+  echo "   This is the known broken configuration. Refusing to build." >&2
+  exit 1
+fi
+
+# ---- 5. Temporarily move server-only routes so next build can export ----
 TMP_DIR=$(mktemp -d)
 
 restore_files() {
@@ -50,21 +109,23 @@ echo "=== Temporarily moving server-only routes ==="
 if [ -f src/app/page.tsx ]; then
   cp src/app/page.tsx "$TMP_DIR/page.tsx.bak"
   sed -i 's/export const dynamic = "force-dynamic"/export const dynamic = "force-static"/' src/app/page.tsx
-  echo "  patched src/app/page.tsx"
+  echo "  patched src/app/page.tsx (force-static for export)"
 fi
 
+# ---- 6. Run the static export build ----
 export STATIC_EXPORT=true
 export NEXT_PUBLIC_STATIC_EXPORT=true
 export NEXT_PUBLIC_BASE_PATH="$BASE_PATH"
 
-echo "=== Building static site ==="
+echo "=== Building static site (next build) ==="
 npx next build
 
 touch out/.nojekyll
 
+# Privacy: never ship the CV PDF inside the public static output.
 if [ -d out/uploads/cv ]; then
   rm -rf out/uploads/cv
-  echo "  removed CV from static output (privacy)"
+  echo "  removed out/uploads/cv (privacy — Request CV flow stays server-side)"
 fi
 
 echo "=== Verify out/index.html exists ==="
