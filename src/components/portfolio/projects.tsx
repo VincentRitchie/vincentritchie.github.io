@@ -12,14 +12,14 @@ export function Projects({ projects = defaultProjects }: { projects?: ProjectIte
     <Section id="generative-ai-work" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Generative AI Work & Productions"
+          eyebrow="Selected Work"
           title={
             <>
-              Generative AI work reflecting multimodal production{" "}
-              <span className="text-gradient">&amp; long-form storytelling</span>
+              Confirmed work across AI production{" "}
+              <span className="text-gradient">&amp; AI training data</span>
             </>
           }
-          intro="This section presents confirmed generative AI work — AI-powered YouTube content, Nollywood-style AI films, character consistency techniques, multimodal production, and content research and quality review experience. Each card reflects real production work rather than placeholder case studies."
+          intro="This section presents confirmed work — AI Nollywood-style faceless film channels, AI true-crime reconstruction production, AI 3D documentary production, robot-arm video annotation at Turing, and CVAT image annotation and video tracking practice. Each card reflects real production or annotation work rather than placeholder case studies."
           accent="magenta"
         />
 

@@ -12,12 +12,12 @@ import {
 import { sendContactNotification } from "@/lib/email";
 
 const VALID_INQUIRY_TYPES = [
-  "AI Evaluation / AI Training Role",
-  "Prompt Engineering Project",
-  "Data Annotation Opportunity",
-  "Web Development Project",
-  "Afrik-Vine Tech LTD Inquiry",
-  "Security Research Discussion",
+  "Multimodal Prompt Engineering",
+  "AI Video Production",
+  "Video Annotation",
+  "Generative AI Content",
+  "Content Writing & Research",
+  "Digital Content Quality",
   "General Professional Contact",
 ];
 

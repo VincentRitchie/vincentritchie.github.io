@@ -2,8 +2,8 @@
  * Portfolio content repository for Vincent Chimaobi Obasiochie.
  * Source of truth for public copy.
  *
- * Identity: Multimodal Prompt Engineer · Generative AI Content Creation ·
- * AI Video Production · Creative Direction · Content Quality.
+ * Identity: Multimodal Prompt Engineer · AI Video Producer ·
+ * Video Annotation Specialist · Content Quality.
  *
  * NOTE: This file is the single source of truth for public copy. All personal
  * narrative uses first-person voice. The CV is the factual authority — no
@@ -17,18 +17,18 @@ export const profile = {
   heroName: "VINCENT CHIMAOBI",
   shortName: "VINCENT",
   initials: "VCO",
-  role: "Multimodal Prompt Engineer",
+  role: "Multimodal Prompt Engineer | AI Video Producer | Video Annotation Specialist",
   location: "Abuja, Nigeria",
   tagline:
-    "Multimodal Prompt Engineering · Generative AI Content · AI Video Production · Creative Direction · Content Quality",
+    "Multimodal Prompt Engineering · AI Video Production · Video Annotation · Content Quality",
   heroHeadline:
-    "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, and Creative Direction",
+    "Multimodal Prompt Engineering, AI Video Production, and Video Annotation for AI Training",
   heroIntro:
-    "I work with generative AI across text, image and video, using structured prompting, repeated refinement and careful visual control to turn creative ideas into long-form content. My work focuses strongly on character identity, facial appearance, environments, scene continuity, visual direction and consistent storytelling across generated scenes.",
+    "I work with generative AI across text, image and video production, and I annotate and evaluate visual content for AI training. My work combines structured prompting, careful visual review, character consistency and quality control across long-form productions.",
   shortBio:
-    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
+    "I am a Multimodal Prompt Engineer, AI Video Producer and Video Annotation Specialist based in Abuja, Nigeria. I work with generative AI across text, image and video production, and I annotate and evaluate visual content for AI training — combining structured prompting, careful visual review, character consistency and quality control across long-form productions.",
   longBio:
-    "Across AI-assisted film and content production, I plan scenes and visual requirements before generation, keep useful references, review outputs critically and correct inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage. My background in content writing, research and digital content review also strengthens how I approach AI-generated work.",
+    "Across AI-assisted film, documentary and annotation work, I plan scenes and visual requirements before generation, keep useful references, review outputs critically and correct inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage. My background in content research and digital content review also strengthens how I approach annotation, evaluation and AI-generated work.",
   // Professional photographs — profile-main.jpeg is the official header avatar.
   profileImage: "/images/profile-main.jpeg",
   avatar: "/images/profile-main.jpeg",
@@ -41,12 +41,13 @@ export const profile = {
     "/images/me_img5.jpeg",
   ],
   // CV-aligned contact — WhatsApp, X/Twitter, GitHub removed (not in CV).
-  whatsapp: "",
+  whatsapp: null as string | null,
   email: "vincentchimaobi042@gmail.com",
+  email2: "sekretv.contact@gmail.com",
   publicEmail: "vincentchimaobi042@gmail.com",
   phone: "09068254110",
-  twitter: "",
-  github: "",
+  twitter: null as string | null,
+  github: null as string | null,
   linkedin: "https://www.linkedin.com/in/vincent-chimaobi042/",
 };
 
@@ -56,41 +57,41 @@ export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Expertise", href: "#expertise" },
-  { label: "Multimodal Prompting", href: "#multimodal-prompting" },
-  { label: "Prompt Refinement", href: "#prompt-refinement" },
-  { label: "Character Consistency", href: "#character-consistency" },
-  { label: "Quality Control", href: "#quality-control" },
+  { label: "Video Annotation", href: "#multimodal-prompting" },
+  { label: "Multimodal Prompting", href: "#prompt-refinement" },
+  { label: "CV Annotation", href: "#character-consistency" },
+  { label: "Annotation QA", href: "#quality-control" },
   { label: "Experience", href: "#experience" },
-  { label: "Generative AI Work", href: "#generative-ai-work" },
+  { label: "Selected Work", href: "#generative-ai-work" },
   { label: "Production Approach", href: "#production-approach" },
   { label: "Articles", href: "#articles" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const selectedHighlights: string[] = [
-  "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views through structured prompting, repeated refinement and careful visual control.",
-  "Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
-  "Practical experience maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.",
-  "Multimodal workflow spanning text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
-  "Background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) that strengthens how I plan, evaluate and refine AI-generated work.",
-  "Ongoing exploration of prompting techniques for stronger character identity, scene continuity and long-form storytelling.",
+  "Built and managed AI-powered YouTube channels with 29,000+ subscribers and 13.5 million+ combined views through structured prompting, repeated refinement and careful visual control.",
+  "Produced more than 20 complete Nollywood-style AI films — original Nigerian stories carried from script and storyboard through generation, voice production and final assembly.",
+  "Annotate short robot-arm task videos for AI training data at Turing, producing four structured deliverables per clip: intent caption, atomic subtask list, final summary and outcome rating.",
+  "Applied CVAT Academy's annotation curriculum through structured, project-based exercises — multi-instance bounding boxes, polygons, segmentation masks and video tracking.",
+  "Practical experience maintaining character recognisability, clothing, locations, backgrounds and visual cues across long-form generated productions.",
+  "Background in investigative research, search quality evaluation and digital content review that strengthens how I plan, evaluate and refine AI-generated work.",
 ];
 
 /* ---------- About ---------- */
 export const about = {
-  headline: "Multimodal Prompt Engineering for Generative AI Content & AI Video Production",
+  headline: "Multimodal Prompt Engineering, AI Video Production & Video Annotation",
   intro:
-    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
+    "I am a Multimodal Prompt Engineer, AI Video Producer and Video Annotation Specialist based in Abuja, Nigeria. I work with generative AI across text, image and video production, and I annotate and evaluate visual content for AI training — combining structured prompting, careful visual review, character consistency and quality control across long-form productions.",
   aboutMe: [
-    "My professional path combines generative AI content creation, AI video production, content writing, research and digital content quality review. In practice, these areas share the same foundation: careful planning before generation, useful references, critical review of outputs, and correction of inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage.",
-    "I have built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, created more than 20 Nollywood-style AI films, and worked on long-form character-driven storytelling. My background in content writing, research and digital content review also strengthens how I approach AI-generated work — I read requirements carefully, separate evidence from assumption, identify weak reasoning, and communicate findings in a structured and practical way.",
+    "My professional path combines AI film and documentary production, video annotation for AI training, computer vision image annotation, and digital content quality review. In practice, these areas share the same foundation: careful planning before generation, useful references, critical review of outputs, and correction of inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage.",
+    "I have built and managed AI-powered YouTube channels with 29,000+ subscribers and 13.5 million+ combined views, and produced more than 20 complete Nollywood-style AI films. As an LLM Trainer at Turing I annotate robot-arm task videos for AI training data, and I practise computer vision image annotation and video tracking with CVAT. My background in research and digital content review also strengthens how I approach this work — I read requirements carefully, separate evidence from assumption, identify weak reasoning, and communicate findings in a structured and practical way.",
   ],
   howIWork: [
     "My work begins with planning. Before generating any scene, I plan the story, characters, settings, visual cues and overall creative direction. I keep useful references so that each generated scene can be checked against the intended look, tone and continuity rather than accepted on first impression.",
-    "From there, I work in stages — text-to-image, image-to-video, voice production, sequencing and review. I review outputs critically, identify inconsistencies in character identity, facial appearance, clothing, environments or backgrounds, and correct them before moving forward. This reduces unnecessary retries and helps maintain stronger continuity across long-form content.",
+    "From there, I work in stages — research, story development, scriptwriting, scene planning, structured prompting, visual reference preparation, AI generation, continuity review, voice production, sequencing and final assembly. I review outputs critically, identify inconsistencies in character identity, clothing, environments or backgrounds, and correct them before moving forward. The same discipline shapes my annotation work: review in full before writing, document accurately, and grade against clear criteria.",
   ],
   professionalDirection:
-    "My long-term direction is to keep building strong, character-consistent, long-form AI content — Nollywood-style films, story-driven video and multimodal productions — while refining my prompting techniques across text, image and video. I am especially interested in work where creative direction, character identity and scene continuity matter, and where my background in content writing, research and quality review strengthens the final output.",
+    "My long-term direction is to keep building strong, character-consistent, long-form AI content — Nollywood-style films, story-driven video and multimodal productions — while deepening my annotation and evaluation practice for AI training data. I am especially interested in work where visual review, character identity, scene continuity and guideline compliance matter, and where my background in research and quality review strengthens the final output.",
   differentiators: [
     {
       title: "Plan before generation",
@@ -105,158 +106,157 @@ export const about = {
       body: "I review outputs critically and correct inconsistencies in characters, environments, locations or backgrounds before moving forward.",
     },
     {
+      title: "Annotation discipline",
+      body: "I apply the same care to AI training data — full review before writing, accurate documentation of objects, errors and outcomes, and self-audits against guidelines.",
+    },
+    {
       title: "Multimodal control",
       body: "I work across text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
     },
-    {
-      title: "Story-driven refinement",
-      body: "I treat prompting as a story tool — every scene serves the narrative, tone and emotional direction of the long-form content.",
-    },
   ],
   brandStatement:
-    "I build my work around structured prompting, repeated refinement and careful visual control. I want every visitor to this portfolio to understand not just what I do, but how I think: plan before generation, keep useful references, review outputs critically, correct inconsistencies early, and maintain character identity, scene continuity and visual direction across long-form AI content.",
+    "I build my work around structured prompting, careful visual review and quality control. I want every visitor to this portfolio to understand not just what I do, but how I think: plan before generation, keep useful references, review outputs critically, correct inconsistencies early, and maintain character identity, scene continuity and visual direction across long-form AI content.",
 };
 
 /* ---------- Expertise overview ---------- */
 export const expertiseCards = [
-  { title: "Multimodal Prompt Engineering", icon: "Sparkles", accent: "violet", body: "Structured prompting across text, image and video, with close control of requirements, visual direction and generated results.", href: "#multimodal-prompting" },
-  { title: "Generative AI Content Creation", icon: "Clapperboard", accent: "magenta", body: "Development of AI-assisted story and visual content from initial concept through final review.", href: "#multimodal-prompting" },
-  { title: "AI Video Production", icon: "Clapperboard", accent: "blue", body: "Long-form video production using story development, scripting, image generation, video generation, voice production, sequencing and review.", href: "#prompt-refinement" },
-  { title: "AI Creative Direction", icon: "Compass", accent: "violet", body: "Planning characters, settings, scenes, visual cues and overall creative direction before and during generation.", href: "#production-approach" },
-  { title: "Character Identity & Facial Consistency", icon: "Users", accent: "magenta", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement.", href: "#character-consistency" },
-  { title: "Scene & Environment Continuity", icon: "Layers", accent: "blue", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across generated scenes.", href: "#character-consistency" },
-  { title: "Story Development & Scriptwriting", icon: "FileText", accent: "violet", body: "Developing story-based content, scripts and narrative direction for long-form AI productions.", href: "#production-approach" },
-  { title: "Content Research & Quality Control", icon: "ScanSearch", accent: "magenta", body: "Research, critical reading, organised information gathering and manual review for accuracy, meaning and quality.", href: "#quality-control" },
-  { title: "Model Stumping & Prompt Stress Testing", icon: "ShieldAlert", accent: "blue", body: "Testing difficult instructions and model behaviour to identify weaknesses, inconsistency or failure under demanding prompts.", href: "#quality-control" },
-  { title: "Prompt Refinement & Production Planning", icon: "Lightbulb", accent: "violet", body: "Improving prompts from observed results and defining scenes or production requirements clearly before generation.", href: "#prompt-refinement" },
+  { title: "Video Annotation & Frame-Level Review", icon: "ListChecks", accent: "violet", body: "Structured video annotation with intent captions, atomic subtasks, execution-error documentation and outcome ratings for AI training data.", href: "#multimodal-prompting" },
+  { title: "Computer Vision Image Annotation & Instance Segmentation", icon: "Tags", accent: "magenta", body: "Multi-instance annotation using bounding boxes, polygons, segmentation masks and brush-based editing in CVAT.", href: "#character-consistency" },
+  { title: "Shot-Level Visual Analysis & Scene Continuity", icon: "Eye", accent: "blue", body: "Frame-level review of character identity, composition, environment, continuity and track alignment across scenes.", href: "#character-consistency" },
+  { title: "AI Video Editing & Production", icon: "Clapperboard", accent: "violet", body: "Long-form video production from story development through scripting, generation, sequencing and final assembly.", href: "#prompt-refinement" },
+  { title: "Multimodal Prompt Engineering & Video Generation", icon: "Sparkles", accent: "magenta", body: "Structured prompting across text, image and video generation with reusable production templates.", href: "#prompt-refinement" },
+  { title: "Annotation Quality Assurance & Guideline Compliance", icon: "ShieldCheck", accent: "blue", body: "Quality checks for missed objects, incorrect classes, merged objects, duplicates and boundary inaccuracies.", href: "#quality-control" },
+  { title: "Investigative Documentary Research & Content Evaluation", icon: "ScanSearch", accent: "violet", body: "Research-first production with fact-checked information, multiple firsthand accounts and evidence-supported assessment.", href: "#production-approach" },
 ];
 
 export const expertiseIntegration =
-  "My multimodal prompting work controls how text, image and video outputs are produced. My character consistency practice keeps recognisability strong across long-form content. My scene and environment continuity work holds locations, backgrounds and visual cues together across scenes. My story development and scriptwriting turn ideas into structured narrative direction. My prompt refinement improves outputs from observed results. My content research and quality control background strengthens how I review, evaluate and correct AI-generated work. Together, these areas form a practical professional profile for multimodal prompt engineering, generative AI content and AI video production.";
+  "My video annotation work produces structured training data — intent captions, atomic subtasks, error documentation and outcome ratings. My computer vision annotation practice covers bounding boxes, polygons, segmentation masks and brush-based editing in CVAT. My shot-level visual analysis keeps character identity, composition and continuity strong across long-form content. My AI video production turns research and scripts into finished films, and my multimodal prompt engineering drives every generative stage with reusable templates. My annotation quality assurance catches missed objects, wrong classes, merged objects, duplicates and boundary inaccuracies. Together, these areas form a practical professional profile for multimodal prompt engineering, AI video production and video annotation.";
 
-/* ---------- Multimodal Prompting (was AI Evaluation) ----------
+/* ---------- Video Annotation (was AI Evaluation) ----------
  * Export names kept stable so existing component imports keep working.
- * Content is fully replaced with multimodal-prompting material.
+ * Content covers the Turing robot-arm video annotation workflow.
  */
 export const aiEvaluation = {
-  headline: "Multimodal Prompt Engineering Across Text, Image and Video",
+  headline: "Robot-Arm Video Annotation for AI Training Data",
   intro:
-    "Multimodal prompt engineering is the structured practice of guiding generative AI across text, image and video in one production process. My approach focuses on clear objectives, careful context, repeated refinement and close control of visual direction, character identity and scene continuity.",
+    "As an LLM Trainer – Video Annotation Specialist at Turing, I annotate short robot-arm task videos for AI training data, producing four structured deliverables per clip: intent caption, atomic subtask list, final summary and outcome rating. My approach focuses on full review before writing, accurate documentation and guideline compliance.",
   whatItMeans:
-    "Multimodal prompting is not writing a single instruction and accepting the first result. It is the disciplined process of defining the creative objective, preparing references and constraints, generating the first output with the appropriate tool, reviewing the result critically, and refining prompts, assets or direction until the output meets the intended standard. A polished output can still miss the brief, break character identity, drift in environment or fail continuity — my role is to catch and correct those issues before they become final content.",
+    "Robot-arm video annotation is not watching a clip once and describing it loosely. It is the disciplined process of reviewing each clip in full before writing anything, recording exactly what is present — objects, counts, colours, starting positions, gripper type and final state — and then separating what the robot intended to do from what it actually did. Every missed grasp, slip, drop, retry and pause matters. Every clip is graded against defined outcome criteria and checked against detailed guidelines for word limits, voice, tense and punctuation before submission.",
   workflow: [
-    { step: "Clarify the creative objective", body: "Identify the story, tone, characters, setting, visual cues and the intended emotional effect before any generation begins." },
-    { step: "Prepare references and constraints", body: "Collect useful references for character identity, clothing, environments, locations and backgrounds so each output can be checked against intent." },
-    { step: "Generate the first output", body: "Use the appropriate generative stage — text-to-image, image-to-video, voice production — with a prompt aligned to the objective." },
-    { step: "Review critically", body: "Check coherence, realism, character recognisability, facial appearance, clothing, environment continuity, narrative alignment and audience suitability." },
-    { step: "Refine and correct", body: "Adjust prompts, references or direction to address weaknesses, inconsistencies or failures identified during review." },
-    { step: "Finalise only when ready", body: "Accept the output only after it meets the intended quality standard and supports the long-form story direction." },
+    { step: "Review the clip in full", body: "Watch the complete clip before writing anything, so the description reflects the whole task rather than a first impression." },
+    { step: "Record the scene accurately", body: "Document objects, counts, colours, starting positions, gripper type and the final state of the task." },
+    { step: "Separate intent from execution", body: "Distinguish the robot's intended goal from its actual execution, so training data reflects what really happened." },
+    { step: "Document execution errors", body: "Record missed grasps, slips, drops, retries and pauses accurately, without speculation." },
+    { step: "Distinguish movement types", body: "Separate camera movement from robot movement so the description never confuses the two." },
+    { step: "Grade and self-audit", body: "Grade the outcome as Success, Partial or Fail, apply the guideline checks, complete a self-audit and document ambiguous details in reviewer notes." },
   ],
   lookFor: [
-    { label: "Character recognisability", body: "Does the generated character remain identifiable across scenes through facial characteristics, clothing and visual cues?" },
-    { label: "Facial appearance", body: "Is the face consistent with the intended identity, without unintended drift between scenes?" },
-    { label: "Clothing and styling", body: "Does the wardrobe, accessories and styling remain coherent with the story and the character?" },
-    { label: "Environment continuity", body: "Are locations, backgrounds, settings, objects and lighting consistent with the established scene?" },
-    { label: "Narrative alignment", body: "Does the output serve the story, tone and intended emotional effect?" },
-    { label: "Realism and artifacts", body: "Is the output free of obvious AI artifacts, distortion, morphing or implausible motion?" },
-    { label: "Audience suitability", body: "Is the content appropriate for the intended audience and platform?" },
-    { label: "Production fit", body: "Does the output integrate cleanly into the longer sequence, voice track and final edit?" },
+    { label: "Objects and counts", body: "Are all objects present in the clip recorded with correct counts, colours and starting positions?" },
+    { label: "Gripper type and final state", body: "Is the gripper type identified and the final state of the task documented precisely?" },
+    { label: "Intent versus execution", body: "Is the robot's intended goal clearly separated from what it actually did?" },
+    { label: "Execution errors", body: "Are missed grasps, slips, drops, retries and pauses recorded accurately and completely?" },
+    { label: "Camera vs robot movement", body: "Is camera movement clearly distinguished from robot movement throughout the description?" },
+    { label: "Outcome rating", body: "Is the clip graded as Success, Partial or Fail according to the defined criteria?" },
+    { label: "Guideline compliance", body: "Does every deliverable follow the guidelines for word limits, voice, tense and punctuation?" },
+    { label: "Reviewer notes", body: "Are ambiguous details documented in reviewer notes instead of guessed at?" },
   ],
   professionalValue:
-    "Good multimodal prompting improves the reliability of long-form AI content. It helps reduce unnecessary retries, keeps character identity stable, holds environments and backgrounds together, and produces scenes that fit the story. My value is in bringing careful planning, critical review and structured refinement to that process — not just generating outputs, but explaining why an output works, where it fails, and what needs to change.",
+    "Good robot-arm video annotation produces training data that models can actually learn from. It requires watching carefully, describing exactly what happened, separating intention from execution, and grading consistently against criteria. My value is in bringing that discipline to every clip — reviewing in full before writing, documenting errors precisely, and completing self-audits so that ambiguous details are flagged rather than silently resolved.",
   relatedExperience:
-    "My multimodal prompting experience includes building and managing AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, and creating more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
+    "I currently work as an LLM Trainer – Video Annotation Specialist at Turing (remote), annotating short robot-arm task videos for AI training data. Each clip produces four structured deliverables: an intent caption, an atomic subtask list, a final summary and an outcome rating. I review each clip in full before writing, record objects, counts, colours, starting positions, gripper type and final state, separate the robot's intended goal from its actual execution, document missed grasps, slips, drops, retries and pauses, distinguish camera movement from robot movement, and complete self-audits with reviewer notes for ambiguous details.",
 };
 
-/* Text-to-image focus (replaces Data Annotation export shape) */
+/* Intent captions & atomic subtasks (replaces Data Annotation export shape) */
 export const dataAnnotation = {
-  headline: "Text-to-Image Generation with Character and Visual Control",
+  headline: "Intent Captions & Atomic Subtask Lists",
   intro:
-    "Text-to-image generation is where the visual identity of a production is first established. My approach focuses on defining characters, settings, clothing, lighting and visual cues clearly before generation, and reviewing each generated image against the intended look before it is accepted.",
+    "Every robot-arm clip I annotate produces an intent caption and an atomic subtask list. The intent caption states what the robot is trying to achieve; the subtask list breaks the clip down into its smallest meaningful steps. Both deliverables follow strict guidelines for word limits, voice, tense and punctuation.",
   whyItMatters:
-    "Every later stage — image-to-video, sequencing, voice production — depends on the visual identity established at the text-to-image stage. If character identity, facial appearance, clothing, environment or background drift here, the inconsistency propagates through the whole production. That is why careful prompt design, useful references and critical review at this stage reduce unnecessary retries later and protect continuity across long-form content.",
+    "Training data lives or dies on structure. An intent caption that drifts into storytelling, or a subtask list that merges three steps into one sentence, teaches a model the wrong granularity. That is why each deliverable has its own rules — the caption stays focused on intent, the subtasks stay atomic, and the wording stays within the guideline limits for voice, tense and punctuation. Careful structure at this stage is what makes the final summary and outcome rating trustworthy.",
   approach: [
-    "Define the character identity, facial characteristics, clothing and styling before generation.",
-    "Establish the setting, environment, location, background and lighting in the prompt and references.",
-    "Specify the visual cues, mood, tone and intended emotional effect.",
-    "Generate the first image with a prompt aligned to the objective.",
-    "Review the output for character recognisability, environment continuity and artifact risk.",
-    "Refine the prompt or references and regenerate until the output meets the intended standard.",
+    "Review the entire clip before writing any deliverable.",
+    "Identify the robot's intended goal and express it as a precise intent caption.",
+    "Break the clip into its smallest meaningful actions.",
+    "Write each action as one atomic subtask with a clear verb and object.",
+    "Record objects, counts, colours, starting positions, gripper type and final state where relevant.",
+    "Check every deliverable against the guidelines for word limits, voice, tense and punctuation.",
+    "Document any ambiguous detail in reviewer notes rather than guessing.",
   ],
   principles: [
-    { label: "Identity first", body: "Character recognisability is established and protected before any environment or motion work begins." },
-    { label: "Reference discipline", body: "Useful references keep the generated output anchored to the intended look rather than drifting." },
-    { label: "Critical review", body: "Each image is reviewed against the brief — not accepted on first impression." },
-    { label: "Iterative refinement", body: "Prompts and references are revised based on observed output, not guesswork." },
-    { label: "Continuity awareness", body: "Every accepted image is checked against the longer sequence it will belong to." },
+    { label: "Full review first", body: "Nothing is written until the whole clip has been watched and understood." },
+    { label: "Atomic granularity", body: "Each subtask expresses exactly one action — no merged steps, no skipped steps." },
+    { label: "Intent focus", body: "The caption describes what the robot is trying to achieve, not editorial commentary." },
+    { label: "Guideline discipline", body: "Word limits, voice, tense and punctuation follow the project guidelines exactly." },
+    { label: "Honest ambiguity", body: "Unclear details go into reviewer notes instead of invented descriptions." },
   ],
 };
 
-/* Image-to-video focus (replaces Rubric Evaluation export shape) */
+/* Outcome ratings & execution errors (replaces Rubric Evaluation export shape) */
 export const rubricEvaluation = {
-  headline: "Image-to-Video Generation Guided by Story and Continuity",
+  headline: "Outcome Ratings & Execution-Error Documentation",
   intro:
-    "Image-to-video generation turns a static visual into motion. My approach focuses on motion quality, narrative alignment, character consistency and continuity with the surrounding scenes — not just accepting the first motion output.",
+    "Every clip ends with a graded outcome and a final summary. My approach focuses on separating what the robot intended from what it executed, recording every execution error precisely, and grading consistently as Success, Partial or Fail.",
   methods: [
-    { label: "Motion purpose", body: "Before generating motion, I identify the narrative purpose of the shot — what the audience needs to see, feel or understand — so the motion supports the story rather than distracting from it." },
-    { label: "Character stability", body: "I check that facial characteristics, clothing and posture remain consistent with the source image, without unintended morphing, distortion or identity drift during motion." },
-    { label: "Environment consistency", body: "I review the location, background, lighting and objects across the motion to ensure the scene holds together visually and matches the established environment." },
+    { label: "Success / Partial / Fail grading", body: "Each clip is graded against defined outcome criteria — a clean completion is a Success, a partially achieved goal is Partial, and a failed goal is a Fail — never a gut feeling." },
+    { label: "Execution-error documentation", body: "Missed grasps, slips, drops, retries and pauses are recorded accurately. The error record is what turns a video into usable training signal." },
+    { label: "Camera vs robot movement", body: "Camera movement is explicitly distinguished from robot movement, so a pan or zoom is never mistaken for the robot acting." },
+    { label: "Self-audits and reviewer notes", body: "After writing, I self-audit each deliverable against the guidelines and document ambiguous details in reviewer notes for the reviewer." },
   ],
 };
 
-/* Voice production focus (replaces Hallucination Detection export shape) */
+/* CVAT video tracking (replaces Hallucination Detection export shape) */
 export const hallucinationDetection = {
-  headline: "Voice Production, Sequencing and Review for Long-Form AI Content",
+  headline: "CVAT Video Tracking: Tracks, Keyframes & Interpolation",
   intro:
-    "Voice production and sequencing close the loop on AI-assisted film and long-form content. My approach focuses on voice suitability, narrative pacing, audio-visual alignment and final review before a production is considered complete.",
+    "Through CVAT Academy's curriculum, I completed video-tracking exercises using persistent object tracks, manually adjusted keyframes and interpolation. My approach focuses on track identity, bounding-box alignment and position drift across frames.",
   whyDangerous:
-    "A weak voice, mistimed line or disconnected audio track can break an otherwise strong visual production. Voice is not just an addition — it carries character, tone and emotion. If voice production is rushed, mistimed or inconsistent with the visual identity, the audience feels the disconnect even when they cannot name it. That is why voice production, sequencing and review are treated as a serious production stage, not an afterthought.",
+    "A video track that silently switches identity, or a bounding box that drifts off its object between keyframes, corrupts the whole annotation. In crowded scenes — urban intersections, roadside markets, dense pedestrian flow — a single merged or lost track can invalidate a sequence of frames. That is why I check track identity, bounding-box alignment and position drift explicitly, and adjust keyframes manually where interpolation gets it wrong, rather than trusting the interpolated result by default.",
   process: [
-    "Identify the voice direction — character, tone, accent, pacing and emotional register — that fits the story.",
-    "Produce or select voice outputs aligned to the characters and the scene.",
-    "Sequence voice against the visual track, checking alignment, pacing and emotional beat.",
-    "Review the audio-visual combination for coherence, realism and narrative alignment.",
-    "Refine voice, pacing or sequencing where the combination feels off.",
-    "Finalise only when the audio-visual production meets the intended quality standard.",
+    "Set up the annotation task in CVAT with the appropriate label schema.",
+    "Create a persistent object track for each target object.",
+    "Place and adjust keyframes manually at points of change — appearance, disappearance, occlusion or direction.",
+    "Review the interpolated positions between keyframes for alignment and drift.",
+    "Check that track identity is preserved — no merged objects, no identity switches.",
+    "Verify bounding-box alignment at boundaries and occlusions before completing the task.",
   ],
   techniques: [
-    { label: "Voice-to-character fit", body: "Each voice should match the character identity established in the visual stage." },
-    { label: "Pacing control", body: "Pacing should serve the narrative beat — not the default speed of the generator." },
-    { label: "Audio-visual alignment", body: "Voice and motion should feel connected, with natural timing and emotional register." },
-    { label: "Final review", body: "The combined output is reviewed as a single production, not as separate audio and visual pieces." },
-    { label: "Continuity across scenes", body: "Voice direction should remain consistent across scenes that share a character or setting." },
+    { label: "Persistent object tracks", body: "Each object keeps one track across the sequence, so identity survives motion and occlusion." },
+    { label: "Manual keyframe adjustment", body: "Keyframes are placed and corrected by hand where the object changes direction, gets occluded or reappears." },
+    { label: "Interpolation review", body: "Interpolated boxes between keyframes are checked for alignment and drift, not accepted by default." },
+    { label: "Track identity checks", body: "Identity swaps, merged objects and duplicate tracks are caught before submission." },
+    { label: "Boundary accuracy", body: "Boxes are verified at frame edges and partial occlusions, where drift is most common." },
   ],
 };
 
-/* ---------- Prompt Refinement (was Prompt Engineering & Generative AI) ---------- */
+/* ---------- Multimodal Prompting (was Prompt Engineering & Generative AI) ---------- */
 export const promptEngineering = {
-  headline: "Prompt Refinement: Improving Outputs from Observed Results",
+  headline: "Reusable Multimodal Prompting Workflows",
   intro:
-    "Prompt refinement is the process of improving prompts based on what a generative tool actually produces. My approach focuses on observing outputs critically, tracing weaknesses back to the prompt, and revising instructions to address the specific issue rather than changing everything blindly.",
+    "My prompt engineering is built on reusable production templates and activation directives for ChatGPT, Gemini and Claude. The same structured workflow carries a production from story development and scriptwriting through scene planning, image and video generation, voice production, sequencing and final assembly.",
   understanding:
-    "A prompt is not a one-shot instruction — it is a working document that evolves with the production. A weak prompt may leave too much room for interpretation, causing the model to drift in character identity, environment, tone or continuity. A refined prompt defines the objective, anchors the references, sets boundaries, and explains what a successful output should look like — and it improves with each generation cycle.",
+    "A prompt is not a one-shot instruction — it is part of a repeatable production system. Over more than 20 Nollywood-style AI films and long-form documentary productions, I have developed reusable production templates and activation directives that keep story development, scriptwriting and scene planning consistent from project to project. Each generative stage — text with ChatGPT, Gemini and Claude; image generation; video generation; voice production — gets structured prompts that define the objective, anchor the references, set constraints and state what a successful output looks like.",
   principles: [
-    { label: "Define the objective", body: "The prompt should state the exact creative goal — story beat, character action, environment, tone and intended emotional effect." },
-    { label: "Anchor references", body: "Useful references keep the output aligned to the intended character identity, clothing, environment and visual cues." },
-    { label: "Set constraints clearly", body: "The prompt should explain what must be included and what should be avoided — drift, distortion, unwanted style, off-brief additions." },
-    { label: "Specify output structure", body: "Where the output is structured — shot framing, character placement, scene composition — the prompt should define it explicitly." },
-    { label: "Add success criteria", body: "The prompt should make it possible to judge whether the output succeeded against the brief." },
-    { label: "Iterate from evidence", body: "Prompt refinement should respond to actual output behavior — observed drift, artifact, identity loss or continuity break — not guesswork." },
+    { label: "Reusable templates", body: "Story development, scriptwriting and scene planning run on templates I refine between productions, so each project starts structured rather than from zero." },
+    { label: "Activation directives", body: "For ChatGPT and Claude I use activation directives that set role, constraints and output format before any task-specific prompting begins." },
+    { label: "Right tool per stage", body: "ChatGPT, Gemini and Claude each handle the stages they are strongest at — and image and video generation tools are driven with equally structured prompts." },
+    { label: "Set constraints clearly", body: "Prompts state what must be included and what should be avoided — drift, distortion, off-brief additions." },
+    { label: "Specify output structure", body: "Shot framing, character placement and scene composition are defined explicitly, not left to chance." },
+    { label: "Iterate from evidence", body: "Prompt refinement responds to actual output behavior — observed drift, artifact, identity loss or continuity break — not guesswork." },
   ],
   debugWorkflow: [
-    "Review the output to identify what failed: character recognisability, facial appearance, clothing, environment, motion, narrative alignment, artifact risk.",
+    "Review the output to identify what failed: character recognisability, clothing, environment, motion, narrative alignment, artifact risk.",
     "Trace the failure back to the prompt: missing context, unclear instruction, weak references, poor output guidance.",
-    "Rewrite the prompt to correct the specific weakness rather than changing everything blindly.",
+    "Rewrite the prompt or template to correct the specific weakness rather than changing everything blindly.",
     "Run another output and compare whether the revised prompt improved the result.",
-    "Continue refinement until the prompt reliably produces the intended quality standard.",
+    "Fold what worked back into the reusable template so the next production starts stronger.",
   ],
   useCases: [
-    "Multimodal prompting across text, image and video for long-form AI productions.",
-    "Character identity and facial consistency prompts for repeated scenes.",
-    "Environment, location and background continuity prompts across scenes.",
-    "Story development and scriptwriting prompts for narrative direction.",
+    "Story development and scriptwriting for long-form AI productions.",
+    "Scene planning with reusable production templates.",
+    "Structured prompting for image and video generation stages.",
+    "Activation directives for ChatGPT and Claude.",
     "Voice production and sequencing prompts for audio-visual alignment.",
-    "Prompt stress testing and model stumping to surface weaknesses under demanding instructions.",
+    "Refining prompting techniques for realism, consistency and generation-credit efficiency.",
   ],
 };
 
@@ -265,22 +265,23 @@ export const generativeAI = {
   intro:
     "Generative AI is most useful when it is guided by clear creative goals, reviewed carefully, and integrated into a structured multimodal workflow. I use generative AI tools to develop story, characters, scenes, voice and final sequencing while maintaining critical human review at every stage.",
   experience:
-    "My generative AI work includes AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, more than 20 Nollywood-style AI films, long-form character-driven storytelling, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
-  tools: ["Text-to-Image", "Image-to-Video", "Voice Production", "Sequencing", "Critical Review"],
+    "My generative AI work includes AI-powered YouTube channels with 29,000+ subscribers and 13.5 million+ combined views, more than 20 complete Nollywood-style AI films, AI true-crime reconstruction productions, and long-form 3D-style investigative documentaries. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement — with ChatGPT, Gemini and Claude carrying the text stages, and final assembly completed in CapCut.",
+  tools: ["ChatGPT", "Gemini", "Claude", "CVAT", "CapCut"],
   workflow: [
     "Define the creative objective — story, characters, setting, tone, visual cues.",
-    "Identify the target audience and intended output format.",
-    "Prepare the prompt, references, constraints and success criteria.",
-    "Generate the first output using the appropriate generative stage.",
+    "Develop the story and write the script using reusable templates.",
+    "Plan the production scene by scene with clear visual requirements.",
+    "Prepare structured prompts and visual references for each generative stage.",
+    "Generate image and video outputs with the appropriate tool.",
     "Review the result for coherence, realism, character identity, environment continuity and narrative alignment.",
     "Refine prompts, assets or direction based on observed weaknesses.",
-    "Finalize only after the output meets the intended standard.",
+    "Produce voice, sequence the scenes and complete the final assembly in CapCut.",
   ],
   qualityReview:
     "The important part of my workflow is not simply generating content. It is the review process that comes after generation. I check whether the output is coherent, visually consistent, narratively useful and appropriate for the audience. When an output fails, I identify whether the weakness came from the prompt, the tool limitation, the reference material, or the editing process — and I correct it before moving forward.",
   stats: [
-    { value: "29,000+", label: "Subscribers across AI YouTube channels" },
-    { value: "3.5M+", label: "Combined views" },
+    { value: "29,000+", label: "Subscribers across AI channels" },
+    { value: "13.5M+", label: "Combined views" },
     { value: "20+", label: "Nollywood-style AI films" },
   ],
 };
@@ -288,131 +289,210 @@ export const generativeAI = {
 export const aiVideo = {
   headline: "AI Video Production: Story, Sequencing and Review",
   intro:
-    "AI video production combines story development, scripting, image generation, video generation, voice production, sequencing and review. My work in this area focuses on producing long-form, character-driven content where continuity, realism and narrative alignment matter.",
+    "AI video production combines story development, scriptwriting, scene planning, structured prompting, image and video generation, voice production, sequencing and final assembly. My work in this area focuses on producing long-form, character-driven content where continuity, realism and narrative alignment matter.",
   creativeDirection:
-    "AI video workflows require more than writing a prompt and accepting the first result. The process begins with a clear concept: the story, tone, setting, character direction, visual style and intended emotional effect. From there, prompts and assets are refined until the output supports the creative goal — and reviewed critically at every stage before being accepted into the final sequence.",
+    "AI video workflows require more than writing a prompt and accepting the first result. The process begins with research and a clear concept: the story, tone, setting, character direction, visual style and intended emotional effect. From there, reusable production templates carry story development, scriptwriting and scene planning; prompts and assets are refined until the output supports the creative goal; and everything is reviewed critically before being accepted into the final sequence. Final assembly is completed in CapCut.",
   qualityFactors: [
     "Narrative coherence and logical scene progression.",
-    "Character recognisability and facial consistency across scenes.",
+    "Character recognisability and consistency across scenes.",
     "Clothing, styling and visual identity continuity.",
     "Environment, location, background and lighting consistency.",
     "Realism, motion quality and avoidance of obvious AI artifacts.",
     "Voice-to-character fit and audio-visual alignment.",
-    "Audience clarity and emotional impact.",
     "Alignment between prompt, generated output and final editing direction.",
+    "Chapter-level compliance checks and final pass/fail audits.",
   ],
 };
 
-/* ---------- Character Consistency (was Web Development) ---------- */
+/* ---------- Computer Vision Image Annotation (was Web Development) ---------- */
 export const webDevelopment = {
-  headline: "Character Identity, Facial Consistency and Scene Continuity Across Generated Scenes",
+  headline: "Computer Vision Image Annotation & Instance Segmentation",
   intro:
-    "Maintaining character recognisability, facial appearance, clothing, environments, locations and backgrounds across multiple generated scenes is one of the hardest problems in long-form AI content. My approach combines structured prompting, useful references, repeated refinement and critical review at every stage.",
+    "Using CVAT as my central annotation tool, I practise multi-instance image annotation with bounding boxes, polygons, segmentation masks, brush-based masking, polygon-to-mask selection and additive/subtractive region editing — on datasets covering crowded urban intersections, roadside markets, pedestrians, vehicles and complex object interactions.",
   philosophy:
-    "Character identity is the foundation of long-form AI storytelling. If a character is not recognisable across scenes, the story breaks — no matter how strong the individual shots are. My approach treats character identity, facial consistency and scene continuity as production discipline, not luck. The goal is to make the audience see the same person in the same world across every scene, even when each scene was generated separately.",
+    "Annotation quality is a production discipline, not a drawing exercise. Every label schema, every polygon vertex and every mask boundary feeds a computer vision model, so the difference between a tight boundary and a sloppy one is the difference between usable training data and noise. My approach treats CVAT task configuration, label schema design and instance-level precision as the foundation — plan the schema before annotating, annotate each instance deliberately, and verify boundaries and occlusions before submitting.",
   process: [
-    { step: "Establish identity", body: "Define the character identity, facial characteristics, clothing, styling and visual cues before any scene generation begins." },
-    { step: "Build references", body: "Collect useful references for the character, environment, location, background and lighting so each output can be checked against intent." },
-    { step: "Generate per scene", body: "Produce each scene with a prompt anchored to the established identity and references." },
-    { step: "Review for drift", body: "Check each output for character recognisability, facial appearance, clothing, environment and background continuity." },
-    { step: "Correct inconsistencies", body: "Refine prompts or references and regenerate where drift, distortion or identity loss appears." },
-    { step: "Sequence", body: "Order the accepted scenes into a coherent sequence that respects narrative direction and continuity." },
-    { step: "Final review", body: "Review the full sequence as one production, checking continuity, pacing, tone and emotional effect end-to-end." },
+    { step: "Configure the task", body: "Set up the CVAT annotation task and custom JSON label schemas that match the dataset's classes and requirements." },
+    { step: "Plan instances", body: "Read the frame first — identify every object instance, its class and the interactions before drawing anything." },
+    { step: "Annotate multi-instance", body: "Mark each object with the right geometry: bounding boxes for extent, polygons for shape, segmentation masks for precise boundaries." },
+    { step: "Refine regions", body: "Use brush-based masking, polygon-to-mask selection and additive/subtractive region editing to correct boundaries and occlusions." },
+    { step: "Handle occlusion", body: "Decide deliberately how partially visible objects are marked — truncated, occluded or crowd — according to the schema." },
+    { step: "Quality check", body: "Review for omitted objects, incorrect classes, merged objects, duplicate annotations and boundary inaccuracies before completing the task." },
   ],
   priorities: [
-    { label: "Character recognisability", body: "The audience should see the same person across every scene." },
-    { label: "Facial consistency", body: "Facial characteristics should not drift, morph or break identity between scenes." },
-    { label: "Clothing continuity", body: "Wardrobe, accessories and styling should remain coherent with the story." },
-    { label: "Environment continuity", body: "Locations, backgrounds, settings and objects should remain consistent across scenes." },
-    { label: "Narrative alignment", body: "Each scene should serve the story, tone and intended emotional effect." },
-    { label: "Critical review", body: "Every output is reviewed against the brief — not accepted on first impression." },
-    { label: "Iterative refinement", body: "Prompts and references are revised based on observed drift, not guesswork." },
-    { label: "End-to-end continuity", body: "The full sequence is reviewed as one production, not as isolated shots." },
+    { label: "Schema fidelity", body: "Custom JSON label schemas are configured to match the dataset exactly — no improvised classes." },
+    { label: "Instance precision", body: "Every object gets its own annotation — no merged instances, no duplicates." },
+    { label: "Boundary accuracy", body: "Boxes, polygons and masks sit on the true object boundary, not an approximation." },
+    { label: "Occlusion handling", body: "Partial visibility is handled according to the schema, not ignored." },
+    { label: "Complex interactions", body: "Overlapping objects and interactions in crowded scenes are separated deliberately." },
+    { label: "Final verification", body: "Each task ends with a check for omitted objects and incorrect classes." },
+    { label: "Tool fluency", body: "Bounding boxes, polygons, masks, brush tools and track editing are applied where each fits best." },
+    { label: "Consistency across frames", body: "Annotation style stays consistent across the whole task, frame after frame." },
   ],
   serviceAreas: [
-    { title: "Character Identity & Facial Consistency", icon: "Users", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes." },
-    { title: "Scene & Environment Continuity", icon: "Layers", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across scenes — so the world stays coherent end-to-end." },
-    { title: "Wardrobe & Styling Coherence", icon: "Sparkles", body: "Keeping clothing, accessories and styling aligned with the character and story across scenes, generations and stages." },
-    { title: "Visual Direction & Tone", icon: "Compass", body: "Holding the overall creative direction, lighting, mood and visual cues consistent across the long-form production." },
+    { title: "Bounding Box Annotation", icon: "Tags", body: "Multi-instance bounding boxes for extent and position, checked for alignment and boundary accuracy." },
+    { title: "Polygon & Instance Segmentation", icon: "Layers", body: "Polygon annotation and segmentation masks for precise object boundaries, including polygon-to-mask selection." },
+    { title: "Brush-Based Masking", icon: "Sparkles", body: "Brush-based masking with additive and subtractive region editing for irregular shapes and fine boundaries." },
+    { title: "Label Schema Configuration", icon: "Code2", body: "Custom JSON label schemas configured in CVAT to match dataset classes, attributes and project requirements." },
   ],
 };
 
-/* ---------- Quality Control (was Security Research) ---------- */
+/* ---------- Annotation Quality Assurance (was Security Research) ---------- */
 export const securityResearch = {
-  headline: "Quality Control, Model Stumping and Content Review for Generative AI",
+  headline: "Annotation Quality Assurance & Guideline Compliance",
   intro:
-    "Quality control for generative AI combines content research, critical review, model stumping and prompt stress testing. My approach focuses on identifying weaknesses, inconsistencies and failures in AI outputs — and correcting them before they reach a final production or audience.",
+    "Quality assurance is the discipline behind both my annotation and my production work. My approach focuses on catching missed objects, incorrect classes, merged objects, duplicate annotations and boundary inaccuracies — plus track identity, position drift, camera-versus-subject movement and guideline compliance.",
   philosophy:
-    "Quality control is not a final checkbox. It is a discipline that runs through every stage of a generative AI production. I plan before generation, keep useful references, review outputs critically, identify where a model fails under demanding prompts, and correct inconsistencies before moving forward. My background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) shapes how I approach this work.",
+    "Quality control is not a final checkbox. It is a discipline that runs through every stage of annotation and production. I review each clip in full before writing, check track identity and bounding-box alignment in video tracking, verify classes and boundaries in image annotation, and audit my own deliverables against the guidelines before submission. My background in digital content review (TELUS Digital, Remotasks) shapes how I approach this work — thousands of items reviewed taught me that consistency comes from applying the same checks every single time.",
   methodology: [
-    { step: "Define the standard", body: "Clarify what a successful output looks like — character identity, environment, narrative alignment, realism, audience suitability — before any review." },
-    { step: "Review critically", body: "Inspect each output against the standard: character recognisability, facial appearance, clothing, environment, background, motion, narrative alignment, artifact risk." },
-    { step: "Identify weaknesses", body: "Look for drift, distortion, identity loss, environment breaks, unsupported claims, weak reasoning, ambiguity, overconfidence or inconsistency." },
-    { step: "Stress-test prompts", body: "Probe the model with difficult, ambiguous or demanding instructions to surface where it fails, hallucinates or produces inconsistent behaviour." },
-    { step: "Trace the cause", body: "Identify whether the weakness came from the prompt, the reference, the tool limitation or the editing process." },
-    { step: "Correct and refine", body: "Revise the prompt, references or direction to address the specific weakness rather than changing everything blindly." },
-    { step: "Final review", body: "Review the corrected output against the standard and the longer sequence it belongs to." },
-    { step: "Document learnings", body: "Capture what failed and what worked so future productions benefit from the refinement." },
+    { step: "Know the guidelines", body: "Word limits, voice, tense, punctuation, class definitions and rating criteria are internalised before any work begins." },
+    { step: "Review in full", body: "Nothing is annotated or written until the clip, frame or content item has been reviewed completely." },
+    { step: "Check completeness", body: "Look for omitted objects, missed steps, skipped frames and missing deliverables." },
+    { step: "Check correctness", body: "Verify classes, labels, track identity and ratings against the defined criteria." },
+    { step: "Check for structural errors", body: "Catch merged objects, duplicate annotations, identity switches and boundary inaccuracies." },
+    { step: "Check movement and drift", body: "Distinguish camera movement from subject movement, and check position drift between keyframes." },
+    { step: "Self-audit", body: "Audit my own work against the guidelines and fix findings before submission." },
+    { step: "Document ambiguity", body: "Record ambiguous details in reviewer notes so the reviewer sees exactly what was uncertain." },
   ],
   interestAreas: [
-    "Character identity drift across scenes.",
-    "Facial appearance and morphing artifacts.",
-    "Environment, location and background inconsistency.",
-    "Hallucinated or unsupported claims in text generation.",
-    "Model behaviour under ambiguous, conflicting or demanding instructions.",
-    "Continuity breaks across long-form sequences.",
-    "Voice-to-character fit and audio-visual alignment.",
-    "Audience suitability, accuracy and quality of final outputs.",
+    "Missed-object detection in dense scenes.",
+    "Incorrect class labelling.",
+    "Merged objects and duplicate annotations.",
+    "Boundary inaccuracies in boxes, polygons and masks.",
+    "Track identity and identity switches in video tracking.",
+    "Position drift between keyframes.",
+    "Camera movement versus subject movement.",
+    "Guideline compliance and outcome-rating consistency.",
   ],
   reportingStyle:
-    "My reporting style focuses on clarity and usefulness: what the weakness is, where it appears, why it matters, what evidence supports the finding, how it can be reproduced, and what correction or refinement is recommended. The goal is always to make the next output stronger, not just to flag the current one as weak.",
+    "My reporting style focuses on clarity and usefulness: what the issue is, where it appears, why it matters, what evidence supports the finding, and what correction is recommended. In annotation work this shows up as precise reviewer notes; in production work it shows up as chapter-level compliance checks and final pass/fail audits. The goal is always to make the next output stronger, not just to flag the current one as weak.",
   publicNote:
-    "I can discuss my general methodology, quality-control principles, model stumping approach, prompt stress testing, and review process. I do not expose confidential client content, private productions, internal review data or unpublished assets unless explicitly authorized.",
+    "I can discuss my general annotation methodology, quality-assurance principles, CVAT practice and review process. I do not expose confidential client content, private productions, internal review data or unpublished assets unless explicitly authorized.",
 };
 
 /* ---------- Experience ---------- */
 export const experience = [
   {
-    role: "Generative AI Content Creator & AI Video Producer",
+    role: "Computer Vision Image Annotation & Video Tracking",
+    org: "CVAT Academy Curriculum & Independent Practice",
+    type: "Remote",
+    period: "Nov 2026 – Present",
+    badge: "Independent Practice",
+    summary:
+      "Applied CVAT Academy's annotation curriculum through structured, project-based exercises involving multi-object image datasets, crowded urban intersections, roadside markets, pedestrians, vehicles and complex object interactions. This is independent practice, not employment.",
+    points: [
+      "Configured CVAT annotation tasks and custom JSON label schemas.",
+      "Executed multi-instance annotation using bounding boxes, polygons and segmentation masks.",
+      "Applied brush-based masking, polygon-to-mask selection and additive/subtractive region editing.",
+      "Completed CVAT video-tracking exercises using persistent object tracks, manually adjusted keyframes and interpolation.",
+      "Checked track identity, bounding-box alignment and position drift.",
+      "Performed quality checks for omitted objects, incorrect classes, merged objects, duplicate annotations and boundary inaccuracies.",
+    ],
+    methods: [],
+  },
+  {
+    role: "LLM Trainer – Video Annotation Specialist",
+    org: "Turing",
+    type: "Remote",
+    period: "Oct 2026 – Present",
+    summary:
+      "Annotate short robot-arm task videos for AI training data, producing four structured deliverables per clip: intent caption, atomic subtask list, final summary and outcome rating.",
+    points: [
+      "Review each clip in full before writing, recording objects, counts, colours, starting positions, gripper type and final state.",
+      "Separate the robot's intended goal from its actual execution.",
+      "Record missed grasps, slips, drops, retries and pauses accurately.",
+      "Distinguish camera movement from robot movement.",
+      "Grade outcomes as Success, Partial or Fail.",
+      "Apply detailed guidelines for word limits, voice, tense and punctuation.",
+      "Complete self-audits and document ambiguous details in reviewer notes.",
+    ],
+    methods: [],
+  },
+  {
+    role: "Co-Founder & Creator, AI Nollywood-Style Faceless Film Channels",
+    org: "Self-Owned",
+    type: "Remote",
+    period: "Oct 2023 – Present",
+    summary:
+      "Created, owned and operated AI-powered YouTube channels with 29,000+ subscribers and 13.5 million+ combined views, producing more than 20 complete Nollywood-style AI films.",
+    points: [
+      "Developed original Nigerian stories, scripts and storyboards.",
+      "Planned films scene by scene using reusable production templates.",
+      "Maintained character recognisability through facial characteristics, clothing, settings and visual cues.",
+      "Maintained location, background and storyline continuity.",
+      "Managed voice production, scene sequencing and final assembly.",
+      "Used multiple generative AI tools according to each production stage.",
+      "Refined prompting techniques to improve realism, consistency and generation-credit efficiency.",
+    ],
+    methods: [],
+  },
+  {
+    role: "Search Quality Evaluator",
+    org: "OneForma",
+    type: "Remote",
+    period: "Mar 2026 – Aug 2026",
+    summary:
+      "Interpreted map-search queries and evaluated search-result relevance using geographic context, location terms, distance and prominence.",
+    points: [
+      "Distinguished business, category, navigational, address and other query types.",
+      "Examined place names, business categories, addresses and map-pin positioning.",
+      "Used authoritative sources to verify details and identify discrepancies.",
+      "Applied separate relevance and data-accuracy criteria.",
+      "Produced guideline-based, evidence-supported assessments.",
+    ],
+    methods: [],
+  },
+  {
+    role: "AI True-Crime Reconstruction Producer",
+    org: "Freelance, Contract Basis",
+    type: "Remote",
+    period: "Nov 2025 – Aug 2026",
+    badge: "NDA",
+    note: "Confidential work produced under NDA — case details, scripts and generated assets are not shared publicly.",
+    summary:
+      "Produced AI-reconstructed true-crime videos for documented cases without usable original footage, under NDA.",
+    points: [
+      "Researched documented cases before production and established factual chronology.",
+      "Converted verified narration into scene-by-scene visual reconstructions.",
+      "Recreated appropriate camera perspectives including body-worn views, night-vision CCTV and dashboard-camera perspectives.",
+      "Developed reusable production templates and activation directives for ChatGPT and Claude.",
+      "Aligned every generated scene with its corresponding script line.",
+      "Maintained recurring character, clothing, building and object consistency.",
+      "Applied chapter-level compliance checks and final pass/fail audits.",
+    ],
+    methods: [],
+  },
+  {
+    role: "AI 3D Documentary Video Producer",
     org: "Independent Content Production",
     type: "Remote",
-    period: "Oct 2023 — Present",
+    period: "Jan 2024 – Oct 2025",
     summary:
-      "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views. Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+      "Produced long-form investigative documentary videos from research and reference analysis through final publication-ready assembly.",
     points: [
-      "AI-powered YouTube channels with 29,000+ subscribers and 3.5M+ combined views.",
-      "20+ Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
-      "Character recognisability, facial characteristics, clothing, settings, visual cues maintained across long story-based productions.",
-      "Scene consistency, creative refinement and ongoing exploration of prompting techniques.",
+      "Analysed reference videos to understand production methods, pacing and editorial direction.",
+      "Developed research-to-script pipelines using multiple firsthand accounts.",
+      "Wrote structured, multi-chapter investigative scripts.",
+      "Directed narration production using text-to-speech workflows.",
+      "Used still-to-video generation workflows to maintain a consistent 3D CGI documentary style.",
+      "Maintained character, clothing and object consistency across multi-chapter productions.",
+      "Produced animated chapter title cards, route maps and visual explanations.",
+      "Completed final video assembly in CapCut.",
     ],
     methods: [],
   },
   {
-    role: "Content Writer & Research Assistant",
-    org: "Upwork",
-    type: "Remote",
-    period: "Dec 2020 — Present",
-    summary:
-      "Supported more than 20 clients with writing, research, editing and digital content development. Applied generative-AI-assisted drafting and editing alongside manual accuracy and quality review.",
-    points: [
-      "20+ clients supported with writing, research, editing and digital content development.",
-      "Generative-AI-assisted drafting and editing integrated into content workflows.",
-      "Manual accuracy and quality review applied to every delivered piece.",
-    ],
-    methods: [],
-  },
-  {
-    role: "Digital Content Quality & Research Work",
+    role: "Digital Content Quality & Research Specialist",
     org: "TELUS Digital",
     type: "Remote",
-    period: "Mar 2022 — Dec 2023",
+    period: "Jun 2022 – Dec 2023",
     summary:
-      "Worked on large-scale digital content assignments involving thousands of content items. Applied research, detailed instructions and consistent judgement, including detection of ambiguity, conflicting information and unsupported information.",
+      "Evaluated thousands of digital content items for relevance, clarity, factual consistency and completeness.",
     points: [
-      "Large-scale digital content assignments involving thousands of content items.",
-      "Research, detailed instructions and consistent judgement applied across assignments.",
-      "Detection of ambiguity, conflicting information and unsupported information.",
-      "Quality control across a high volume of reviewed content.",
+      "Researched unclear information and weighed available evidence.",
+      "Identified ambiguous, conflicting, incomplete and unsupported information.",
+      "Applied changing project instructions consistently across high-volume workflows.",
+      "Documented quality issues clearly.",
     ],
     methods: [],
   },
@@ -420,148 +500,153 @@ export const experience = [
     role: "Digital Content Review & Quality Operations",
     org: "Remotasks",
     type: "Remote",
-    period: "Oct 2020 — Jan 2022",
+    period: "Oct 2020 – Jan 2022",
     summary:
-      "Reviewed more than 10,000 individual items across content review, classification and quality review tasks. Built foundational content-review skills including error detection and inconsistency detection.",
+      "Reviewed more than 10,000 individual items across repetitive, high-volume workflows.",
     points: [
-      "10,000+ individual items reviewed across content review, classification and quality review tasks.",
-      "Error detection and inconsistency detection at scale.",
-      "Foundational content-review skills that strengthened later generative AI quality work.",
+      "Checked completed work for errors, inconsistencies and missing information.",
+      "Worked independently and adapted to changing project requirements and guidelines.",
     ],
     methods: [],
   },
 ];
 
-/* ---------- Projects (Generative AI Work) ---------- */
+/* ---------- Projects (Selected Work) ---------- */
 export const projects = [
   {
-    title: "AI-Powered YouTube Content",
-    category: "Generative AI · Audience",
+    title: "AI Nollywood-Style Faceless Film Channels",
+    category: "Generative AI · Film Production",
     status: "Live",
     summary:
-      "Created and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views through structured prompting, repeated refinement and careful visual control.",
-    focus: ["AI YouTube channels", "29,000+ subscribers", "3.5M+ combined views", "Long-form content"],
+      "Created, owned and operated AI-powered YouTube channels with 29,000+ subscribers and 13.5 million+ combined views, producing more than 20 complete Nollywood-style AI films from original Nigerian stories.",
+    focus: ["29,000+ subscribers", "13.5M+ combined views", "20+ complete AI films", "Reusable production templates"],
     value:
-      "Demonstrates practical experience producing AI-generated content at scale — building an audience through consistent, character-driven, story-based productions rather than isolated outputs.",
+      "Demonstrates end-to-end AI film production at scale — original story development, scripting, storyboarding, scene planning, structured prompting, voice production, sequencing and final assembly, with character and location continuity held across every film.",
     icon: "Clapperboard",
     accent: "violet",
   },
   {
-    title: "20+ Nollywood-Style AI Films",
-    category: "Generative AI · Film",
-    status: "Completed",
+    title: "AI True-Crime Reconstruction Production",
+    category: "Generative AI · True Crime",
+    status: "NDA",
     summary:
-      "Created more than 20 AI-assisted Nollywood-style films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
-    focus: ["Story development", "Scripting", "Image generation", "Video generation", "Voice production", "Sequencing"],
+      "Produced AI-reconstructed true-crime videos for documented cases without usable original footage — converting verified narration into scene-by-scene visual reconstructions under NDA.",
+    focus: ["Factual chronology research", "Body-worn & CCTV perspectives", "ChatGPT & Claude directives", "Pass/fail audits"],
     value:
-      "Shows end-to-end AI film production capability — from story concept through final sequence — using a multimodal workflow across text, image and video.",
-    icon: "Sparkles",
+      "Shows research-first reconstruction discipline: every generated scene aligned with its script line, recurring character, clothing, building and object consistency maintained, and chapter-level compliance checks applied before release.",
+    icon: "ShieldAlert",
     accent: "magenta",
   },
   {
-    title: "Long-Form Character Consistency",
-    category: "Generative AI · Consistency",
-    status: "Ongoing",
+    title: "AI 3D Documentary Video Production",
+    category: "Generative AI · Documentary",
+    status: "Completed",
     summary:
-      "Developed practical techniques for maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.",
-    focus: ["Character recognisability", "Facial characteristics", "Clothing continuity", "Locations", "Backgrounds", "Visual cues"],
+      "Produced long-form investigative documentary videos from research and reference analysis through final publication-ready assembly, using multiple firsthand accounts and a consistent 3D CGI documentary style.",
+    focus: ["Research-to-script pipelines", "Multi-chapter scripts", "Still-to-video generation", "Final assembly in CapCut"],
     value:
-      "Addresses one of the hardest problems in long-form AI content — keeping the same character recognisable across separately generated scenes — through references, refinement and review.",
-    icon: "Users",
+      "Demonstrates long-form investigative production — animated chapter title cards, route maps, visual explanations, and character, clothing and object consistency maintained across multi-chapter productions.",
+    icon: "BrainCircuit",
     accent: "blue",
   },
   {
-    title: "Multimodal AI Video Production",
-    category: "Generative AI · Multimodal",
-    status: "Ongoing",
+    title: "Robot-Arm Video Annotation (Turing)",
+    category: "AI Training Data · Annotation",
+    status: "Current",
     summary:
-      "Worked across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
-    focus: ["Text generation", "Image generation", "Video generation", "Stage selection", "Production planning"],
+      "Annotate short robot-arm task videos for AI training data as an LLM Trainer at Turing, producing four structured deliverables per clip: intent caption, atomic subtask list, final summary and outcome rating.",
+    focus: ["Intent captions", "Atomic subtasks", "Success / Partial / Fail ratings", "Self-audits & reviewer notes"],
     value:
-      "Demonstrates multimodal control — choosing the right generative stage for each part of the production rather than relying on a single tool for every task.",
-    icon: "Clapperboard",
+      "Applies structured annotation discipline to real training data — full clip review before writing, precise documentation of objects and execution errors, and consistent grading against defined criteria.",
+    icon: "ListChecks",
     accent: "violet",
   },
   {
-    title: "Content Research & Quality Review",
-    category: "Research · Quality",
-    status: "Completed",
+    title: "CVAT Image Annotation & Video Tracking Practice",
+    category: "Computer Vision · Annotation",
+    status: "Independent Practice",
     summary:
-      "Built practical research and review experience through Upwork, TELUS Digital and Remotasks, with careful attention to requirements, evidence, ambiguity, accuracy and consistency.",
-    focus: ["Research", "Accuracy review", "Ambiguity detection", "Consistency checks", "Quality control"],
+      "Applied CVAT Academy's annotation curriculum through structured, project-based exercises — multi-object image datasets, crowded urban intersections, roadside markets, pedestrians, vehicles and complex object interactions.",
+    focus: ["Bounding boxes & polygons", "Segmentation masks", "Custom JSON label schemas", "Video tracking & keyframes"],
     value:
-      "Foundational experience that strengthens how I plan, evaluate and refine AI-generated work today — quality control is treated as production discipline, not afterthought.",
+      "Builds computer vision annotation capability — multi-instance annotation, brush-based masking, polygon-to-mask selection, persistent object tracks, manually adjusted keyframes and interpolation review.",
     icon: "ScanSearch",
-    accent: "blue",
+    accent: "magenta",
   },
 ];
 
 /* ---------- Production Approach (was Afrik-Vine Tech LTD) ---------- */
 export const afrikVine = {
   name: "Multimodal Production Approach",
-  tagline: "Plan · Refine · Review · Sequence",
+  tagline: "Research · Plan · Prompt · Generate · Review · Assemble",
   logo: "/images/profile-main.jpeg",
   headline: "My Multimodal Production Approach for Long-Form AI Content",
   intro:
-    "This section describes the production approach I use for long-form AI content — Nollywood-style films, story-driven video and multimodal productions. It is not a separate company or brand; it is the working method behind the work shown in this portfolio.",
+    "This section describes the production approach I use for long-form AI content — Nollywood-style films, true-crime reconstructions, investigative documentaries and multimodal productions. It is not a separate company or brand; it is the working method behind the work shown in this portfolio.",
   positioning:
-    "My production approach is built around structured prompting, repeated refinement and careful visual control. I plan scenes and visual requirements before generation, keep useful references, review outputs critically, and correct inconsistencies before moving forward. This reduces unnecessary retries, maintains stronger continuity, and lets me use different generative tools according to the needs of each production stage.",
+    "My production approach runs from investigative research through final assembly. Every production starts with research and story development, moves through scriptwriting and scene-by-scene planning, and only then enters structured prompting, visual reference preparation and AI generation. Character and scene continuity are reviewed as the scenes are produced, voice and sound are layered in during the audio stages, and every production ends with quality review and final assembly. This reduces unnecessary retries, maintains stronger continuity, and lets me use different generative tools according to the needs of each production stage.",
   mission:
-    "To turn creative ideas into controlled, long-form AI content — where character identity, scene continuity, environment consistency and narrative alignment are treated as production discipline, not luck.",
+    "To turn researched stories into controlled, long-form AI content — where character identity, scene continuity, environment consistency and narrative alignment are treated as production discipline, not luck.",
   vision:
     "To keep refining multimodal prompting techniques that produce stronger, more consistent, character-driven AI content across text, image and video.",
   values: [
-    { label: "Plan before generation", body: "I plan scenes, characters, settings, visual cues and creative direction before any generation begins." },
+    { label: "Research before production", body: "Documented facts, firsthand accounts and verified chronology come before any generation begins." },
+    { label: "Plan before generation", body: "Scenes, characters, settings, visual cues and creative direction are planned before any generation begins." },
     { label: "Character identity first", body: "Recognisability through facial characteristics, clothing, visual references and repeated refinement is the foundation of long-form content." },
-    { label: "Critical review", body: "Every output is reviewed against the brief — coherence, realism, continuity, narrative alignment — before being accepted." },
-    { label: "Iterative refinement", body: "Prompts and references are revised based on observed output, not guesswork." },
-    { label: "Multimodal control", body: "I work across text, image and video in one production process, selecting the right stage for each requirement." },
-    { label: "Story-driven", body: "Every scene serves the narrative, tone and intended emotional effect of the long-form content." },
+    { label: "Continuity at every stage", body: "Location, background, clothing and storyline continuity are reviewed as scenes are produced, not patched afterwards." },
+    { label: "Structured prompting", body: "Reusable production templates and activation directives keep every generative stage consistent." },
+    { label: "Quality review before release", body: "Chapter-level compliance checks and final pass/fail audits gate every publication." },
   ],
   serviceAreas: [
     "Story development and scriptwriting for long-form AI productions.",
-    "Multimodal prompting across text, image and video.",
-    "Character identity, facial consistency and clothing continuity.",
-    "Scene, environment, location and background continuity.",
-    "Voice production, sequencing and audio-visual alignment.",
-    "Critical review, prompt refinement and quality control.",
+    "Multimodal prompting across text, image and video generation.",
+    "Character identity, clothing and scene continuity.",
+    "Voice production, sound design and audio-visual alignment.",
+    "Investigative research and evidence-supported content.",
+    "Quality review, compliance checks and final assembly in CapCut.",
   ],
   engagementProcess: [
-    { step: "Discovery", body: "Understand the story, characters, setting, tone, audience and intended emotional effect." },
-    { step: "Planning", body: "Define scenes, visual cues, character identity, references and success criteria before generation." },
-    { step: "Generation", body: "Produce each scene with the appropriate generative stage — text-to-image, image-to-video, voice production." },
-    { step: "Review", body: "Review each output critically against the brief, references and longer sequence." },
-    { step: "Refinement", body: "Correct inconsistencies in character, environment or narrative alignment through prompt and reference revision." },
-    { step: "Sequencing", body: "Order accepted scenes into a coherent sequence that respects continuity and narrative direction." },
-    { step: "Final review", body: "Review the full production end-to-end — continuity, pacing, tone, audio-visual alignment and audience suitability." },
+    { step: "Investigative research", body: "Gather documented facts, firsthand accounts and verified chronology before anything is written." },
+    { step: "Story development", body: "Shape the material into an original story with characters, tone and intended emotional effect." },
+    { step: "Scriptwriting", body: "Write the structured script — chapters, scenes, narration and dialogue." },
+    { step: "Scene planning", body: "Plan the production scene by scene with clear visual requirements using reusable templates." },
+    { step: "Structured prompting", body: "Prepare prompts and activation directives for each generative stage." },
+    { step: "Visual reference preparation", body: "Collect and organise references so every output can be checked against the intended look." },
+    { step: "AI generation", body: "Generate image and video outputs with the appropriate tools for each stage." },
+    { step: "Character & scene continuity", body: "Review each output for character recognisability, clothing, location and background consistency." },
+    { step: "Voice production", body: "Direct narration and character voices that fit the story and the visual identity." },
+    { step: "Sound design", body: "Layer sound to support the narrative beat and emotional register." },
+    { step: "Sequencing", body: "Order the accepted scenes into a coherent sequence that respects continuity and pacing." },
+    { step: "Quality review", body: "Run chapter-level compliance checks and review the full production end-to-end." },
+    { step: "Final assembly", body: "Complete the final edit and assembly in CapCut and prepare the production for release." },
   ],
   roadmap:
     "My production approach continues to evolve as I explore new prompting techniques, generative tools and review methods. The direction is consistent: stronger character identity, tighter scene continuity, more reliable long-form storytelling, and a clearer creative direction across every production.",
   cta:
-    "If you would like to discuss a generative AI content project, an AI video production, a multimodal workflow or a creative direction collaboration, you can reach me through the contact section below.",
+    "If you would like to discuss an AI video production, a multimodal prompt engineering project, a video annotation engagement or a creative direction collaboration, you can reach me through the contact section below.",
 };
 
 /* ---------- Articles ---------- */
 export const articles = {
   headline: "Articles, Research Notes & Reflections on Multimodal Prompt Engineering",
   intro:
-    "This section will become the knowledge hub for multimodal prompt engineering, generative AI content, AI video production, character consistency, prompt refinement and content quality.",
+    "This section will become the knowledge hub for multimodal prompt engineering, AI video production, video annotation, character consistency and content quality.",
   comingSoon:
-    "I am building a collection of articles and research notes focused on multimodal prompt engineering, generative AI content, AI video production, character consistency, prompt refinement and content quality. New posts will be added gradually as this portfolio grows.",
+    "I am building a collection of articles and research notes focused on multimodal prompt engineering, AI video production, video annotation, character consistency and content quality. New posts will be added gradually as this portfolio grows.",
   categories: [
     "Multimodal Prompt Engineering",
-    "Generative AI Content & Story Development",
     "AI Video Production & Sequencing",
-    "Character Identity & Facial Consistency",
+    "Video Annotation for AI Training",
+    "Computer Vision Annotation & CVAT",
+    "Character Identity & Consistency",
     "Scene & Environment Continuity",
-    "Prompt Refinement & Stress Testing",
+    "Annotation Quality Assurance",
     "Content Research & Quality Control",
-    "Creative Direction for Long-Form AI",
   ],
   placeholders: [
     { title: "How I Maintain Character Consistency Across Generated Scenes", body: "Will explain the practical techniques I use to keep character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues consistent across multiple separately generated scenes." },
     { title: "Planning a Multimodal AI Film Before Generation", body: "Will explain how I plan story, characters, settings, visual cues and creative direction before any generation begins — and why this stage reduces unnecessary retries later." },
-    { title: "Prompt Refinement from Observed Results", body: "Will explain how I review generated outputs critically, trace weaknesses back to the prompt, and revise instructions to address the specific issue rather than changing everything blindly." },
+    { title: "Annotating Robot-Arm Videos for AI Training Data", body: "Will explain the structured workflow behind intent captions, atomic subtask lists, outcome ratings and execution-error documentation for robot-arm task videos." },
   ],
 };
 
@@ -569,9 +654,10 @@ export const articles = {
 export const contact = {
   headline: "Let's Connect",
   intro:
-    "If my work aligns with an opportunity, project, collaboration or professional discussion, you can reach me through the contact details below. I am open to conversations around multimodal prompt engineering, generative AI content, AI video production, creative direction, content research and quality control.",
+    "If my work aligns with an opportunity, project, collaboration or professional discussion, you can reach me through the contact details below. I am open to conversations around multimodal prompt engineering, AI video production, video annotation, computer vision image annotation, research and quality assurance.",
   channels: [
     { label: "Email", value: "vincentchimaobi042@gmail.com", href: "mailto:vincentchimaobi042@gmail.com", icon: "Mail" },
+    { label: "Email 2", value: "sekretv.contact@gmail.com", href: "mailto:sekretv.contact@gmail.com", icon: "Mail" },
     { label: "Phone", value: "09068254110", href: "tel:+2349068254110", icon: "Phone" },
     { label: "Location", value: "Abuja, Nigeria", href: null, icon: "MapPin" },
     { label: "LinkedIn", value: "vincent-chimaobi042", href: "https://www.linkedin.com/in/vincent-chimaobi042/", icon: "Linkedin" },
@@ -583,15 +669,15 @@ export const contact = {
     helper: "",
   },
   inquiryGuidance: [
-    { type: "Multimodal prompt engineering or AI video production", body: "Please include the type of production, target audience, intended length, character or story requirements, references if available, timeline, and whether creative direction is needed." },
-    { type: "Generative AI content collaboration", body: "Please include the scope, intended platform, audience, tone, content volume, timeline, and whether review and refinement are part of the engagement." },
+    { type: "Video annotation or AI training data work", body: "Please include the annotation type (video, image or both), expected volume, guidelines availability, tools involved, timeline, and whether quality review is part of the engagement." },
+    { type: "AI video production or multimodal prompt engineering", body: "Please include the type of production, target audience, intended length, character or story requirements, references if available, timeline, and whether creative direction is needed." },
     { type: "Content writing, research or quality review", body: "Please include the type of content, expected depth, research requirements, accuracy expectations, volume, and timeline." },
   ],
   inquiryTypes: [
     "Multimodal Prompt Engineering",
     "AI Video Production",
+    "Video Annotation",
     "Generative AI Content",
-    "Creative AI Workflow",
     "Content Writing & Research",
     "Digital Content Quality",
     "General Professional Contact",
@@ -600,10 +686,10 @@ export const contact = {
 
 export const footer = {
   blurb:
-    "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality.",
+    "Multimodal Prompt Engineering, AI Video Production, Video Annotation and Content Quality.",
   ventureNote: "",
   location:
-    "Based in Abuja, Nigeria. Available for remote multimodal prompt engineering, generative AI content, AI video production, creative direction and content quality opportunities.",
+    "Based in Abuja, Nigeria. Available for remote multimodal prompt engineering, AI video production, video annotation and content quality opportunities.",
   links: navItems,
 };
 

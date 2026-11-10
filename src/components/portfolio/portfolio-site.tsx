@@ -48,11 +48,12 @@ export interface PortfolioSiteContent {
     profileImage: string;
     avatar: string;
     gallery: string[];
-    whatsapp: string;
+    whatsapp: string | null;
     email: string;
+    email2: string;
     phone: string;
-    twitter: string;
-    github: string;
+    twitter: string | null;
+    github: string | null;
     linkedin: string | null;
     publicEmail: string;
     cvPath: string | null;

@@ -1,121 +1,121 @@
 /**
- * Extended character-consistency content for the Character Consistency section.
+ * Extended computer-vision annotation content for the CV Annotation section.
  *
  * NOTE: This export is named `webDevExtended` for historical reasons — the
  * section component (web-development.tsx) imports it under that name. The
- * content has been fully repositioned to cover character identity, facial
- * consistency, scene continuity and environment continuity across generated
- * scenes — the hardest problems in long-form AI content production.
+ * content covers computer vision image annotation and instance segmentation
+ * with CVAT as the central tool — bounding boxes, polygons, segmentation
+ * masks, brush-based masking, JSON label schemas, occlusion handling and
+ * multi-instance annotation.
  */
 export const webDevExtended = {
   headline:
-    "Character Identity, Facial Consistency and Scene Continuity Across Generated Scenes",
+    "Computer Vision Image Annotation & Instance Segmentation",
   intro:
-    "Maintaining character recognisability, facial appearance, clothing, environments, locations and backgrounds across multiple generated scenes is one of the hardest problems in long-form AI content. My approach combines structured prompting, useful references, repeated refinement and critical review at every stage — treating character identity as production discipline, not luck.",
+    "Using CVAT as my central annotation tool, I practise multi-instance image annotation with bounding boxes, polygons, segmentation masks, brush-based masking, polygon-to-mask selection and additive/subtractive region editing — on datasets covering crowded urban intersections, roadside markets, pedestrians, vehicles and complex object interactions. Every task is configured with custom JSON label schemas and ends with a quality check for omitted objects, incorrect classes, merged objects, duplicates and boundary inaccuracies.",
   philosophy:
-    "Character identity is the foundation of long-form AI storytelling. If a character is not recognisable across scenes, the story breaks — no matter how strong the individual shots are. My approach treats character identity, facial consistency and scene continuity as a discipline: plan the identity before generation, anchor every scene to references, review every output for drift, and correct inconsistencies before they propagate. The goal is to make the audience see the same person in the same world across every scene, even when each scene was generated separately.",
+    "Annotation quality is a production discipline, not a drawing exercise. Every label schema, every polygon vertex and every mask boundary feeds a computer vision model, so the difference between a tight boundary and a sloppy one is the difference between usable training data and noise. My approach treats CVAT task configuration, label schema design and instance-level precision as the foundation: plan the schema before annotating, annotate each instance deliberately, and verify boundaries and occlusions before submitting.",
   methodology:
-    "My methodology is built on disciplined visual control: establish the identity first, then structure every scene around it. I begin with the character — facial characteristics, clothing, styling, visual cues — and only then move into environment, location, background and lighting. From there, I generate per scene with a prompt anchored to the established references, review each output critically, and refine until the scene holds together.",
+    "My methodology is built on disciplined tool use: configure the task correctly, then annotate instance by instance. I begin with the CVAT task setup and the custom JSON label schema, so every class and attribute is defined before the first object is drawn. From there, I read each frame first — identifying every object instance, its class and its interactions — then annotate with the geometry that fits: bounding boxes for extent, polygons for shape, segmentation masks for precise boundaries. Brush-based masking and additive/subtractive region editing refine the regions that polygons alone cannot capture.",
   engineeringWorkflow:
-    "I treat character consistency as a pipeline, not a single generation. Each scene is one stage in a longer production: identity establishment, reference building, scene generation, drift review, correction and refinement, sequencing, and end-to-end final review. Every stage feeds the next — a weakness at any stage propagates forward, so each stage has its own review checkpoint before the next begins.",
+    "I treat annotation as a pipeline, not a single pass. Each task moves through configuration, planning, multi-instance annotation, region refinement, occlusion handling and a final quality check. Every stage feeds the next — a weak schema propagates into every label, and a sloppy boundary propagates into the model — so each stage has its own verification step before the next begins.",
   analyticalApproach:
-    "When a character drifts between scenes, I do not guess at the cause. I break the problem into parts: facial characteristics, clothing, styling, lighting, environment, background, motion or artifact. I compare the output against the reference, identify which dimension drifted, trace the cause back to the prompt or reference, and fix that specific issue rather than changing everything blindly.",
+    "When an annotation is wrong, I do not guess at the cause. I break the problem into parts: is it a schema problem (wrong class defined), an instance problem (merged or duplicated objects), a geometry problem (boundary inaccuracy), or an occlusion problem (partial visibility handled incorrectly)? I compare the annotation against the image, identify which dimension failed, and fix that specific issue rather than redrawing everything blindly.",
   designPhilosophy:
-    "Good character consistency is invisible. When it works, the audience does not notice the technical effort — they notice that the same person shows up in every scene, in the same world, with the same identity. My philosophy prioritises recognisability over flashiness: the goal is identity stability, not impressive individual shots that break continuity.",
+    "Good annotation is invisible to the model. When it works, the model learns from clean, consistent instances and never has to compensate for boundary noise, duplicate boxes or missing objects. My philosophy prioritises precision and consistency over raw speed: the goal is training data a computer vision team can trust, not the fastest possible submission.",
   uxThinking:
-    "Audience perception is the real test of character consistency. I plan the audience journey before generating any scene: who is this character, what do they look like, what should the audience recognise about them, and where could drift break that recognition? Every scene is then checked against the audience's mental model of the character, not just against the prompt.",
+    "The real test of annotation quality is what the downstream model — and the dataset reviewer — sees. I plan each frame from the consumer's perspective: which objects must be captured, how should partial visibility be marked, and where could a merged instance or drifted boundary mislead training? Every annotation is then checked against the schema and the scene, not just drawn and left.",
   architectureMindset:
-    "I structure character identity so it can scale. A character established today should still be recognisable in scene 1, scene 20, scene 100 and across future sequels or series. The reference architecture should not lock the production into a single generation run — it should support continuity across a long-form content library.",
+    "I structure label schemas so they scale. A schema defined for one task should reuse cleanly across similar datasets — consistent class names, consistent attribute definitions, consistent occlusion and truncation conventions — so a multi-task annotation campaign does not require re-labelling when the dataset grows.",
   lifecycle: [
-    { phase: "Identity establishment", body: "Define the character — facial characteristics, clothing, styling, visual cues — before any scene generation begins." },
-    { phase: "Reference building", body: "Collect useful references for the character, environment, location, background and lighting so each output can be checked against intent." },
-    { phase: "Scene generation", body: "Produce each scene with a prompt anchored to the established identity and references." },
-    { phase: "Drift review", body: "Check each output for character recognisability, facial appearance, clothing, environment and background continuity." },
-    { phase: "Correction", body: "Refine prompts or references and regenerate where drift, distortion or identity loss appears." },
-    { phase: "Sequencing", body: "Order accepted scenes into a coherent sequence that respects narrative direction and continuity." },
-    { phase: "End-to-end review", body: "Review the full sequence as one production, checking continuity, pacing, tone and emotional effect end-to-end." },
-    { phase: "Finalisation", body: "Accept the production only after it meets the intended quality standard and the character reads as one identity across every scene." },
+    { phase: "Task configuration", body: "Set up the CVAT annotation task and custom JSON label schemas that match the dataset's classes and requirements." },
+    { phase: "Frame planning", body: "Read the frame first — identify every object instance, its class and the interactions before drawing anything." },
+    { phase: "Multi-instance annotation", body: "Mark each object with the right geometry — bounding boxes for extent, polygons for shape, masks for precise boundaries." },
+    { phase: "Region refinement", body: "Apply brush-based masking, polygon-to-mask selection and additive/subtractive region editing to correct boundaries." },
+    { phase: "Occlusion handling", body: "Decide deliberately how partially visible objects are marked — truncated, occluded or crowd — according to the schema." },
+    { phase: "Consistency check", body: "Verify that annotation style stays consistent across the whole task, frame after frame." },
+    { phase: "Quality check", body: "Review for omitted objects, incorrect classes, merged objects, duplicate annotations and boundary inaccuracies." },
   ],
   qualityAssurance:
-    "Quality is built into every stage, not added at the end. I review each scene against the brief before accepting it, check the full sequence end-to-end before finalising, and trace any drift back to its cause so the next scene is stronger.",
+    "Quality is built into every stage, not added at the end. I check each annotation against the schema while annotating, verify boundaries and occlusions before moving to the next frame, and close every task with a completeness pass for omitted objects and duplicate instances.",
   performanceStrategy:
-    "Batch scene generation works best when identity is anchored first. By establishing the character and references up front, I reduce unnecessary retries later, keep prompt iterations focused, and avoid regenerating whole scenes for avoidable drift.",
+    "Multi-instance annotation works best when the frame is planned before drawing. By reading the scene first — counting instances, noting interactions and occlusions — I avoid the most common rework: merged objects, duplicates and missed instances discovered only at review time.",
   securityMindset:
-    "My character consistency practice is built around responsible use: I do not generate misleading representations of real people, do not replicate identifiable private individuals without authorisation, and keep character use aligned with the intended story, audience and platform.",
+    "My annotation practice is built around responsible data handling: I follow the dataset's usage terms, do not expose annotation content outside the authorized environment, and treat every dataset — especially footage involving people — with the confidentiality the task requires.",
   maintainability:
-    "A character identity becomes more valuable when it can be reused across scenes, sequels and future productions. I structure references, prompts and review notes so the identity remains stable and recoverable over time, not just for a single generation run.",
+    "An annotation task becomes more valuable when its schema and conventions are documented and reusable. I structure label schemas, attribute definitions and occlusion conventions so they can be reapplied to similar datasets without re-invention.",
   scalability:
-    "I build character identity for scale. The reference architecture should support the same character across many scenes, long-form productions, sequels and series — without requiring a complete redesign each time.",
+    "I annotate for scale. A consistent schema and a consistent style mean a dataset can grow from hundreds to thousands of frames without a quality drop — and without requiring the early frames to be redone.",
   clientConsultation:
-    "I begin every character-driven project with a consultation: What does the character look like? Who is the audience? What is the story? What is the intended emotional effect? Based on those answers, I recommend the most practical character consistency approach for the scope and timeline.",
+    "I begin every annotation engagement with the requirements: What objects and classes matter? How should occlusion and truncation be handled? What level of geometry — boxes, polygons or masks — does the model actually need? Based on those answers, I recommend the most practical schema and annotation approach for the scope and timeline.",
   requirementAnalysis:
-    "Good character requirements lead to consistent characters. I help clients articulate the character's identity, visual cues and narrative role. I distinguish must-have identity features from nice-to-have visual details so the production stays focused on recognisability.",
+    "Good annotation requirements lead to good annotations. I help teams articulate the class taxonomy, the attribute set and the boundary conventions, and distinguish must-have precision from nice-to-have detail so the task stays focused on what the model needs.",
   communication:
-    "I explain character consistency decisions clearly to non-technical collaborators. I avoid jargon. I document what the character looks like, how each scene was generated, what was corrected, and how to keep the identity stable in future productions.",
+    "I explain annotation decisions clearly to non-technical collaborators. I avoid jargon. I document how classes were defined, how occlusions were handled, what was flagged as ambiguous, and how to keep the labelling consistent as the dataset grows.",
   longTermSupport:
-    "A character identity is not a one-time deliverable — it is a living reference. I plan for long-term support: updated references, prompt refinements, review notes and continuity documentation so the character stays recognisable across future productions.",
+    "A label schema is not a one-time deliverable — it is a living convention. I plan for long-term consistency: documented class definitions, attribute conventions and review notes so the dataset stays coherent as new tasks and annotators are added.",
   priorities: [
-    { label: "Character recognisability", body: "The audience should see the same person across every scene." },
-    { label: "Facial consistency", body: "Facial characteristics should not drift, morph or break identity between scenes." },
-    { label: "Clothing continuity", body: "Wardrobe, accessories and styling should remain coherent with the story." },
-    { label: "Environment continuity", body: "Locations, backgrounds, settings and objects should remain consistent across scenes." },
-    { label: "Narrative alignment", body: "Each scene should serve the story, tone and intended emotional effect." },
-    { label: "Critical review", body: "Every output is reviewed against the brief — not accepted on first impression." },
-    { label: "Iterative refinement", body: "Prompts and references are revised based on observed drift, not guesswork." },
-    { label: "End-to-end continuity", body: "The full sequence is reviewed as one production, not as isolated shots." },
+    { label: "Schema fidelity", body: "Custom JSON label schemas are configured to match the dataset exactly — no improvised classes." },
+    { label: "Instance precision", body: "Every object gets its own annotation — no merged instances, no duplicates." },
+    { label: "Boundary accuracy", body: "Boxes, polygons and masks sit on the true object boundary, not an approximation." },
+    { label: "Occlusion handling", body: "Partial visibility is handled according to the schema, not ignored." },
+    { label: "Complex interactions", body: "Overlapping objects and interactions in crowded scenes are separated deliberately." },
+    { label: "Tool fluency", body: "Bounding boxes, polygons, masks and brush tools are applied where each fits best." },
+    { label: "Final verification", body: "Each task ends with a check for omitted objects and incorrect classes." },
+    { label: "Consistency across frames", body: "Annotation style stays consistent across the whole task, frame after frame." },
   ],
   solutions: [
-    { title: "Character Identity & Facial Consistency", icon: "Users", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes." },
-    { title: "Scene & Environment Continuity", icon: "Layers", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across scenes — so the world stays coherent end-to-end." },
-    { title: "Wardrobe & Styling Coherence", icon: "Sparkles", body: "Keeping clothing, accessories and styling aligned with the character and story across scenes, generations and stages." },
-    { title: "Visual Direction & Tone", icon: "Compass", body: "Holding the overall creative direction, lighting, mood and visual cues consistent across the long-form production." },
-    { title: "Long-Form Sequencing", icon: "Workflow", body: "Ordering accepted scenes into a coherent sequence that respects narrative direction, pacing and continuity." },
-    { title: "Drift Detection & Correction", icon: "ScanSearch", body: "Reviewing each output for character drift, distortion, identity loss or environment break — and correcting before moving forward." },
-    { title: "Reference Architecture", icon: "FileText", body: "Building reusable reference sets so character identity stays stable across scenes, sequels and future productions." },
-    { title: "End-to-End Final Review", icon: "ShieldCheck", body: "Reviewing the full sequence as one production — continuity, pacing, tone, audio-visual alignment and audience suitability." },
+    { title: "Bounding Box Annotation", icon: "Tags", body: "Multi-instance bounding boxes for extent and position, checked for alignment and boundary accuracy." },
+    { title: "Polygon & Instance Segmentation", icon: "Layers", body: "Polygon annotation and segmentation masks for precise object boundaries, including polygon-to-mask selection." },
+    { title: "Brush-Based Masking", icon: "Sparkles", body: "Brush-based masking with additive and subtractive region editing for irregular shapes and fine boundaries." },
+    { title: "Label Schema Configuration", icon: "Code2", body: "Custom JSON label schemas configured in CVAT to match dataset classes, attributes and requirements." },
+    { title: "Occlusion & Truncation Handling", icon: "Eye", body: "Partially visible objects marked deliberately — truncated, occluded or crowd — according to the schema." },
+    { title: "Crowded-Scene Annotation", icon: "Users", body: "Multi-instance annotation of crowded urban intersections, roadside markets, pedestrians and vehicles." },
+    { title: "Quality Checking", icon: "ScanSearch", body: "Task-level review for omitted objects, incorrect classes, merged objects, duplicates and boundary inaccuracies." },
+    { title: "Video Track Verification", icon: "ShieldCheck", body: "Persistent object tracks checked for identity, bounding-box alignment and position drift between keyframes." },
   ],
   solutionPhilosophy:
-    "I do not force every production into the same character consistency approach. I evaluate the story, scope, timeline and future growth path, then recommend the most practical reference and review architecture for that specific production.",
+    "I do not force every dataset into the same annotation approach. I evaluate the classes, density, occlusion profile and downstream model requirements, then recommend the most practical schema and geometry — boxes, polygons or masks — for that specific task.",
   serviceAreas: [
-    { title: "Character Identity & Facial Consistency", icon: "Users", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes." },
-    { title: "Scene & Environment Continuity", icon: "Layers", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across scenes — so the world stays coherent end-to-end." },
-    { title: "Wardrobe & Styling Coherence", icon: "Sparkles", body: "Keeping clothing, accessories and styling aligned with the character and story across scenes, generations and stages." },
-    { title: "Visual Direction & Tone", icon: "Compass", body: "Holding the overall creative direction, lighting, mood and visual cues consistent across the long-form production." },
+    { title: "Bounding Box Annotation", icon: "Tags", body: "Multi-instance bounding boxes for extent and position, checked for alignment and boundary accuracy." },
+    { title: "Polygon & Instance Segmentation", icon: "Layers", body: "Polygon annotation and segmentation masks for precise object boundaries, including polygon-to-mask selection." },
+    { title: "Brush-Based Masking", icon: "Sparkles", body: "Brush-based masking with additive and subtractive region editing for irregular shapes and fine boundaries." },
+    { title: "Label Schema Configuration", icon: "Code2", body: "Custom JSON label schemas configured in CVAT to match dataset classes, attributes and requirements." },
   ],
   toolkit: [
     {
-      category: "Identity Establishment",
-      items: ["Character briefs", "Facial reference sheets", "Clothing & styling boards", "Visual cue definitions", "Identity anchors"],
+      category: "Core Annotation Tools",
+      items: ["CVAT", "Bounding boxes", "Polygons", "Segmentation masks", "Brush-based masking"],
     },
     {
-      category: "Reference & Generation",
-      items: ["Text-to-image prompting", "Image-to-video prompting", "Voice direction", "Scene composition", "Reference anchoring"],
+      category: "Region Editing",
+      items: ["Polygon-to-mask selection", "Additive region editing", "Subtractive region editing", "Vertex-level refinement"],
     },
     {
-      category: "Review & Drift Detection",
-      items: ["Facial consistency checks", "Clothing continuity checks", "Environment continuity checks", "Artifact detection", "End-to-end sequence review"],
+      category: "Schema & Configuration",
+      items: ["Custom JSON label schemas", "Class & attribute definition", "Occlusion conventions", "Truncation conventions"],
     },
     {
-      category: "Refinement & Correction",
-      items: ["Prompt refinement", "Reference revision", "Targeted regeneration", "Continuity correction", "Iterative improvement"],
+      category: "Quality Review",
+      items: ["Omitted-object checks", "Class verification", "Duplicate & merge detection", "Boundary accuracy review"],
     },
     {
-      category: "Long-Form Production",
-      items: ["Sequencing", "Pacing review", "Audio-visual alignment", "Final review", "Continuity documentation"],
+      category: "Video Tracking",
+      items: ["Persistent object tracks", "Manual keyframes", "Interpolation review", "Position-drift checks"],
     },
   ],
   costNote:
-    "Character consistency scales with planning. A small production can stay lightweight — a few references and a clear identity brief. Larger productions benefit from a fuller reference architecture: detailed character sheets, environment references, review checkpoints and continuity documentation. Advanced techniques should be added only when the production scope, timeline and future growth justify them.",
+    "Annotation depth scales with the model's need. A detection task can stay lightweight — clean boxes on a clear schema. Segmentation and crowded-scene tasks justify the fuller treatment: masks, brush-based refinement, occlusion conventions and task-level quality checks. The right level of precision is the one the downstream model actually requires.",
   advancedFeatures: [
-    "Character identity sheets", "Facial reference boards", "Clothing & styling continuity guides",
-    "Environment reference libraries", "Location continuity checks", "Background consistency review",
-    "Multi-scene reference anchoring", "Drift detection workflow", "Targeted regeneration pipeline",
-    "End-to-end sequence review", "Continuity documentation", "Character recap & onboarding notes",
-    "Cross-production identity reuse", "Sequel & series continuity planning", "Audience recognisability testing",
-    "Visual direction & tone guides", "Lighting continuity checks", "Wardrobe change management",
-    "Voice-to-character fit review", "Audio-visual alignment review", "Final production review",
-    "Continuity audit", "Reference version control", "Long-form pacing review",
+    "Custom JSON label schemas", "Multi-instance annotation", "Instance segmentation masks",
+    "Brush-based masking", "Polygon-to-mask selection", "Additive region editing",
+    "Subtractive region editing", "Occlusion & truncation handling", "Crowd region conventions",
+    "Crowded urban intersection datasets", "Roadside market scenes", "Pedestrian & vehicle annotation",
+    "Complex object interactions", "Persistent object tracks", "Manual keyframe adjustment",
+    "Interpolation review", "Track identity checks", "Position-drift detection",
+    "Boundary accuracy review", "Duplicate annotation detection", "Merged-object detection",
+    "Omitted-object detection", "Task-level quality checks", "Schema documentation",
   ],
   advancedFeaturesNote:
-    "Depending on the production's scope, timeline and long-term goal, these character consistency techniques can be applied gradually. Simple productions can stay lightweight, while larger long-form projects can grow into full reference architectures, drift detection workflows and end-to-end continuity documentation.",
+    "Depending on the dataset's density, occlusion profile and downstream model, these annotation techniques can be applied gradually. Simple detection tasks can stay at box level, while dense segmentation and tracking tasks grow into masks, brush-based refinement and keyframe-level review.",
 };

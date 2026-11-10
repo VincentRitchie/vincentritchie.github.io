@@ -19,10 +19,10 @@ type ProfileLike = typeof defaultProfile;
  * - Exactly five images (me_img1.jpeg … me_img5.jpeg)
  */
 const captions = [
-  "LLM Prompt Engineering Training",
-  "Web Development Workspace",
-  "Client Project Analysis Session",
-  "Student Training Session",
+  "Multimodal Prompt Engineering",
+  "AI Video Production Workspace",
+  "Video Annotation & Review Session",
+  "Computer Vision Annotation Practice",
   "Lifestyle Portrait",
 ];
 

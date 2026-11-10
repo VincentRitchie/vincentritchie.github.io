@@ -23,7 +23,7 @@ export function EducationLanguages() {
               Education &amp; <span className="text-gradient">languages</span>
             </>
           }
-          intro="Academic background and languages that support my professional practice across multimodal prompt engineering, generative AI content and AI video production."
+          intro="Academic background and languages that support my professional practice across multimodal prompt engineering, AI video production and video annotation."
           accent="blue"
         />
 

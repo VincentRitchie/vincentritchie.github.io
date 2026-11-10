@@ -13,11 +13,11 @@ export function Experience() {
           eyebrow="Professional Experience"
           title={
             <>
-              Across generative AI content, AI video production{" "}
+              Across video annotation, AI production, research{" "}
               <span className="text-gradient">&amp; content quality work</span>
             </>
           }
-          intro="My experience combines generative AI content creation, AI video production, content writing and research, and digital content quality review. Each role has contributed to my ability to plan productions, evaluate outputs critically, refine prompts, and deliver structured long-form AI content remotely."
+          intro="My experience combines robot-arm video annotation for AI training data, CVAT computer vision practice, AI film and documentary production, search quality evaluation and digital content review. Each role has contributed to my ability to review visual content carefully, document accurately, apply guidelines consistently, and deliver structured long-form work remotely."
           accent="violet"
         />
 
@@ -52,11 +52,16 @@ export function Experience() {
                       {/* card */}
                       <div className={`pl-12 sm:w-1/2 sm:pl-0 ${isLeft ? "sm:pr-10 sm:text-right" : "sm:pl-10"}`}>
                         <div className="rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm transition-all hover:border-violet-400/40 hover:shadow-[0_0_40px_-12px_rgba(168,85,247,0.4)]">
-                          <div className={`flex items-center gap-2 ${isLeft ? "sm:justify-end" : ""}`}>
+                          <div className={`flex flex-wrap items-center gap-2 ${isLeft ? "sm:justify-end" : ""}`}>
                             <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-400/30 bg-violet-500/10 px-2.5 py-1 text-[11px] font-medium text-violet-200">
                               <Briefcase className="h-3 w-3" />
                               {exp.period}
                             </span>
+                            {exp.badge && (
+                              <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/40 bg-amber-500/10 px-2.5 py-1 text-[11px] font-semibold text-amber-200">
+                                {exp.badge}
+                              </span>
+                            )}
                           </div>
                           <h3 className="mt-3 font-display text-lg font-semibold text-foreground">
                             {exp.role}
@@ -71,6 +76,12 @@ export function Experience() {
                           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                             {exp.summary}
                           </p>
+
+                          {exp.note && (
+                            <p className="mt-3 rounded-lg border border-amber-400/20 bg-amber-500/5 px-3 py-2 text-xs leading-relaxed text-amber-200/90">
+                              {exp.note}
+                            </p>
+                          )}
 
                           {exp.points.length > 0 && (
                             <ul className={`mt-4 space-y-1.5 ${isLeft ? "sm:text-right" : ""}`}>

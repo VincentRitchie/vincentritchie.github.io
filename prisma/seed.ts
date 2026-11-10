@@ -94,7 +94,7 @@ async function main() {
         summary: p.summary,
         description: p.value,
         status: p.status,
-        placeholder: !!p.placeholder,
+        placeholder: !!(p as { placeholder?: boolean }).placeholder,
         icon: p.icon,
         accent: p.accent,
         tags: JSON.stringify(p.focus ?? []),

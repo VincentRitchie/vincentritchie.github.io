@@ -16,7 +16,7 @@ export function Navbar({ profile = defaultProfile }: { profile?: ProfileLike } =
 
   // Primary links shown in the desktop bar (rest live in the mobile drawer)
   const primaryLinks = navItems.filter((n) =>
-    ["About", "Expertise", "Multimodal Prompting", "Character Consistency", "Generative AI Work", "Production Approach", "Contact"].includes(
+    ["About", "Expertise", "Video Annotation", "CV Annotation", "Selected Work", "Production Approach", "Contact"].includes(
       n.label
     )
   );

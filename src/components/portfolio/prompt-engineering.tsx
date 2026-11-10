@@ -9,11 +9,11 @@ export function PromptEngineering() {
     <Section id="prompt-refinement" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Prompt Refinement & Generative AI"
+          eyebrow="Multimodal Prompt Engineering"
           title={
             <>
-              Turning observed results into{" "}
-              <span className="text-gradient">clearer, refined instructions</span>
+              Reusable prompting workflows across{" "}
+              <span className="text-gradient">text, image and video</span>
             </>
           }
           intro={promptEngineering.intro}
@@ -29,7 +29,7 @@ export function PromptEngineering() {
                   <TerminalSquare className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  How I understand prompt refinement
+                  How I build reusable prompting workflows
                 </h3>
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">
@@ -37,7 +37,7 @@ export function PromptEngineering() {
               </p>
 
               <h4 className="mt-6 mb-4 text-sm font-semibold text-foreground">
-                Prompt design principles
+                Workflow principles
               </h4>
               <div className="space-y-2.5">
                 {promptEngineering.principles.map((p) => (
@@ -57,7 +57,7 @@ export function PromptEngineering() {
                   <Lightbulb className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Prompt debugging workflow
+                  Prompt refinement workflow
                 </h3>
               </div>
               <ol className="space-y-3">

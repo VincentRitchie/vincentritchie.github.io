@@ -13,10 +13,10 @@ import { ScanSearch, Tags, ListChecks, ShieldAlert, CheckCircle2 } from "lucide-
 import { cn } from "@/lib/utils";
 
 const tabs = [
-  { id: "evaluation", label: "Multimodal Prompting", icon: ScanSearch, accent: "violet" as const },
-  { id: "annotation", label: "Text-to-Image", icon: Tags, accent: "blue" as const },
-  { id: "rubric", label: "Image-to-Video", icon: ListChecks, accent: "magenta" as const },
-  { id: "hallucination", label: "Voice & Sequencing", icon: ShieldAlert, accent: "violet" as const },
+  { id: "evaluation", label: "Robot-Arm Video Annotation", icon: ScanSearch, accent: "violet" as const },
+  { id: "annotation", label: "Intent Captions & Atomic Subtasks", icon: Tags, accent: "blue" as const },
+  { id: "rubric", label: "Outcome Ratings & Execution Errors", icon: ListChecks, accent: "magenta" as const },
+  { id: "hallucination", label: "CVAT Video Tracking", icon: ShieldAlert, accent: "violet" as const },
 ];
 
 export function AiEvaluation() {
@@ -26,11 +26,11 @@ export function AiEvaluation() {
     <Section id="multimodal-prompting" className="border-t border-border/40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Multimodal Prompt Engineering"
+          eyebrow="Video Annotation"
           title={
             <>
               A structured, evidence-based approach to{" "}
-              <span className="text-gradient">multimodal AI production</span>
+              <span className="text-gradient">robot-arm video annotation</span>
             </>
           }
           intro={aiEvaluation.intro}
@@ -146,7 +146,7 @@ function EvaluationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="font-display text-base font-semibold text-foreground">
-            What multimodal prompt engineering means to me
+            What robot-arm video annotation means to me
           </h4>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {aiEvaluation.whatItMeans}
@@ -154,7 +154,7 @@ function EvaluationPanel() {
         </div>
         <div className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            My multimodal workflow
+            My annotation workflow
           </h4>
           <WorkflowSteps steps={aiEvaluation.workflow} />
         </div>
@@ -162,7 +162,7 @@ function EvaluationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            What I look for in generated outputs
+            What I check on every clip
           </h4>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {aiEvaluation.lookFor.map((item) => (
@@ -207,13 +207,13 @@ function AnnotationPanel() {
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="rounded-2xl border border-sky-400/20 bg-sky-500/5 p-6">
         <h4 className="font-display text-base font-semibold text-foreground">
-          Why text-to-image identity matters
+          Why structured deliverables matter
         </h4>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {dataAnnotation.whyItMatters}
         </p>
         <h4 className="mt-6 mb-4 font-display text-base font-semibold text-foreground">
-          My text-to-image approach
+          My intent caption &amp; subtask approach
         </h4>
         <ol className="space-y-2.5">
           {dataAnnotation.approach.map((s, i) => (
@@ -228,7 +228,7 @@ function AnnotationPanel() {
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
         <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-          Text-to-image principles
+          Deliverable principles
         </h4>
         <div className="space-y-3">
           {dataAnnotation.principles.map((p) => (
@@ -248,18 +248,18 @@ function RubricPanel() {
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
       <div className="rounded-2xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-6">
         <h4 className="font-display text-base font-semibold text-foreground">
-          Why image-to-video matters
+          Why outcome ratings and error documentation matter
         </h4>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {rubricEvaluation.intro}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Image-to-video is where motion is born — and where character identity, environment and continuity are most at risk. A weak motion output can break an otherwise strong visual production, so motion generation is treated as a serious production stage with its own review checkpoint.
+          The outcome rating and the error record are what make a clip usable as training signal. A model learning from robot-arm tasks needs to know not just what was attempted, but whether it succeeded and exactly where execution broke down. That is why grading and error documentation are treated as first-class deliverables — never an afterthought.
         </p>
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
         <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-          My image-to-video methods
+          My rating &amp; error-documentation methods
         </h4>
         <div className="space-y-3">
           {rubricEvaluation.methods.map((m) => (
@@ -283,7 +283,7 @@ function HallucinationPanel() {
       <div className="space-y-6">
         <div className="rounded-2xl border border-violet-400/20 bg-violet-500/5 p-6">
           <h4 className="font-display text-base font-semibold text-foreground">
-            Why voice production matters
+            Why video tracking accuracy matters
           </h4>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             {hallucinationDetection.whyDangerous}
@@ -291,7 +291,7 @@ function HallucinationPanel() {
         </div>
         <div className="rounded-2xl border border-border bg-card/50 p-6">
           <h4 className="mb-4 font-display text-base font-semibold text-foreground">
-            My voice production & sequencing process
+            My CVAT video tracking process
           </h4>
           <ol className="space-y-2.5">
             {hallucinationDetection.process.map((s, i) => (
@@ -322,8 +322,8 @@ function HallucinationPanel() {
         </div>
         <div className="mt-5 rounded-xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-4">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            <span className="font-semibold text-fuchsia-200">Value for long-form AI content: </span>
-            Voice production and sequencing close the loop on AI-assisted film. A weak voice, mistimed line or disconnected audio track can break an otherwise strong visual production. My approach treats voice, sequencing and final review as a serious production stage — not an afterthought.
+            <span className="font-semibold text-fuchsia-200">Value for AI training data: </span>
+            Accurate video tracking keeps object identity stable across frames — the foundation any downstream model builds on. My approach treats track identity, bounding-box alignment and drift checks as required verification, not optional polish.
           </p>
         </div>
       </div>

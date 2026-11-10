@@ -15,11 +15,11 @@ export function Expertise({ skills = defaultExpertiseCards }: { skills?: SkillCa
           title={
             <>
               Expertise built around{" "}
-              <span className="text-gradient">multimodal prompting, character identity</span>{" "}
-              and long-form content
+              <span className="text-gradient">video annotation, multimodal prompting</span>{" "}
+              and AI production
             </>
           }
-          intro="My expertise connects multimodal prompt engineering, generative AI content creation, AI video production, creative direction, character identity and scene continuity, story development, content research and quality control, model stumping and prompt refinement. Each area is supported by the same discipline: plan before generation, keep useful references, review outputs critically, and correct inconsistencies before moving forward."
+          intro="My expertise connects video annotation and frame-level review, computer vision image annotation and instance segmentation, shot-level visual analysis, AI video production, multimodal prompt engineering, annotation quality assurance and investigative research. Each area is supported by the same discipline: plan before starting, review carefully, document accurately, and correct inconsistencies before moving forward."
           accent="violet"
         />
 

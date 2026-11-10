@@ -73,12 +73,12 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
                   <Target className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Draft Mission
+                  Production Mission
                 </h3>
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">{afrikVine.mission}</p>
               <p className="mt-3 text-[11px] italic text-muted-foreground/70">
-                Editable placeholder — to be finalized with official company details.
+                Editable via the admin CMS — this is the CV-aligned default.
               </p>
             </div>
           </Reveal>
@@ -89,12 +89,12 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
                   <Eye className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Draft Vision
+                  Production Vision
                 </h3>
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">{afrikVine.vision}</p>
               <p className="mt-3 text-[11px] italic text-muted-foreground/70">
-                Editable placeholder — to be finalized with official company details.
+                Editable via the admin CMS — this is the CV-aligned default.
               </p>
             </div>
           </Reveal>
@@ -128,7 +128,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
                   <Layers className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Planned service areas
+                  Production capabilities
                 </h3>
               </div>
               <ul className="space-y-2">
@@ -148,7 +148,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
                   <Rocket className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Client engagement process
+                  End-to-end production pipeline
                 </h3>
               </div>
               <ol className="space-y-2.5">

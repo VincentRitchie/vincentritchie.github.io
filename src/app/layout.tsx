@@ -23,20 +23,24 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
+  title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer, AI Video Producer & Video Annotation Specialist",
   description:
-    "Professional portfolio of Vincent Chimaobi Obasiochie, a Multimodal Prompt Engineer with practical experience across generative AI text, image and video production, AI video production, creative direction, character and scene consistency, prompt refinement, content research and quality control.",
+    "Professional portfolio of Vincent Chimaobi Obasiochie, a Multimodal Prompt Engineer, AI Video Producer and Video Annotation Specialist with experience in AI film and documentary production, robot-arm video annotation, CVAT image annotation, instance segmentation, scene continuity, research and quality assurance.",
   keywords: [
     "Vincent Chimaobi Obasiochie",
     "Multimodal Prompt Engineer",
+    "AI Video Producer",
+    "Video Annotation Specialist",
     "Generative AI",
     "AI Video Production",
-    "AI Creative Direction",
+    "Video Annotation",
+    "Robot-Arm Video Annotation",
+    "CVAT",
+    "Instance Segmentation",
+    "Image Annotation",
     "Character Consistency",
     "Scene Continuity",
-    "Prompt Refinement",
-    "Prompt Stress Testing",
-    "Content Quality",
+    "Annotation Quality Assurance",
     "Abuja Nigeria",
   ],
   authors: [{ name: "Vincent Chimaobi Obasiochie" }],
@@ -44,17 +48,17 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
+    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer, AI Video Producer & Video Annotation Specialist",
     description:
-      "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality. Personal portfolio of Vincent Chimaobi Obasiochie.",
+      "Multimodal Prompt Engineering, AI Video Production and Video Annotation for AI training data. Personal portfolio of Vincent Chimaobi Obasiochie.",
     siteName: "Vincent Chimaobi Obasiochie",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer",
+    title: "Vincent Chimaobi Obasiochie | Multimodal Prompt Engineer, AI Video Producer & Video Annotation Specialist",
     description:
-      "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, Creative Direction and Content Quality.",
+      "Multimodal Prompt Engineering, AI Video Production, Video Annotation and Annotation Quality Assurance.",
   },
 };
 

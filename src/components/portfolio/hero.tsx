@@ -14,15 +14,15 @@ const scrollTo = (href: string) => {
 
 const techTicker = [
   "Multimodal Prompt Engineering",
-  "Generative AI Content",
   "AI Video Production",
-  "Character Identity & Consistency",
-  "Scene & Environment Continuity",
+  "Video Annotation & Frame-Level Review",
+  "CVAT Image Annotation",
+  "Instance Segmentation",
+  "Character & Scene Consistency",
   "Story Development & Scriptwriting",
-  "Prompt Refinement",
-  "Model Stumping & Stress Testing",
-  "Creative Direction",
-  "Content Quality Control",
+  "Structured Prompting",
+  "Annotation Quality Assurance",
+  "Content Research & Evaluation",
 ];
 
 type ProfileLike = typeof defaultProfile & {
@@ -55,7 +55,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-400" />
             </span>
-            Available for remote multimodal prompt & generative AI work
+            Available for remote AI production, prompting & annotation work
           </motion.div>
 
           <motion.h1
@@ -114,7 +114,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
               </a>
             )}
             <button
-              onClick={() => scrollTo("#projects")}
+              onClick={() => scrollTo("#generative-ai-work")}
               className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
             >
               View My Work
@@ -134,7 +134,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Sparkles className="h-4 w-4 text-fuchsia-300" />
-              Independent Content Production · Upwork
+              Turing · Independent AI Production
             </span>
           </motion.div>
         </div>
@@ -170,14 +170,14 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
               className="absolute -left-4 top-10 hidden rounded-2xl border border-fuchsia-400/30 bg-card/80 px-4 py-3 backdrop-blur-md sm:block"
             >
               <p className="font-display text-xl font-bold text-gradient">29,000+</p>
-              <p className="text-[11px] text-muted-foreground">Subscribers across AI YouTube channels</p>
+              <p className="text-[11px] text-muted-foreground">Subscribers across AI channels</p>
             </motion.div>
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -right-3 bottom-24 hidden rounded-2xl border border-sky-400/30 bg-card/80 px-4 py-3 backdrop-blur-md sm:block"
             >
-              <p className="font-display text-xl font-bold text-sky-300">3.5M+</p>
+              <p className="font-display text-xl font-bold text-sky-300">13.5M+</p>
               <p className="text-[11px] text-muted-foreground">Combined views</p>
             </motion.div>
             <motion.div

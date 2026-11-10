@@ -14,11 +14,11 @@ export function SecurityResearch() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Quality Control & Content Review"
+          eyebrow="Annotation QA"
           title={
             <>
-              Guided by evidence, critical review{" "}
-              <span className="text-gradient">&amp; clear quality communication</span>
+              Guided by guidelines, careful review{" "}
+              <span className="text-gradient">&amp; documented quality findings</span>
             </>
           }
           intro={securityResearch.intro}
@@ -35,7 +35,7 @@ export function SecurityResearch() {
                     <ShieldCheck className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-foreground">
-                    Quality control philosophy
+                    Annotation QA philosophy
                   </h3>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
@@ -109,7 +109,7 @@ export function SecurityResearch() {
             <Reveal delay={0.1}>
               <div className="rounded-2xl border border-border bg-card/50 p-7">
                 <h3 className="mb-4 font-display text-lg font-semibold text-foreground">
-                  Areas of quality interest
+                  Annotation quality checks
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {securityResearch.interestAreas.map((area) => (
