@@ -62,3 +62,8 @@ prompt
 server.log
 # Skills directory
 /skills/upload/
+
+# Local session artifacts — never deploy these (may contain pasted tool
+# output, reference uploads, or transient scratch data).
+/tool-results/
+/upload/
