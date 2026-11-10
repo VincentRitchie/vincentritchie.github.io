@@ -1,0 +1,402 @@
+     1→/**
+     2→ * Portfolio content repository for Vincent Chimaobi Obasiochie.
+     3→ * Source of truth for public copy.
+     4→ *
+     5→ * Identity: Multimodal Prompt Engineer · Generative AI Content Creation ·
+     6→ * AI Video Production · Creative Direction · Content Quality.
+     7→ *
+     8→ * NOTE: This file is the single source of truth for public copy. All personal
+     9→ * narrative uses first-person voice. The CV is the factual authority — no
+    10→ * invented employers, clients, tools, or metrics.
+    11→ */
+    12→
+    13→export const profile = {
+    14→  // Primary personal identity — displayed in uppercase everywhere it appears as the main identity.
+    15→  name: "VINCENT CHIMAOBI OBASIOCHIE",
+    16→  // Homepage hero animated name only (rule: large main animated name shows only "VINCENT CHIMAOBI").
+    17→  heroName: "VINCENT CHIMAOBI",
+    18→  shortName: "VINCENT",
+    19→  initials: "VCO",
+    20→  role: "Multimodal Prompt Engineer",
+    21→  location: "Abuja, Nigeria",
+    22→  tagline:
+    23→    "Multimodal Prompt Engineering · Generative AI Content · AI Video Production · Creative Direction · Content Quality",
+    24→  heroHeadline:
+    25→    "Multimodal Prompt Engineering, Generative AI Content, AI Video Production, and Creative Direction",
+    26→  heroIntro:
+    27→    "I work with generative AI across text, image and video, using structured prompting, repeated refinement and careful visual control to turn creative ideas into long-form content. My work focuses strongly on character identity, facial appearance, environments, scene continuity, visual direction and consistent storytelling across generated scenes.",
+    28→  shortBio:
+    29→    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
+    30→  longBio:
+    31→    "Across AI-assisted film and content production, I plan scenes and visual requirements before generation, keep useful references, review outputs critically and correct inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage. My background in content writing, research and digital content review also strengthens how I approach AI-generated work.",
+    32→  // Professional photographs — profile-main.jpeg is the official header avatar.
+    33→  profileImage: "/images/profile-main.jpeg",
+    34→  avatar: "/images/profile-main.jpeg",
+    35→  // Premium hero/about showcase slider — exactly five professional photographs.
+    36→  gallery: [
+    37→    "/images/me_img1.jpeg",
+    38→    "/images/me_img2.jpeg",
+    39→    "/images/me_img3.jpeg",
+    40→    "/images/me_img4.jpeg",
+    41→    "/images/me_img5.jpeg",
+    42→  ],
+    43→  // CV-aligned contact — WhatsApp, X/Twitter, GitHub removed (not in CV).
+    44→  whatsapp: "",
+    45→  email: "vincentchimaobi042@gmail.com",
+    46→  publicEmail: "vincentchimaobi042@gmail.com",
+    47→  phone: "09068254110",
+    48→  twitter: "",
+    49→  github: "",
+    50→  linkedin: "https://www.linkedin.com/in/vincent-chimaobi042/",
+    51→};
+    52→
+    53→export type NavItem = { label: string; href: string };
+    54→
+    55→export const navItems: NavItem[] = [
+    56→  { label: "Home", href: "#home" },
+    57→  { label: "About", href: "#about" },
+    58→  { label: "Expertise", href: "#expertise" },
+    59→  { label: "Multimodal Prompting", href: "#multimodal-prompting" },
+    60→  { label: "Prompt Refinement", href: "#prompt-refinement" },
+    61→  { label: "Character Consistency", href: "#character-consistency" },
+    62→  { label: "Quality Control", href: "#quality-control" },
+    63→  { label: "Experience", href: "#experience" },
+    64→  { label: "Generative AI Work", href: "#generative-ai-work" },
+    65→  { label: "Production Approach", href: "#production-approach" },
+    66→  { label: "Articles", href: "#articles" },
+    67→  { label: "Contact", href: "#contact" },
+    68→];
+    69→
+    70→export const selectedHighlights: string[] = [
+    71→  "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views through structured prompting, repeated refinement and careful visual control.",
+    72→  "Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+    73→  "Practical experience maintaining character recognisability, facial characteristics, clothing, locations, backgrounds and visual cues across multiple generated scenes.",
+    74→  "Multimodal workflow spanning text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
+    75→  "Background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) that strengthens how I plan, evaluate and refine AI-generated work.",
+    76→  "Ongoing exploration of prompting techniques for stronger character identity, scene continuity and long-form storytelling.",
+    77→];
+    78→
+    79→/* ---------- About ---------- */
+    80→export const about = {
+    81→  headline: "Multimodal Prompt Engineering for Generative AI Content & AI Video Production",
+    82→  intro:
+    83→    "I am a Multimodal Prompt Engineer with practical experience working with generative AI across text, image and video production. My work focuses on turning creative ideas into controlled, long-form visual content through structured prompting, repeated refinement and close attention to character identity, facial appearance, clothing, environments, locations, backgrounds and scene continuity.",
+    84→  aboutMe: [
+    85→    "My professional path combines generative AI content creation, AI video production, content writing, research and digital content quality review. In practice, these areas share the same foundation: careful planning before generation, useful references, critical review of outputs, and correction of inconsistencies before moving forward. This approach has helped me reduce unnecessary retries, maintain stronger continuity and use different generative tools according to the needs of each production stage.",
+    86→    "I have built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, created more than 20 Nollywood-style AI films, and worked on long-form character-driven storytelling. My background in content writing, research and digital content review also strengthens how I approach AI-generated work — I read requirements carefully, separate evidence from assumption, identify weak reasoning, and communicate findings in a structured and practical way.",
+    87→  ],
+    88→  howIWork: [
+    89→    "My work begins with planning. Before generating any scene, I plan the story, characters, settings, visual cues and overall creative direction. I keep useful references so that each generated scene can be checked against the intended look, tone and continuity rather than accepted on first impression.",
+    90→    "From there, I work in stages — text-to-image, image-to-video, voice production, sequencing and review. I review outputs critically, identify inconsistencies in character identity, facial appearance, clothing, environments or backgrounds, and correct them before moving forward. This reduces unnecessary retries and helps maintain stronger continuity across long-form content.",
+    91→  ],
+    92→  professionalDirection:
+    93→    "My long-term direction is to keep building strong, character-consistent, long-form AI content — Nollywood-style films, story-driven video and multimodal productions — while refining my prompting techniques across text, image and video. I am especially interested in work where creative direction, character identity and scene continuity matter, and where my background in content writing, research and quality review strengthens the final output.",
+    94→  differentiators: [
+    95→    {
+    96→      title: "Plan before generation",
+    97→      body: "I plan scenes, characters, settings and visual cues before generating, so each output can be checked against the intended look and continuity.",
+    98→    },
+    99→    {
+   100→      title: "Character identity first",
+   101→      body: "I maintain recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes.",
+   102→    },
+   103→    {
+   104→      title: "Critical review at every stage",
+   105→      body: "I review outputs critically and correct inconsistencies in characters, environments, locations or backgrounds before moving forward.",
+   106→    },
+   107→    {
+   108→      title: "Multimodal control",
+   109→      body: "I work across text, image and video generation in one production process, selecting outputs from different generative stages according to each production requirement.",
+   110→    },
+   111→    {
+   112→      title: "Story-driven refinement",
+   113→      body: "I treat prompting as a story tool — every scene serves the narrative, tone and emotional direction of the long-form content.",
+   114→    },
+   115→  ],
+   116→  brandStatement:
+   117→    "I build my work around structured prompting, repeated refinement and careful visual control. I want every visitor to this portfolio to understand not just what I do, but how I think: plan before generation, keep useful references, review outputs critically, correct inconsistencies early, and maintain character identity, scene continuity and visual direction across long-form AI content.",
+   118→};
+   119→
+   120→/* ---------- Expertise overview ---------- */
+   121→export const expertiseCards = [
+   122→  { title: "Multimodal Prompt Engineering", icon: "Sparkles", accent: "violet", body: "Structured prompting across text, image and video, with close control of requirements, visual direction and generated results.", href: "#multimodal-prompting" },
+   123→  { title: "Generative AI Content Creation", icon: "Clapperboard", accent: "magenta", body: "Development of AI-assisted story and visual content from initial concept through final review.", href: "#multimodal-prompting" },
+   124→  { title: "AI Video Production", icon: "Clapperboard", accent: "blue", body: "Long-form video production using story development, scripting, image generation, video generation, voice production, sequencing and review.", href: "#prompt-refinement" },
+   125→  { title: "AI Creative Direction", icon: "Compass", accent: "violet", body: "Planning characters, settings, scenes, visual cues and overall creative direction before and during generation.", href: "#production-approach" },
+   126→  { title: "Character Identity & Facial Consistency", icon: "Users", accent: "magenta", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement.", href: "#character-consistency" },
+   127→  { title: "Scene & Environment Continuity", icon: "Layers", accent: "blue", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across generated scenes.", href: "#character-consistency" },
+   128→  { title: "Story Development & Scriptwriting", icon: "FileText", accent: "violet", body: "Developing story-based content, scripts and narrative direction for long-form AI productions.", href: "#production-approach" },
+   129→  { title: "Content Research & Quality Control", icon: "ScanSearch", accent: "magenta", body: "Research, critical reading, organised information gathering and manual review for accuracy, meaning and quality.", href: "#quality-control" },
+   130→  { title: "Model Stumping & Prompt Stress Testing", icon: "ShieldAlert", accent: "blue", body: "Testing difficult instructions and model behaviour to identify weaknesses, inconsistency or failure under demanding prompts.", href: "#quality-control" },
+   131→  { title: "Prompt Refinement & Production Planning", icon: "Lightbulb", accent: "violet", body: "Improving prompts from observed results and defining scenes or production requirements clearly before generation.", href: "#prompt-refinement" },
+   132→];
+   133→
+   134→export const expertiseIntegration =
+   135→  "My multimodal prompting work controls how text, image and video outputs are produced. My character consistency practice keeps recognisability strong across long-form content. My scene and environment continuity work holds locations, backgrounds and visual cues together across scenes. My story development and scriptwriting turn ideas into structured narrative direction. My prompt refinement improves outputs from observed results. My content research and quality control background strengthens how I review, evaluate and correct AI-generated work. Together, these areas form a practical professional profile for multimodal prompt engineering, generative AI content and AI video production.";
+   136→
+   137→/* ---------- Multimodal Prompting (was AI Evaluation) ----------
+   138→ * Export names kept stable so existing component imports keep working.
+   139→ * Content is fully replaced with multimodal-prompting material.
+   140→ */
+   141→export const aiEvaluation = {
+   142→  headline: "Multimodal Prompt Engineering Across Text, Image and Video",
+   143→  intro:
+   144→    "Multimodal prompt engineering is the structured practice of guiding generative AI across text, image and video in one production process. My approach focuses on clear objectives, careful context, repeated refinement and close control of visual direction, character identity and scene continuity.",
+   145→  whatItMeans:
+   146→    "Multimodal prompting is not writing a single instruction and accepting the first result. It is the disciplined process of defining the creative objective, preparing references and constraints, generating the first output with the appropriate tool, reviewing the result critically, and refining prompts, assets or direction until the output meets the intended standard. A polished output can still miss the brief, break character identity, drift in environment or fail continuity — my role is to catch and correct those issues before they become final content.",
+   147→  workflow: [
+   148→    { step: "Clarify the creative objective", body: "Identify the story, tone, characters, setting, visual cues and the intended emotional effect before any generation begins." },
+   149→    { step: "Prepare references and constraints", body: "Collect useful references for character identity, clothing, environments, locations and backgrounds so each output can be checked against intent." },
+   150→    { step: "Generate the first output", body: "Use the appropriate generative stage — text-to-image, image-to-video, voice production — with a prompt aligned to the objective." },
+   151→    { step: "Review critically", body: "Check coherence, realism, character recognisability, facial appearance, clothing, environment continuity, narrative alignment and audience suitability." },
+   152→    { step: "Refine and correct", body: "Adjust prompts, references or direction to address weaknesses, inconsistencies or failures identified during review." },
+   153→    { step: "Finalise only when ready", body: "Accept the output only after it meets the intended quality standard and supports the long-form story direction." },
+   154→  ],
+   155→  lookFor: [
+   156→    { label: "Character recognisability", body: "Does the generated character remain identifiable across scenes through facial characteristics, clothing and visual cues?" },
+   157→    { label: "Facial appearance", body: "Is the face consistent with the intended identity, without unintended drift between scenes?" },
+   158→    { label: "Clothing and styling", body: "Does the wardrobe, accessories and styling remain coherent with the story and the character?" },
+   159→    { label: "Environment continuity", body: "Are locations, backgrounds, settings, objects and lighting consistent with the established scene?" },
+   160→    { label: "Narrative alignment", body: "Does the output serve the story, tone and intended emotional effect?" },
+   161→    { label: "Realism and artifacts", body: "Is the output free of obvious AI artifacts, distortion, morphing or implausible motion?" },
+   162→    { label: "Audience suitability", body: "Is the content appropriate for the intended audience and platform?" },
+   163→    { label: "Production fit", body: "Does the output integrate cleanly into the longer sequence, voice track and final edit?" },
+   164→  ],
+   165→  professionalValue:
+   166→    "Good multimodal prompting improves the reliability of long-form AI content. It helps reduce unnecessary retries, keeps character identity stable, holds environments and backgrounds together, and produces scenes that fit the story. My value is in bringing careful planning, critical review and structured refinement to that process — not just generating outputs, but explaining why an output works, where it fails, and what needs to change.",
+   167→  relatedExperience:
+   168→    "My multimodal prompting experience includes building and managing AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, and creating more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
+   169→};
+   170→
+   171→/* Text-to-image focus (replaces Data Annotation export shape) */
+   172→export const dataAnnotation = {
+   173→  headline: "Text-to-Image Generation with Character and Visual Control",
+   174→  intro:
+   175→    "Text-to-image generation is where the visual identity of a production is first established. My approach focuses on defining characters, settings, clothing, lighting and visual cues clearly before generation, and reviewing each generated image against the intended look before it is accepted.",
+   176→  whyItMatters:
+   177→    "Every later stage — image-to-video, sequencing, voice production — depends on the visual identity established at the text-to-image stage. If character identity, facial appearance, clothing, environment or background drift here, the inconsistency propagates through the whole production. That is why careful prompt design, useful references and critical review at this stage reduce unnecessary retries later and protect continuity across long-form content.",
+   178→  approach: [
+   179→    "Define the character identity, facial characteristics, clothing and styling before generation.",
+   180→    "Establish the setting, environment, location, background and lighting in the prompt and references.",
+   181→    "Specify the visual cues, mood, tone and intended emotional effect.",
+   182→    "Generate the first image with a prompt aligned to the objective.",
+   183→    "Review the output for character recognisability, environment continuity and artifact risk.",
+   184→    "Refine the prompt or references and regenerate until the output meets the intended standard.",
+   185→  ],
+   186→  principles: [
+   187→    { label: "Identity first", body: "Character recognisability is established and protected before any environment or motion work begins." },
+   188→    { label: "Reference discipline", body: "Useful references keep the generated output anchored to the intended look rather than drifting." },
+   189→    { label: "Critical review", body: "Each image is reviewed against the brief — not accepted on first impression." },
+   190→    { label: "Iterative refinement", body: "Prompts and references are revised based on observed output, not guesswork." },
+   191→    { label: "Continuity awareness", body: "Every accepted image is checked against the longer sequence it will belong to." },
+   192→  ],
+   193→};
+   194→
+   195→/* Image-to-video focus (replaces Rubric Evaluation export shape) */
+   196→export const rubricEvaluation = {
+   197→  headline: "Image-to-Video Generation Guided by Story and Continuity",
+   198→  intro:
+   199→    "Image-to-video generation turns a static visual into motion. My approach focuses on motion quality, narrative alignment, character consistency and continuity with the surrounding scenes — not just accepting the first motion output.",
+   200→  methods: [
+   201→    { label: "Motion purpose", body: "Before generating motion, I identify the narrative purpose of the shot — what the audience needs to see, feel or understand — so the motion supports the story rather than distracting from it." },
+   202→    { label: "Character stability", body: "I check that facial characteristics, clothing and posture remain consistent with the source image, without unintended morphing, distortion or identity drift during motion." },
+   203→    { label: "Environment consistency", body: "I review the location, background, lighting and objects across the motion to ensure the scene holds together visually and matches the established environment." },
+   204→  ],
+   205→};
+   206→
+   207→/* Voice production focus (replaces Hallucination Detection export shape) */
+   208→export const hallucinationDetection = {
+   209→  headline: "Voice Production, Sequencing and Review for Long-Form AI Content",
+   210→  intro:
+   211→    "Voice production and sequencing close the loop on AI-assisted film and long-form content. My approach focuses on voice suitability, narrative pacing, audio-visual alignment and final review before a production is considered complete.",
+   212→  whyDangerous:
+   213→    "A weak voice, mistimed line or disconnected audio track can break an otherwise strong visual production. Voice is not just an addition — it carries character, tone and emotion. If voice production is rushed, mistimed or inconsistent with the visual identity, the audience feels the disconnect even when they cannot name it. That is why voice production, sequencing and review are treated as a serious production stage, not an afterthought.",
+   214→  process: [
+   215→    "Identify the voice direction — character, tone, accent, pacing and emotional register — that fits the story.",
+   216→    "Produce or select voice outputs aligned to the characters and the scene.",
+   217→    "Sequence voice against the visual track, checking alignment, pacing and emotional beat.",
+   218→    "Review the audio-visual combination for coherence, realism and narrative alignment.",
+   219→    "Refine voice, pacing or sequencing where the combination feels off.",
+   220→    "Finalise only when the audio-visual production meets the intended quality standard.",
+   221→  ],
+   222→  techniques: [
+   223→    { label: "Voice-to-character fit", body: "Each voice should match the character identity established in the visual stage." },
+   224→    { label: "Pacing control", body: "Pacing should serve the narrative beat — not the default speed of the generator." },
+   225→    { label: "Audio-visual alignment", body: "Voice and motion should feel connected, with natural timing and emotional register." },
+   226→    { label: "Final review", body: "The combined output is reviewed as a single production, not as separate audio and visual pieces." },
+   227→    { label: "Continuity across scenes", body: "Voice direction should remain consistent across scenes that share a character or setting." },
+   228→  ],
+   229→};
+   230→
+   231→/* ---------- Prompt Refinement (was Prompt Engineering & Generative AI) ---------- */
+   232→export const promptEngineering = {
+   233→  headline: "Prompt Refinement: Improving Outputs from Observed Results",
+   234→  intro:
+   235→    "Prompt refinement is the process of improving prompts based on what a generative tool actually produces. My approach focuses on observing outputs critically, tracing weaknesses back to the prompt, and revising instructions to address the specific issue rather than changing everything blindly.",
+   236→  understanding:
+   237→    "A prompt is not a one-shot instruction — it is a working document that evolves with the production. A weak prompt may leave too much room for interpretation, causing the model to drift in character identity, environment, tone or continuity. A refined prompt defines the objective, anchors the references, sets boundaries, and explains what a successful output should look like — and it improves with each generation cycle.",
+   238→  principles: [
+   239→    { label: "Define the objective", body: "The prompt should state the exact creative goal — story beat, character action, environment, tone and intended emotional effect." },
+   240→    { label: "Anchor references", body: "Useful references keep the output aligned to the intended character identity, clothing, environment and visual cues." },
+   241→    { label: "Set constraints clearly", body: "The prompt should explain what must be included and what should be avoided — drift, distortion, unwanted style, off-brief additions." },
+   242→    { label: "Specify output structure", body: "Where the output is structured — shot framing, character placement, scene composition — the prompt should define it explicitly." },
+   243→    { label: "Add success criteria", body: "The prompt should make it possible to judge whether the output succeeded against the brief." },
+   244→    { label: "Iterate from evidence", body: "Prompt refinement should respond to actual output behavior — observed drift, artifact, identity loss or continuity break — not guesswork." },
+   245→  ],
+   246→  debugWorkflow: [
+   247→    "Review the output to identify what failed: character recognisability, facial appearance, clothing, environment, motion, narrative alignment, artifact risk.",
+   248→    "Trace the failure back to the prompt: missing context, unclear instruction, weak references, poor output guidance.",
+   249→    "Rewrite the prompt to correct the specific weakness rather than changing everything blindly.",
+   250→    "Run another output and compare whether the revised prompt improved the result.",
+   251→    "Continue refinement until the prompt reliably produces the intended quality standard.",
+   252→  ],
+   253→  useCases: [
+   254→    "Multimodal prompting across text, image and video for long-form AI productions.",
+   255→    "Character identity and facial consistency prompts for repeated scenes.",
+   256→    "Environment, location and background continuity prompts across scenes.",
+   257→    "Story development and scriptwriting prompts for narrative direction.",
+   258→    "Voice production and sequencing prompts for audio-visual alignment.",
+   259→    "Prompt stress testing and model stumping to surface weaknesses under demanding instructions.",
+   260→  ],
+   261→};
+   262→
+   263→export const generativeAI = {
+   264→  headline: "Practical Generative AI Workflows for Long-Form Content & AI Video Production",
+   265→  intro:
+   266→    "Generative AI is most useful when it is guided by clear creative goals, reviewed carefully, and integrated into a structured multimodal workflow. I use generative AI tools to develop story, characters, scenes, voice and final sequencing while maintaining critical human review at every stage.",
+   267→  experience:
+   268→    "My generative AI work includes AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views, more than 20 Nollywood-style AI films, long-form character-driven storytelling, image generation, video generation, voice production, sequencing and review. I work across text, image and video generation in one production process, selecting outputs from different generative stages according to the production requirement.",
+   269→  tools: ["Text-to-Image", "Image-to-Video", "Voice Production", "Sequencing", "Critical Review"],
+   270→  workflow: [
+   271→    "Define the creative objective — story, characters, setting, tone, visual cues.",
+   272→    "Identify the target audience and intended output format.",
+   273→    "Prepare the prompt, references, constraints and success criteria.",
+   274→    "Generate the first output using the appropriate generative stage.",
+   275→    "Review the result for coherence, realism, character identity, environment continuity and narrative alignment.",
+   276→    "Refine prompts, assets or direction based on observed weaknesses.",
+   277→    "Finalize only after the output meets the intended standard.",
+   278→  ],
+   279→  qualityReview:
+   280→    "The important part of my workflow is not simply generating content. It is the review process that comes after generation. I check whether the output is coherent, visually consistent, narratively useful and appropriate for the audience. When an output fails, I identify whether the weakness came from the prompt, the tool limitation, the reference material, or the editing process — and I correct it before moving forward.",
+   281→  stats: [
+   282→    { value: "29,000+", label: "Subscribers across AI YouTube channels" },
+   283→    { value: "3.5M+", label: "Combined views" },
+   284→    { value: "20+", label: "Nollywood-style AI films" },
+   285→  ],
+   286→};
+   287→
+   288→export const aiVideo = {
+   289→  headline: "AI Video Production: Story, Sequencing and Review",
+   290→  intro:
+   291→    "AI video production combines story development, scripting, image generation, video generation, voice production, sequencing and review. My work in this area focuses on producing long-form, character-driven content where continuity, realism and narrative alignment matter.",
+   292→  creativeDirection:
+   293→    "AI video workflows require more than writing a prompt and accepting the first result. The process begins with a clear concept: the story, tone, setting, character direction, visual style and intended emotional effect. From there, prompts and assets are refined until the output supports the creative goal — and reviewed critically at every stage before being accepted into the final sequence.",
+   294→  qualityFactors: [
+   295→    "Narrative coherence and logical scene progression.",
+   296→    "Character recognisability and facial consistency across scenes.",
+   297→    "Clothing, styling and visual identity continuity.",
+   298→    "Environment, location, background and lighting consistency.",
+   299→    "Realism, motion quality and avoidance of obvious AI artifacts.",
+   300→    "Voice-to-character fit and audio-visual alignment.",
+   301→    "Audience clarity and emotional impact.",
+   302→    "Alignment between prompt, generated output and final editing direction.",
+   303→  ],
+   304→};
+   305→
+   306→/* ---------- Character Consistency (was Web Development) ---------- */
+   307→export const webDevelopment = {
+   308→  headline: "Character Identity, Facial Consistency and Scene Continuity Across Generated Scenes",
+   309→  intro:
+   310→    "Maintaining character recognisability, facial appearance, clothing, environments, locations and backgrounds across multiple generated scenes is one of the hardest problems in long-form AI content. My approach combines structured prompting, useful references, repeated refinement and critical review at every stage.",
+   311→  philosophy:
+   312→    "Character identity is the foundation of long-form AI storytelling. If a character is not recognisable across scenes, the story breaks — no matter how strong the individual shots are. My approach treats character identity, facial consistency and scene continuity as production discipline, not luck. The goal is to make the audience see the same person in the same world across every scene, even when each scene was generated separately.",
+   313→  process: [
+   314→    { step: "Establish identity", body: "Define the character identity, facial characteristics, clothing, styling and visual cues before any scene generation begins." },
+   315→    { step: "Build references", body: "Collect useful references for the character, environment, location, background and lighting so each output can be checked against intent." },
+   316→    { step: "Generate per scene", body: "Produce each scene with a prompt anchored to the established identity and references." },
+   317→    { step: "Review for drift", body: "Check each output for character recognisability, facial appearance, clothing, environment and background continuity." },
+   318→    { step: "Correct inconsistencies", body: "Refine prompts or references and regenerate where drift, distortion or identity loss appears." },
+   319→    { step: "Sequence", body: "Order the accepted scenes into a coherent sequence that respects narrative direction and continuity." },
+   320→    { step: "Final review", body: "Review the full sequence as one production, checking continuity, pacing, tone and emotional effect end-to-end." },
+   321→  ],
+   322→  priorities: [
+   323→    { label: "Character recognisability", body: "The audience should see the same person across every scene." },
+   324→    { label: "Facial consistency", body: "Facial characteristics should not drift, morph or break identity between scenes." },
+   325→    { label: "Clothing continuity", body: "Wardrobe, accessories and styling should remain coherent with the story." },
+   326→    { label: "Environment continuity", body: "Locations, backgrounds, settings and objects should remain consistent across scenes." },
+   327→    { label: "Narrative alignment", body: "Each scene should serve the story, tone and intended emotional effect." },
+   328→    { label: "Critical review", body: "Every output is reviewed against the brief — not accepted on first impression." },
+   329→    { label: "Iterative refinement", body: "Prompts and references are revised based on observed drift, not guesswork." },
+   330→    { label: "End-to-end continuity", body: "The full sequence is reviewed as one production, not as isolated shots." },
+   331→  ],
+   332→  serviceAreas: [
+   333→    { title: "Character Identity & Facial Consistency", icon: "Users", body: "Maintaining recognisability through facial characteristics, clothing, visual references and repeated refinement across multiple generated scenes." },
+   334→    { title: "Scene & Environment Continuity", icon: "Layers", body: "Maintaining locations, backgrounds, settings, objects and visual continuity across scenes — so the world stays coherent end-to-end." },
+   335→    { title: "Wardrobe & Styling Coherence", icon: "Sparkles", body: "Keeping clothing, accessories and styling aligned with the character and story across scenes, generations and stages." },
+   336→    { title: "Visual Direction & Tone", icon: "Compass", body: "Holding the overall creative direction, lighting, mood and visual cues consistent across the long-form production." },
+   337→  ],
+   338→};
+   339→
+   340→/* ---------- Quality Control (was Security Research) ---------- */
+   341→export const securityResearch = {
+   342→  headline: "Quality Control, Model Stumping and Content Review for Generative AI",
+   343→  intro:
+   344→    "Quality control for generative AI combines content research, critical review, model stumping and prompt stress testing. My approach focuses on identifying weaknesses, inconsistencies and failures in AI outputs — and correcting them before they reach a final production or audience.",
+   345→  philosophy:
+   346→    "Quality control is not a final checkbox. It is a discipline that runs through every stage of a generative AI production. I plan before generation, keep useful references, review outputs critically, identify where a model fails under demanding prompts, and correct inconsistencies before moving forward. My background in content writing, research and digital content quality review (Upwork, TELUS Digital, Remotasks) shapes how I approach this work.",
+   347→  methodology: [
+   348→    { step: "Define the standard", body: "Clarify what a successful output looks like — character identity, environment, narrative alignment, realism, audience suitability — before any review." },
+   349→    { step: "Review critically", body: "Inspect each output against the standard: character recognisability, facial appearance, clothing, environment, background, motion, narrative alignment, artifact risk." },
+   350→    { step: "Identify weaknesses", body: "Look for drift, distortion, identity loss, environment breaks, unsupported claims, weak reasoning, ambiguity, overconfidence or inconsistency." },
+   351→    { step: "Stress-test prompts", body: "Probe the model with difficult, ambiguous or demanding instructions to surface where it fails, hallucinates or produces inconsistent behaviour." },
+   352→    { step: "Trace the cause", body: "Identify whether the weakness came from the prompt, the reference, the tool limitation or the editing process." },
+   353→    { step: "Correct and refine", body: "Revise the prompt, references or direction to address the specific weakness rather than changing everything blindly." },
+   354→    { step: "Final review", body: "Review the corrected output against the standard and the longer sequence it belongs to." },
+   355→    { step: "Document learnings", body: "Capture what failed and what worked so future productions benefit from the refinement." },
+   356→  ],
+   357→  interestAreas: [
+   358→    "Character identity drift across scenes.",
+   359→    "Facial appearance and morphing artifacts.",
+   360→    "Environment, location and background inconsistency.",
+   361→    "Hallucinated or unsupported claims in text generation.",
+   362→    "Model behaviour under ambiguous, conflicting or demanding instructions.",
+   363→    "Continuity breaks across long-form sequences.",
+   364→    "Voice-to-character fit and audio-visual alignment.",
+   365→    "Audience suitability, accuracy and quality of final outputs.",
+   366→  ],
+   367→  reportingStyle:
+   368→    "My reporting style focuses on clarity and usefulness: what the weakness is, where it appears, why it matters, what evidence supports the finding, how it can be reproduced, and what correction or refinement is recommended. The goal is always to make the next output stronger, not just to flag the current one as weak.",
+   369→  publicNote:
+   370→    "I can discuss my general methodology, quality-control principles, model stumping approach, prompt stress testing, and review process. I do not expose confidential client content, private productions, internal review data or unpublished assets unless explicitly authorized.",
+   371→};
+   372→
+   373→/* ---------- Experience ---------- */
+   374→export const experience = [
+   375→  {
+   376→    role: "Generative AI Content Creator & AI Video Producer",
+   377→    org: "Independent Content Production",
+   378→    type: "Remote",
+   379→    period: "Oct 2023 — Present",
+   380→    summary:
+   381→      "Built and managed AI-powered YouTube channels with more than 29,000 subscribers and more than 3.5 million combined views. Created more than 20 Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+   382→    points: [
+   383→      "AI-powered YouTube channels with 29,000+ subscribers and 3.5M+ combined views.",
+   384→      "20+ Nollywood-style AI films using story development, scripting, prompting, image generation, video generation, voice production, sequencing and review.",
+   385→      "Character recognisability, facial characteristics, clothing, settings, visual cues maintained across long story-based productions.",
+   386→      "Scene consistency, creative refinement and ongoing exploration of prompting techniques.",
+   387→    ],
+   388→    methods: [],
+   389→  },
+   390→  {
+   391→    role: "Content Writer & Research Assistant",
+   392→    org: "Upwork",
+   393→    type: "Remote",
+   394→    period: "Dec 2020 — Present",
+   395→    summary:
+   396→      "Supported more than 20 clients with writing, research, editing and digital content development. Applied generative-AI-assisted drafting and editing alongside manual accuracy and quality review.",
+   397→    points: [
+   398→      "20+ clients supported with writing, research, editing and digital content development.",
+   399→      "Generative-AI-assisted drafting and editing integrated into content workflows.",
+   400→      "Manual accuracy and quality review applied to every delivered piece.",
+
+[showing lines 1-400 of 647; use offset=401 with limit to continue reading]
