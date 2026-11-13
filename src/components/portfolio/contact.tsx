@@ -13,8 +13,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Send, CheckCircle2, Loader2, ShieldCheck, Download, FileText } from "lucide-react";
+import { Send, CheckCircle2, Loader2, ShieldCheck, FileText, Eye } from "lucide-react";
 import { toast } from "sonner";
+import { PdfViewerModal } from "./pdf-viewer-modal";
+import { PUBLIC_CV_PATH } from "@/lib/police-reconstructions";
 
 type Status = "idle" | "loading" | "success";
 
@@ -31,6 +33,7 @@ export function Contact({
   profile?: ProfileLike;
 } = {}) {
   const cvPath = (profile as ProfileLike).cvPath ?? null;
+  const [cvOpen, setCvOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [form, setForm] = useState({
     name: "",
@@ -177,18 +180,19 @@ export function Contact({
                     <FileText className="h-5 w-5" />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm font-semibold text-emerald-200">Request CV / Résumé</p>
+                    <p className="text-sm font-semibold text-emerald-200">View My CV</p>
                     <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
-                      Full CV available on request for relevant opportunities, collaborations, and project discussions.
+                      My updated professional CV — read it right here on the site, no download needed.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
-                      <a
-                        href={`mailto:vincentchimaobi042@gmail.com?subject=${encodeURIComponent("CV Request — Vincent Chimaobi Obasiochie")}&body=${encodeURIComponent("Hello,\n\nI would like to request your full CV / résumé.\n\nThank you.")}`}
+                      <button
+                        type="button"
+                        onClick={() => setCvOpen(true)}
                         className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 px-3 py-1.5 text-xs font-semibold text-emerald-100 transition-all hover:bg-emerald-500/30"
                       >
-                        <Download className="h-3 w-3" />
-                        Request via Email
-                      </a>
+                        <Eye className="h-3 w-3" />
+                        View My CV
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -354,6 +358,15 @@ export function Contact({
           </Reveal>
         </div>
       </div>
+
+      {/* CV — integrated document viewer (updated CV, read online) */}
+      <PdfViewerModal
+        open={cvOpen}
+        onClose={() => setCvOpen(false)}
+        src={cvPath || PUBLIC_CV_PATH}
+        title="Vincent Chimaobi Obasiochie — Professional CV"
+        subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
+      />
     </Section>
   );
 }

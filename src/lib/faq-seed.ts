@@ -88,10 +88,10 @@ export const FAQ_SEED = [
     order: 10,
   },
   {
-    question: "Can I download your CV?",
+    question: "Can I view your CV?",
     answer:
-      "My full CV is available on request for relevant opportunities, collaborations and project discussions. Use the Request CV button in the Contact section to email me directly, and I will share the latest CV with you. I do not publish a direct download link on this website.",
-    keywords: "cv,resume,download,pdf,document,request",
+      "Yes — my updated professional CV can be read directly on this website. Use the View My CV button in the hero or Contact section to open it in the site's document viewer. It is provided for reading online rather than as a direct download.",
+    keywords: "cv,resume,view,pdf,document,read,online",
     category: "contact",
     order: 11,
   },

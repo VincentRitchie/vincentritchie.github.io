@@ -4,6 +4,7 @@ import { Reveal, Section, SectionHeading, GlowCard, Icon, accentMap, type Accent
 import { projects as defaultProjects } from "@/lib/portfolio-data";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { assetPath } from "@/lib/asset-path";
+import { PoliceReconstructions } from "./police-reconstructions";
 
 type ProjectItem = typeof defaultProjects[number];
 
@@ -88,6 +89,12 @@ export function Projects({ projects = defaultProjects }: { projects?: ProjectIte
             );
           })}
         </div>
+
+        {/* Police Bodycam & Dashcam Reconstructions — dedicated category
+            inside Selected Work (reached via the existing View My Work
+            navigation). Data-driven; future batches only add media and
+            registry entries. */}
+        <PoliceReconstructions />
       </div>
     </Section>
   );

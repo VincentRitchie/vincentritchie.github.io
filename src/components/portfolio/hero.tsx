@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowDown, Sparkles, MapPin } from "lucide-react";
+import { ArrowRight, ArrowDown, Sparkles, MapPin, FileText } from "lucide-react";
 import { profile as defaultProfile } from "@/lib/portfolio-data";
 import { GlowOrb } from "./shared";
 import { AnimatedHeroName } from "./animated-name";
 import { HeroSlider } from "./hero-slider";
+import { PdfViewerModal } from "./pdf-viewer-modal";
+import { PUBLIC_CV_PATH } from "@/lib/police-reconstructions";
 import { assetPath } from "@/lib/asset-path";
 
 const scrollTo = (href: string) => {
@@ -31,6 +34,7 @@ type ProfileLike = typeof defaultProfile & {
 
 export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {}) {
   const cvPath = (profile as ProfileLike).cvPath ?? null;
+  const [cvOpen, setCvOpen] = useState(false);
   return (
     <section
       id="home"
@@ -104,15 +108,13 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
             >
               Contact Me
             </button>
-            {cvPath && (
-              <a
-                href={cvPath}
-                download
-                className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-5 py-3 text-sm font-semibold text-emerald-200 backdrop-blur-sm transition-all hover:bg-emerald-500/20"
-              >
-                Download CV
-              </a>
-            )}
+            <button
+              onClick={() => setCvOpen(true)}
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-5 py-3 text-sm font-semibold text-emerald-200 backdrop-blur-sm transition-all hover:bg-emerald-500/20"
+            >
+              <FileText className="h-4 w-4" />
+              View My CV
+            </button>
             <button
               onClick={() => scrollTo("#generative-ai-work")}
               className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
@@ -208,6 +210,15 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
           </div>
         </div>
       </div>
+
+      {/* CV — integrated document viewer (updated CV, read online) */}
+      <PdfViewerModal
+        open={cvOpen}
+        onClose={() => setCvOpen(false)}
+        src={cvPath || PUBLIC_CV_PATH}
+        title="Vincent Chimaobi Obasiochie — Professional CV"
+        subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
+      />
     </section>
   );
 }
