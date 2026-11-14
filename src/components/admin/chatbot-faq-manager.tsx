@@ -109,7 +109,7 @@ export function ChatbotFaqManager({ initial }: { initial: Faq[] }) {
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Bot className="h-4 w-4 text-violet-300" />
           {unknownCount > 0 ? (
-            <span>{unknownCount} unanswered visitor questions logged — review and add as FAQs.</span>
+            <span>{unknownCount} unanswered visitor questions logged; review and add as FAQs.</span>
           ) : (
             <span>No unanswered visitor questions logged.</span>
           )}

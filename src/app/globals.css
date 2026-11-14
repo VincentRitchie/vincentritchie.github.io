@@ -46,7 +46,7 @@
 
 /* ============================================================
    PREMIUM DARK NEON-TECH DESIGN SYSTEM
-   Vincent Chimaobi Obasiochie — Personal Portfolio
+   Vincent Chimaobi Obasiochie: Personal Portfolio
    Palette: deep dark base + purple / violet / magenta / blue /
    silver / white neon accents
    ============================================================ */
@@ -54,7 +54,7 @@
 :root {
   --radius: 0.875rem;
 
-  /* Base surfaces — dark-first premium */
+  /* Base surfaces: dark-first premium */
   --background: oklch(0.13 0.02 285);
   --foreground: oklch(0.97 0.005 285);
 
@@ -64,18 +64,18 @@
   --popover: oklch(0.16 0.025 285);
   --popover-foreground: oklch(0.97 0.005 285);
 
-  /* Primary — electric violet */
+  /* Primary: electric violet */
   --primary: oklch(0.62 0.25 295);
   --primary-foreground: oklch(0.99 0 0);
 
-  /* Secondary — deep plum surface */
+  /* Secondary: deep plum surface */
   --secondary: oklch(0.24 0.04 290);
   --secondary-foreground: oklch(0.95 0.01 285);
 
   --muted: oklch(0.22 0.03 285);
   --muted-foreground: oklch(0.68 0.03 285);
 
-  /* Accent — magenta */
+  /* Accent: magenta */
   --accent: oklch(0.66 0.27 330);
   --accent-foreground: oklch(0.99 0 0);
 
@@ -290,7 +290,7 @@
 }
 
 /* ============================================================
-   HERO ANIMATED NAME — premium entrance + continuous effects
+   HERO ANIMATED NAME: premium entrance + continuous effects
    Gradient movement + soft neon glow pulse (subtle, professional)
    ============================================================ */
 .hero-name {
@@ -352,12 +352,12 @@ select,
   user-select: text;
   -webkit-touch-callout: default;
 }
-/* Discourage image dragging — clicks/links still work */
+/* Discourage image dragging: clicks/links still work */
 img {
   -webkit-user-drag: none;
   user-drag: none;
 }
-/* Ownership watermark — subtle, non-blocking */
+/* Ownership watermark: subtle, non-blocking */
 .ownership-notice {
   position: fixed;
   bottom: 0.5rem;

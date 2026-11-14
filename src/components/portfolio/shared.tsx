@@ -46,6 +46,7 @@ import {
   Link,
   Zap,
   Linkedin,
+  Cctv,
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -95,6 +96,7 @@ export const iconMap: Record<string, LucideIcon> = {
   Link,
   Zap,
   Linkedin,
+  Cctv,
 };
 
 export function Icon({

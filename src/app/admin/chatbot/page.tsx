@@ -17,7 +17,7 @@ export default async function AdminChatbotPage() {
     <>
       <AdminPageHeader
         title="Chatbot FAQs"
-        description="Manage the pre-written questions and answers the public chatbot uses for instant self-service. The chatbot is FAQ-based only — no external LLM. Unanswered visitor questions are logged for your review so you can add them as new FAQs."
+        description="Manage the pre-written questions and answers the public chatbot uses for instant self-service. The chatbot is FAQ-based only; no external LLM. Unanswered visitor questions are logged for your review so you can add them as new FAQs."
         action={items.length > 0 ? <StatusBadge tone="violet">{items.length} FAQs</StatusBadge> : undefined}
       />
       <ChatbotFaqManager initial={JSON.parse(JSON.stringify(items))} />

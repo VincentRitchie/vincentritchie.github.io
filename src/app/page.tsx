@@ -4,7 +4,7 @@ import { PortfolioSite, type PortfolioSiteContent } from "@/components/portfolio
 export const dynamic = "force-dynamic";
 
 /**
- * Public homepage — SERVER component.
+ * Public homepage: SERVER component.
  *
  * Calls getMergedContent() (DB-over-portfolio-data fallback) and passes the
  * merged content to the client wrapper <PortfolioSite />. If the DB is

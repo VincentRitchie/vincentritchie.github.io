@@ -57,7 +57,7 @@ export default function AdminLoginPage() {
             Admin Sign In
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            Obasiochie Vincent Chimaobi — Portfolio CMS
+            Obasiochie Vincent Chimaobi: Portfolio CMS
           </p>
         </div>
 

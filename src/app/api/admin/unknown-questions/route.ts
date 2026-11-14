@@ -7,7 +7,7 @@ function forbidden() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 }
 
-/** GET /api/admin/unknown-questions — list unanswered chatbot questions (admin only). */
+/** GET /api/admin/unknown-questions: list unanswered chatbot questions (admin only). */
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
@@ -24,7 +24,7 @@ export async function GET() {
   }
 }
 
-/** DELETE /api/admin/unknown-questions?id=... — delete one, or all if no id. */
+/** DELETE /api/admin/unknown-questions?id=...: delete one, or all if no id. */
 export async function DELETE(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);

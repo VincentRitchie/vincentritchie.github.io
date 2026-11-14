@@ -10,7 +10,7 @@ import { profile } from "@/lib/portfolio-data";
  * + slight scale settle), so the name visually "forms" into VINCENT CHIMAOBI.
  *
  * Continuous (after entrance): the `.hero-name` class drives a moving neon
- * gradient and a soft glow pulse — subtle and professional, never chaotic.
+ * gradient and a soft glow pulse: subtle and professional, never chaotic.
  */
 export function AnimatedHeroName() {
   // Render "VINCENT CHIMAOBI" as two stacked, dominant lines.

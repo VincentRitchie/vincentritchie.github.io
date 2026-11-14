@@ -10,7 +10,7 @@ import { AdminShell } from "@/components/admin/admin-shell";
  *  - returns 401 JSON for unauthenticated /api/admin/*
  *
  * Here we additionally check session server-side as defense-in-depth.
- * When no session (i.e. on the login page), render children bare — no shell.
+ * When no session (i.e. on the login page), render children bare: no shell.
  */
 export default async function AdminLayout({
   children,

@@ -20,7 +20,7 @@ import { assetPath } from "@/lib/asset-path";
 import { cn } from "@/lib/utils";
 
 /**
- * PoliceReconstructions — "Police Bodycam & Dashcam Reconstructions"
+ * PoliceReconstructions: "Police Bodycam & Dashcam Reconstructions"
  * category inside the Selected Work section.
  *
  * Renders one card per completed production. Selecting a card opens a
@@ -28,10 +28,10 @@ import { cn } from "@/lib/utils";
  * tags, the interactive video carousel and (when a correct case study
  * exists for that production) the "View Technical Case Study" button,
  * which opens the PDF in the integrated document viewer stacked above
- * the showcase — closing it returns to the showcase without losing the
+ * the showcase; closing it returns to the showcase without losing the
  * visitor's place.
  *
- * Fully data-driven from src/lib/police-reconstructions.ts — future
+ * Fully data-driven from src/lib/police-reconstructions.ts: future
  * batches only add media + registry entries.
  */
 export function PoliceReconstructions() {
@@ -41,7 +41,7 @@ export function PoliceReconstructions() {
 
   return (
     <div className="mt-16 border-t border-border/40 pt-12">
-      {/* Category subheading — consistent with section heading language */}
+      {/* Category subheading, consistent with section heading language */}
       <Reveal>
         <div className="max-w-3xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-500/15 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-sky-200">
@@ -72,7 +72,7 @@ export function PoliceReconstructions() {
                 <div className="relative aspect-[47/26] w-full overflow-hidden">
                   <img
                     src={assetPath(p.cover)}
-                    alt={`${p.title} — production cover`}
+                    alt={`${p.title} production cover`}
                     loading="lazy"
                     decoding="async"
                     draggable={false}
@@ -166,7 +166,7 @@ export function PoliceReconstructions() {
 }
 
 /**
- * ProductionShowcase — full detail modal for a single production:
+ * ProductionShowcase: full detail modal for a single production:
  * cover banner, title, description, tags, video carousel, case study.
  */
 function ProductionShowcase({
@@ -227,7 +227,7 @@ function ProductionShowcase({
           <div className="relative aspect-[47/26] max-h-64 w-full overflow-hidden sm:max-h-72">
             <img
               src={assetPath(production.cover)}
-              alt={`${production.title} — production cover`}
+              alt={`${production.title} production cover`}
               draggable={false}
               className="h-full w-full select-none object-cover"
             />
@@ -269,7 +269,7 @@ function ProductionShowcase({
             <div className="mt-6">
               <p className="mb-3 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                 <Icon name={production.icon} className="h-4 w-4" />
-                Production clips — {production.clips.length} independent
+                Production clips · {production.clips.length} independent
                 excerpts
               </p>
               <VideoCarousel
@@ -281,7 +281,7 @@ function ProductionShowcase({
             {/* Disclosure + case study */}
             <div className="mt-6 flex flex-col gap-4 border-t border-border/60 pt-5 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-xs leading-relaxed text-muted-foreground">
-                These clips are AI-generated reconstructions — not authentic
+                These clips are AI-generated reconstructions, not authentic
                 police recordings.
               </p>
               {production.technicalCaseStudy ? (
@@ -304,13 +304,13 @@ function ProductionShowcase({
       </motion.div>
       </motion.div>
 
-      {/* Case study viewer — stacked above the showcase as a sibling
+      {/* Case study viewer, stacked above the showcase as a sibling
           so backdrop clicks do not bubble into the showcase layer. */}
       <PdfViewerModal
         open={pdfOpen}
         onClose={() => setPdfOpen(false)}
         src={production.technicalCaseStudy ?? ""}
-        title={production.caseStudyLabel ?? `${production.title} — Technical Case Study`}
+        title={production.caseStudyLabel ?? `${production.title}: Technical Case Study`}
         subtitle="Read online · AI-generated reconstruction portfolio"
       />
     </>

@@ -7,7 +7,7 @@ function forbidden() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 }
 
-/** PATCH /api/admin/assistants/[id] — update an assistant. */
+/** PATCH /api/admin/assistants/[id]: update an assistant. */
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
@@ -50,7 +50,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   }
 }
 
-/** DELETE /api/admin/assistants/[id] — remove an assistant. */
+/** DELETE /api/admin/assistants/[id]: remove an assistant. */
 export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);

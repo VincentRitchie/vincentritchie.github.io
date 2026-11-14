@@ -13,7 +13,7 @@ import path from "path";
  *
  * NOTE: Local uploads are ephemeral on serverless hosts (Vercel functions have a
  * read-only filesystem except /tmp). For production, swap saveUpload() for
- * Vercel Blob / Cloudinary / S3 — see README-ADMIN.md.
+ * Vercel Blob / Cloudinary / S3: see README-ADMIN.md.
  */
 
 export interface SaveUploadResult {

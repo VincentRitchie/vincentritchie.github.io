@@ -132,7 +132,7 @@ export function ProfileMediaManager({
               Current: {settings.cvPath.split("/").pop()}
             </a>
           ) : (
-            <StatusBadge tone="warning">No CV uploaded — public button hidden</StatusBadge>
+            <StatusBadge tone="warning">No CV uploaded; public button hidden</StatusBadge>
           )}
         </div>
       </SectionCard>

@@ -8,7 +8,7 @@ import { assetPath } from "@/lib/asset-path";
 import type { PoliceClip } from "@/lib/police-reconstructions";
 
 /**
- * VideoCarousel — interactive multi-clip video showcase.
+ * VideoCarousel: interactive multi-clip video showcase.
  *
  * Requirements implemented:
  * - One active video at a time (only the active clip is mounted, so
@@ -18,7 +18,7 @@ import type { PoliceClip } from "@/lib/police-reconstructions";
  * - Clear current-clip indicator ("1 / 4").
  * - Native play/pause controls on each clip (keyboard operable).
  * - Original 752x416 (47:26) aspect ratio preserved via object-contain.
- * - Metadata-only initial loading (preload="metadata") — clips are not
+ * - Metadata-only initial loading (preload="metadata"): clips are not
  *   downloaded until the visitor opens/plays them.
  * - The previous clip is paused and unmounted on navigation.
  * - Arrow-key navigation when the carousel has focus.
@@ -101,7 +101,7 @@ export function VideoCarousel({
         aria-label={label}
         className="group relative overflow-hidden rounded-xl border border-border/70 bg-black outline-none focus-visible:ring-2 focus-visible:ring-violet-400/60"
       >
-        {/* Stage — 47:26 = native 752x416 source ratio */}
+        {/* Stage: 47:26 = native 752x416 source ratio */}
         <div className="relative aspect-[47/26] w-full">
           <AnimatePresence initial={false} mode="popLayout">
             <motion.div
@@ -130,7 +130,7 @@ export function VideoCarousel({
                 preload="metadata"
                 controlsList="nodownload"
                 disablePictureInPicture
-                aria-label={`${clip.title} — AI-generated reconstruction clip`}
+                aria-label={`${clip.title}, an AI-generated reconstruction clip`}
                 className="h-full w-full select-none object-contain"
               />
             </motion.div>

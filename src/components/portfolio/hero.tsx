@@ -68,7 +68,7 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
             transition={{ duration: 0.4 }}
             className="font-display text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl xl:text-[5.5rem]"
           >
-            {/* Large main animated name — shows only VINCENT CHIMAOBI */}
+            {/* Large main animated name: shows only VINCENT CHIMAOBI */}
             <AnimatedHeroName />
             <motion.span
               initial={{ opacity: 0, y: 18 }}
@@ -153,10 +153,10 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
             <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-to-tr from-violet-600/30 via-fuchsia-600/20 to-sky-600/30 blur-2xl" />
             <div className="absolute -inset-1 -z-10 rounded-[2.2rem] bg-gradient-to-tr from-violet-500 via-fuchsia-500 to-sky-500 opacity-60 blur-md" />
 
-            {/* Slider — no internal name caption (the small duplicate was removed) */}
+            {/* Slider: no internal name caption (the small duplicate was removed) */}
             <HeroSlider profile={profile} />
 
-            {/* down-arrow — kept for navigation */}
+            {/* down-arrow: kept for navigation */}
             <button
               onClick={() => scrollTo("#about")}
               className="absolute -bottom-5 left-1/2 z-30 grid h-11 w-11 -translate-x-1/2 place-items-center rounded-full border border-violet-400/40 bg-violet-500/20 text-violet-100 backdrop-blur-sm transition-all hover:scale-110 hover:bg-violet-500/30"
@@ -211,12 +211,12 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
         </div>
       </div>
 
-      {/* CV — integrated document viewer (updated CV, read online) */}
+      {/* CV: integrated document viewer (updated CV, read online) */}
       <PdfViewerModal
         open={cvOpen}
         onClose={() => setCvOpen(false)}
         src={cvPath || PUBLIC_CV_PATH}
-        title="Vincent Chimaobi Obasiochie — Professional CV"
+        title="Vincent Chimaobi Obasiochie: Professional CV"
         subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
       />
     </section>

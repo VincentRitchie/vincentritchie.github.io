@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 /**
- * SiteProtection — lightweight, non-hostile copy/screenshot discouragement.
+ * SiteProtection: lightweight, non-hostile copy/screenshot discouragement.
  *
  * What it does:
  *  - Disables the right-click context menu on public content (form fields exempt)

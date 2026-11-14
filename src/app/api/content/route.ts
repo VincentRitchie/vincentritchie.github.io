@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getPublicContent } from "@/lib/content";
 
 /**
- * GET /api/content — public.
+ * GET /api/content: public.
  * Returns the merged content (DB-over-fallback) with only public-safe fields.
  */
 export async function GET() {

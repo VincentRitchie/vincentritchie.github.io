@@ -9,7 +9,7 @@ async function requireAdmin() {
   return session;
 }
 
-/** PATCH /api/contact/[id] — toggle isRead. Body: { isRead?: boolean } */
+/** PATCH /api/contact/[id]: toggle isRead. Body: { isRead?: boolean } */
 export async function PATCH(
   req: NextRequest,
   context: { params: Promise<{ id: string }> }

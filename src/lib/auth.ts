@@ -8,7 +8,7 @@ import bcrypt from "bcryptjs";
  * Admin credentials come from env vars:
  *  - ADMIN_EMAIL (required)
  *  - ADMIN_PASSWORD_HASH (bcrypt hash, preferred)
- *  - ADMIN_PASSWORD (plain-text dev-only fallback — a warning is logged when used)
+ *  - ADMIN_PASSWORD (plain-text dev-only fallback; a warning is logged when used)
  */
 export const authOptions: NextAuthOptions = {
   session: { strategy: "jwt" },
@@ -26,7 +26,7 @@ export const authOptions: NextAuthOptions = {
         const plain = process.env.ADMIN_PASSWORD;
 
         if (!adminEmail) {
-          console.warn("[auth] ADMIN_EMAIL not set — admin login disabled.");
+          console.warn("[auth] ADMIN_EMAIL not set; admin login disabled.");
           return null;
         }
 
@@ -46,7 +46,7 @@ export const authOptions: NextAuthOptions = {
           );
           if (password !== plain) return null;
         } else {
-          console.warn("[auth] No ADMIN_PASSWORD_HASH or ADMIN_PASSWORD set — admin login disabled.");
+          console.warn("[auth] No ADMIN_PASSWORD_HASH or ADMIN_PASSWORD set; admin login disabled.");
           return null;
         }
 

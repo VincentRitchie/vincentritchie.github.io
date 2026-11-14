@@ -4,7 +4,7 @@ import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
 
 /**
- * /api/support/[id] — admin only.
+ * /api/support/[id]: admin only.
  *  PATCH: update status / isRead / assignedToType / assistantId / priority / escalatedToOwner
  *  DELETE: delete the inquiry
  */

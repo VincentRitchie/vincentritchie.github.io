@@ -182,7 +182,7 @@ export function Contact({
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-semibold text-emerald-200">View My CV</p>
                     <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
-                      My updated professional CV — read it right here on the site, no download needed.
+                      My updated professional CV, readable right here on the site with no download needed.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <button
@@ -206,7 +206,7 @@ export function Contact({
               onSubmit={handleSubmit}
               className="rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm sm:p-8"
             >
-              {/* Honeypot — hidden from humans, bots fill it in. */}
+              {/* Honeypot: hidden from humans, bots fill it in. */}
               <input
                 type="text"
                 name="website"
@@ -288,7 +288,7 @@ export function Contact({
                   id="message"
                   value={form.message}
                   onChange={(e) => update("message", e.target.value)}
-                  placeholder="Include enough context so I can respond usefully — role type, project details, timeline, etc."
+                  placeholder="Include enough context so I can respond usefully: role type, project details, timeline, etc."
                   className="min-h-[140px] resize-y border-border bg-background/60"
                   required
                 />
@@ -359,12 +359,12 @@ export function Contact({
         </div>
       </div>
 
-      {/* CV — integrated document viewer (updated CV, read online) */}
+      {/* CV: integrated document viewer (updated CV, read online) */}
       <PdfViewerModal
         open={cvOpen}
         onClose={() => setCvOpen(false)}
         src={cvPath || PUBLIC_CV_PATH}
-        title="Vincent Chimaobi Obasiochie — Professional CV"
+        title="Vincent Chimaobi Obasiochie: Professional CV"
         subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
       />
     </Section>

@@ -40,7 +40,7 @@ export function HeroSlider({ profile = defaultProfile }: { profile?: ProfileLike
   );
   const goTo = useCallback((i: number) => setIndex(i), []);
 
-  // Autoplay — pauses on hover, focus, or while lightbox is open
+  // Autoplay: pauses on hover, focus, or while lightbox is open
   useEffect(() => {
     if (paused || lightbox) return;
     const t = setInterval(() => setIndex((i) => (i + 1) % count), 4800);
@@ -98,7 +98,7 @@ export function HeroSlider({ profile = defaultProfile }: { profile?: ProfileLike
             >
               <motion.img
                 src={assetPath(slides[index])}
-                alt={`${profile.name} — ${captions[index]}`}
+                alt={`${profile.name}, ${captions[index]}`}
                 className="h-full w-full select-none object-cover"
                 loading={index === 0 ? "eager" : "lazy"}
                 decoding="async"
@@ -219,7 +219,7 @@ export function HeroSlider({ profile = defaultProfile }: { profile?: ProfileLike
             >
               <img
                 src={assetPath(slides[index])}
-                alt={`${profile.name} — ${captions[index]}`}
+                alt={`${profile.name}, ${captions[index]}`}
                 className="max-h-[78vh] w-full object-contain"
                 draggable={false}
               />

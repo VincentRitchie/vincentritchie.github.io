@@ -146,7 +146,7 @@ export function SupportInbox({ initial, assistants }: { initial: Inquiry[]; assi
                           {!i.isRead && <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />}
                           {i.visitorName}
                         </p>
-                        <p className="text-xs text-muted-foreground truncate max-w-[200px]">{i.visitorEmail || i.visitorPhone || "—"}</p>
+                        <p className="text-xs text-muted-foreground truncate max-w-[200px]">{i.visitorEmail || i.visitorPhone || "n/a"}</p>
                       </button>
                     </td>
                     <td className="hidden px-4 py-3 text-xs text-muted-foreground md:table-cell">{i.source}</td>
@@ -155,7 +155,7 @@ export function SupportInbox({ initial, assistants }: { initial: Inquiry[]; assi
                         <span className="text-violet-200">{assistantName(i.assistantId) ?? "Assistant"}</span>
                       ) : i.assignedToType === "owner" ? (
                         <span className="text-amber-200">Mr. Vincent CEO</span>
-                      ) : "—"}
+                      ) : "n/a"}
                       {i.escalatedToOwner && <span className="ml-1 text-[10px] text-amber-300">(escalated)</span>}
                     </td>
                     <td className="px-4 py-3">
@@ -185,7 +185,7 @@ export function SupportInbox({ initial, assistants }: { initial: Inquiry[]; assi
       <Dialog open={!!viewing} onOpenChange={(o) => !o && setViewing(null)}>
         <DialogContent className="max-h-[90vh] max-w-2xl overflow-y-auto border-border bg-card/95 backdrop-blur-xl">
           <DialogHeader>
-            <DialogTitle>Support inquiry — {viewing?.visitorName}</DialogTitle>
+            <DialogTitle>Support inquiry: {viewing?.visitorName}</DialogTitle>
             <DialogDescription>
               {viewing && new Date(viewing.createdAt).toLocaleString()} · Source: {viewing?.source}
             </DialogDescription>
@@ -193,9 +193,9 @@ export function SupportInbox({ initial, assistants }: { initial: Inquiry[]; assi
           {viewing && (
             <div className="space-y-4 text-sm">
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Email</p><p className="text-foreground">{viewing.visitorEmail || "—"}</p></div>
-                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Phone / WhatsApp</p><p className="text-foreground">{viewing.visitorPhone || "—"}</p></div>
-                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Preferred contact</p><p className="text-foreground">{viewing.preferredContact || "—"}</p></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Email</p><p className="text-foreground">{viewing.visitorEmail || "n/a"}</p></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Phone / WhatsApp</p><p className="text-foreground">{viewing.visitorPhone || "n/a"}</p></div>
+                <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Preferred contact</p><p className="text-foreground">{viewing.preferredContact || "n/a"}</p></div>
                 <div><p className="text-[10px] uppercase tracking-wider text-muted-foreground">Requested recipient</p><p className="text-foreground">{viewing.requestedRecipient || "Auto"}</p></div>
               </div>
               <div>
@@ -225,7 +225,7 @@ export function SupportInbox({ initial, assistants }: { initial: Inquiry[]; assi
                       onChange={(e) => patch(viewing.id, { assistantId: e.target.value || null }, "Assistant reassigned")}
                       className="rounded-md border border-border bg-background/60 px-2 py-1 text-xs"
                     >
-                      <option value="">— pick assistant —</option>
+                      <option value="">Pick an assistant</option>
                       {assistants.map((a) => <option key={a.id} value={a.id}>{a.name}</option>)}
                     </select>
                   )}

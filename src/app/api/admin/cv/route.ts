@@ -4,7 +4,7 @@ import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
 
 /**
- * GET /api/admin/cv — PUBLIC. Returns whether a CV exists and its path
+ * GET /api/admin/cv: PUBLIC. Returns whether a CV exists and its path
  * so the public Contact section can show a "Download CV" button or "CV coming soon".
  */
 export async function GET() {
@@ -18,7 +18,7 @@ export async function GET() {
 }
 
 /**
- * PUT /api/admin/cv — PROTECTED. Accepts multipart formData with `file`.
+ * PUT /api/admin/cv: PROTECTED. Accepts multipart formData with `file`.
  * Saves via upload lib (PDF only) and updates SiteSetting.cvPath.
  */
 export async function PUT(req: NextRequest) {

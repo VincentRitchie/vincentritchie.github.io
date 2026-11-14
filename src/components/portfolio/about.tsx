@@ -22,11 +22,11 @@ export function About({ profile = defaultProfile }: { profile?: ProfileLike } = 
             <Reveal delay={0.15}>
               <div className="relative mt-8 max-w-sm">
                 <div className="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-violet-600/25 to-fuchsia-600/20 blur-2xl" />
-                {/* Profile portrait — small duplicate name caption removed (header name is the identity) */}
+                {/* Profile portrait: small duplicate name caption removed (header name is the identity) */}
                 <div className="overflow-hidden rounded-2xl border border-border bg-card">
                   <img
                     src={assetPath(profile.profileImage)}
-                    alt={`${profile.name} — professional portrait`}
+                    alt={`${profile.name}, professional portrait`}
                     className="aspect-[4/5] w-full object-cover"
                     loading="lazy"
                     draggable={false}

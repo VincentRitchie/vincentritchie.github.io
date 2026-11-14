@@ -78,7 +78,7 @@ export function Articles({ published = [] }: { published?: PublicArticle[] } = {
           </div>
         ) : (
           <>
-            {/* Coming soon state — preserved exactly from the original */}
+            {/* Coming soon state, preserved exactly from the original */}
             <Reveal delay={0.1}>
               <div className="mt-10 overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-sky-950/30 via-background to-violet-950/30 p-8 sm:p-10">
                 <div className="flex flex-col items-center text-center">

@@ -16,7 +16,7 @@ export default async function AdminCertificationsPage() {
     <>
       <AdminPageHeader
         title="Certifications"
-        description="Only add verified certifications. Empty by default — public section renders nothing until you add items here."
+        description="Only add verified certifications. Empty by default; public section renders nothing until you add items here."
         action={items.length > 0 ? <StatusBadge tone="violet">{items.length} total</StatusBadge> : undefined}
       />
       <SimpleListManager

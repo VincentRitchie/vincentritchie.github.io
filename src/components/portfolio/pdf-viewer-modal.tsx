@@ -6,7 +6,7 @@ import { X, FileText } from "lucide-react";
 import { assetPath } from "@/lib/asset-path";
 
 /* ------------------------------------------------------------------ */
-/* Scroll-lock counter — supports stacked modals (case study opened   */
+/* Scroll-lock counter: supports stacked modals (case study opened   */
 /* on top of a production showcase modal) without prematurely         */
 /* restoring body scroll.                                             */
 /* ------------------------------------------------------------------ */
@@ -34,7 +34,7 @@ export function useScrollLock(active: boolean) {
 }
 
 /**
- * PdfViewerModal — professional, responsive in-site document viewer.
+ * PdfViewerModal: professional, responsive in-site document viewer.
  *
  * - Displays the PDF inside the site interface (no forced download,
  *   no download button in our UI).
@@ -132,7 +132,7 @@ export function PdfViewerModal({
               </button>
             </div>
 
-            {/* Document body — native PDF engine, toolbar hidden where supported */}
+            {/* Document body: native PDF engine, toolbar hidden where supported */}
             <div className="relative flex-1 bg-background/40">
               <iframe
                 src={`${assetPath(src)}#toolbar=0&navpanes=0&view=FitH`}

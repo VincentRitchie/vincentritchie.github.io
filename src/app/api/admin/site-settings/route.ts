@@ -8,7 +8,7 @@ async function requireAdmin() {
   return session;
 }
 
-/** GET /api/admin/site-settings — protected */
+/** GET /api/admin/site-settings: protected */
 export async function GET() {
   const session = await requireAdmin();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -21,7 +21,7 @@ export async function GET() {
   }
 }
 
-/** PUT /api/admin/site-settings — protected. Body = partial SiteSetting fields. */
+/** PUT /api/admin/site-settings: protected. Body = partial SiteSetting fields. */
 export async function PUT(req: NextRequest) {
   const session = await requireAdmin();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

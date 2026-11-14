@@ -111,7 +111,7 @@ export function SiteSettingsForm({ initial }: { initial: Settings | null }) {
             label="Hero animated name"
             value={s.heroName ?? ""}
             onChange={(e) => update("heroName", e.target.value)}
-            hint="The large animated name shown in the hero — defaults to 'VINCENT CHIMAOBI'."
+            hint="The large animated name shown in the hero; defaults to 'VINCENT CHIMAOBI'."
           />
           <TextField
             id="role"

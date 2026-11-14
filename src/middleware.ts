@@ -37,7 +37,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  // HTML admin page — redirect to login with callbackUrl.
+  // HTML admin page: redirect to login with callbackUrl.
   const loginUrl = new URL("/admin/login", req.url);
   loginUrl.searchParams.set("callbackUrl", pathname);
   return NextResponse.redirect(loginUrl);

@@ -43,7 +43,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
               <div className="overflow-hidden rounded-3xl border border-violet-400/30 bg-card/60 p-2 backdrop-blur-sm">
                 <img
                   src={assetPath(afrikVine.logo)}
-                  alt="Vincent Chimaobi — production approach portrait"
+                  alt="Vincent Chimaobi, production approach portrait"
                   className="h-40 w-40 rounded-2xl object-cover sm:h-48 sm:w-48"
                   loading="lazy"
                 />
@@ -78,7 +78,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">{afrikVine.mission}</p>
               <p className="mt-3 text-[11px] italic text-muted-foreground/70">
-                Editable via the admin CMS — this is the CV-aligned default.
+                Editable via the admin CMS; this is the CV-aligned default.
               </p>
             </div>
           </Reveal>
@@ -94,7 +94,7 @@ export function AfrikVine({ afrikVine = defaultAfrikVine }: { afrikVine?: AfrikV
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">{afrikVine.vision}</p>
               <p className="mt-3 text-[11px] italic text-muted-foreground/70">
-                Editable via the admin CMS — this is the CV-aligned default.
+                Editable via the admin CMS; this is the CV-aligned default.
               </p>
             </div>
           </Reveal>

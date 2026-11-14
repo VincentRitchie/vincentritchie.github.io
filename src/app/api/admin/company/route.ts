@@ -3,7 +3,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
 
-/** GET /api/admin/company — protected */
+/** GET /api/admin/company: protected */
 export async function GET() {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -16,7 +16,7 @@ export async function GET() {
   }
 }
 
-/** PUT /api/admin/company — protected */
+/** PUT /api/admin/company: protected */
 export async function PUT(req: NextRequest) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -30,7 +30,7 @@ export async function PUT(req: NextRequest) {
     for (const f of fields) {
       if (f in body) {
         const v = body[f];
-        // values / services are arrays — serialize to JSON string for SQLite.
+        // values / services are arrays: serialize to JSON string for SQLite.
         if ((f === "values" || f === "services") && Array.isArray(v)) {
           allowed[f] = JSON.stringify(v);
         } else {

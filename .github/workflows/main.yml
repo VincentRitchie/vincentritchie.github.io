@@ -5,7 +5,7 @@ name: Deploy GitHub Pages
 #
 # This is the SINGLE workflow that publishes the public site. The
 # previous duplicate (deploy.yml, "Deploy to GitHub Pages") has been
-# removed — it omitted REPO_OWNER, which caused build-static.sh to
+# removed: it omitted REPO_OWNER, which caused build-static.sh to
 # treat the user-site repo as a project repo and emit a broken
 # basePath of "/vincentritchie.github.io" (assets 404 → unstyled page).
 # ====================================================================
@@ -43,6 +43,9 @@ jobs:
       - name: Generate Prisma client
         run: bun run db:generate
 
+      - name: Punctuation audit (no em dashes in authored text)
+        run: python3 scripts/check-punctuation.py --src
+
       - name: Build static site
         env:
           REPO_NAME: ${{ github.event.repository.name }}
@@ -53,10 +56,10 @@ jobs:
         run: |
           set -euo pipefail
           echo "=== Structural checks on ./out ==="
-          test -d out || { echo "❌ ./out does not exist — build failed"; exit 1; }
+          test -d out || { echo "❌ ./out does not exist: build failed"; exit 1; }
           test -f out/index.html || { echo "❌ out/index.html missing"; exit 1; }
           test -f out/.nojekyll || { echo "❌ out/.nojekyll missing"; exit 1; }
-          test -d out/_next/static || { echo "❌ out/_next/static missing — JS/CSS not exported"; exit 1; }
+          test -d out/_next/static || { echo "❌ out/_next/static missing: JS/CSS not exported"; exit 1; }
           echo "✅ Structural checks passed"
           echo ""
           echo "=== Top-level out/ listing ==="
@@ -146,6 +149,9 @@ jobs:
               sys.exit(1)
           print("✅ All local asset references resolve to real files in out/.")
           PY
+
+      - name: Verify exported site has no em dashes in authored text
+        run: python3 scripts/check-punctuation.py --out
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

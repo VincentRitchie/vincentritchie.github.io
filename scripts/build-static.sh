@@ -74,7 +74,7 @@ echo "REPO_NAME: ${REPO_NAME}"
 echo "USER_SITE_REPO (normalised): ${USER_SITE_REPO}"
 echo "DEPLOYMENT_TYPE: ${DEPLOYMENT_TYPE}"
 if [ -z "$BASE_PATH" ]; then
-  echo "BASE_PATH: (empty — root deployment)"
+  echo "BASE_PATH: (empty, root deployment)"
 else
   echo "BASE_PATH: ${BASE_PATH}"
 fi
@@ -87,6 +87,12 @@ if [ -n "$BASE_PATH" ] && [ "$BASE_PATH" = "/${USER_SITE_REPO}" ]; then
   echo "   This is the known broken configuration. Refusing to build." >&2
   exit 1
 fi
+
+# ---- 4b. Punctuation audit: website-authored text must contain no em
+# dashes (U+2014) or encoded equivalents. Runs BEFORE any files are moved
+# so the full source tree is audited in its committed state. ----
+echo "=== Punctuation audit (source): no em dashes in authored text ==="
+python3 scripts/check-punctuation.py --src
 
 # ---- 5. Temporarily move server-only routes so next build can export ----
 TMP_DIR=$(mktemp -d)
@@ -122,10 +128,16 @@ npx next build
 
 touch out/.nojekyll
 
+# ---- 7. Punctuation audit on the exported site (rendered verification).
+# Scans out/**/*.html and out/**/*.json so the published pages, not just
+# the source, are guaranteed free of em dashes. ----
+echo "=== Punctuation audit (exported site) ==="
+python3 scripts/check-punctuation.py --out
+
 # Privacy: never ship the CV PDF inside the public static output.
 if [ -d out/uploads/cv ]; then
   rm -rf out/uploads/cv
-  echo "  removed out/uploads/cv (privacy — Request CV flow stays server-side)"
+  echo "  removed out/uploads/cv (privacy: Request CV flow stays server-side)"
 fi
 
 echo "=== Verify out/index.html exists ==="

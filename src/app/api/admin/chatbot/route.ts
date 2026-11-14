@@ -7,7 +7,7 @@ function forbidden() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 }
 
-/** GET /api/admin/chatbot — list all FAQs (admin only). */
+/** GET /api/admin/chatbot: list all FAQs (admin only). */
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
@@ -22,7 +22,7 @@ export async function GET() {
   }
 }
 
-/** POST /api/admin/chatbot — create an FAQ (admin only). */
+/** POST /api/admin/chatbot: create an FAQ (admin only). */
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);

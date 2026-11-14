@@ -117,10 +117,10 @@ export function SkillsManager({ initial }: { initial: Skill[] }) {
                     <td className="px-4 py-3">
                       <button onClick={() => { setEditing({ ...s }); setIsNew(false); }} className="text-left">
                         <p className="font-medium text-foreground">{s.title}</p>
-                        <p className="text-xs text-muted-foreground">{s.icon ?? "—"} · {s.accent ?? "—"}</p>
+                        <p className="text-xs text-muted-foreground">{s.icon ?? "n/a"} · {s.accent ?? "n/a"}</p>
                       </button>
                     </td>
-                    <td className="hidden px-4 py-3 text-muted-foreground md:table-cell">{s.category ?? "—"}</td>
+                    <td className="hidden px-4 py-3 text-muted-foreground md:table-cell">{s.category ?? "n/a"}</td>
                     <td className="px-4 py-3">
                       {s.visible ? <StatusBadge tone="violet">Visible</StatusBadge> : <StatusBadge tone="neutral">Hidden</StatusBadge>}
                     </td>

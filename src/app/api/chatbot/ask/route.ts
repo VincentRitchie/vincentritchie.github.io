@@ -3,7 +3,7 @@ import { matchFaq } from "@/lib/faq";
 import { getClientIP, rateLimitCheck } from "@/lib/spam";
 
 /**
- * POST /api/chatbot/ask — public.
+ * POST /api/chatbot/ask: public.
  * Body: { question: string }
  * Returns the best FAQ match or a "no match" signal so the chatbot can offer
  * human support. Unknown questions are logged for admin review (rate-limited).

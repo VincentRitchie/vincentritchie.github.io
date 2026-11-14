@@ -40,7 +40,7 @@ const OWNER_EMAIL = "vincentchimaobi042@gmail.com";
 const IS_STATIC = process.env.NEXT_PUBLIC_STATIC_EXPORT === "true";
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-// Static FAQ data — used in static export mode (GitHub Pages) where API routes
+// Static FAQ data: used in static export mode (GitHub Pages) where API routes
 // don't exist. In full-stack mode, the API is used instead.
 type StaticFaq = { id: string; question: string; answer: string; keywords?: string; category?: string };
 let staticFaqs: StaticFaq[] = [];
@@ -260,11 +260,11 @@ export function ChatbotWidget() {
       setSubmitting(true);
       setSubmitResult(null);
 
-      // Static mode: no API — open a prefilled mailto as fallback.
+      // Static mode: no API, so open a prefilled mailto as fallback.
       if (IS_STATIC) {
         const subject = encodeURIComponent(`Website inquiry from ${form.visitorName}`);
         const body = encodeURIComponent(
-          `Name: ${form.visitorName}\nEmail: ${form.visitorEmail || "—"}\nPhone: ${form.visitorPhone || "—"}\nPreferred contact: ${form.preferredContact}\n\nMessage:\n${form.visitorMessage}`
+          `Name: ${form.visitorName}\nEmail: ${form.visitorEmail || "not provided"}\nPhone: ${form.visitorPhone || "not provided"}\nPreferred contact: ${form.preferredContact}\n\nMessage:\n${form.visitorMessage}`
         );
         window.location.href = `mailto:${OWNER_EMAIL}?subject=${subject}&body=${body}`;
         setSubmitting(false);

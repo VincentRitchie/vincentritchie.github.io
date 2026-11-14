@@ -2,12 +2,12 @@
  * Contact notification email.
  *
  * Priority:
- *  1. Resend REST API (if RESEND_API_KEY + RESEND_FROM set) — no SDK, plain fetch.
+ *  1. Resend REST API (if RESEND_API_KEY + RESEND_FROM set): no SDK, plain fetch.
  *  2. SMTP via nodemailer (if SMTP_HOST set).
  *  3. Else: console.log + skip.
  *
  * Recipient = CONTACT_NOTIFICATION_EMAIL.
- * ALWAYS wrapped in try/catch — must NEVER throw to the contact route or crash the API.
+ * ALWAYS wrapped in try/catch: must NEVER throw to the contact route or crash the API.
  */
 
 export interface ContactNotificationPayload {
@@ -23,11 +23,11 @@ export interface ContactNotificationPayload {
 export async function sendContactNotification(payload: ContactNotificationPayload): Promise<void> {
   const to = process.env.CONTACT_NOTIFICATION_EMAIL;
   if (!to) {
-    console.warn("[email] CONTACT_NOTIFICATION_EMAIL not set — skipping notification.");
+    console.warn("[email] CONTACT_NOTIFICATION_EMAIL not set; skipping notification.");
     return;
   }
 
-  const subject = `New portfolio inquiry — ${payload.inquiryType}`;
+  const subject = `New portfolio inquiry: ${payload.inquiryType}`;
   const text = [
     `New contact form submission on your portfolio.`,
     ``,
@@ -41,7 +41,7 @@ export async function sendContactNotification(payload: ContactNotificationPayloa
     `Message:`,
     payload.message,
     ``,
-    `— Sent from the Vincent Chimaobi Obasiochie portfolio contact form.`,
+    `Sent from the Vincent Chimaobi Obasiochie portfolio contact form.`,
   ]
     .filter(Boolean)
     .join("\n");
@@ -97,11 +97,11 @@ export async function sendContactNotification(payload: ContactNotificationPayloa
       return;
     }
 
-    // No transport configured — log and skip.
+    // No transport configured: log and skip.
     console.log("[email] No transport configured. Notification payload:");
     console.log(text);
   } catch (err) {
-    // NEVER throw — the contact route must not crash on email failure.
+    // NEVER throw: the contact route must not crash on email failure.
     console.error("[email] sendContactNotification failed (suppressed):", err);
   }
 }

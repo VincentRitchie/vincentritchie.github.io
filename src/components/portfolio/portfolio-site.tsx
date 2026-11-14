@@ -25,7 +25,7 @@ import { EducationLanguages } from "@/components/portfolio/education-languages";
  * Receives the merged `content` object from the server component (page.tsx)
  * and distributes each slice as a prop to the relevant section. Sections that
  * are NOT admin-editable (AI Evaluation, Prompt Engineering, Web Development,
- * Security, Experience) keep reading from portfolio-data directly — they are
+ * Security, Experience) keep reading from portfolio-data directly; they are
  * rendered here without props.
  *
  * The 3 optional sections (Achievements, Certifications, Testimonials) render

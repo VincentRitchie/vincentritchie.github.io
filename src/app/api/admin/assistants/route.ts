@@ -7,7 +7,7 @@ function forbidden() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 }
 
-/** GET /api/admin/assistants — list all assistants (admin only). */
+/** GET /api/admin/assistants: list all assistants (admin only). */
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
@@ -23,7 +23,7 @@ export async function GET() {
   }
 }
 
-/** POST /api/admin/assistants — create a new assistant (admin only). */
+/** POST /api/admin/assistants: create a new assistant (admin only). */
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);

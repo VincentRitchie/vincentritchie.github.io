@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
 
     // ---- Honeypot ----
     if (honeypotFailed(body.website)) {
-      // Pretend success to bots — don't leak that they were caught.
+      // Pretend success to bots: don't leak that they were caught.
       return NextResponse.json(
         { success: true, message: "Your message has been received. Thank you for reaching out." },
         { status: 201 }
@@ -136,7 +136,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function GET() {
-  // PROTECTED — admin only.
+  // PROTECTED: admin only.
   try {
     const session = await getServerSession(authOptions);
     if (!session) {

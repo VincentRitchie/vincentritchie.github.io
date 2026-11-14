@@ -173,7 +173,7 @@ export function ProjectsManager({ initial }: { initial: Project[] }) {
                     <td className="px-4 py-3">
                       <button onClick={() => startEdit(p)} className="text-left">
                         <p className="font-medium text-foreground">{p.title}</p>
-                        <p className="text-xs text-muted-foreground">{p.category ?? "—"}</p>
+                        <p className="text-xs text-muted-foreground">{p.category ?? "n/a"}</p>
                       </button>
                     </td>
                     <td className="hidden px-4 py-3 md:table-cell">

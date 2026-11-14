@@ -3,7 +3,7 @@ import { getPublicFaqs } from "@/lib/faq";
 import { getSupportSetting } from "@/lib/support";
 
 /**
- * GET /api/chatbot/faq — public.
+ * GET /api/chatbot/faq: public.
  * Returns the FAQ suggestion chips + the chatbot welcome message + the owner
  * WhatsApp link (for the WhatsApp fallback button). No admin-only data.
  */

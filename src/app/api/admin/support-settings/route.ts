@@ -7,7 +7,7 @@ function forbidden() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 }
 
-/** GET /api/admin/support-settings — admin only. */
+/** GET /api/admin/support-settings: admin only. */
 export async function GET() {
   try {
     const session = await getServerSession(authOptions);
@@ -34,7 +34,7 @@ export async function GET() {
   }
 }
 
-/** PUT /api/admin/support-settings — admin only. */
+/** PUT /api/admin/support-settings: admin only. */
 export async function PUT(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);

@@ -64,7 +64,7 @@ export function SimpleListManager({
     }
     setSaving(true);
     try {
-      // Build payload — convert empty strings to null.
+      // Build payload: convert empty strings to null.
       const payload: Record<string, unknown> = { visible: editing.visible, order: editing.order };
       for (const f of fields) {
         const v = String(editing[f.key] ?? "").trim();
@@ -140,12 +140,12 @@ export function SimpleListManager({
                         onClick={() => { setEditing({ ...row }); setIsNew(false); }}
                         className="text-left"
                       >
-                        <p className="font-medium text-foreground">{String(row[fields[0].key] ?? "—")}</p>
+                        <p className="font-medium text-foreground">{String(row[fields[0].key] ?? "n/a")}</p>
                       </button>
                     </td>
                     {fields.slice(1, 3).map((f) => (
                       <td key={f.key} className="hidden px-4 py-3 text-muted-foreground md:table-cell">
-                        <span className="line-clamp-1 max-w-[220px]">{String(row[f.key] ?? "—")}</span>
+                        <span className="line-clamp-1 max-w-[220px]">{String(row[f.key] ?? "n/a")}</span>
                       </td>
                     ))}
                     <td className="px-4 py-3">

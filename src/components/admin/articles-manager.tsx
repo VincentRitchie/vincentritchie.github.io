@@ -160,7 +160,7 @@ export function ArticlesManager({ initial }: { initial: Article[] }) {
                         <p className="text-xs text-muted-foreground">{a.slug}</p>
                       </button>
                     </td>
-                    <td className="hidden px-4 py-3 text-muted-foreground md:table-cell">{a.category ?? "—"}</td>
+                    <td className="hidden px-4 py-3 text-muted-foreground md:table-cell">{a.category ?? "n/a"}</td>
                     <td className="px-4 py-3">
                       {a.status === "published" ? (
                         <StatusBadge tone="success">Published</StatusBadge>

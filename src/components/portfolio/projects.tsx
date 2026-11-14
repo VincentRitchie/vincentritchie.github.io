@@ -4,6 +4,7 @@ import { Reveal, Section, SectionHeading, GlowCard, Icon, accentMap, type Accent
 import { projects as defaultProjects } from "@/lib/portfolio-data";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { assetPath } from "@/lib/asset-path";
+import { TrueCrimeReconstructions } from "./true-crime-reconstructions";
 import { PoliceReconstructions } from "./police-reconstructions";
 
 type ProjectItem = typeof defaultProjects[number];
@@ -20,7 +21,7 @@ export function Projects({ projects = defaultProjects }: { projects?: ProjectIte
               <span className="text-gradient">&amp; AI training data</span>
             </>
           }
-          intro="This section presents confirmed work — AI Nollywood-style faceless film channels, AI true-crime reconstruction production, AI 3D documentary production, robot-arm video annotation at Turing, and CVAT image annotation and video tracking practice. Each card reflects real production or annotation work rather than placeholder case studies."
+          intro="This section presents confirmed work: AI Nollywood-style faceless film channels, AI true-crime reconstruction production, AI 3D documentary production, robot-arm video annotation at Turing, and CVAT image annotation and video tracking practice. Each card reflects real production or annotation work rather than placeholder case studies."
           accent="magenta"
         />
 
@@ -90,7 +91,14 @@ export function Projects({ projects = defaultProjects }: { projects?: ProjectIte
           })}
         </div>
 
-        {/* Police Bodycam & Dashcam Reconstructions — dedicated category
+        {/* AI True-Crime Reconstruction: dedicated category inside
+            Selected Work for case-linked reconstruction productions
+            (reached via the existing View My Work navigation).
+            Data-driven; future productions only add media and registry
+            entries. */}
+        <TrueCrimeReconstructions />
+
+        {/* Police Bodycam & Dashcam Reconstructions: dedicated category
             inside Selected Work (reached via the existing View My Work
             navigation). Data-driven; future batches only add media and
             registry entries. */}

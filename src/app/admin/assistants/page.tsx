@@ -21,7 +21,7 @@ export default async function AdminAssistantsPage() {
     <>
       <AdminPageHeader
         title="Assistants"
-        description="Manage support assistants. When an active and available assistant exists, new inquiries route to them. When none is available, inquiries escalate automatically to Mr. Vincent CEO. No fake assistants are seeded — add real ones here."
+        description="Manage support assistants. When an active and available assistant exists, new inquiries route to them. When none is available, inquiries escalate automatically to Mr. Vincent CEO. No fake assistants are seeded; add real ones here."
         action={items.length > 0 ? (
           <div className="flex gap-2">
             <StatusBadge tone="violet">{activeCount} available</StatusBadge>

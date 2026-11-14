@@ -53,7 +53,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/messages",
       label: "Inbox",
-      stat: counts ? `${counts.unreadMessages} unread` : "—",
+      stat: counts ? `${counts.unreadMessages} unread` : "n/a",
       sub: counts ? `${counts.totalMessages} total` : "loading…",
       icon: Inbox,
       tone: "violet" as const,
@@ -61,7 +61,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/projects",
       label: "Projects",
-      stat: counts ? `${counts.projects}` : "—",
+      stat: counts ? `${counts.projects}` : "n/a",
       sub: "Visible & hidden",
       icon: FolderKanban,
       tone: "magenta" as const,
@@ -69,7 +69,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/articles",
       label: "Articles",
-      stat: counts ? `${counts.publishedArticles} published` : "—",
+      stat: counts ? `${counts.publishedArticles} published` : "n/a",
       sub: counts ? `${counts.draftArticles} drafts` : "loading…",
       icon: FileText,
       tone: "blue" as const,
@@ -77,7 +77,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/skills",
       label: "Skills",
-      stat: counts ? `${counts.skills}` : "—",
+      stat: counts ? `${counts.skills}` : "n/a",
       sub: "Visible expertise cards",
       icon: Sparkles,
       tone: "violet" as const,
@@ -85,7 +85,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/certifications",
       label: "Certifications",
-      stat: counts ? `${counts.certifications}` : "—",
+      stat: counts ? `${counts.certifications}` : "n/a",
       sub: "Visible",
       icon: Award,
       tone: "blue" as const,
@@ -93,7 +93,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/testimonials",
       label: "Testimonials",
-      stat: counts ? `${counts.testimonials}` : "—",
+      stat: counts ? `${counts.testimonials}` : "n/a",
       sub: "Visible",
       icon: MessageSquareQuote,
       tone: "magenta" as const,
@@ -101,7 +101,7 @@ export default async function AdminDashboardPage() {
     {
       href: "/admin/achievements",
       label: "Achievements",
-      stat: counts ? `${counts.achievements}` : "—",
+      stat: counts ? `${counts.achievements}` : "n/a",
       sub: "Visible",
       icon: Trophy,
       tone: "violet" as const,
@@ -123,7 +123,7 @@ export default async function AdminDashboardPage() {
 
       {counts === null && (
         <div className="mb-6">
-          <StatusBadge tone="warning">DB unavailable — showing partial state</StatusBadge>
+          <StatusBadge tone="warning">DB unavailable: showing partial state</StatusBadge>
         </div>
       )}
 
@@ -185,7 +185,7 @@ export default async function AdminDashboardPage() {
 
         <SectionCard
           title="Reminders"
-          description="Content seeded empty on purpose — add as you go."
+          description="Content seeded empty on purpose; add as you go."
         >
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
@@ -202,7 +202,7 @@ export default async function AdminDashboardPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400" />
-              Local uploads live in <code className="text-violet-200">/public/uploads/</code> — they are ephemeral on serverless hosts. See README-ADMIN.md.
+              Local uploads live in <code className="text-violet-200">/public/uploads/</code>; they are ephemeral on serverless hosts. See README-ADMIN.md.
             </li>
           </ul>
         </SectionCard>

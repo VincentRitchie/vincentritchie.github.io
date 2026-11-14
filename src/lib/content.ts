@@ -8,7 +8,7 @@ import {
   seedCertifications,
 } from "@/lib/portfolio-data";
 
-// Dynamic import of db — only loaded when NOT in static export mode.
+// Dynamic import of db: only loaded when NOT in static export mode.
 // This prevents Prisma client from being required during GitHub Pages build.
 let _db: typeof import("@/lib/db")["db"] | null = null;
 async function getDb() {
@@ -144,7 +144,7 @@ let cache: { at: number; data: MergedContent } | null = null;
 const CACHE_TTL_MS = 3000;
 
 export async function getMergedContent(): Promise<MergedContent> {
-  // Static export mode (GitHub Pages): return pure fallback — no DB access.
+  // Static export mode (GitHub Pages): return pure fallback, no DB access.
   if (process.env.NEXT_PUBLIC_STATIC_EXPORT === "true") {
     return buildStaticContent();
   }
@@ -179,7 +179,7 @@ function buildStaticContent(): MergedContent {
     icon: c.icon, accent: c.accent,
     category: c.href?.replace("#", "") ?? "general", href: c.href ?? "#expertise",
   }));
-  // CV-aligned seed certifications — shown by default in static export mode
+  // CV-aligned seed certifications, shown by default in static export mode
   // (no admin DB available). Mirrors PublicCertification shape.
   const certifications: PublicCertification[] = seedCertifications.map((c) => ({
     id: c.id, title: c.title, issuer: c.issuer, year: c.year, credentialLink: c.credentialLink,
@@ -325,7 +325,7 @@ async function buildContent(): Promise<MergedContent> {
       featuredImage: a.featuredImage,
       publishedAt: a.publishedAt ? a.publishedAt.toISOString() : null,
     }));
-    // If no published articles, leave array empty — public articles section
+    // If no published articles, leave array empty: public articles section
     // shows its coming-soon UI (preserves today's behaviour).
   } catch (err) {
     console.error("[content] Articles load failed:", err);

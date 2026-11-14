@@ -12,7 +12,7 @@ import { decideRouting, visitorRoutingMessage } from "@/lib/support";
 import { sendSupportNotification } from "@/lib/support-email";
 
 /**
- * POST /api/support — public.
+ * POST /api/support: public.
  * Chatbot escalation / support widget submission.
  * Validates + sanitizes, routes to assistant-or-owner, saves SupportInquiry,
  * sends best-effort email notifications.
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 
     // Honeypot (hidden field named "website" must be empty)
     if (honeypotFailed(body.website)) {
-      // Fake success to bots — do NOT save.
+      // Fake success to bots: do NOT save.
       return NextResponse.json(
         { success: true, message: "Your message has been received. The support team will review it and respond as soon as possible." },
         { status: 201 }
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
 
     // Best-effort email notification (never throws).
     const adminBase = process.env.NEXTAUTH_URL ?? "http://localhost:3000";
-    // Fire-and-forget — do NOT await; email must never block the response (504 fix).
+    // Fire-and-forget: do NOT await; email must never block the response (504 fix).
     void sendSupportNotification({
       visitorName,
       visitorEmail,
@@ -137,7 +137,7 @@ export async function POST(req: NextRequest) {
 }
 
 /**
- * GET /api/support — admin only.
+ * GET /api/support: admin only.
  * Returns all support inquiries with filters.
  */
 export async function GET(req: NextRequest) {

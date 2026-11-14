@@ -5,7 +5,7 @@
  *   NOTE: in-memory state is per-process; on serverless hosts the limit is per-instance.
  *   For production use a shared store (Upstash Redis, KV, etc.).
  * - Honeypot: a hidden field named `website` must be empty.
- * - Optional Cloudflare Turnstile verification — only if TURNSTILE_SECRET env is set.
+ * - Optional Cloudflare Turnstile verification: only if TURNSTILE_SECRET env is set.
  * - Sanitizer: trims and strips HTML tags from name/company/message.
  */
 
@@ -35,7 +35,7 @@ export function rateLimitCheck(ip: string): { ok: boolean; retryAfterMs?: number
     return { ok: true };
   }
   if (now - b.firstAt > WINDOW_MS) {
-    // Window expired — reset.
+    // Window expired: reset.
     buckets.set(ip, { count: 1, firstAt: now });
     return { ok: true };
   }

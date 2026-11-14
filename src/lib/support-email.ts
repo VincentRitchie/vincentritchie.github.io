@@ -2,7 +2,7 @@
  * Support inquiry email notifications.
  *
  * Same provider strategy as email.ts (Resend REST → SMTP → skip).
- * ALWAYS best-effort — never throws to the caller.
+ * ALWAYS best-effort, never throws to the caller.
  *
  * Recipients:
  *  - If routed to an assistant with an email: notify the assistant.
@@ -78,7 +78,7 @@ async function sendViaProvider(to: string, subject: string, text: string, replyT
       return;
     }
 
-    // No transport — log and skip.
+    // No transport: log and skip.
     console.log(`[email] No transport configured. Support notification (to ${to}) skipped. Payload:`);
     console.log(text);
   } catch (err) {
@@ -106,7 +106,7 @@ export async function sendSupportNotification(p: SupportNotificationPayload): Pr
     `View / manage this inquiry in the admin dashboard:`,
     p.adminInboxUrl,
     ``,
-    `— Sent from the Vincent Chimaobi Obasiochie portfolio support system.`,
+    `Sent from the Vincent Chimaobi Obasiochie portfolio support system.`,
   ]
     .filter(Boolean)
     .join("\n");

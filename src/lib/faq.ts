@@ -2,7 +2,7 @@ import "server-only";
 import { db } from "@/lib/db";
 
 /**
- * Chatbot FAQ matching — server-side, no external LLM.
+ * Chatbot FAQ matching: server-side, no external LLM.
  *
  * Strategy:
  *  1. Normalize the visitor question (lowercase, strip punctuation, collapse spaces).

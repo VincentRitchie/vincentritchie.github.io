@@ -254,7 +254,7 @@ function RubricPanel() {
           {rubricEvaluation.intro}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          The outcome rating and the error record are what make a clip usable as training signal. A model learning from robot-arm tasks needs to know not just what was attempted, but whether it succeeded and exactly where execution broke down. That is why grading and error documentation are treated as first-class deliverables — never an afterthought.
+          The outcome rating and the error record are what make a clip usable as training signal. A model learning from robot-arm tasks needs to know not just what was attempted, but whether it succeeded and exactly where execution broke down. That is why grading and error documentation are treated as first-class deliverables, never an afterthought.
         </p>
       </div>
       <div className="rounded-2xl border border-border bg-card/50 p-6">
@@ -323,7 +323,7 @@ function HallucinationPanel() {
         <div className="mt-5 rounded-xl border border-fuchsia-400/20 bg-fuchsia-500/5 p-4">
           <p className="text-sm leading-relaxed text-muted-foreground">
             <span className="font-semibold text-fuchsia-200">Value for AI training data: </span>
-            Accurate video tracking keeps object identity stable across frames — the foundation any downstream model builds on. My approach treats track identity, bounding-box alignment and drift checks as required verification, not optional polish.
+            Accurate video tracking keeps object identity stable across frames, the foundation any downstream model builds on. My approach treats track identity, bounding-box alignment and drift checks as required verification, not optional polish.
           </p>
         </div>
       </div>

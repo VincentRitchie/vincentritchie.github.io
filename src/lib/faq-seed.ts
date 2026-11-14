@@ -66,7 +66,7 @@ export const FAQ_SEED = [
   {
     question: "What tools do you use?",
     answer:
-      "My core tools are ChatGPT, Gemini and Claude for the text stages — story development, scriptwriting, scene planning and activation directives — plus CVAT for image annotation and video tracking, and CapCut for final video assembly. I select the right tool for each production stage rather than relying on a single tool for everything.",
+      "My core tools are ChatGPT, Gemini and Claude for the text stages (story development, scriptwriting, scene planning and activation directives), plus CVAT for image annotation and video tracking, and CapCut for final video assembly. I select the right tool for each production stage rather than relying on a single tool for everything.",
     keywords: "tools,use,software,chatgpt,gemini,claude,cvat,capcut,stack",
     category: "multimodal-prompting",
     order: 8,
@@ -90,7 +90,7 @@ export const FAQ_SEED = [
   {
     question: "Can I view your CV?",
     answer:
-      "Yes — my updated professional CV can be read directly on this website. Use the View My CV button in the hero or Contact section to open it in the site's document viewer. It is provided for reading online rather than as a direct download.",
+      "Yes, my updated professional CV can be read directly on this website. Use the View My CV button in the hero or Contact section to open it in the site's document viewer. It is provided for reading online rather than as a direct download.",
     keywords: "cv,resume,view,pdf,document,read,online",
     category: "contact",
     order: 11,
@@ -112,7 +112,7 @@ export const FAQ_SEED = [
     order: 13,
   },
   {
-    question: "I want to hire you or discuss a project — what should I include?",
+    question: "I want to hire you or discuss a project: what should I include?",
     answer:
       "For video annotation or AI training data work, please include the annotation type (video, image or both), expected volume, guidelines availability, tools involved, timeline, and whether quality review is part of the engagement. For AI video production or multimodal prompt engineering, please include the type of production, target audience, intended length, character or story requirements, references if available, and timeline. For content writing, research or quality review, please include the type of content, expected depth, research requirements, accuracy expectations, volume and timeline.",
     keywords: "hire,project,job,work,inquiry,rfp,proposal,discuss",
