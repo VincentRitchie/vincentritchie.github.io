@@ -7,8 +7,8 @@ import { profile as defaultProfile } from "@/lib/portfolio-data";
 import { GlowOrb } from "./shared";
 import { AnimatedHeroName } from "./animated-name";
 import { HeroSlider } from "./hero-slider";
-import { PdfViewerModal } from "./pdf-viewer-modal";
-import { PUBLIC_CV_PATH } from "@/lib/police-reconstructions";
+import { DocumentReaderModal } from "./document-reader-modal";
+import { PUBLIC_CV_DOC } from "@/lib/work-documents";
 import { assetPath } from "@/lib/asset-path";
 
 const scrollTo = (href: string) => {
@@ -211,13 +211,12 @@ export function Hero({ profile = defaultProfile }: { profile?: ProfileLike } = {
         </div>
       </div>
 
-      {/* CV: integrated document viewer (updated CV, read online) */}
-      <PdfViewerModal
+      {/* CV: integrated document reader (updated CV, read online) */}
+      <DocumentReaderModal
         open={cvOpen}
         onClose={() => setCvOpen(false)}
-        src={cvPath || PUBLIC_CV_PATH}
-        title="Vincent Chimaobi Obasiochie: Professional CV"
-        subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
+        doc={PUBLIC_CV_DOC}
+        pdfSrc={cvPath}
       />
     </section>
   );

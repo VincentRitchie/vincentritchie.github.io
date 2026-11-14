@@ -15,8 +15,8 @@ import {
 } from "@/components/ui/select";
 import { Send, CheckCircle2, Loader2, ShieldCheck, FileText, Eye } from "lucide-react";
 import { toast } from "sonner";
-import { PdfViewerModal } from "./pdf-viewer-modal";
-import { PUBLIC_CV_PATH } from "@/lib/police-reconstructions";
+import { DocumentReaderModal } from "./document-reader-modal";
+import { PUBLIC_CV_DOC } from "@/lib/work-documents";
 
 type Status = "idle" | "loading" | "success";
 
@@ -359,13 +359,12 @@ export function Contact({
         </div>
       </div>
 
-      {/* CV: integrated document viewer (updated CV, read online) */}
-      <PdfViewerModal
+      {/* CV: integrated document reader (updated CV, read online) */}
+      <DocumentReaderModal
         open={cvOpen}
         onClose={() => setCvOpen(false)}
-        src={cvPath || PUBLIC_CV_PATH}
-        title="Vincent Chimaobi Obasiochie: Professional CV"
-        subtitle="Read online · Multimodal Prompt Engineer · AI Video Producer · Video Annotation Specialist"
+        doc={PUBLIC_CV_DOC}
+        pdfSrc={cvPath}
       />
     </Section>
   );

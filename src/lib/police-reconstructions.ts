@@ -7,14 +7,16 @@
  * BATCH GUIDE (future updates):
  *   1. Drop the new production's media into
  *      public/portfolio/police-bodycam/<production-slug>/ following the same
- *      layout: cover.jpg, 01-*.mp4, 02-*.mp4, ..., technical-case-study.pdf.
+ *      layout: cover.jpg, 01-*.mp4, 02-*.mp4, ..., case-study/p-01.jpg..
+ *      p-NN.jpg (page images generated from the private source PDF during
+ *      development; the original PDF itself is never published).
  *   2. Add one entry to `policeReconstructions` below.
- *   3. Nothing else needs to change: the section, cards, showcase modal,
- *      video carousel and case-study viewer are fully data-driven.
+ *   3. Nothing else needs to change: the nested work explorer, cards,
+ *      video carousel and case-study reader are fully data-driven.
  *
- * NOTE: `technicalCaseStudy` is optional. Omit it for productions whose
- * case study has not been supplied yet; the "View Technical Case Study"
- * button only renders when a correct PDF exists for that production.
+ * NOTE: `caseStudy` is optional. Omit it for productions whose case study
+ * has not been supplied yet; the "View Technical Case Study" button only
+ * renders when page images exist for that production.
  *
  * All clip titles reflect the supplied filenames and the actual footage
  * content (verified frame-by-frame). Every production in this category is
@@ -24,6 +26,8 @@
  * dashes (U+2014). scripts/check-punctuation.py enforces this at build
  * time; use commas, colons, semicolons or parentheses instead.
  */
+
+import type { WorkDocument } from "./work-documents";
 
 export type PoliceClip = {
   /** Logical public path (root-relative); wrapped with assetPath() at render time. */
@@ -46,15 +50,13 @@ export type PoliceProduction = {
   cover: string;
   /** Independent clips shown in the interactive carousel, in order. */
   clips: PoliceClip[];
-  /** Optional path to the production's PDF technical case study. */
-  technicalCaseStudy?: string;
-  /** Preview label for the case study button tooltip/aria. */
-  caseStudyLabel?: string;
+  /** Optional read-only case study document (page images inside the site reader). */
+  caseStudy?: WorkDocument;
   accent: "violet" | "magenta" | "blue";
   icon: string;
 };
 
-/** Section copy for the category block inside Selected Work. */
+/** Copy for the subcategory inside the AI True-Crime parent work card. */
 export const policeCategory = {
   eyebrow: "Police Bodycam & Dashcam Reconstructions",
   title: "Police camera-perspective reconstruction productions",
@@ -99,9 +101,13 @@ export const policeReconstructions: PoliceProduction[] = [
         title: "Daylight Restraint",
       },
     ],
-    technicalCaseStudy:
-      "/portfolio/police-bodycam/night-operations/technical-case-study.pdf",
-    caseStudyLabel: "Night Operations Bodycam Reconstruction: Technical Case Study",
+    caseStudy: {
+      actionLabel: "View Technical Case Study",
+      title: "Night Operations Bodycam Reconstruction: Technical Case Study",
+      subtitle: "Read online · AI-generated reconstruction portfolio",
+      pagesDir: "/portfolio/police-bodycam/night-operations/case-study",
+      pageCount: 19,
+    },
     accent: "violet",
     icon: "ScanSearch",
   },
@@ -135,9 +141,13 @@ export const policeReconstructions: PoliceProduction[] = [
         title: "Residential Foot Pursuit",
       },
     ],
-    technicalCaseStudy:
-      "/portfolio/police-bodycam/outdoor-bodycam/technical-case-study.pdf",
-    caseStudyLabel: "Outdoor Police Bodycam Reconstruction: Technical Case Study",
+    caseStudy: {
+      actionLabel: "View Technical Case Study",
+      title: "Outdoor Police Bodycam Reconstruction: Technical Case Study",
+      subtitle: "Read online · AI-generated reconstruction portfolio",
+      pagesDir: "/portfolio/police-bodycam/outdoor-bodycam/case-study",
+      pageCount: 17,
+    },
     accent: "magenta",
     icon: "Eye",
   },
@@ -171,18 +181,14 @@ export const policeReconstructions: PoliceProduction[] = [
         title: "Chaotic Multilane Highway Pursuit",
       },
     ],
-    technicalCaseStudy:
-      "/portfolio/police-bodycam/dashcam-highway-pursuit/technical-case-study.pdf",
-    caseStudyLabel:
-      "Police Dashcam Highway Pursuit Reconstruction: Technical Case Study",
+    caseStudy: {
+      actionLabel: "View Technical Case Study",
+      title: "Police Dashcam Highway Pursuit Reconstruction: Technical Case Study",
+      subtitle: "Read online · AI-generated reconstruction portfolio",
+      pagesDir: "/portfolio/police-bodycam/dashcam-highway-pursuit/case-study",
+      pageCount: 17,
+    },
     accent: "blue",
     icon: "Radar",
   },
 ];
-
-/**
- * Public CV: the updated professional CV shipped with the portfolio.
- * Used by the "View My CV" interactions (hero + contact) unless an
- * admin-uploaded CV path (profile.cvPath) overrides it in full-stack mode.
- */
-export const PUBLIC_CV_PATH = "/documents/cv/vincent-chimaobi-prof-cv.pdf";

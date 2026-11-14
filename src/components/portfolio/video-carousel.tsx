@@ -5,7 +5,13 @@ import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import { ChevronLeft, ChevronRight, Film } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { assetPath } from "@/lib/asset-path";
-import type { PoliceClip } from "@/lib/police-reconstructions";
+
+export type CarouselClip = {
+  /** Logical public path (root-relative); wrapped with assetPath() at render time. */
+  src: string;
+  /** Short, accurate clip title. */
+  title: string;
+};
 
 /**
  * VideoCarousel: interactive multi-clip video showcase.
@@ -17,7 +23,9 @@ import type { PoliceClip } from "@/lib/police-reconstructions";
  * - Left/right swiping on touch devices (framer-motion drag).
  * - Clear current-clip indicator ("1 / 4").
  * - Native play/pause controls on each clip (keyboard operable).
- * - Original 752x416 (47:26) aspect ratio preserved via object-contain.
+ * - Source aspect ratio preserved via object-contain; the stage ratio is
+ *   configurable through `aspectClass` (47:26 for police clips, 16:9 for
+ *   documentary clips).
  * - Metadata-only initial loading (preload="metadata"): clips are not
  *   downloaded until the visitor opens/plays them.
  * - The previous clip is paused and unmounted on navigation.
@@ -27,11 +35,14 @@ export function VideoCarousel({
   clips,
   label,
   className,
+  aspectClass = "aspect-[47/26]",
 }: {
-  clips: PoliceClip[];
+  clips: CarouselClip[];
   /** Accessible name for the carousel group. */
   label: string;
   className?: string;
+  /** Stage aspect-ratio class matching the source clips (default 47:26). */
+  aspectClass?: string;
 }) {
   const count = clips.length;
   const [index, setIndex] = useState(0);
@@ -101,8 +112,9 @@ export function VideoCarousel({
         aria-label={label}
         className="group relative overflow-hidden rounded-xl border border-border/70 bg-black outline-none focus-visible:ring-2 focus-visible:ring-violet-400/60"
       >
-        {/* Stage: 47:26 = native 752x416 source ratio */}
-        <div className="relative aspect-[47/26] w-full">
+        {/* Stage: aspect ratio matches the source clips (object-contain
+            letterboxes any clip that differs slightly). */}
+        <div className={cn("relative w-full", aspectClass)}>
           <AnimatePresence initial={false} mode="popLayout">
             <motion.div
               key={index}

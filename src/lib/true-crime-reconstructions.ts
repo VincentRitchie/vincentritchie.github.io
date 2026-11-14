@@ -12,10 +12,11 @@
  *   1. Drop the new production's media into
  *      public/portfolio/true-crime/<production-slug>/ following the same
  *      layout: cover.jpg, showcase.mp4 (one connected sequence),
- *      technical-case-study.pdf.
+ *      case-study/p-01.jpg..p-NN.jpg (page images generated from the
+ *      private source PDF during development; the PDF is never published).
  *   2. Add one entry to `trueCrimeProductions` below.
- *   3. Nothing else needs to change: the section, cards, showcase modal,
- *      single-video player and case-study viewer are fully data-driven.
+ *   3. Nothing else needs to change: the nested work explorer, cards,
+ *      single-video player and case-study reader are fully data-driven.
  *
  * EDITORIAL RULES for this category:
  *   - Keep the documented historical case and the reconstructed visual
@@ -24,6 +25,8 @@
  *   - PUNCTUATION: website-authored text must not contain em dashes
  *     (U+2014); scripts/check-punctuation.py enforces this at build time.
  */
+
+import type { WorkDocument } from "./work-documents";
 
 export type TrueCrimeProduction = {
   id: string;
@@ -42,10 +45,8 @@ export type TrueCrimeProduction = {
     src: string;
     title: string;
   };
-  /** Optional path to the production's PDF technical case study. */
-  technicalCaseStudy?: string;
-  /** Label for the case-study viewer title. */
-  caseStudyLabel?: string;
+  /** Optional read-only case study document (page images inside the site reader). */
+  caseStudy?: WorkDocument;
   /**
    * Documents what is historical record and what is reconstructed,
    * displayed in the showcase so visitors keep the distinction clear.
@@ -55,7 +56,7 @@ export type TrueCrimeProduction = {
   icon: string;
 };
 
-/** Section copy for the category block inside Selected Work. */
+/** Copy for the category inside the AI True-Crime parent work card. */
 export const trueCrimeCategory = {
   eyebrow: "AI True-Crime Reconstruction",
   title: "Case-linked reconstruction productions",
@@ -86,9 +87,13 @@ export const trueCrimeProductions: TrueCrimeProduction[] = [
       src: "/portfolio/true-crime/martin-knell-cctv/showcase.mp4",
       title: "CCTV Reconstruction Showcase",
     },
-    technicalCaseStudy:
-      "/portfolio/true-crime/martin-knell-cctv/technical-case-study.pdf",
-    caseStudyLabel: "Martin Knell CCTV Reconstruction: Technical Case Study",
+    caseStudy: {
+      actionLabel: "View Technical Case Study",
+      title: "Martin Knell CCTV Reconstruction: Technical Case Study",
+      subtitle: "Read online · AI-generated reconstruction portfolio",
+      pagesDir: "/portfolio/true-crime/martin-knell-cctv/case-study",
+      pageCount: 15,
+    },
     documentedNote:
       "Documented: the real Martin Knell case and a January 13, 2015 bank visit noted in the appellate record. Reconstructed: the on-screen interaction, gestures, room layout and camera view, all generated for this production and never presented as original surveillance evidence.",
     accent: "magenta",
